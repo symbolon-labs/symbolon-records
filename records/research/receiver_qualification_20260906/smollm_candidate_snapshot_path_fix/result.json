@@ -1,0 +1,84 @@
+{
+  "model": [
+    "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "a10cc1512eabd3dde888204e902eca88bddb4951"
+  ],
+  "qualified": true,
+  "checks": {
+    "same_batch_exact": true,
+    "missing_repeat_exact": true,
+    "reverse": true,
+    "permute": true,
+    "singletons": true,
+    "donor_probabilities": true,
+    "donor_following": true,
+    "donor_wrong_for_original": true,
+    "full_vocab_scoring_seam": true,
+    "sealed_scorer_matches_last": true,
+    "oracle_all_four": true,
+    "each_correct_margin_positive": true,
+    "missing_exact_chance": true,
+    "endpoint_unchanged": true,
+    "no_endpoint_gradients": true,
+    "identity_unchanged": true,
+    "code_prereg_unchanged": true
+  },
+  "oracle_accuracy": 1.0,
+  "oracle_predictions": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "margins": [
+    1.0647220611572266,
+    0.806402325630188,
+    0.7136430740356445,
+    2.023289740085602
+  ],
+  "donor_following": 1.0,
+  "donor_original_target_accuracy": 0.0,
+  "missing_accuracy": 0.25,
+  "comparisons": {
+    "reverse": {
+      "max_abs_label_lp_difference": 0.0,
+      "predictions_match": true,
+      "pass_check": true
+    },
+    "permute": {
+      "max_abs_label_lp_difference": 0.0,
+      "predictions_match": true,
+      "pass_check": true
+    },
+    "singletons": {
+      "max_abs_label_lp_difference": 9.5367431640625e-06,
+      "predictions_match": true,
+      "pass_check": true
+    },
+    "donor": {
+      "max_abs_label_lp_difference": 0.0,
+      "predictions_match": true,
+      "pass_check": true
+    }
+  },
+  "full_logit_seam_max_abs": 3.4332275390625e-05,
+  "historical_exact": null,
+  "parameter_hash_before": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3",
+  "parameter_hash_after": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3",
+  "timings": {
+    "oracle": 1.0233485179996933,
+    "missing": 0.4215632080013165,
+    "oracle_repeat": 1.0445492709986866,
+    "missing_repeat": 0.4223845110027469,
+    "reverse": 1.0612858150052489,
+    "permute": 1.073226093001722,
+    "singletons": 1.6796781540033408,
+    "cyclic_donor": 1.108445985999424,
+    "full_logit_seam": 2.498744792006619
+  },
+  "elapsed_s": 15.058130211997195,
+  "peak_rss_kib": 2876028,
+  "external_spend_usd": 0,
+  "unique_oracle_cases": 4,
+  "scope": "Exact finite-domain oracle receiver qualification only; no heldout bridge or general instruction claim."
+}

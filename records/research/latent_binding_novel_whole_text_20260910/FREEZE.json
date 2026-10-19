@@ -1,0 +1,167 @@
+{
+  "identity": {
+    "code": {
+      "PREREGISTRATION.md": "cf57d17993865d7061676fba35de0a1bc624d6f3091ec1c3e76088937bfe14ab",
+      "AUTHORIZATION.md": "7b81efba3d8ebdd477e7bef80ed95c3694113f832c14eb6cfc8f2cbd67afc115",
+      "ANALYSIS_DEPENDENCIES.json": "9547254ef9bcf1e41e83e7a89d8ff9e48b273f0b47ed8b1ff13c4a7a2d772fe8",
+      "NATIVE_PARENT.json": "7429095477edfaa633d0fa935087f16fac8f5fd3394e7fd3c5e744400928038b",
+      "core.py": "e7046e7805fcd7ea966bafb807623c7fa110eb27545763a62d27403d90eb88bb",
+      "runtime.py": "0fecf04832656921db27ab3208ed135d47068ac676f0e9a180245b18a7c9b87d",
+      "audit.py": "5e86616d5838380674aff51053f5e000a4e1a419de0e023ce63918160b99324e",
+      "test_text.py": "67b729889d01776adae8d8685d49f339d25cb8329bdab9d3d12778dc2bfed475",
+      "job.py": "fc60399c661fb13712cc35563d221012b9f8cf5c279a346639881944bff6be82",
+      "report.py": "22dfbf1afd340e486ada2f658b861babdcaf25dcc3c8468fdb99f96be39a1244",
+      "close.py": "a29439cfd730f9d568b1830ade54ba0b096a5991d950464838bf01eb0b84a5e7"
+    },
+    "imports": {
+      "research/latent_binding_v1_20260906/run.py": "7ab1c9f3a050ee572f663ca433ecb6655058da3612a63fb52e3536da4a0e72c9",
+      "research/latent_binding_v1_20260906/binding.py": "275b280e0f1664febabc4186757312782756149f94944a656c7ef4e3ba574437",
+      "research/latent_channel_v1_20260906/channel.py": "e2de36c051ba503b441c2d84b959728cb09f8d064791012b5f673462039f6fbd",
+      "research/latent_channel_smollm_20260906/channel_cf.py": "deb001a66dc5126652dfeb5479f7b0f98e1758152cf44f1c81d2dd4eb5a71887",
+      "research/latent_channel_v2_20260906/channel_v2.py": "ee773ac60f7068f3e350ce60120f5f5bed268beece1e9fd7793a48fcb57eaf29"
+    },
+    "inputs": {
+      "research/latent_binding_novel_whole_native_20260910/run/data.json": "35fce6409005e2ed69f753aaee42920349564b32d41fc843f83bfe4bfbfa231e",
+      "research/latent_binding_novel_whole_native_20260910/analysis.json": "f155c4075a79aabd9adc30cdcae75dcfdf02bc018fc5cae9639543015c528dea",
+      "research/latent_binding_novel_whole_native_20260910/FREEZE.json": "0371c5db96190bff8b0314feccbad45df3ed0d95d51477f8cafb7c0d7e955714",
+      "research/latent_binding_novel_whole_native_20260910/seal.json": "a4025f8f941ff2551616c2a4e6464879a0eef1f7cafc47c415474b926c661e98",
+      "research/latent_binding_order1_text_extended_20260908/seal.json": "9a6365b8cb5a99be7748bc3043e41228675e0177d5bf2e99c00863b38f9265ee",
+      "research/latent_binding_order1_text_extended_20260908/FREEZE.json": "ec97fb3b4ae5159fcc64b0fbf11b8500af997ff3ef6135b4caab6735604ed1f1",
+      "research/latent_binding_order1_text_extended_20260908/inputs.json": "3963ef96553d07e917d8f41903a78802d103803d1b856fcb02c5302ab8f4a61f",
+      "research/latent_binding_order1_text_extended_20260908/sender_audit.json": "bdcee0301c6ac0db0f155d1da47e95875ed110c32a3db2b9516073037757313c"
+    },
+    "data": "67cd0b333444f9ba029722a5ccd985ad081a53957bd528bac312fcc973e0bfe8",
+    "models": {
+      "sender": {
+        "repo": "Qwen/Qwen3-1.7B",
+        "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+        "path": "<local>/.cache/huggingface/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+        "files": {
+          "config.json": {
+            "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+            "bytes": 726
+          },
+          "generation_config.json": {
+            "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+            "bytes": 239
+          },
+          "merges.txt": {
+            "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "bytes": 1671853
+          },
+          "model-00001-of-00002.safetensors": {
+            "sha256": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5",
+            "bytes": 3441185608
+          },
+          "model-00002-of-00002.safetensors": {
+            "sha256": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9",
+            "bytes": 622329984
+          },
+          "model.safetensors.index.json": {
+            "sha256": "0d660e94b165eb912669a5249dff44b83188c4777a07ddb9611fb78d91b0578d",
+            "bytes": 25605
+          },
+          "tokenizer.json": {
+            "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "bytes": 11422654
+          },
+          "tokenizer_config.json": {
+            "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+            "bytes": 9732
+          },
+          "vocab.json": {
+            "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+            "bytes": 2776833
+          }
+        },
+        "dtype": "float32",
+        "quantization": "none"
+      },
+      "receiver": {
+        "repo": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+        "path": "<local>/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM2-360M-Instruct/snapshots/a10cc1512eabd3dde888204e902eca88bddb4951",
+        "files": {
+          "README.md": {
+            "sha256": "6b88794416ac9da8f254ebb0bec228967a2bdd0badf9a2853863928b25facd95",
+            "bytes": 7304
+          },
+          "all_results.json": {
+            "sha256": "71face5e244d784819f937a25206865c295c8889fe4359eec28bbec85d02da0d",
+            "bytes": 786
+          },
+          "config.json": {
+            "sha256": "224f72354f10d617a359cc82ad15a3c96e866b9b2ffadb81997eeea9e88e22ee",
+            "bytes": 846
+          },
+          "eval_results.json": {
+            "sha256": "db9bcb5c4f2a3be0d7e88f86af26f375c22c240954af86942d1554d87a488ce8",
+            "bytes": 589
+          },
+          "generation_config.json": {
+            "sha256": "87b916edaaab66b3899b9d0dd0752727dff6666686da0504d89ae0a6e055a013",
+            "bytes": 132
+          },
+          "merges.txt": {
+            "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+            "bytes": 466391
+          },
+          "model.safetensors": {
+            "sha256": "e6bffe7435d7ddc10fd3b9a9efd429dafbacb1cb17015fb5562664e7532bf86e",
+            "bytes": 723674912
+          },
+          "special_tokens_map.json": {
+            "sha256": "2b7379f3ae813529281a5c602bc5a11c1d4e0a99107aaa597fe936c1e813ca52",
+            "bytes": 655
+          },
+          "tokenizer.json": {
+            "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+            "bytes": 2104556
+          },
+          "tokenizer_config.json": {
+            "sha256": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df",
+            "bytes": 3764
+          },
+          "train_results.json": {
+            "sha256": "fceae2634b0a268a8adbda73fd0b2192922b496054011f588d2c6e888db1cea1",
+            "bytes": 232
+          },
+          "trainer_state.json": {
+            "sha256": "2263f580ae0d7890acc11253b83138b3fc1250dc6728688a3387ce813b92eed1",
+            "bytes": 57621
+          },
+          "vocab.json": {
+            "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+            "bytes": 800662
+          }
+        },
+        "dtype": "float32",
+        "quantization": "none"
+      }
+    },
+    "packages": {
+      "torch": "2.13.0",
+      "transformers": "5.10.2",
+      "tokenizers": "0.22.2",
+      "numpy": "2.4.6",
+      "safetensors": "0.8.0"
+    }
+  },
+  "caps": {
+    "sender": null,
+    "receiver": null
+  },
+  "seed": 68108,
+  "tests": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_actual_message_union_not_oracle_replacement (test_text.Tests.test_actual_message_union_not_oracle_replacement) ... ok\ntest_event_signatures_and_no_training (test_text.Tests.test_event_signatures_and_no_training) ... ok\ntest_existing_runtime_identity (test_text.Tests.test_existing_runtime_identity) ... ok\ntest_full_two_token_scalar_score (test_text.Tests.test_full_two_token_scalar_score) ... ok\ntest_inference_functions_unchanged (test_text.Tests.test_inference_functions_unchanged) ... ok\ntest_no_wall_time_kill (test_text.Tests.test_no_wall_time_kill) ... ok\ntest_receiver_has_only_message (test_text.Tests.test_receiver_has_only_message) ... ok\ntest_requests_and_prompt_exclusion (test_text.Tests.test_requests_and_prompt_exclusion) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.016s\n\nOK\n"
+  },
+  "cpu": "processor\t: 0\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 140\nmodel name\t: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz\nstepping\t: 1\nmicrocode\t: 0xbe\ncpu MHz\t\t: 400.000\ncache size\t: 8192 KB\nphysical id\t: 0\nsiblings\t: 8\ncore id\t\t: 0\ncpu cores\t: 4\napicid\t\t: 0\ninitial apicid\t: 0\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities\nvmx flags\t: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_violation_ve ept_mode_based_exec tsc_scaling\nbugs\t\t: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi spectre_v2_user its its_native_only\nbogomips\t: 4838.40\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 1\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 140\nmodel name\t: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz\nstepping\t: 1\nmicrocode\t: 0xbe\ncpu MHz\t\t: 811.383\ncache size\t: 8192 KB\nphysical id\t: 0\nsiblings\t: 8\ncore id\t\t: 1\ncpu cores\t: 4\napicid\t\t: 2\ninitial apicid\t: 2\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities\nvmx flags\t: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_violation_ve ept_mode_based_exec tsc_scaling\nbugs\t\t: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi spectre_v2_user its its_native_only\nbogomips\t: 4838.40\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 2\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 140\nmodel name\t: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz\nstepping\t: 1\nmicrocode\t: 0xbe\ncpu MHz\t\t: 400.000\ncache size\t: 8192 KB\nphysical id\t: 0\nsiblings\t: 8\ncore id\t\t: 2\ncpu cores\t: 4\napicid\t\t: 4\ninitial apicid\t: 4\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities\nvmx flags\t: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_violation_ve ept_mode_based_exec tsc_scaling\nbugs\t\t: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi spectre_v2_user its its_native_only\nbogomips\t: 4838.40\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 3\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 140\nmodel name\t: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz\nstepping\t: 1\nmicrocode\t: 0xbe\ncpu MHz\t\t: 3599.963\ncache size\t: 8192 KB\nphysical id\t: 0\nsiblings\t: 8\ncore id\t\t: 3\ncpu cores\t: 4\napicid\t\t: 6\ninitial apicid\t: 6\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities\nvmx flags\t: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_violation_ve ept_mode_based_exec tsc_scaling\nbugs\t\t: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi spectre_v2_user its its_native_only\nbogomips\t: 4838.40\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 4\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 140\nmodel name\t: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz\nstepping\t: 1\nmicrocode\t: 0xbe\ncpu MHz\t\t: 1427.545\ncache size\t: 8192 KB\nphysical id\t: 0\nsiblings\t: 8\ncore id\t\t: 0\ncpu cores\t: 4\napicid\t\t: 1\ninitial apicid\t: 1\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities\nvmx flags\t: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_violation_ve ept_mode_based_exec tsc_scaling\nbugs\t\t: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi spectre_v2_user its its_native_only\nbogomips\t: 4838.40\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 5\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 140\nmodel name\t: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz\nstepping\t: 1\nmicrocode\t: 0xbe\ncpu MHz\t\t: 2015.971\ncache size\t: 8192 KB\nphysical id\t: 0\nsiblings\t: 8\ncore id\t\t: 1\ncpu cores\t: 4\napicid\t\t: 3\ninitial apicid\t: 3\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities\nvmx flags\t: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_violation_ve ept_mode_based_exec tsc_scaling\nbugs\t\t: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi spectre_v2_user its its_native_only\nbogomips\t: 4838.40\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 6\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 140\nmodel name\t: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz\nstepping\t: 1\nmicrocode\t: 0xbe\ncpu MHz\t\t: 724.102\ncache size\t: 8192 KB\nphysical id\t: 0\nsiblings\t: 8\ncore id\t\t: 2\ncpu cores\t: 4\napicid\t\t: 5\ninitial apicid\t: 5\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities\nvmx flags\t: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_violation_ve ept_mode_based_exec tsc_scaling\nbugs\t\t: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi spectre_v2_user its its_native_only\nbogomips\t: 4838.40\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\nprocessor\t: 7\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel\t\t: 140\nmodel name\t: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz\nstepping\t: 1\nmicrocode\t: 0xbe\ncpu MHz\t\t: 400.000\ncache size\t: 8192 KB\nphysical id\t: 0\nsiblings\t: 8\ncore id\t\t: 3\ncpu cores\t: 4\napicid\t\t: 7\ninitial apicid\t: 7\nfpu\t\t: yes\nfpu_exception\t: yes\ncpuid level\t: 27\nwp\t\t: yes\nflags\t\t: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l2 cdp_l2 ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid movdiri movdir64b fsrm avx512_vp2intersect md_clear ibt flush_l1d arch_capabilities\nvmx flags\t: vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple pml ept_violation_ve ept_mode_based_exec tsc_scaling\nbugs\t\t: spectre_v1 spectre_v2 spec_store_bypass swapgs eibrs_pbrsb gds bhi spectre_v2_user its its_native_only\nbogomips\t: 4838.40\nclflush size\t: 64\ncache_alignment\t: 64\naddress sizes\t: 39 bits physical, 48 bits virtual\npower management:\n\n",
+  "memory": "MemTotal:       16056392 kB\nMemFree:         6979624 kB\nMemAvailable:   13762532 kB\nBuffers:           39348 kB\nCached:          7219344 kB\nSwapCached:         1800 kB\nActive:          5504692 kB\nInactive:        2713756 kB\nActive(anon):     892092 kB\nInactive(anon):   318896 kB\nActive(file):    4612600 kB\nInactive(file):  2394860 kB\nUnevictable:      175424 kB\nMlocked:            8664 kB\nSwapTotal:      20971512 kB\nSwapFree:       20141884 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              1032 kB\nWriteback:             0 kB\nAnonPages:       1128840 kB\nMapped:           722660 kB\nShmem:            244692 kB\nKReclaimable:      79752 kB\nSlab:             195864 kB\nSReclaimable:      79752 kB\nSUnreclaim:       116112 kB\nKernelStack:        9840 kB\nPageTables:        28048 kB\nSecPageTables:      4212 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    28999708 kB\nCommitted_AS:    9112660 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       68680 kB\nVmallocChunk:          0 kB\nPercpu:             5088 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:    284672 kB\nShmemHugePages:   147456 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    178176 kB\nFilePmdMapped:    126976 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      211636 kB\nDirectMap2M:     6817792 kB\nDirectMap1G:     9437184 kB\n",
+  "python": "3.14.7 (main, Aug 10 2026, 07:46:56) [GCC 16.1.1 20260728]",
+  "git_commit": "ae550f0fbcf9dea1a5507f5695b077d2cc77d02b",
+  "git_status": " M src/lib.rs\n M src/main.rs\n?? .cache/\n?? .commandcode/\n?? docs/phase2-optimization-report.md\n?? examples/tmp_vits_ids.rs\n?? inf-eng-interactive.html\n?? inf-eng.txt\n?? research/embersec/comparative/disclosure/report_S1_llama_cpp.md\n?? research/embersec/comparative/disclosure/report_S2_llama_cpp.md\n?? research/embersec/comparative/disclosure/report_S3_llama_cpp.md\n?? research/embersec/comparative/disclosure/report_S4_candle.md\n?? research/embersec/comparative/disclosure/report_S5_llama_cpp.md\n?? research/embersec/comparative/results/diff_fuzz/blobs/\n?? research/embersec/comparative/results/diff_fuzz/crashes/\n?? src/cli_handoff.rs\n?? src/cli_intervene.rs\n?? src/residual_patch.rs\n?? tools/build_inf_eng_interactive.py\n",
+  "utc": "2026-09-09T22:59:18Z",
+  "new_external_spend_usd": 0
+}

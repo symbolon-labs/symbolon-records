@@ -1,0 +1,3714 @@
+[
+  {
+    "id": "tiny-000000",
+    "group": 3,
+    "label": 2,
+    "donor_id": "tiny-000011",
+    "donor_label": 0,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9896901845932007,
+          -6.5283684730529785,
+          -6.607705593109131,
+          -6.0597825050354
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437017440796,
+          "delta_norm": 0.054684415459632874,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011477392399683595,
+          "cosine": 0.9999990463256836
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9898686408996582,
+          -6.528406620025635,
+          -6.607799053192139,
+          -6.059738636016846
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437255859375,
+          "delta_norm": 0.05365806072950363,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011261976324021816,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9887945652008057,
+          -6.527988433837891,
+          -6.607521057128906,
+          -6.059682846069336
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.059561014175415,
+          "delta_norm": 0.024090897291898727,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005056297522969544,
+          "cosine": 1.0
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9890947341918945,
+          -6.528705596923828,
+          -6.60855770111084,
+          -6.0603790283203125
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0638184547424316,
+          "delta_norm": 0.027545250952243805,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005781311774626374,
+          "cosine": 0.9999998807907104
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -3.648106813430786,
+          -5.138851165771484,
+          -5.1776227951049805,
+          -4.05870246887207
+        ],
+        "prediction": 0,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000001",
+    "group": 7,
+    "label": 3,
+    "donor_id": "tiny-000022",
+    "donor_label": 0,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9897911548614502,
+          -6.5281829833984375,
+          -6.60765266418457,
+          -6.059688568115234
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794341564178467,
+          "delta_norm": 0.05613998696208,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011782892979681492,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9896351099014282,
+          -6.528378963470459,
+          -6.607845783233643,
+          -6.059903621673584
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079435348510742,
+          "delta_norm": 0.053810812532901764,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011294037103652954,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9890427589416504,
+          -6.528886318206787,
+          -6.60908842086792,
+          -6.061025142669678
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.065345287322998,
+          "delta_norm": 0.03001357987523079,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0006299374508671463,
+          "cosine": 0.9999998211860657
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9886168241500854,
+          -6.528006553649902,
+          -6.607885360717773,
+          -6.060263633728027
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0686590671539307,
+          "delta_norm": 0.018593311309814453,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0003902441239915788,
+          "cosine": 0.9999999403953552
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -2.7111735343933105,
+          -4.2316203117370605,
+          -3.197427272796631,
+          -4.210416316986084
+        ],
+        "prediction": 0,
+        "unconstrained_token": 17607,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000002",
+    "group": 3,
+    "label": 1,
+    "donor_id": "tiny-000010",
+    "donor_label": 3,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.989654779434204,
+          -6.528376579284668,
+          -6.607729911804199,
+          -6.059808731079102
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079436779022217,
+          "delta_norm": 0.05446356534957886,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011431039310991764,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.989851474761963,
+          -6.528468608856201,
+          -6.607811450958252,
+          -6.059793949127197
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437732696533,
+          "delta_norm": 0.05354892089962959,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001123906928114593,
+          "cosine": 0.9999992251396179
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9895390272140503,
+          -6.528923034667969,
+          -6.608190536499023,
+          -6.060657501220703
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0541024208068848,
+          "delta_norm": 0.020299484953284264,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004260540008544922,
+          "cosine": 0.9999997615814209
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9882655143737793,
+          -6.528109073638916,
+          -6.608927249908447,
+          -6.060676097869873
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.065406322479248,
+          "delta_norm": 0.02103853039443493,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00044156541116535664,
+          "cosine": 0.9999998211860657
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -3.9693658351898193,
+          -5.705535888671875,
+          -3.879960775375366,
+          -4.17405891418457
+        ],
+        "prediction": 2,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000003",
+    "group": 0,
+    "label": 1,
+    "donor_id": "tiny-000015",
+    "donor_label": 0,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9897098541259766,
+          -6.528072357177734,
+          -6.607603073120117,
+          -6.059648513793945
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437255859375,
+          "delta_norm": 0.054187264293432236,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011373048182576895,
+          "cosine": 0.9999992847442627
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.989808440208435,
+          -6.528134822845459,
+          -6.607649326324463,
+          -6.0596442222595215
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079434394836426,
+          "delta_norm": 0.05626897141337395,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011809965362772346,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9883198738098145,
+          -6.528915882110596,
+          -6.608863353729248,
+          -6.060805797576904
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.063823699951172,
+          "delta_norm": 0.02122540958225727,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004454877052921802,
+          "cosine": 0.9999997615814209
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9896223545074463,
+          -6.527864456176758,
+          -6.607785224914551,
+          -6.0598297119140625
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.067169427871704,
+          "delta_norm": 0.019716812297701836,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004138246295042336,
+          "cosine": 1.000000238418579
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -3.793717384338379,
+          -5.366388320922852,
+          -3.8266687393188477,
+          -4.2168426513671875
+        ],
+        "prediction": 0,
+        "unconstrained_token": 17607,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000004",
+    "group": 1,
+    "label": 0,
+    "donor_id": "tiny-000020",
+    "donor_label": 0,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9900085926055908,
+          -6.528465270996094,
+          -6.607752799987793,
+          -6.059906005859375
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794386863708496,
+          "delta_norm": 0.05461008846759796,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011461791582405567,
+          "cosine": 0.999999463558197
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9897314310073853,
+          -6.52805757522583,
+          -6.607604503631592,
+          -6.059607982635498
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437494277954,
+          "delta_norm": 0.05437227338552475,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011411878513172269,
+          "cosine": 0.9999992251396179
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9889123439788818,
+          -6.527566909790039,
+          -6.607765197753906,
+          -6.059441566467285
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.066398859024048,
+          "delta_norm": 0.017971700057387352,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0003771974879782647,
+          "cosine": 1.0
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9894435405731201,
+          -6.528247833251953,
+          -6.608043670654297,
+          -6.059697151184082
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0567803382873535,
+          "delta_norm": 0.023654796183109283,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004964766558259726,
+          "cosine": 0.9999998807907104
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -4.1969380378723145,
+          -4.247561931610107,
+          -3.79282808303833,
+          -3.9637694358825684
+        ],
+        "prediction": 2,
+        "unconstrained_token": 220,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000005",
+    "group": 5,
+    "label": 1,
+    "donor_id": "tiny-000029",
+    "donor_label": 2,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9898542165756226,
+          -6.528431415557861,
+          -6.6078057289123535,
+          -6.059776782989502
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437494277954,
+          "delta_norm": 0.05349959060549736,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001122871646657586,
+          "cosine": 0.9999995231628418
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9898970127105713,
+          -6.528414726257324,
+          -6.607781410217285,
+          -6.059746742248535
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437732696533,
+          "delta_norm": 0.05369920656085014,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011270612012594938,
+          "cosine": 0.9999991655349731
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.988256812095642,
+          -6.52836275100708,
+          -6.608413219451904,
+          -6.060451984405518
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0656638145446777,
+          "delta_norm": 0.025510139763355255,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005354174063540995,
+          "cosine": 0.9999996423721313
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9903918504714966,
+          -6.528282165527344,
+          -6.607883453369141,
+          -6.060183525085449
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0625786781311035,
+          "delta_norm": 0.02604134939610958,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005465666181407869,
+          "cosine": 0.9999997615814209
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -2.497591495513916,
+          -4.612833499908447,
+          -2.896721363067627,
+          -3.358328342437744
+        ],
+        "prediction": 0,
+        "unconstrained_token": 17607,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000006",
+    "group": 6,
+    "label": 2,
+    "donor_id": "tiny-000008",
+    "donor_label": 2,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.989654302597046,
+          -6.52839469909668,
+          -6.60783576965332,
+          -6.059925079345703
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794358253479004,
+          "delta_norm": 0.05383116006851196,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011298307217657566,
+          "cosine": 0.999999463558197
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9900403022766113,
+          -6.52847146987915,
+          -6.607734203338623,
+          -6.059915065765381
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794389247894287,
+          "delta_norm": 0.054680269211530685,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001147652161307633,
+          "cosine": 0.9999992847442627
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9886044263839722,
+          -6.528801918029785,
+          -6.608452796936035,
+          -6.060516357421875
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0637128353118896,
+          "delta_norm": 0.020216047763824463,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00042430279427208006,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9888924360275269,
+          -6.528759956359863,
+          -6.608546257019043,
+          -6.060376167297363
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0618512630462646,
+          "delta_norm": 0.0203618835657835,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004273636732250452,
+          "cosine": 0.9999998807907104
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -3.620577812194824,
+          -5.006867408752441,
+          -4.831023216247559,
+          -4.178842544555664
+        ],
+        "prediction": 0,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000007",
+    "group": 2,
+    "label": 1,
+    "donor_id": "tiny-000028",
+    "donor_label": 2,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.989670991897583,
+          -6.528249740600586,
+          -6.607775688171387,
+          -6.059793472290039
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437017440796,
+          "delta_norm": 0.05512150377035141,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011569130001589656,
+          "cosine": 0.9999995231628418
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.989701509475708,
+          -6.5282487869262695,
+          -6.607762336730957,
+          -6.059776306152344
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437255859375,
+          "delta_norm": 0.05533039942383766,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011612974340096116,
+          "cosine": 0.9999995231628418
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9885048866271973,
+          -6.528618335723877,
+          -6.60897970199585,
+          -6.060873508453369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.057527542114258,
+          "delta_norm": 0.026002343744039536,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005457479855976999,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9886162281036377,
+          -6.528288841247559,
+          -6.608214378356934,
+          -6.060248374938965
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0701279640197754,
+          "delta_norm": 0.02198057621717453,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00046133744763210416,
+          "cosine": 1.000000238418579
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -4.762258052825928,
+          -6.1689133644104,
+          -4.419872760772705,
+          -4.988325595855713
+        ],
+        "prediction": 2,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000008",
+    "group": 1,
+    "label": 2,
+    "donor_id": "tiny-000021",
+    "donor_label": 1,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9900403022766113,
+          -6.52847146987915,
+          -6.607734203338623,
+          -6.059915065765381
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794389247894287,
+          "delta_norm": 0.054680269211530685,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001147652161307633,
+          "cosine": 0.9999992847442627
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9897927045822144,
+          -6.52815055847168,
+          -6.607658386230469,
+          -6.059685707092285
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794339179992676,
+          "delta_norm": 0.05606650188565254,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001176747027784586,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9889473915100098,
+          -6.527652263641357,
+          -6.607913494110107,
+          -6.059118747711182
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0497493743896484,
+          "delta_norm": 0.02873094566166401,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0006030169897712767,
+          "cosine": 0.9999998807907104
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9893107414245605,
+          -6.527757167816162,
+          -6.6081109046936035,
+          -6.060096263885498
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.047097682952881,
+          "delta_norm": 0.01763785444200039,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00037019059527665377,
+          "cosine": 1.0
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -2.289541721343994,
+          -3.961081027984619,
+          -3.725013256072998,
+          -3.246708393096924
+        ],
+        "prediction": 0,
+        "unconstrained_token": 17607,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000009",
+    "group": 0,
+    "label": 3,
+    "donor_id": "tiny-000023",
+    "donor_label": 3,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9897087812423706,
+          -6.528097152709961,
+          -6.607603073120117,
+          -6.059649467468262
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437255859375,
+          "delta_norm": 0.05425061658024788,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001138634397648275,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9897297620773315,
+          -6.528469085693359,
+          -6.6078081130981445,
+          -6.059946060180664
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794365406036377,
+          "delta_norm": 0.05465671047568321,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001147157745435834,
+          "cosine": 0.9999991059303284
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9884798526763916,
+          -6.528572082519531,
+          -6.608725547790527,
+          -6.060795783996582
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.062007427215576,
+          "delta_norm": 0.017058243975043297,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0003580255142878741,
+          "cosine": 0.9999999403953552
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9894126653671265,
+          -6.528082370758057,
+          -6.607971668243408,
+          -6.0599894523620605
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0644824504852295,
+          "delta_norm": 0.019826097413897514,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004161183605901897,
+          "cosine": 1.0
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -2.6734776496887207,
+          -3.918088436126709,
+          -3.0881714820861816,
+          -3.8886609077453613
+        ],
+        "prediction": 0,
+        "unconstrained_token": 17607,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000010",
+    "group": 5,
+    "label": 3,
+    "donor_id": "tiny-000024",
+    "donor_label": 1,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.989851474761963,
+          -6.528468608856201,
+          -6.607811450958252,
+          -6.059793949127197
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437732696533,
+          "delta_norm": 0.05354892089962959,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001123906928114593,
+          "cosine": 0.9999992251396179
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9900050163269043,
+          -6.5284905433654785,
+          -6.607755184173584,
+          -6.059942722320557
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794386863708496,
+          "delta_norm": 0.054476749151945114,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001143380650319159,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9890056848526,
+          -6.528703212738037,
+          -6.608214855194092,
+          -6.0605149269104
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0566329956054688,
+          "delta_norm": 0.02109781838953495,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00044280977454036474,
+          "cosine": 0.9999998807907104
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9885848760604858,
+          -6.529212474822998,
+          -6.608897686004639,
+          -6.061438083648682
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0500340461730957,
+          "delta_norm": 0.023378241807222366,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004906722460873425,
+          "cosine": 0.9999999403953552
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -1.4943581819534302,
+          -3.2560901641845703,
+          -2.2414093017578125,
+          -3.403017997741699
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000011",
+    "group": 5,
+    "label": 0,
+    "donor_id": "tiny-000013",
+    "donor_label": 1,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9898686408996582,
+          -6.528406620025635,
+          -6.607799053192139,
+          -6.059738636016846
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437255859375,
+          "delta_norm": 0.05365806072950363,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011261976324021816,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9896243810653687,
+          -6.528402805328369,
+          -6.607855319976807,
+          -6.059948444366455
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079435348510742,
+          "delta_norm": 0.05362103134393692,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001125420443713665,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.989575743675232,
+          -6.527978420257568,
+          -6.607990741729736,
+          -6.059913158416748
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.063469171524048,
+          "delta_norm": 0.02187379263341427,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.000459096219856292,
+          "cosine": 1.0
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9882830381393433,
+          -6.527587890625,
+          -6.608044624328613,
+          -6.059904098510742
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.068202018737793,
+          "delta_norm": 0.022194402292370796,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004658253164961934,
+          "cosine": 0.9999999403953552
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -4.103684425354004,
+          -4.06471061706543,
+          -3.565361976623535,
+          -3.838315010070801
+        ],
+        "prediction": 2,
+        "unconstrained_token": 220,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000012",
+    "group": 0,
+    "label": 2,
+    "donor_id": "tiny-000005",
+    "donor_label": 1,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9897481203079224,
+          -6.528064727783203,
+          -6.6075849533081055,
+          -6.059624671936035
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794379711151123,
+          "delta_norm": 0.05438049137592316,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011413602624088526,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9898542165756226,
+          -6.528431415557861,
+          -6.6078057289123535,
+          -6.059776782989502
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437494277954,
+          "delta_norm": 0.05349959060549736,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001122871646657586,
+          "cosine": 0.9999995231628418
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9888756275177002,
+          -6.528467178344727,
+          -6.609016418457031,
+          -6.060101509094238
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0620832443237305,
+          "delta_norm": 0.02332332171499729,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004895195597782731,
+          "cosine": 0.9999999403953552
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9890660047531128,
+          -6.5288190841674805,
+          -6.608460426330566,
+          -6.060636520385742
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.062173843383789,
+          "delta_norm": 0.022511376067996025,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00047247810289263725,
+          "cosine": 0.9999998807907104
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -3.5187649726867676,
+          -5.346094608306885,
+          -5.17575216293335,
+          -4.5071120262146
+        ],
+        "prediction": 0,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000013",
+    "group": 6,
+    "label": 1,
+    "donor_id": "tiny-000027",
+    "donor_label": 3,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9896243810653687,
+          -6.528402805328369,
+          -6.607855319976807,
+          -6.059948444366455
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079435348510742,
+          "delta_norm": 0.05362103134393692,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001125420443713665,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.989617109298706,
+          -6.528434753417969,
+          -6.607853889465332,
+          -6.05994987487793
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794355869293213,
+          "delta_norm": 0.053715866059064865,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001127410912886262,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9888850450515747,
+          -6.528176307678223,
+          -6.607949256896973,
+          -6.059844970703125
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0637221336364746,
+          "delta_norm": 0.02241768315434456,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004705116443801671,
+          "cosine": 0.9999999403953552
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9888262748718262,
+          -6.52846097946167,
+          -6.608622074127197,
+          -6.06040620803833
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.054222583770752,
+          "delta_norm": 0.018246185034513474,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00038295850390568376,
+          "cosine": 1.0
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -4.225057125091553,
+          -6.076423168182373,
+          -4.294535160064697,
+          -4.892977237701416
+        ],
+        "prediction": 0,
+        "unconstrained_token": 17607,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000014",
+    "group": 4,
+    "label": 1,
+    "donor_id": "tiny-000004",
+    "donor_label": 0,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9897339344024658,
+          -6.528444290161133,
+          -6.607816696166992,
+          -6.0599565505981445
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794365406036377,
+          "delta_norm": 0.054636966437101364,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00114674330689013,
+          "cosine": 0.9999992847442627
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9900085926055908,
+          -6.528465270996094,
+          -6.607752799987793,
+          -6.059906005859375
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794386863708496,
+          "delta_norm": 0.05461008846759796,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011461791582405567,
+          "cosine": 0.999999463558197
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9883930683135986,
+          -6.528750419616699,
+          -6.608552932739258,
+          -6.061081886291504
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0651965141296387,
+          "delta_norm": 0.02195773646235466,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004608580784406513,
+          "cosine": 1.0
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9887224435806274,
+          -6.528780460357666,
+          -6.60837984085083,
+          -6.0609517097473145
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.063873529434204,
+          "delta_norm": 0.021785492077469826,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004572429461404681,
+          "cosine": 0.9999998211860657
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -3.9340531826019287,
+          -5.606873512268066,
+          -3.992929220199585,
+          -4.615362167358398
+        ],
+        "prediction": 0,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000015",
+    "group": 7,
+    "label": 0,
+    "donor_id": "tiny-000025",
+    "donor_label": 0,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.989808440208435,
+          -6.528134822845459,
+          -6.607649326324463,
+          -6.0596442222595215
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079434394836426,
+          "delta_norm": 0.05626897141337395,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011809965362772346,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9896758794784546,
+          -6.528228282928467,
+          -6.607780933380127,
+          -6.059753894805908
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437017440796,
+          "delta_norm": 0.05529865622520447,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001160631189122796,
+          "cosine": 0.999999463558197
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.989361047744751,
+          -6.529085159301758,
+          -6.608736038208008,
+          -6.061326026916504
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.063199043273926,
+          "delta_norm": 0.02697436697781086,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005661491886712611,
+          "cosine": 1.0
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.988562822341919,
+          -6.52849006652832,
+          -6.608375549316406,
+          -6.0608415603637695
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.069456100463867,
+          "delta_norm": 0.021339144557714462,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00044787483057007194,
+          "cosine": 1.0
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -4.790591239929199,
+          -4.965180397033691,
+          -4.407094955444336,
+          -4.661419868469238
+        ],
+        "prediction": 2,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000016",
+    "group": 3,
+    "label": 0,
+    "donor_id": "tiny-000007",
+    "donor_label": 1,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9896771907806396,
+          -6.528354644775391,
+          -6.60771369934082,
+          -6.059760093688965
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079436779022217,
+          "delta_norm": 0.05468052253127098,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001147657516412437,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.989670991897583,
+          -6.528249740600586,
+          -6.607775688171387,
+          -6.059793472290039
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437017440796,
+          "delta_norm": 0.05512150377035141,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011569130001589656,
+          "cosine": 0.9999995231628418
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9892463684082031,
+          -6.528393745422363,
+          -6.607729911804199,
+          -6.060420036315918
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0661802291870117,
+          "delta_norm": 0.023708870634436607,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004976115887984633,
+          "cosine": 0.9999998807907104
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9891552925109863,
+          -6.528601169586182,
+          -6.607987880706787,
+          -6.060196399688721
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0565595626831055,
+          "delta_norm": 0.021804990246891975,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00045765217510052025,
+          "cosine": 0.9999998211860657
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -4.813467979431152,
+          -4.421906471252441,
+          -3.912790060043335,
+          -4.055373191833496
+        ],
+        "prediction": 2,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000017",
+    "group": 1,
+    "label": 3,
+    "donor_id": "tiny-000001",
+    "donor_label": 3,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9900001287460327,
+          -6.528513431549072,
+          -6.607757091522217,
+          -6.059953212738037
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794386863708496,
+          "delta_norm": 0.05444522202014923,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011427189456298947,
+          "cosine": 0.9999992847442627
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9897911548614502,
+          -6.5281829833984375,
+          -6.60765266418457,
+          -6.059688568115234
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794341564178467,
+          "delta_norm": 0.05613998696208,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011782892979681492,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9892160892486572,
+          -6.52802848815918,
+          -6.608260154724121,
+          -6.060284614562988
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0603318214416504,
+          "delta_norm": 0.014803892001509666,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0003107102238573134,
+          "cosine": 1.000000238418579
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9886958599090576,
+          -6.528388977050781,
+          -6.608554840087891,
+          -6.06022834777832
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0607106685638428,
+          "delta_norm": 0.01971321366727352,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004137491050641984,
+          "cosine": 1.0
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -1.7002495527267456,
+          -3.4243392944335938,
+          -2.367547035217285,
+          -3.405941963195801
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000018",
+    "group": 4,
+    "label": 2,
+    "donor_id": "tiny-000030",
+    "donor_label": 3,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.989768385887146,
+          -6.528435230255127,
+          -6.607789516448975,
+          -6.059925556182861
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079436779022217,
+          "delta_norm": 0.05480638146400452,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001150299096480012,
+          "cosine": 0.9999991655349731
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9896572828292847,
+          -6.528281211853027,
+          -6.607781410217285,
+          -6.059800148010254
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437255859375,
+          "delta_norm": 0.05517378821969032,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011580103309825063,
+          "cosine": 0.9999992847442627
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9886857271194458,
+          -6.528654098510742,
+          -6.608678817749023,
+          -6.060976982116699
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0604500770568848,
+          "delta_norm": 0.026676185429096222,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005598908173851669,
+          "cosine": 0.9999995827674866
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.989209771156311,
+          -6.528326511383057,
+          -6.608462810516357,
+          -6.06033182144165
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.068450450897217,
+          "delta_norm": 0.02205464243888855,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004628919705282897,
+          "cosine": 0.9999999403953552
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -3.3829102516174316,
+          -5.18915319442749,
+          -4.8889031410217285,
+          -4.666284084320068
+        ],
+        "prediction": 0,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000019",
+    "group": 7,
+    "label": 2,
+    "donor_id": "tiny-000009",
+    "donor_label": 3,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9898271560668945,
+          -6.528144836425781,
+          -6.607638359069824,
+          -6.059663772583008
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079434871673584,
+          "delta_norm": 0.05628827586770058,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011814016615971923,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9897087812423706,
+          -6.528097152709961,
+          -6.607603073120117,
+          -6.059649467468262
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437255859375,
+          "delta_norm": 0.05425061658024788,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001138634397648275,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9892505407333374,
+          -6.528433322906494,
+          -6.607940196990967,
+          -6.059922695159912
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.065087080001831,
+          "delta_norm": 0.02280869148671627,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.000478718284284696,
+          "cosine": 0.9999995827674866
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9891996383666992,
+          -6.528560638427734,
+          -6.60867977142334,
+          -6.06057071685791
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.057831048965454,
+          "delta_norm": 0.02000470831990242,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00041986710857599974,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -3.563525676727295,
+          -5.440124034881592,
+          -5.166405200958252,
+          -4.503377437591553
+        ],
+        "prediction": 0,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000020",
+    "group": 0,
+    "label": 0,
+    "donor_id": "tiny-000000",
+    "donor_label": 2,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9897314310073853,
+          -6.52805757522583,
+          -6.607604503631592,
+          -6.059607982635498
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437494277954,
+          "delta_norm": 0.05437227338552475,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011411878513172269,
+          "cosine": 0.9999992251396179
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9896901845932007,
+          -6.5283684730529785,
+          -6.607705593109131,
+          -6.0597825050354
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437017440796,
+          "delta_norm": 0.054684415459632874,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011477392399683595,
+          "cosine": 0.9999990463256836
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.988798975944519,
+          -6.528838157653809,
+          -6.608861923217773,
+          -6.060732841491699
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.067373752593994,
+          "delta_norm": 0.01434984989464283,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0003011806111317128,
+          "cosine": 1.0
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9887889623641968,
+          -6.527515888214111,
+          -6.608357906341553,
+          -6.059802532196045
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.059622049331665,
+          "delta_norm": 0.025292007252573967,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005308391409926116,
+          "cosine": 0.9999998211860657
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -4.508004665374756,
+          -4.682650089263916,
+          -4.288444995880127,
+          -4.529778957366943
+        ],
+        "prediction": 2,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000021",
+    "group": 7,
+    "label": 1,
+    "donor_id": "tiny-000016",
+    "donor_label": 0,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9897927045822144,
+          -6.52815055847168,
+          -6.607658386230469,
+          -6.059685707092285
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794339179992676,
+          "delta_norm": 0.05606650188565254,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001176747027784586,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9896771907806396,
+          -6.528354644775391,
+          -6.60771369934082,
+          -6.059760093688965
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079436779022217,
+          "delta_norm": 0.05468052253127098,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001147657516412437,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9894379377365112,
+          -6.529460906982422,
+          -6.608846664428711,
+          -6.061657905578613
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.056955575942993,
+          "delta_norm": 0.02851766161620617,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005985405296087265,
+          "cosine": 1.0
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9897396564483643,
+          -6.528103828430176,
+          -6.607634544372559,
+          -6.060028076171875
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.042050838470459,
+          "delta_norm": 0.02385793998837471,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.000500740366987884,
+          "cosine": 0.9999998807907104
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -4.167248249053955,
+          -5.92074728012085,
+          -4.286440372467041,
+          -4.7363810539245605
+        ],
+        "prediction": 0,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000022",
+    "group": 6,
+    "label": 0,
+    "donor_id": "tiny-000002",
+    "donor_label": 1,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9896351099014282,
+          -6.528378963470459,
+          -6.607845783233643,
+          -6.059903621673584
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079435348510742,
+          "delta_norm": 0.053810812532901764,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011294037103652954,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.989654779434204,
+          -6.528376579284668,
+          -6.607729911804199,
+          -6.059808731079102
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079436779022217,
+          "delta_norm": 0.05446356534957886,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011431039310991764,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9888874292373657,
+          -6.5280890464782715,
+          -6.608066082000732,
+          -6.05978536605835
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0626401901245117,
+          "delta_norm": 0.021480998024344444,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004508520942181349,
+          "cosine": 1.0
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9887925386428833,
+          -6.528528213500977,
+          -6.608848571777344,
+          -6.060482025146484
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.071061849594116,
+          "delta_norm": 0.023931847885251045,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.000502291542943567,
+          "cosine": 0.9999999403953552
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -4.932969093322754,
+          -5.040046691894531,
+          -4.280881881713867,
+          -4.673037528991699
+        ],
+        "prediction": 2,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000023",
+    "group": 4,
+    "label": 3,
+    "donor_id": "tiny-000006",
+    "donor_label": 2,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9897297620773315,
+          -6.528469085693359,
+          -6.6078081130981445,
+          -6.059946060180664
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794365406036377,
+          "delta_norm": 0.05465671047568321,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001147157745435834,
+          "cosine": 0.9999991059303284
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.989654302597046,
+          -6.52839469909668,
+          -6.60783576965332,
+          -6.059925079345703
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794358253479004,
+          "delta_norm": 0.05383116006851196,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011298307217657566,
+          "cosine": 0.999999463558197
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9895069599151611,
+          -6.528810501098633,
+          -6.608109474182129,
+          -6.060673713684082
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.071769952774048,
+          "delta_norm": 0.018611392006278038,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00039062360883690417,
+          "cosine": 1.0
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9887093305587769,
+          -6.528066635131836,
+          -6.608107566833496,
+          -6.06027889251709
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0592315196990967,
+          "delta_norm": 0.019276117905974388,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004045751702506095,
+          "cosine": 0.9999999403953552
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -2.690934658050537,
+          -4.032694339752197,
+          -3.095698833465576,
+          -4.080394268035889
+        ],
+        "prediction": 0,
+        "unconstrained_token": 17607,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000024",
+    "group": 1,
+    "label": 1,
+    "donor_id": "tiny-000012",
+    "donor_label": 2,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9900050163269043,
+          -6.5284905433654785,
+          -6.607755184173584,
+          -6.059942722320557
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794386863708496,
+          "delta_norm": 0.054476749151945114,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001143380650319159,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9897481203079224,
+          -6.528064727783203,
+          -6.6075849533081055,
+          -6.059624671936035
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794379711151123,
+          "delta_norm": 0.05438049137592316,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011413602624088526,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9888883829116821,
+          -6.529223918914795,
+          -6.609086513519287,
+          -6.061649799346924
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0613749027252197,
+          "delta_norm": 0.025064688175916672,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005260680918581784,
+          "cosine": 0.9999997615814209
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9888015985488892,
+          -6.528099536895752,
+          -6.6084303855896,
+          -6.060133457183838
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.06038498878479,
+          "delta_norm": 0.01867690123617649,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00039199856109917164,
+          "cosine": 1.0
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -2.626116991043091,
+          -4.623830795288086,
+          -2.9716293811798096,
+          -3.4415924549102783
+        ],
+        "prediction": 0,
+        "unconstrained_token": 17607,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000025",
+    "group": 2,
+    "label": 0,
+    "donor_id": "tiny-000031",
+    "donor_label": 0,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9896758794784546,
+          -6.528228282928467,
+          -6.607780933380127,
+          -6.059753894805908
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437017440796,
+          "delta_norm": 0.05529865622520447,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001160631189122796,
+          "cosine": 0.999999463558197
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.989750623703003,
+          -6.5284223556518555,
+          -6.607800483703613,
+          -6.059904098510742
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079436779022217,
+          "delta_norm": 0.05482325702905655,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011506532318890095,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.989137887954712,
+          -6.528384208679199,
+          -6.608190536499023,
+          -6.060209274291992
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.063060998916626,
+          "delta_norm": 0.017232360318303108,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00036167993675917387,
+          "cosine": 0.9999998211860657
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9892120361328125,
+          -6.5277814865112305,
+          -6.607466697692871,
+          -6.059518814086914
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0526397228240967,
+          "delta_norm": 0.02227715589106083,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00046756217489019036,
+          "cosine": 0.9999997615814209
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -5.520058631896973,
+          -5.4723358154296875,
+          -4.721429824829102,
+          -5.1962995529174805
+        ],
+        "prediction": 2,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000026",
+    "group": 3,
+    "label": 3,
+    "donor_id": "tiny-000017",
+    "donor_label": 3,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9896517992019653,
+          -6.5284013748168945,
+          -6.607721328735352,
+          -6.059806823730469
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079436779022217,
+          "delta_norm": 0.054500237107276917,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011438735527917743,
+          "cosine": 0.9999995231628418
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9900001287460327,
+          -6.528513431549072,
+          -6.607757091522217,
+          -6.059953212738037
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794386863708496,
+          "delta_norm": 0.05444522202014923,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011427189456298947,
+          "cosine": 0.9999992847442627
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9886037111282349,
+          -6.527738571166992,
+          -6.608135223388672,
+          -6.059869766235352
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0671310424804688,
+          "delta_norm": 0.02344178408384323,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004920059000141919,
+          "cosine": 0.9999998807907104
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9893653392791748,
+          -6.5284881591796875,
+          -6.608448028564453,
+          -6.06058406829834
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0595409870147705,
+          "delta_norm": 0.022504638880491257,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.000472336687380448,
+          "cosine": 1.0
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -2.6821441650390625,
+          -3.909698486328125,
+          -2.910776138305664,
+          -4.005317687988281
+        ],
+        "prediction": 0,
+        "unconstrained_token": 17607,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000027",
+    "group": 6,
+    "label": 3,
+    "donor_id": "tiny-000003",
+    "donor_label": 1,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.989617109298706,
+          -6.528434753417969,
+          -6.607853889465332,
+          -6.05994987487793
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794355869293213,
+          "delta_norm": 0.053715866059064865,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001127410912886262,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9897098541259766,
+          -6.528072357177734,
+          -6.607603073120117,
+          -6.059648513793945
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437255859375,
+          "delta_norm": 0.054187264293432236,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011373048182576895,
+          "cosine": 0.9999992847442627
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9893629550933838,
+          -6.528306007385254,
+          -6.608516693115234,
+          -6.060395240783691
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.068471908569336,
+          "delta_norm": 0.016762929037213326,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.000351827300619334,
+          "cosine": 0.9999999403953552
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9893490076065063,
+          -6.528350353240967,
+          -6.608560085296631,
+          -6.060605525970459
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0582149028778076,
+          "delta_norm": 0.020446501672267914,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.000429139647167176,
+          "cosine": 1.000000238418579
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -2.471615791320801,
+          -3.921525001525879,
+          -2.9099836349487305,
+          -4.04567813873291
+        ],
+        "prediction": 0,
+        "unconstrained_token": 17607,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000028",
+    "group": 2,
+    "label": 2,
+    "donor_id": "tiny-000019",
+    "donor_label": 2,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.989701509475708,
+          -6.5282487869262695,
+          -6.607762336730957,
+          -6.059776306152344
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437255859375,
+          "delta_norm": 0.05533039942383766,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011612974340096116,
+          "cosine": 0.9999995231628418
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9898271560668945,
+          -6.528144836425781,
+          -6.607638359069824,
+          -6.059663772583008
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079434871673584,
+          "delta_norm": 0.05628827586770058,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011814016615971923,
+          "cosine": 0.9999993443489075
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9886159896850586,
+          -6.52772331237793,
+          -6.607941627502441,
+          -6.0600080490112305
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.062706470489502,
+          "delta_norm": 0.020946603268384933,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00043963600182905793,
+          "cosine": 0.9999997019767761
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9899274110794067,
+          -6.528491020202637,
+          -6.6076812744140625,
+          -6.06005859375
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0690112113952637,
+          "delta_norm": 0.02643599361181259,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005548496264964342,
+          "cosine": 0.9999997615814209
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -4.4559221267700195,
+          -5.906763076782227,
+          -5.655791282653809,
+          -5.0558366775512695
+        ],
+        "prediction": 0,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000029",
+    "group": 5,
+    "label": 2,
+    "donor_id": "tiny-000014",
+    "donor_label": 1,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9898970127105713,
+          -6.528414726257324,
+          -6.607781410217285,
+          -6.059746742248535
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437732696533,
+          "delta_norm": 0.05369920656085014,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011270612012594938,
+          "cosine": 0.9999991655349731
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9897339344024658,
+          -6.528444290161133,
+          -6.607816696166992,
+          -6.0599565505981445
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794365406036377,
+          "delta_norm": 0.054636966437101364,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.00114674330689013,
+          "cosine": 0.9999992847442627
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9890400171279907,
+          -6.527985095977783,
+          -6.608086109161377,
+          -6.059652805328369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0651326179504395,
+          "delta_norm": 0.02346484549343586,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004924898967146873,
+          "cosine": 1.0
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9883143901824951,
+          -6.528944969177246,
+          -6.608950614929199,
+          -6.061182022094727
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.067409038543701,
+          "delta_norm": 0.02413802221417427,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.000506618816871196,
+          "cosine": 0.9999998807907104
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -2.203660011291504,
+          -4.019163131713867,
+          -4.004702568054199,
+          -3.3238134384155273
+        ],
+        "prediction": 0,
+        "unconstrained_token": 17607,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000030",
+    "group": 2,
+    "label": 3,
+    "donor_id": "tiny-000018",
+    "donor_label": 2,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.9896572828292847,
+          -6.528281211853027,
+          -6.607781410217285,
+          -6.059800148010254
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079437255859375,
+          "delta_norm": 0.05517378821969032,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011580103309825063,
+          "cosine": 0.9999992847442627
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.989768385887146,
+          -6.528435230255127,
+          -6.607789516448975,
+          -6.059925556182861
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079436779022217,
+          "delta_norm": 0.05480638146400452,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.001150299096480012,
+          "cosine": 0.9999991655349731
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9890456199645996,
+          -6.5286641120910645,
+          -6.608341693878174,
+          -6.060849666595459
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0634267330169678,
+          "delta_norm": 0.022999612614512444,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004827254160773009,
+          "cosine": 0.9999997615814209
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9888606071472168,
+          -6.527830600738525,
+          -6.608761310577393,
+          -6.06034517288208
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.062730073928833,
+          "delta_norm": 0.02508227899670601,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005264373030513525,
+          "cosine": 0.9999997019767761
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -3.1955740451812744,
+          -4.236920356750488,
+          -3.360037088394165,
+          -4.319601058959961
+        ],
+        "prediction": 0,
+        "unconstrained_token": 17607,
+        "diagnostics": {}
+      }
+    }
+  },
+  {
+    "id": "tiny-000031",
+    "group": 4,
+    "label": 0,
+    "donor_id": "tiny-000026",
+    "donor_label": 3,
+    "conditions": {
+      "receiver_only": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {}
+      },
+      "correct": {
+        "answer_log_probabilities": [
+          -1.989750623703003,
+          -6.5284223556518555,
+          -6.607800483703613,
+          -6.059904098510742
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079436779022217,
+          "delta_norm": 0.05482325702905655,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011506532318890095,
+          "cosine": 0.9999994039535522
+        }
+      },
+      "shuffled": {
+        "answer_log_probabilities": [
+          -1.9896517992019653,
+          -6.5284013748168945,
+          -6.607721328735352,
+          -6.059806823730469
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.079436779022217,
+          "delta_norm": 0.054500237107276917,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0011438735527917743,
+          "cosine": 0.9999995231628418
+        }
+      },
+      "random_71001": {
+        "answer_log_probabilities": [
+          -1.9894261360168457,
+          -6.528453350067139,
+          -6.607650279998779,
+          -6.060664653778076
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.049469470977783,
+          "delta_norm": 0.01984466426074505,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0004165080317761749,
+          "cosine": 0.9999999403953552
+        }
+      },
+      "random_71002": {
+        "answer_log_probabilities": [
+          -1.9893152713775635,
+          -6.529279708862305,
+          -6.608441352844238,
+          -6.0606536865234375
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0644924640655518,
+          "delta_norm": 0.026119377464056015,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0005482043488882482,
+          "cosine": 1.0
+        }
+      },
+      "zero": {
+        "answer_log_probabilities": [
+          -1.9890295267105103,
+          -6.52846097946167,
+          -6.608348369598389,
+          -6.060385227203369
+        ],
+        "prediction": 0,
+        "unconstrained_token": 362,
+        "diagnostics": {
+          "reader_entropy": 2.0794413089752197,
+          "delta_norm": 0.0,
+          "residual_norm": 47.64533233642578,
+          "delta_residual_ratio": 0.0,
+          "cosine": 1.0000001192092896
+        }
+      },
+      "text": {
+        "answer_log_probabilities": [
+          -4.390621185302734,
+          -4.762883186340332,
+          -4.22566032409668,
+          -4.739137649536133
+        ],
+        "prediction": 2,
+        "unconstrained_token": 23754,
+        "diagnostics": {}
+      }
+    }
+  }
+]

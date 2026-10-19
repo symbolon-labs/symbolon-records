@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "stock_disabled_zero_full_logits_exact": true,
+  "active_changes_logits": true,
+  "active_repeat_exact": true,
+  "direct_scoring_max_difference": 3.814697265625e-06,
+  "direct_scoring_tolerance": 0.0001,
+  "candidate_reordering_exact": true,
+  "gradients": {
+    "resampler.queries": 4.684742452809587e-05,
+    "resampler.key.weight": 0.0005081567214801908,
+    "resampler.value.weight": 0.051685482263565063,
+    "projector.weight": 0.012601824477314949,
+    "reader.gate": 0.033613137900829315,
+    "reader.query.weight": 2.8417364319466287e-06,
+    "reader.key.weight": 2.445017798891058e-06,
+    "reader.value.weight": 0.04852638393640518,
+    "reader.output.weight": 0.015487831085920334
+  },
+  "endpoint_gradients": false,
+  "full_id_nll": 17.473529815673828
+}

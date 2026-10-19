@@ -1,0 +1,91 @@
+{
+  "verdict": "MECHANICS/TRAINING NO-GO",
+  "step": 300,
+  "best_step": 240,
+  "best_id_nll": 1.8408290147781372,
+  "terminal_metrics": {
+    "receiver_only": {
+      "accuracy": 0.03125,
+      "per_color": {
+        "red": 0.0,
+        "green": 0.0,
+        "blue": 0.0,
+        "yellow": 0.125
+      },
+      "mean_id_nll": 16.76451873779297,
+      "donor_following": null
+    },
+    "correct": {
+      "accuracy": 0.0625,
+      "per_color": {
+        "red": 0.25,
+        "green": 0.0,
+        "blue": 0.0,
+        "yellow": 0.0
+      },
+      "mean_id_nll": 3.8547163009643555,
+      "donor_following": null
+    },
+    "shuffled": {
+      "accuracy": 0.03125,
+      "per_color": {
+        "red": 0.125,
+        "green": 0.0,
+        "blue": 0.0,
+        "yellow": 0.0
+      },
+      "mean_id_nll": 5.920568943023682,
+      "donor_following": 0.0625
+    },
+    "wrong_binding": {
+      "accuracy": 0.0625,
+      "per_color": {
+        "red": 0.25,
+        "green": 0.0,
+        "blue": 0.0,
+        "yellow": 0.0
+      },
+      "mean_id_nll": 4.06219482421875,
+      "donor_following": 0.03125
+    },
+    "random_71001": {
+      "accuracy": 0.03125,
+      "per_color": {
+        "red": 0.0,
+        "green": 0.0,
+        "blue": 0.0,
+        "yellow": 0.125
+      },
+      "mean_id_nll": 16.005847930908203,
+      "donor_following": null
+    },
+    "random_71002": {
+      "accuracy": 0.03125,
+      "per_color": {
+        "red": 0.0,
+        "green": 0.0,
+        "blue": 0.0,
+        "yellow": 0.125
+      },
+      "mean_id_nll": 14.697165489196777,
+      "donor_following": null
+    },
+    "zero": {
+      "accuracy": 0.03125,
+      "per_color": {
+        "red": 0.0,
+        "green": 0.0,
+        "blue": 0.0,
+        "yellow": 0.125
+      },
+      "mean_id_nll": 16.76451873779297,
+      "donor_following": null
+    }
+  },
+  "receiver_parameter_hash": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3",
+  "terminal_rerun_exact": true,
+  "best_sha256": "cb38ecb8fbe7418822281796acc426e7687280a72206e89d976805b0e75bfa65",
+  "last_sha256": "6368a614c33245cc4bef07f7d9fa41766265c7b9f59a24d8bc58b49657fc3aef",
+  "elapsed_s": 4600.279658575993,
+  "external_spend_usd": 0
+}

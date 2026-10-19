@@ -1,0 +1,1123 @@
+{
+  "verdict": "SOURCE-ORDER AND FRESH FAMILIAR-ID PASS; NOVEL WHOLE-ID NO-GO",
+  "candidate": "d0f16cb9705ba53daf6cc8f2bfad03a08efa96cbb4f77dd836c9533e948cba87",
+  "architecture": {
+    "candidate_path": "research/latent_binding_shared_id_query_mechanics_20260908/run/candidate.pt",
+    "candidate_sha256": "d0f16cb9705ba53daf6cc8f2bfad03a08efa96cbb4f77dd836c9533e948cba87",
+    "stored_parameters": 569857,
+    "state_entries": 11,
+    "wire_shape": [
+      8,
+      64
+    ],
+    "wire_dtype": "float32",
+    "wire_bytes": 2048,
+    "models": {
+      "sender": {
+        "repo": "Qwen/Qwen3-1.7B",
+        "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+        "path": "<local>/.cache/huggingface/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+        "files": {
+          "config.json": {
+            "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+            "bytes": 726
+          },
+          "generation_config.json": {
+            "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+            "bytes": 239
+          },
+          "merges.txt": {
+            "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "bytes": 1671853
+          },
+          "model-00001-of-00002.safetensors": {
+            "sha256": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5",
+            "bytes": 3441185608
+          },
+          "model-00002-of-00002.safetensors": {
+            "sha256": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9",
+            "bytes": 622329984
+          },
+          "model.safetensors.index.json": {
+            "sha256": "0d660e94b165eb912669a5249dff44b83188c4777a07ddb9611fb78d91b0578d",
+            "bytes": 25605
+          },
+          "tokenizer.json": {
+            "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "bytes": 11422654
+          },
+          "tokenizer_config.json": {
+            "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+            "bytes": 9732
+          },
+          "vocab.json": {
+            "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+            "bytes": 2776833
+          }
+        },
+        "dtype": "float32",
+        "quantization": "none"
+      },
+      "receiver": {
+        "repo": "HuggingFaceTB/SmolLM2-360M-Instruct",
+        "revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+        "path": "<local>/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM2-360M-Instruct/snapshots/a10cc1512eabd3dde888204e902eca88bddb4951",
+        "files": {
+          "README.md": {
+            "sha256": "6b88794416ac9da8f254ebb0bec228967a2bdd0badf9a2853863928b25facd95",
+            "bytes": 7304
+          },
+          "all_results.json": {
+            "sha256": "71face5e244d784819f937a25206865c295c8889fe4359eec28bbec85d02da0d",
+            "bytes": 786
+          },
+          "config.json": {
+            "sha256": "224f72354f10d617a359cc82ad15a3c96e866b9b2ffadb81997eeea9e88e22ee",
+            "bytes": 846
+          },
+          "eval_results.json": {
+            "sha256": "db9bcb5c4f2a3be0d7e88f86af26f375c22c240954af86942d1554d87a488ce8",
+            "bytes": 589
+          },
+          "generation_config.json": {
+            "sha256": "87b916edaaab66b3899b9d0dd0752727dff6666686da0504d89ae0a6e055a013",
+            "bytes": 132
+          },
+          "merges.txt": {
+            "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+            "bytes": 466391
+          },
+          "model.safetensors": {
+            "sha256": "e6bffe7435d7ddc10fd3b9a9efd429dafbacb1cb17015fb5562664e7532bf86e",
+            "bytes": 723674912
+          },
+          "special_tokens_map.json": {
+            "sha256": "2b7379f3ae813529281a5c602bc5a11c1d4e0a99107aaa597fe936c1e813ca52",
+            "bytes": 655
+          },
+          "tokenizer.json": {
+            "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+            "bytes": 2104556
+          },
+          "tokenizer_config.json": {
+            "sha256": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df",
+            "bytes": 3764
+          },
+          "train_results.json": {
+            "sha256": "fceae2634b0a268a8adbda73fd0b2192922b496054011f588d2c6e888db1cea1",
+            "bytes": 232
+          },
+          "trainer_state.json": {
+            "sha256": "2263f580ae0d7890acc11253b83138b3fc1250dc6728688a3387ce813b92eed1",
+            "bytes": 57621
+          },
+          "vocab.json": {
+            "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+            "bytes": 800662
+          }
+        },
+        "dtype": "float32",
+        "quantization": "none"
+      }
+    },
+    "qualified_span": {
+      "code": {
+        "PREREGISTRATION.md": "53cc788e6fed5198796e8bc4263a0ab0daaa7c1bc697d13d1aa6c48d7ac067e9",
+        "PREFLIGHT_NOTE.md": "7d1dddaf93b852072bd6624778ff94e87237e5a90d1e320c4c031e88de161d40",
+        "span.py": "0b1bf165f6739a421f2052f08bc46ee3adce60415aece65d5ebd6915e99d7cec",
+        "runtime.py": "05dd0b2dbe304bcb504fd86ef0755b0fd601265fd0530e77332cd9e08d313ec3",
+        "test_span.py": "98d09d330d8a730392a07eebdf2a32d5a4f182c32b3e29581b205f5dc669f270",
+        "audit.py": "7934340e69f9644322b2233c31784dad711e6f6fdb92f475616b69aa67a8ef54",
+        "job.py": "548252be85cc695248e73058eda9bd96247ba5c5bab889ca7b4e2cfb80ad09fd",
+        "close.py": "6a9558142acd16453bc4a96dfca7ea07b582ca22b207cf24819beb8af31ebf54"
+      },
+      "parent_identity": {
+        "code": {
+          "PREREGISTRATION.md": "34dde9674c63f930ed0f4ded1cf4aa54fa505807b80753979a27afa2b01c13f8",
+          "precision.py": "652b859508e7697e24a984ccb9937961756eae2a291698034b8c911e72f70534",
+          "run.py": "b166fe9a44671a129689c242481ca227d8e14212ceb32c06f30866ba8f854a58",
+          "test_precision.py": "8c157d611f025aad39d09e797a1931fc0e38e59d5f5c90141740b8eb480e9aec",
+          "audit.py": "ce18fa3b596dfbbf7c5cdf220e83eaed5dd34814b424e733bcd2532095dd9335",
+          "job.py": "046f2a51419777edd146ceeca315c57ae7e868bb2a5ae2e01907404178884fe2",
+          "close.py": "189bf46c81ece53090d4750f11e0bdc44bf44b9912e4682e57a030cddca4238c"
+        },
+        "parent_identity": {
+          "code": {
+            "PREREGISTRATION.md": "c8482b0158955f8cddf1fd28dd6f33e76ec76abc6bfd38b02ed092153010477c",
+            "core.py": "a7315764d859fc523ad225d1a446d7aa59d52f2bb59ddee8c676dbdf999c3f9b",
+            "runtime.py": "bca29bd15f3a7f7a5b0374bb49515fe8ebb6a22aedc51dfb7aa4b5cd716426ae",
+            "job.py": "a1867956d9ec31a64faffa254893f88fb182c4e2ccda4510783f700dd119b581",
+            "audit.py": "e2a5915158b88d5d2e4ce762e6d75a6fbe21396938007705b747660e4e66a8ce",
+            "test_mode.py": "ab6b921607c45973bd7caee294986173f4bf44b90a01970708cfd0e857184d3e",
+            "close.py": "316f6403c687a90784266c27084e1c4f50aae4f5b0606a23295a88b9f02da90e"
+          },
+          "imports": {
+            "research/latent_binding_v1_20260906/binding.py": "275b280e0f1664febabc4186757312782756149f94944a656c7ef4e3ba574437",
+            "research/latent_channel_v1_20260906/channel.py": "e2de36c051ba503b441c2d84b959728cb09f8d064791012b5f673462039f6fbd",
+            "research/latent_channel_smollm_20260906/channel_cf.py": "deb001a66dc5126652dfeb5479f7b0f98e1758152cf44f1c81d2dd4eb5a71887",
+            "research/latent_channel_v2_20260906/channel_v2.py": "ee773ac60f7068f3e350ce60120f5f5bed268beece1e9fd7793a48fcb57eaf29",
+            "research/latent_binding_context_augmentation_fit_20260908/core.py": "59a74215c5d1728199981251172251e6118d6da5d5600794d0ba90c7ac89586d",
+            "research/latent_binding_counterbalanced_20260906/core.py": "b1dbcd07d390c9a0847160e4dc374d4d87641ea33e92a4228c849e2f41ca6720",
+            "research/latent_binding_v1_20260906/run.py": "7ab1c9f3a050ee572f663ca433ecb6655058da3612a63fb52e3536da4a0e72c9",
+            "research/latent_binding_recovery_20260906/run_recovery.py": "d2b493af891e2f080eb3626aac0e783b9eeb2374782f2be0c1fad3fc076e8a5b",
+            "research/latent_binding_source_value_fit_20260908/core.py": "fd655c25a9269e64f1a8c528d71363632f12094eff7d1aef4b2a5e27fdd0ff8c",
+            "research/latent_binding_query_only_fit_20260907/core.py": "0352feb544b273792441f94e7413e2e0492b392b4e13e9b37b646f289d0aafd4",
+            "research/latent_binding_context_diversity_20260907/core.py": "c702050a9a0f93358426697629a055a54cc31c18ae5b8e83d19a7ac74d880507",
+            "research/latent_binding_constructive_native_20260907/pipeline.py": "aa0911597331db3f4fdc7ba377b5c9e9327a19f8574a933952d747b2267445db",
+            "research/latent_binding_constructive_native_20260907/core.py": "6e3348e6eeba8bfff865dbe6cd140eeeccf83bb56ed4d7caefc219ca16c7274d",
+            "research/latent_binding_typed_slots_20260906/core.py": "f164ff1a23f21ae26d3f0953e6db770876c0b313de8206a0b3e03290503c9a14",
+            "research/latent_binding_record_mask_20260906/core.py": "f794d5dac7ccb91fdb183266463469ddc1631d17316fbd43196a00691d030da6",
+            "research/latent_binding_typed_oracle_20260906/core.py": "6cb67ed896172946732f9e1c652cfaeb2cf514e470218a5d3b32a1665ca779f9",
+            "research/latent_binding_typed_teacher_20260907/core.py": "da1c8dad270baa031a59c9f6e9e3bb59bde5028583db00cf046cf1502e1d2dab",
+            "research/latent_binding_effective_fit_20260907/core.py": "4eca764b8c4e476ac085ff7872efc1513adc7dac1a1f4b6e9b3c936c66d3bf82",
+            "research/latent_binding_effective_coordinates_20260907/core.py": "838bb4ccf9d132c27b23ba979af6bb33e33c22a4f3445bee7261f64d8fe75d84",
+            "research/latent_binding_frozen_validation_20260907/core.py": "6a7ffa68e436347f3b28143ddc69b1debb76d743d293b7be5121deb89c9e0ba1",
+            "research/latent_binding_query_only_mechanics_20260907/core.py": "f79c19c7750804fbf0f781e858451920cf1871a941ed329423093c784d0c974c",
+            "research/latent_binding_constant_norm_fit_20260907/core.py": "6a33923b865b2532a2b9176a696d5cff71f7cf178f322182bba566fc3d7691f7",
+            "research/latent_binding_constant_norm_mechanics_20260907/core.py": "86293884e164c4c48ecc66d747366d489a56007d52ac53187886e66df25ebc90",
+            "research/latent_binding_query_center_fit_20260907/core.py": "81152fbba27c19547c9e3c24c679f7e78ff6480af2dba388f4e1b7a50fd757a4",
+            "research/latent_binding_query_center_mechanics_20260907/core.py": "4ea2db101061f69a6a924c1e9c2bb3ee4a477073e535628615672bb775b9a416",
+            "research/latent_binding_hard_read_fit_20260907/core.py": "0173163409c3bccc8cf4353bafe9dab70080b157bc13e7d60c3172414ad4ad74"
+          },
+          "inputs": {
+            "research/latent_binding_context_augmentation_fit_20260908/train/training_inputs.pt": "38e6df5bdb0bff643fda8d19a6ec3006577ad6f968d101f63686238159a8a252",
+            "research/latent_binding_context_augmentation_fit_20260908/train/manifest.json": "231a2ef7356ac6853e7f11aebac8b7a9560e6d0f350de0061046afda7a35bf61",
+            "research/latent_binding_context_augmentation_fit_20260908/train/gradient_mechanics.pt": "788d4166b1e6bc00fdf2f614ed2205c928f9614eff557a382979ec2f8cdae016",
+            "research/latent_binding_context_augmentation_fit_20260908/train/unhooked_stock.pt": "50758d53774a74b777504d3820651b4155335449ce1aa57f10566ec7e509fc10",
+            "research/latent_binding_source_value_fit_20260908/run/terminal.pt": "76f4203caeb5e0cc6666b8249ba8f26d63568c56c65eeb9fb30e06dfe45cbf23"
+          },
+          "framework": {
+            ".venv/lib/python3.14/site-packages/transformers/models/llama/modeling_llama.py": "46d313ec0f1116bcc1bb7f2379467ab249c140415c64fb758e2d5915cd8b89a5",
+            ".venv/lib/python3.14/site-packages/torch/nn/functional.py": "990a8b717645fa603b0dd2957b7b3ed68c5fb937fa205048c096ac8bb532510e",
+            ".venv/lib/python3.14/site-packages/torch/nn/modules/module.py": "341153e4099444f923f5b0766e8e41b45fbe909b87f4737cb28c828f297b7baa",
+            ".venv/lib/python3.14/site-packages/torch/lib/libtorch_cpu.so": "5cdef2a442c77c5114c519f92dab3b9155d2bf9a66c73fd77083cb417babbf6f"
+          },
+          "models": {
+            "sender": {
+              "repo": "Qwen/Qwen3-1.7B",
+              "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+              "path": "<local>/.cache/huggingface/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+              "files": {
+                "config.json": {
+                  "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+                  "bytes": 726
+                },
+                "generation_config.json": {
+                  "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+                  "bytes": 239
+                },
+                "merges.txt": {
+                  "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+                  "bytes": 1671853
+                },
+                "model-00001-of-00002.safetensors": {
+                  "sha256": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5",
+                  "bytes": 3441185608
+                },
+                "model-00002-of-00002.safetensors": {
+                  "sha256": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9",
+                  "bytes": 622329984
+                },
+                "model.safetensors.index.json": {
+                  "sha256": "0d660e94b165eb912669a5249dff44b83188c4777a07ddb9611fb78d91b0578d",
+                  "bytes": 25605
+                },
+                "tokenizer.json": {
+                  "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+                  "bytes": 11422654
+                },
+                "tokenizer_config.json": {
+                  "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+                  "bytes": 9732
+                },
+                "vocab.json": {
+                  "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+                  "bytes": 2776833
+                }
+              },
+              "dtype": "float32",
+              "quantization": "none"
+            },
+            "receiver": {
+              "repo": "HuggingFaceTB/SmolLM2-360M-Instruct",
+              "revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+              "path": "<local>/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM2-360M-Instruct/snapshots/a10cc1512eabd3dde888204e902eca88bddb4951",
+              "files": {
+                "README.md": {
+                  "sha256": "6b88794416ac9da8f254ebb0bec228967a2bdd0badf9a2853863928b25facd95",
+                  "bytes": 7304
+                },
+                "all_results.json": {
+                  "sha256": "71face5e244d784819f937a25206865c295c8889fe4359eec28bbec85d02da0d",
+                  "bytes": 786
+                },
+                "config.json": {
+                  "sha256": "224f72354f10d617a359cc82ad15a3c96e866b9b2ffadb81997eeea9e88e22ee",
+                  "bytes": 846
+                },
+                "eval_results.json": {
+                  "sha256": "db9bcb5c4f2a3be0d7e88f86af26f375c22c240954af86942d1554d87a488ce8",
+                  "bytes": 589
+                },
+                "generation_config.json": {
+                  "sha256": "87b916edaaab66b3899b9d0dd0752727dff6666686da0504d89ae0a6e055a013",
+                  "bytes": 132
+                },
+                "merges.txt": {
+                  "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+                  "bytes": 466391
+                },
+                "model.safetensors": {
+                  "sha256": "e6bffe7435d7ddc10fd3b9a9efd429dafbacb1cb17015fb5562664e7532bf86e",
+                  "bytes": 723674912
+                },
+                "special_tokens_map.json": {
+                  "sha256": "2b7379f3ae813529281a5c602bc5a11c1d4e0a99107aaa597fe936c1e813ca52",
+                  "bytes": 655
+                },
+                "tokenizer.json": {
+                  "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+                  "bytes": 2104556
+                },
+                "tokenizer_config.json": {
+                  "sha256": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df",
+                  "bytes": 3764
+                },
+                "train_results.json": {
+                  "sha256": "fceae2634b0a268a8adbda73fd0b2192922b496054011f588d2c6e888db1cea1",
+                  "bytes": 232
+                },
+                "trainer_state.json": {
+                  "sha256": "2263f580ae0d7890acc11253b83138b3fc1250dc6728688a3387ce813b92eed1",
+                  "bytes": 57621
+                },
+                "vocab.json": {
+                  "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+                  "bytes": 800662
+                }
+              },
+              "dtype": "float32",
+              "quantization": "none"
+            }
+          },
+          "torch_config": "PyTorch built with:\n  - GCC 13.3\n  - C++ Version: 202002\n  - Intel(R) oneAPI Math Kernel Library Version 2024.2-Product Build 20240605 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.12.0 (Git Hash 80afa71049cd69a3df32adcccb623b12cd7baa22)\n  - OpenMP 201511 (a.k.a. OpenMP 4.5)\n  - LAPACK is enabled (usually provided by MKL)\n  - NNPACK is enabled\n  - CPU capability usage: AVX512\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=cf30153c4c131c8164ee7798e5022d810682e2cb, CUDA_FLAGS= -DLIBCUDACXX_ENABLE_SIMPLIFIED_COMPLEX_OPERATIONS -Xfatbin -compress-all -DONNX_NAMESPACE=onnx_torch -gencode arch=compute_75,code=sm_75 -gencode arch=compute_80,code=sm_80 -gencode arch=compute_86,code=sm_86 -gencode arch=compute_90,code=sm_90 -gencode arch=compute_100,code=sm_100 -gencode arch=compute_120,code=sm_120 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --expt-relaxed-constexpr --expt-extended-lambda -Xfatbin -compress-all --threads 2 -compress-mode=size -Wno-deprecated-gpu-targets --expt-extended-lambda -DCUB_WRAPPED_NAMESPACE=at_cuda_detail -DDISABLE_CUSPARSE_DEPRECATED -DCUDA_HAS_FP16=1 -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -DC10_NODEPRECATED, CUDA_VERSION=13.0, CUDNN_VERSION=9.20.0, CXX_COMPILER=/opt/rh/gcc-toolset-13/root/usr/bin/c++, CXX_FLAGS= -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DHAS_CUPTI -DUSE_FBGEMM -DUSE_MSLK -DUSE_PYTORCH_QNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -O2 -fPIC -DC10_NODEPRECATED -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=range-loop-construct -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-unknown-pragmas -Wno-unused-parameter -Wno-strict-overflow -Wno-strict-aliasing -Wno-stringop-overflow -Wsuggest-override -Wno-psabi -Wno-error=old-style-cast -faligned-new -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-dangling-reference -Wno-error=dangling-reference -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.13.0, USE_CUDA=1, USE_CUDNN=ON, USE_CUSPARSELT=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, USE_XCCL=OFF, USE_XPU=OFF, \n",
+          "python": "3.14.7 (main, Aug 10 2026, 07:46:56) [GCC 16.1.1 20260728]",
+          "torch": "2.13.0+cu130",
+          "platform": "Linux-7.2.3-arch1-2-x86_64-with-glibc2.44"
+        },
+        "sources": {
+          "research/latent_binding_gradient_mode_20260908/run/inputs.pt": "7f00a5c72deaa345c26e91545e2b55fb38a46a40f963fc37b38cad272c984a65",
+          "research/latent_binding_gradient_mode_20260908/run/manifest.json": "6ef04e5f46dbc5282f8b3258ecf886f7a4bdc63a452189e5b4cc506d55ececa5",
+          "research/latent_binding_gradient_mode_20260908/run/stock.pt": "e4c98712b5929992158902813a92769dc00ca5e4fe68cd4edc545a95b7bc0644",
+          "research/latent_binding_gradient_mode_20260908/run/pass0_on_base.pt": "38d91749deb718d95788eadffbc382f70d67c7036df4631d1caf2f43fa64eb07",
+          "research/latent_binding_gradient_mode_20260908/run/pass0_on_plus.pt": "589c80ef045c6c2897196d20d4d73fd7cb5aa8dc524432c9d097e800be866947",
+          "research/latent_binding_gradient_mode_20260908/run/pass0_on_minus.pt": "a2f364824763dad6e414bd640676c8629cd89de46cced96f678218cf0ab851c9"
+        },
+        "seals": {
+          "latent_binding_linear_residual_20260908": "d4d7695f47c7b4b5217ee60926dd519053fc9f0e53f2997b17fad27c91b262f7",
+          "latent_binding_local_adjoint_20260908": "69554375c7e15186b6d1512578c05d7ac8e792045b57e2c4c88680e15eb4f709",
+          "latent_binding_gradient_mode_20260908": "b71c8243fa0196468bd08b00fe10f5cc1f159720594c226b284312ae2b5732d8"
+        }
+      },
+      "cast_seal": "36e26febe980cdf4575333f6d5e21f3cf5023eaaffdac39f430f84f640e960f9",
+      "pair_seal": "68017b2b26126167461b708e56e938b4a0ce544c5751d3b408da496d4577c265",
+      "inputs": {
+        "research/latent_binding_precision_pair_20260908/run/pass0_on_base.pt": "a7106f943bac5627096a78f803f39f17decb24c82714b5f22f92351f085c71a0",
+        "research/latent_binding_precision_pair_20260908/run/pass0_on_plus.pt": "9ed24c32045bd7befd2d538affe18f590336a2f8d9eff2b9642ffe8aef012542",
+        "research/latent_binding_precision_pair_20260908/run/pass0_on_minus.pt": "18fa05995c7207ed9392c5985ca186584b7d64764df8310ee80fdbbcb60fe061"
+      }
+    },
+    "imports": {
+      "research/latent_binding_query_only_fit_20260907/evaluation.py": "93c76dd196b6cdad9a87a705943fa52ad8fae98c4d4a55b992fce1ce60e6845b",
+      "research/latent_binding_v1_20260906/binding.py": "275b280e0f1664febabc4186757312782756149f94944a656c7ef4e3ba574437",
+      "research/latent_channel_v1_20260906/channel.py": "e2de36c051ba503b441c2d84b959728cb09f8d064791012b5f673462039f6fbd",
+      "research/latent_channel_smollm_20260906/channel_cf.py": "deb001a66dc5126652dfeb5479f7b0f98e1758152cf44f1c81d2dd4eb5a71887",
+      "research/latent_channel_v2_20260906/channel_v2.py": "ee773ac60f7068f3e350ce60120f5f5bed268beece1e9fd7793a48fcb57eaf29",
+      "research/latent_binding_source_value_native_20260908/core.py": "1f027fcc91f43a5c5b908156c4a56ab4cb833979e86964da85dd6b8134f78cbb",
+      "research/latent_binding_query_only_value_patch_20260908/core.py": "a6e48086d180f02f5eb338117250be29b67d9c04bcc37eb206304f1faf202212",
+      "research/latent_binding_v1_20260906/run.py": "7ab1c9f3a050ee572f663ca433ecb6655058da3612a63fb52e3536da4a0e72c9",
+      "research/latent_binding_query_only_fit_20260907/core.py": "0352feb544b273792441f94e7413e2e0492b392b4e13e9b37b646f289d0aafd4",
+      "research/latent_binding_counterbalanced_20260906/core.py": "b1dbcd07d390c9a0847160e4dc374d4d87641ea33e92a4228c849e2f41ca6720",
+      "research/latent_binding_recovery_20260906/run_recovery.py": "d2b493af891e2f080eb3626aac0e783b9eeb2374782f2be0c1fad3fc076e8a5b",
+      "research/latent_binding_context_diversity_20260907/core.py": "c702050a9a0f93358426697629a055a54cc31c18ae5b8e83d19a7ac74d880507",
+      "research/latent_binding_constructive_native_20260907/pipeline.py": "aa0911597331db3f4fdc7ba377b5c9e9327a19f8574a933952d747b2267445db",
+      "research/latent_binding_constructive_native_20260907/core.py": "6e3348e6eeba8bfff865dbe6cd140eeeccf83bb56ed4d7caefc219ca16c7274d",
+      "research/latent_binding_typed_slots_20260906/core.py": "f164ff1a23f21ae26d3f0953e6db770876c0b313de8206a0b3e03290503c9a14",
+      "research/latent_binding_record_mask_20260906/core.py": "f794d5dac7ccb91fdb183266463469ddc1631d17316fbd43196a00691d030da6",
+      "research/latent_binding_typed_oracle_20260906/core.py": "6cb67ed896172946732f9e1c652cfaeb2cf514e470218a5d3b32a1665ca779f9",
+      "research/latent_binding_typed_teacher_20260907/core.py": "da1c8dad270baa031a59c9f6e9e3bb59bde5028583db00cf046cf1502e1d2dab",
+      "research/latent_binding_effective_fit_20260907/core.py": "4eca764b8c4e476ac085ff7872efc1513adc7dac1a1f4b6e9b3c936c66d3bf82",
+      "research/latent_binding_effective_coordinates_20260907/core.py": "838bb4ccf9d132c27b23ba979af6bb33e33c22a4f3445bee7261f64d8fe75d84",
+      "research/latent_binding_frozen_validation_20260907/core.py": "6a7ffa68e436347f3b28143ddc69b1debb76d743d293b7be5121deb89c9e0ba1",
+      "research/latent_binding_query_only_mechanics_20260907/core.py": "f79c19c7750804fbf0f781e858451920cf1871a941ed329423093c784d0c974c",
+      "research/latent_binding_constant_norm_fit_20260907/core.py": "6a33923b865b2532a2b9176a696d5cff71f7cf178f322182bba566fc3d7691f7",
+      "research/latent_binding_constant_norm_mechanics_20260907/core.py": "86293884e164c4c48ecc66d747366d489a56007d52ac53187886e66df25ebc90",
+      "research/latent_binding_query_center_fit_20260907/core.py": "81152fbba27c19547c9e3c24c679f7e78ff6480af2dba388f4e1b7a50fd757a4",
+      "research/latent_binding_query_center_mechanics_20260907/core.py": "4ea2db101061f69a6a924c1e9c2bb3ee4a477073e535628615672bb775b9a416",
+      "research/latent_binding_hard_read_fit_20260907/core.py": "0173163409c3bccc8cf4353bafe9dab70080b157bc13e7d60c3172414ad4ad74",
+      "research/latent_binding_query_only_value_patch_20260908/audit.py": "93f642d2efa587655d2bdab761bd655cb73e938a60ed30a93620fc2b478a8ebf",
+      "research/latent_binding_query_only_value_patch_20260908/runtime.py": "71c248a208a3a84ffeb8841c14d7d2afe143a6e4849beab93ed4cc09fc42e47e",
+      "research/latent_binding_context_span_fit_20260908/support.py": "4c54bf729edf9536b23f0d6f79877be1b6d703fe19642a5a9a4b5a3b13332075",
+      "research/latent_binding_value_span_20260908/runtime.py": "05dd0b2dbe304bcb504fd86ef0755b0fd601265fd0530e77332cd9e08d313ec3",
+      "research/latent_binding_gradient_mode_20260908/core.py": "a7315764d859fc523ad225d1a446d7aa59d52f2bb59ddee8c676dbdf999c3f9b",
+      "research/latent_binding_context_augmentation_fit_20260908/core.py": "59a74215c5d1728199981251172251e6118d6da5d5600794d0ba90c7ac89586d",
+      "research/latent_binding_source_value_fit_20260908/core.py": "fd655c25a9269e64f1a8c528d71363632f12094eff7d1aef4b2a5e27fdd0ff8c",
+      "research/latent_binding_precision_pair_20260908/run.py": "b166fe9a44671a129689c242481ca227d8e14212ceb32c06f30866ba8f854a58",
+      "research/latent_binding_precision_pair_20260908/precision.py": "652b859508e7697e24a984ccb9937961756eae2a291698034b8c911e72f70534",
+      "research/latent_binding_gradient_mode_20260908/runtime.py": "bca29bd15f3a7f7a5b0374bb49515fe8ebb6a22aedc51dfb7aa4b5cd716426ae",
+      "research/latent_binding_value_span_20260908/span.py": "0b1bf165f6739a421f2052f08bc46ee3adce60415aece65d5ebd6915e99d7cec",
+      "research/latent_binding_shared_id_native_corrected_20260908/core.py": "69ddefc8d91b10d0ca9f556c554b0daa0cba4d28140534d848d683a06d77723e",
+      "research/latent_binding_context_span_native_core_20260908/core.py": "b012300d2e8efa9a1616439b5b891b2402a3246f063c0c56a7683bcca09d3c9a",
+      "research/latent_binding_shared_id_query_mechanics_20260908/mechanics.py": "9f63bfa45bd6d619f1ce6fca9fa55df7bf8d0dc20605ec35a9bc8e3a5eddac52",
+      "research/latent_binding_isolated_source_mechanics_20260908/source.py": "3a6ae371ba2c894463c55d5a40f950e535b23477712af5a960ad9a2997c5de13"
+    },
+    "interface": "Isolated source ID-token states with materialized shared ID-slot resampler queries; condition-specific whole-table color states; qualified SpanReader",
+    "no_fit": true,
+    "no_tuning": true,
+    "no_capacity_or_readout_changes": true,
+    "fresh_context_gate_required_before_novel_whole_ids": true,
+    "novel_binding_established": false
+  },
+  "order_views": [
+    {
+      "name": "CORE",
+      "order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "native": [
+        32,
+        32,
+        32
+      ],
+      "thresholds": [
+        31,
+        31,
+        28
+      ],
+      "actual_text": [
+        30,
+        31
+      ],
+      "oracle_text": [
+        32,
+        32
+      ],
+      "paired_latent_minus_text": {
+        "original": {
+          "mean": 0.0625,
+          "ci95": [
+            0.0,
+            0.15625
+          ],
+          "positive_fraction": 0.0625,
+          "table_means": [
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0
+          ],
+          "seed": 113001,
+          "draws": 10000,
+          "descriptive_only": true
+        },
+        "changed": {
+          "mean": 0.03125,
+          "ci95": [
+            0.0,
+            0.09375
+          ],
+          "positive_fraction": 0.03125,
+          "table_means": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "seed": 113001,
+          "draws": 10000,
+          "descriptive_only": true
+        }
+      },
+      "text_historical_reuse": true,
+      "native_report": "research/latent_binding_shared_id_native_corrected_20260908/REPORT.md",
+      "text_report": "research/latent_binding_shared_id_native_corrected_20260908/REPORT.md"
+    },
+    {
+      "name": "Cyclic1",
+      "order": [
+        1,
+        2,
+        3,
+        0
+      ],
+      "native": [
+        32,
+        32,
+        31
+      ],
+      "thresholds": [
+        31,
+        31,
+        28
+      ],
+      "actual_text": [
+        30,
+        30
+      ],
+      "oracle_text": [
+        32,
+        32
+      ],
+      "paired_latent_minus_text": {
+        "original": {
+          "mean": 0.0625,
+          "ci95": [
+            0.0,
+            0.15625
+          ],
+          "positive_fraction": 0.0625,
+          "table_means": [
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "seed": 113001,
+          "draws": 10000,
+          "descriptive_only": true
+        },
+        "changed": {
+          "mean": 0.03125,
+          "ci95": [
+            0.0,
+            0.09375
+          ],
+          "positive_fraction": 0.0625,
+          "table_means": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0
+          ],
+          "seed": 113001,
+          "draws": 10000,
+          "descriptive_only": true
+        }
+      },
+      "text_historical_reuse": false,
+      "native_report": "research/latent_binding_order1_native_20260908/REPORT.md",
+      "text_report": "research/latent_binding_order1_text_extended_20260908/REPORT.md"
+    },
+    {
+      "name": "Cyclic2",
+      "order": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "native": [
+        31,
+        31,
+        32
+      ],
+      "thresholds": [
+        31,
+        31,
+        28
+      ],
+      "actual_text": [
+        31,
+        28
+      ],
+      "oracle_text": [
+        32,
+        32
+      ],
+      "paired_latent_minus_text": {
+        "original": {
+          "mean": 0.0,
+          "ci95": [
+            -0.09375,
+            0.09375
+          ],
+          "positive_fraction": 0.03125,
+          "table_means": [
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            -0.25,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "seed": 113001,
+          "draws": 10000,
+          "descriptive_only": true
+        },
+        "changed": {
+          "mean": 0.125,
+          "ci95": [
+            0.0,
+            0.3125
+          ],
+          "positive_fraction": 0.125,
+          "table_means": [
+            0.0,
+            0.0,
+            0.5,
+            0.0,
+            0.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "seed": 113001,
+          "draws": 10000,
+          "descriptive_only": true
+        }
+      },
+      "text_historical_reuse": false,
+      "native_report": "research/latent_binding_order2_native_platform_20260909/REPORT.md",
+      "text_report": "research/latent_binding_order2_text_20260909/REPORT.md"
+    },
+    {
+      "name": "Cyclic3",
+      "order": [
+        3,
+        0,
+        1,
+        2
+      ],
+      "native": [
+        32,
+        32,
+        30
+      ],
+      "thresholds": [
+        31,
+        31,
+        28
+      ],
+      "actual_text": [
+        32,
+        31
+      ],
+      "oracle_text": [
+        32,
+        32
+      ],
+      "paired_latent_minus_text": {
+        "original": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "positive_fraction": 0.0,
+          "table_means": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "seed": 113001,
+          "draws": 10000,
+          "descriptive_only": true
+        },
+        "changed": {
+          "mean": -0.03125,
+          "ci95": [
+            -0.125,
+            0.0625
+          ],
+          "positive_fraction": 0.03125,
+          "table_means": [
+            0.0,
+            0.0,
+            -0.25,
+            0.0,
+            0.25,
+            0.0,
+            -0.25,
+            0.0
+          ],
+          "seed": 113001,
+          "draws": 10000,
+          "descriptive_only": true
+        }
+      },
+      "text_historical_reuse": false,
+      "native_report": "research/latent_binding_order3_native_20260909/REPORT.md",
+      "text_report": "research/latent_binding_order3_text_20260909/REPORT.md"
+    },
+    {
+      "name": "Reversal",
+      "order": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "native": [
+        30,
+        30,
+        30
+      ],
+      "thresholds": [
+        28,
+        28,
+        28
+      ],
+      "actual_text": [
+        31,
+        32
+      ],
+      "oracle_text": [
+        32,
+        32
+      ],
+      "paired_latent_minus_text": {
+        "original": {
+          "mean": -0.03125,
+          "ci95": [
+            -0.125,
+            0.0625
+          ],
+          "positive_fraction": 0.03125,
+          "table_means": [
+            -0.25,
+            0.0,
+            -0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0
+          ],
+          "seed": 113001,
+          "draws": 10000,
+          "descriptive_only": true
+        },
+        "changed": {
+          "mean": -0.0625,
+          "ci95": [
+            -0.15625,
+            0.0
+          ],
+          "positive_fraction": 0.0,
+          "table_means": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.25,
+            -0.25,
+            0.0
+          ],
+          "seed": 113001,
+          "draws": 10000,
+          "descriptive_only": true
+        }
+      },
+      "text_historical_reuse": false,
+      "native_report": "research/latent_binding_reversal_native_20260909/REPORT.md",
+      "text_report": "research/latent_binding_reversal_text_20260909/REPORT.md"
+    }
+  ],
+  "later_stages": [
+    {
+      "name": "Fresh familiar IDs",
+      "native": [
+        32,
+        32,
+        31
+      ],
+      "native_pass": true,
+      "thresholds": {
+        "original": 31,
+        "shuffled_donor": 31,
+        "changed_donor": 28
+      },
+      "data_seed": 191002,
+      "actual_text": [
+        30,
+        31
+      ],
+      "oracle_text": [
+        32,
+        32
+      ],
+      "paired_latent_minus_text": {
+        "original": {
+          "mean": 0.0625,
+          "ci95": [
+            0.0,
+            0.15625
+          ],
+          "positive_fraction": 0.0625,
+          "table_means": [
+            0.0,
+            0.0,
+            0.25,
+            0.0,
+            0.0,
+            0.0,
+            0.25,
+            0.0
+          ],
+          "seed": 95002,
+          "draws": 10000,
+          "descriptive_only": true
+        },
+        "changed": {
+          "mean": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "positive_fraction": 0.03125,
+          "table_means": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "seed": 95002,
+          "draws": 10000,
+          "descriptive_only": true
+        }
+      },
+      "native_report": "research/latent_binding_fresh_known_native_20260910/REPORT.md",
+      "text_report": "research/latent_binding_fresh_known_text_20260910/REPORT.md",
+      "jobs": [
+        {
+          "path": "research/latent_binding_fresh_known_native_20260910/job",
+          "launch": {
+            "pid": 25038,
+            "wrapper_pid": 25037,
+            "cap_s": 2400,
+            "utc": "2026-09-09T21:46:21Z"
+          },
+          "completion": {
+            "exit_code": 0,
+            "timeout": false,
+            "elapsed_s": 593.7932494960005,
+            "utc": "2026-09-09T21:56:15Z",
+            "new_external_spend_usd": 0
+          }
+        },
+        {
+          "path": "research/latent_binding_fresh_known_text_20260910/job_sender",
+          "launch": {
+            "pid": 26182,
+            "wrapper_pid": 26181,
+            "cap_s": null,
+            "role": "sender",
+            "utc": "2026-09-09T21:59:58Z"
+          },
+          "completion": {
+            "exit_code": 0,
+            "timeout": false,
+            "elapsed_s": 1620.8343000210007,
+            "utc": "2026-09-09T22:26:59Z",
+            "new_external_spend_usd": 0
+          }
+        },
+        {
+          "path": "research/latent_binding_fresh_known_text_20260910/job_receiver",
+          "launch": {
+            "pid": 28570,
+            "wrapper_pid": 28569,
+            "cap_s": null,
+            "role": "receiver",
+            "utc": "2026-09-09T22:29:02Z"
+          },
+          "completion": {
+            "exit_code": 0,
+            "timeout": false,
+            "elapsed_s": 125.53525518200331,
+            "utc": "2026-09-09T22:31:07Z",
+            "new_external_spend_usd": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Novel whole IDs",
+      "native": [
+        0,
+        0,
+        0
+      ],
+      "native_pass": false,
+      "thresholds": {
+        "original": 31,
+        "shuffled_donor": 31,
+        "changed_donor": 28
+      },
+      "data_seed": 191003,
+      "actual_text": [
+        32,
+        29
+      ],
+      "oracle_text": [
+        32,
+        32
+      ],
+      "paired_latent_minus_text": {
+        "original": {
+          "mean": -1.0,
+          "ci95": [
+            -1.0,
+            -1.0
+          ],
+          "positive_fraction": 0.0,
+          "table_means": [
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0,
+            -1.0
+          ],
+          "seed": 95002,
+          "draws": 10000,
+          "descriptive_only": true
+        },
+        "changed": {
+          "mean": -0.90625,
+          "ci95": [
+            -0.96875,
+            -0.8125
+          ],
+          "positive_fraction": 0.0,
+          "table_means": [
+            -1.0,
+            -1.0,
+            -0.75,
+            -1.0,
+            -0.75,
+            -1.0,
+            -0.75,
+            -1.0
+          ],
+          "seed": 95002,
+          "draws": 10000,
+          "descriptive_only": true
+        }
+      },
+      "native_report": "research/latent_binding_novel_whole_native_20260910/REPORT.md",
+      "text_report": "research/latent_binding_novel_whole_text_20260910/REPORT.md",
+      "jobs": [
+        {
+          "path": "research/latent_binding_novel_whole_native_20260910/job",
+          "launch": {
+            "pid": 29564,
+            "wrapper_pid": 29563,
+            "cap_s": 2400,
+            "utc": "2026-09-09T22:42:19Z"
+          },
+          "completion": {
+            "exit_code": 0,
+            "timeout": false,
+            "elapsed_s": 515.7984133239988,
+            "utc": "2026-09-09T22:50:55Z",
+            "new_external_spend_usd": 0
+          }
+        },
+        {
+          "path": "research/latent_binding_novel_whole_text_20260910/job_sender",
+          "launch": {
+            "pid": 30618,
+            "wrapper_pid": 30617,
+            "cap_s": null,
+            "role": "sender",
+            "utc": "2026-09-09T22:59:41Z"
+          },
+          "completion": {
+            "exit_code": 0,
+            "timeout": false,
+            "elapsed_s": 1372.843810716,
+            "utc": "2026-09-09T23:22:34Z",
+            "new_external_spend_usd": 0
+          }
+        },
+        {
+          "path": "research/latent_binding_novel_whole_text_20260910/job_receiver",
+          "launch": {
+            "pid": 33652,
+            "wrapper_pid": 33651,
+            "cap_s": null,
+            "role": "receiver",
+            "utc": "2026-09-09T23:23:08Z"
+          },
+          "completion": {
+            "exit_code": 0,
+            "timeout": false,
+            "elapsed_s": 137.43945017499937,
+            "utc": "2026-09-09T23:25:25Z",
+            "new_external_spend_usd": 0
+          }
+        }
+      ]
+    }
+  ],
+  "novel_observations": {
+    "original": {
+      "prediction_ids": [
+        "B3",
+        "C7",
+        "D4",
+        "G3"
+      ],
+      "familiar_prediction_count": 32,
+      "correct_route_counts": [
+        32,
+        32
+      ],
+      "first_prefix_correct": 0,
+      "gold_digit_correct": 4
+    },
+    "changed": {
+      "prediction_ids": [
+        "B3",
+        "C7",
+        "D4",
+        "G3"
+      ],
+      "familiar_prediction_count": 32,
+      "correct_route_counts": [
+        32,
+        32
+      ],
+      "first_prefix_correct": 0,
+      "gold_digit_correct": 4
+    }
+  },
+  "seals": [
+    {
+      "path": "research/latent_binding_order_ladder_20260910",
+      "seal_sha256": "771d9c8c214fd64959aebb321c0b59c0977f8f69603eb99479f3290d036b07fb",
+      "files": 6
+    },
+    {
+      "path": "research/latent_binding_fresh_known_source_20260910",
+      "seal_sha256": "3310438a4603d40e332dea78ff8e3162a25a0e0458481058e43f748da0f88ee4",
+      "files": 22
+    },
+    {
+      "path": "research/latent_binding_fresh_known_native_20260910",
+      "seal_sha256": "33d50d74532f21e37ff9dc99d4149f3b8b379e527370ba0ca92e15dfadf8a9ee",
+      "files": 51
+    },
+    {
+      "path": "research/latent_binding_fresh_known_text_20260910",
+      "seal_sha256": "76425e21a8890f0360ebcb47e95cbb1bb591024e6e64002b62dba5d5f9aba130",
+      "files": 51
+    },
+    {
+      "path": "research/latent_binding_current_exposure_corrected_20260910",
+      "seal_sha256": "8f2f9f3214a0f5a9b5a616a4e34a4b22adc78b846e48ec678207af1511606faf",
+      "files": 7
+    },
+    {
+      "path": "research/latent_binding_novel_whole_source_20260910",
+      "seal_sha256": "2830801114e0e90028345babd6704489411f4e1ad99869ed888adda1e612e40c",
+      "files": 26
+    },
+    {
+      "path": "research/latent_binding_novel_whole_native_20260910",
+      "seal_sha256": "a4025f8f941ff2551616c2a4e6464879a0eef1f7cafc47c415474b926c661e98",
+      "files": 51
+    },
+    {
+      "path": "research/latent_binding_novel_whole_text_20260910",
+      "seal_sha256": "709de39521959aa15f9bc5b4d2b6673b3733f8000d9b8b3b9a87534a98bbf122",
+      "files": 51
+    },
+    {
+      "path": "research/latent_binding_shared_id_native_corrected_20260908",
+      "seal_sha256": "a9ca14f2b054bb2121da9e0995feea970a783a4339f0b2ed3b8f5467ef10110f",
+      "files": 44
+    },
+    {
+      "path": "research/latent_binding_order1_native_20260908",
+      "seal_sha256": "44206387c2f215b2575eb8c3a8e85d03c2612fd97a819a4127ef4f4b0f0b5273",
+      "files": 46
+    },
+    {
+      "path": "research/latent_binding_order1_text_extended_20260908",
+      "seal_sha256": "9a6365b8cb5a99be7748bc3043e41228675e0177d5bf2e99c00863b38f9265ee",
+      "files": 53
+    },
+    {
+      "path": "research/latent_binding_order2_native_platform_20260909",
+      "seal_sha256": "b4c963c62f9394abac6f118263cf992162b605dc0f0db36a902a8ea175862a91",
+      "files": 46
+    },
+    {
+      "path": "research/latent_binding_order2_text_20260909",
+      "seal_sha256": "bc13c31e454fbeb1a28af27b587960751e3549ad8a3efec0ed910490a6ab4102",
+      "files": 51
+    },
+    {
+      "path": "research/latent_binding_order3_native_20260909",
+      "seal_sha256": "c8c9ad3faae3de8774283f958743f77128e871f674d458f6730d20c6d2e67f29",
+      "files": 46
+    },
+    {
+      "path": "research/latent_binding_order3_text_20260909",
+      "seal_sha256": "b964b10f027ab94f6aa0ea81e5af85251ab956019d094566f788ac2584fe8ecd",
+      "files": 52
+    },
+    {
+      "path": "research/latent_binding_reversal_native_20260909",
+      "seal_sha256": "4be77200733d257f87543a0a3f71686873e25f5241aed48b2f9845b823d0eb1e",
+      "files": 46
+    },
+    {
+      "path": "research/latent_binding_reversal_text_20260909",
+      "seal_sha256": "cf631c3f584027d32673b3251bd312a4cc50483a6b7a08bc49205754f4ac5b4a",
+      "files": 51
+    }
+  ],
+  "model_tokenizer_files": 22,
+  "all_recorded_jobs_complete": true,
+  "novel_binding_established": false,
+  "arabic_opened": false,
+  "final_opened": false,
+  "new_external_spend_usd": 0,
+  "novelty_scope": "Eight whole IDs absent from 56 ancestral positive training IDs, with older evaluation/design-selection history; new contexts seed191003. Not pristine IDs or novel components."
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+<rect width="800" height="450" fill="white"/>
+<text x="60" y="28" font-family="sans-serif" font-size="18">Tiny training-set accuracy (not held out)</text>
+<line x1="60" x2="620" y1="350.0" y2="350.0" stroke="#dddddd"/>
+<text x="15" y="355.0" font-family="sans-serif" font-size="12">0%</text>
+<line x1="60" x2="620" y1="280.0" y2="280.0" stroke="#dddddd"/>
+<text x="15" y="285.0" font-family="sans-serif" font-size="12">25%</text>
+<line x1="60" x2="620" y1="210.0" y2="210.0" stroke="#dddddd"/>
+<text x="15" y="215.0" font-family="sans-serif" font-size="12">50%</text>
+<line x1="60" x2="620" y1="140.0" y2="140.0" stroke="#dddddd"/>
+<text x="15" y="145.0" font-family="sans-serif" font-size="12">75%</text>
+<line x1="60" x2="620" y1="70.0" y2="70.0" stroke="#dddddd"/>
+<text x="15" y="75.0" font-family="sans-serif" font-size="12">100%</text>
+<polyline points="60.00,280.00 130.00,280.00 200.00,280.00 270.00,280.00 340.00,210.00 410.00,210.00 480.00,105.00 550.00,140.00 620.00,70.00" fill="none" stroke="#146b3a" stroke-width="2"/>
+<text x="635" y="90" fill="#146b3a" font-family="sans-serif" font-size="12">correct</text>
+<polyline points="60.00,280.00 130.00,280.00 200.00,280.00 270.00,280.00 340.00,262.50 410.00,262.50 480.00,297.50 550.00,280.00 620.00,306.25" fill="none" stroke="#b94d12" stroke-width="2"/>
+<text x="635" y="115" fill="#b94d12" font-family="sans-serif" font-size="12">shuffled</text>
+<polyline points="60.00,280.00 130.00,280.00 200.00,280.00 270.00,280.00 340.00,280.00 410.00,280.00 480.00,280.00 550.00,280.00 620.00,280.00" fill="none" stroke="#4258ad" stroke-width="2"/>
+<text x="635" y="140" fill="#4258ad" font-family="sans-serif" font-size="12">random_71001</text>
+<polyline points="60.00,280.00 130.00,280.00 200.00,280.00 270.00,280.00 340.00,280.00 410.00,280.00 480.00,280.00 550.00,280.00 620.00,280.00" fill="none" stroke="#9462aa" stroke-width="2"/>
+<text x="635" y="165" fill="#9462aa" font-family="sans-serif" font-size="12">random_71002</text>
+<polyline points="60.00,280.00 130.00,280.00 200.00,280.00 270.00,280.00 340.00,280.00 410.00,280.00 480.00,280.00 550.00,280.00 620.00,280.00" fill="none" stroke="#555555" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="635" y="190" fill="#555555" font-family="sans-serif" font-size="12">receiver_only</text>
+<polyline points="60.00,280.00 130.00,280.00 200.00,280.00 270.00,280.00 340.00,280.00 410.00,280.00 480.00,280.00 550.00,280.00 620.00,280.00" fill="none" stroke="#999999" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="635" y="215" fill="#999999" font-family="sans-serif" font-size="12">zero</text>
+<text x="60" y="375" font-family="sans-serif" font-size="12">0</text>
+<text x="590" y="375" font-family="sans-serif" font-size="12">160</text>
+<text x="285" y="400" font-family="sans-serif" font-size="13">Optimizer step</text>
+<text x="60" y="430" font-family="sans-serif" font-size="12">Lines join recorded evaluations; no intermediate accuracies inferred.</text></svg>

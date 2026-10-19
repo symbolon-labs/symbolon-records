@@ -1,0 +1,2901 @@
+{
+  "checks": {
+    "f61_sham_eq_capture": 0.0,
+    "d822_sham_eq_capture": 0.0,
+    "d822_weight_reconstruction": 0.0,
+    "f61_weight_reconstruction": 0.0,
+    "f61_sham_sealed_replay": {
+      "token_lp": 0.0,
+      "lp": 0.0
+    },
+    "f61_sham_prediction_replay": true,
+    "d822_sham_sealed_replay": {
+      "token_lp": 0.0,
+      "lp": 0.0
+    },
+    "d822_sham_prediction_replay": true,
+    "direct_parity_error": 3.814697265625e-06
+  },
+  "arms": {
+    "f61_sham": {
+      "rows": [
+        {
+          "row": 0,
+          "id": "A2",
+          "prediction": "C1",
+          "target": "A2",
+          "first_token": 340,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 1,
+          "id": "M3",
+          "prediction": "M2",
+          "target": "M3",
+          "first_token": 372,
+          "target_first": 372,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 2,
+          "id": "M0",
+          "prediction": "G2",
+          "target": "M0",
+          "first_token": 452,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 3,
+          "id": "C4",
+          "prediction": "L1",
+          "target": "C4",
+          "first_token": 450,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 4,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 5,
+          "id": "A0",
+          "prediction": "D4",
+          "target": "A0",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 6,
+          "id": "A2",
+          "prediction": "C1",
+          "target": "A2",
+          "first_token": 340,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 7,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 8,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 9,
+          "id": "A0",
+          "prediction": "D4",
+          "target": "A0",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 10,
+          "id": "M3",
+          "prediction": "M3",
+          "target": "M3",
+          "first_token": 372,
+          "target_first": 372,
+          "first_token_correct": true,
+          "joint": true
+        },
+        {
+          "row": 11,
+          "id": "M3",
+          "prediction": "M2",
+          "target": "M3",
+          "first_token": 372,
+          "target_first": 372,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 12,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 13,
+          "id": "C4",
+          "prediction": "L1",
+          "target": "C4",
+          "first_token": 450,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 14,
+          "id": "A0",
+          "prediction": "D4",
+          "target": "A0",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 15,
+          "id": "A2",
+          "prediction": "C1",
+          "target": "A2",
+          "first_token": 340,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 16,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 17,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 18,
+          "id": "M0",
+          "prediction": "G2",
+          "target": "M0",
+          "first_token": 452,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 19,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 20,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 21,
+          "id": "A0",
+          "prediction": "D4",
+          "target": "A0",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 22,
+          "id": "C4",
+          "prediction": "L1",
+          "target": "C4",
+          "first_token": 450,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 23,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 24,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 25,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 26,
+          "id": "A2",
+          "prediction": "C1",
+          "target": "A2",
+          "first_token": 340,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 27,
+          "id": "M3",
+          "prediction": "M2",
+          "target": "M3",
+          "first_token": 372,
+          "target_first": 372,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 28,
+          "id": "M0",
+          "prediction": "G2",
+          "target": "M0",
+          "first_token": 452,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 29,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 30,
+          "id": "C4",
+          "prediction": "L1",
+          "target": "C4",
+          "first_token": 450,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 31,
+          "id": "M0",
+          "prediction": "G2",
+          "target": "M0",
+          "first_token": 452,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        }
+      ],
+      "per_id": {
+        "A0": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "A2": {
+          "predictions": [
+            "C1",
+            "C1",
+            "C1",
+            "C1"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "C4": {
+          "predictions": [
+            "L1",
+            "L1",
+            "L1",
+            "L1"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "I2": {
+          "predictions": [
+            "G2",
+            "G2",
+            "G2",
+            "G2"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "K0": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "K3": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M0": {
+          "predictions": [
+            "G2",
+            "G2",
+            "G2",
+            "G2"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M3": {
+          "predictions": [
+            "M2",
+            "M3",
+            "M2",
+            "M2"
+          ],
+          "first_token_correct": 4,
+          "joint": 1
+        }
+      },
+      "joint": 1,
+      "first_token_any": 4,
+      "first_argmax_correct": 4
+    },
+    "f61_R3": {
+      "rows": [
+        {
+          "row": 0,
+          "id": "A2",
+          "prediction": "N1",
+          "target": "A2",
+          "first_token": 442,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 1,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 2,
+          "id": "M0",
+          "prediction": "B2",
+          "target": "M0",
+          "first_token": 389,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 3,
+          "id": "C4",
+          "prediction": "J1",
+          "target": "C4",
+          "first_token": 530,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 4,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 5,
+          "id": "A0",
+          "prediction": "L1",
+          "target": "A0",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 6,
+          "id": "A2",
+          "prediction": "N1",
+          "target": "A2",
+          "first_token": 442,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 7,
+          "id": "K0",
+          "prediction": "B7",
+          "target": "K0",
+          "first_token": 389,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 8,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 9,
+          "id": "A0",
+          "prediction": "L1",
+          "target": "A0",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 10,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 11,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 12,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 13,
+          "id": "C4",
+          "prediction": "J1",
+          "target": "C4",
+          "first_token": 530,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 14,
+          "id": "A0",
+          "prediction": "L1",
+          "target": "A0",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 15,
+          "id": "A2",
+          "prediction": "N1",
+          "target": "A2",
+          "first_token": 442,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 16,
+          "id": "K0",
+          "prediction": "B7",
+          "target": "K0",
+          "first_token": 389,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 17,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 18,
+          "id": "M0",
+          "prediction": "B2",
+          "target": "M0",
+          "first_token": 389,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 19,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 20,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 21,
+          "id": "A0",
+          "prediction": "L1",
+          "target": "A0",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 22,
+          "id": "C4",
+          "prediction": "J1",
+          "target": "C4",
+          "first_token": 530,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 23,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 24,
+          "id": "K0",
+          "prediction": "B7",
+          "target": "K0",
+          "first_token": 389,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 25,
+          "id": "K0",
+          "prediction": "B7",
+          "target": "K0",
+          "first_token": 389,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 26,
+          "id": "A2",
+          "prediction": "N1",
+          "target": "A2",
+          "first_token": 442,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 27,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 28,
+          "id": "M0",
+          "prediction": "B2",
+          "target": "M0",
+          "first_token": 389,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 29,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 30,
+          "id": "C4",
+          "prediction": "J1",
+          "target": "C4",
+          "first_token": 530,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 31,
+          "id": "M0",
+          "prediction": "B2",
+          "target": "M0",
+          "first_token": 389,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        }
+      ],
+      "per_id": {
+        "A0": {
+          "predictions": [
+            "L1",
+            "L1",
+            "L1",
+            "L1"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "A2": {
+          "predictions": [
+            "N1",
+            "N1",
+            "N1",
+            "N1"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "C4": {
+          "predictions": [
+            "J1",
+            "J1",
+            "J1",
+            "J1"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "I2": {
+          "predictions": [
+            "G2",
+            "G2",
+            "G2",
+            "G2"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "K0": {
+          "predictions": [
+            "B7",
+            "B7",
+            "B7",
+            "B7"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "K3": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M0": {
+          "predictions": [
+            "B2",
+            "B2",
+            "B2",
+            "B2"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M3": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        }
+      },
+      "joint": 0,
+      "first_token_any": 0,
+      "first_argmax_correct": 0
+    },
+    "f61_R1": {
+      "rows": [
+        {
+          "row": 0,
+          "id": "A2",
+          "prediction": "G3",
+          "target": "A2",
+          "first_token": 452,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 1,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 2,
+          "id": "M0",
+          "prediction": "B3",
+          "target": "M0",
+          "first_token": 389,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 3,
+          "id": "C4",
+          "prediction": "C3",
+          "target": "C4",
+          "first_token": 340,
+          "target_first": 340,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 4,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 5,
+          "id": "A0",
+          "prediction": "L1",
+          "target": "A0",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 6,
+          "id": "A2",
+          "prediction": "G3",
+          "target": "A2",
+          "first_token": 452,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 7,
+          "id": "K0",
+          "prediction": "J2",
+          "target": "K0",
+          "first_token": 530,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 8,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 9,
+          "id": "A0",
+          "prediction": "L1",
+          "target": "A0",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 10,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 11,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 12,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 13,
+          "id": "C4",
+          "prediction": "C3",
+          "target": "C4",
+          "first_token": 340,
+          "target_first": 340,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 14,
+          "id": "A0",
+          "prediction": "L1",
+          "target": "A0",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 15,
+          "id": "A2",
+          "prediction": "G3",
+          "target": "A2",
+          "first_token": 452,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 16,
+          "id": "K0",
+          "prediction": "B3",
+          "target": "K0",
+          "first_token": 389,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 17,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 18,
+          "id": "M0",
+          "prediction": "B3",
+          "target": "M0",
+          "first_token": 389,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 19,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 20,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 21,
+          "id": "A0",
+          "prediction": "L1",
+          "target": "A0",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 22,
+          "id": "C4",
+          "prediction": "C3",
+          "target": "C4",
+          "first_token": 340,
+          "target_first": 340,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 23,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 24,
+          "id": "K0",
+          "prediction": "B3",
+          "target": "K0",
+          "first_token": 389,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 25,
+          "id": "K0",
+          "prediction": "B3",
+          "target": "K0",
+          "first_token": 389,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 26,
+          "id": "A2",
+          "prediction": "G3",
+          "target": "A2",
+          "first_token": 452,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 27,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 28,
+          "id": "M0",
+          "prediction": "B2",
+          "target": "M0",
+          "first_token": 389,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 29,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 30,
+          "id": "C4",
+          "prediction": "C4",
+          "target": "C4",
+          "first_token": 340,
+          "target_first": 340,
+          "first_token_correct": true,
+          "joint": true
+        },
+        {
+          "row": 31,
+          "id": "M0",
+          "prediction": "B3",
+          "target": "M0",
+          "first_token": 389,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        }
+      ],
+      "per_id": {
+        "A0": {
+          "predictions": [
+            "L1",
+            "L1",
+            "L1",
+            "L1"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "A2": {
+          "predictions": [
+            "G3",
+            "G3",
+            "G3",
+            "G3"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "C4": {
+          "predictions": [
+            "C3",
+            "C3",
+            "C3",
+            "C4"
+          ],
+          "first_token_correct": 4,
+          "joint": 1
+        },
+        "I2": {
+          "predictions": [
+            "G2",
+            "G2",
+            "G2",
+            "G2"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "K0": {
+          "predictions": [
+            "J2",
+            "B3",
+            "B3",
+            "B3"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "K3": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M0": {
+          "predictions": [
+            "B3",
+            "B3",
+            "B2",
+            "B3"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M3": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        }
+      },
+      "joint": 1,
+      "first_token_any": 4,
+      "first_argmax_correct": 4
+    },
+    "f61_R2": {
+      "rows": [
+        {
+          "row": 0,
+          "id": "A2",
+          "prediction": "D3",
+          "target": "A2",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 1,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 2,
+          "id": "M0",
+          "prediction": "B2",
+          "target": "M0",
+          "first_token": 389,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 3,
+          "id": "C4",
+          "prediction": "J1",
+          "target": "C4",
+          "first_token": 530,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 4,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 5,
+          "id": "A0",
+          "prediction": "D4",
+          "target": "A0",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 6,
+          "id": "A2",
+          "prediction": "D3",
+          "target": "A2",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 7,
+          "id": "K0",
+          "prediction": "B7",
+          "target": "K0",
+          "first_token": 389,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 8,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 9,
+          "id": "A0",
+          "prediction": "L3",
+          "target": "A0",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 10,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 11,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 12,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 13,
+          "id": "C4",
+          "prediction": "J1",
+          "target": "C4",
+          "first_token": 530,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 14,
+          "id": "A0",
+          "prediction": "L3",
+          "target": "A0",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 15,
+          "id": "A2",
+          "prediction": "D3",
+          "target": "A2",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 16,
+          "id": "K0",
+          "prediction": "B7",
+          "target": "K0",
+          "first_token": 389,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 17,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 18,
+          "id": "M0",
+          "prediction": "B2",
+          "target": "M0",
+          "first_token": 389,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 19,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 20,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 21,
+          "id": "A0",
+          "prediction": "D4",
+          "target": "A0",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 22,
+          "id": "C4",
+          "prediction": "J1",
+          "target": "C4",
+          "first_token": 530,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 23,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 24,
+          "id": "K0",
+          "prediction": "B7",
+          "target": "K0",
+          "first_token": 389,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 25,
+          "id": "K0",
+          "prediction": "B7",
+          "target": "K0",
+          "first_token": 389,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 26,
+          "id": "A2",
+          "prediction": "D3",
+          "target": "A2",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 27,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 28,
+          "id": "M0",
+          "prediction": "B2",
+          "target": "M0",
+          "first_token": 389,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 29,
+          "id": "K3",
+          "prediction": "D4",
+          "target": "K3",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 30,
+          "id": "C4",
+          "prediction": "J1",
+          "target": "C4",
+          "first_token": 530,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 31,
+          "id": "M0",
+          "prediction": "B2",
+          "target": "M0",
+          "first_token": 389,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        }
+      ],
+      "per_id": {
+        "A0": {
+          "predictions": [
+            "D4",
+            "L3",
+            "L3",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "A2": {
+          "predictions": [
+            "D3",
+            "D3",
+            "D3",
+            "D3"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "C4": {
+          "predictions": [
+            "J1",
+            "J1",
+            "J1",
+            "J1"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "I2": {
+          "predictions": [
+            "G2",
+            "G2",
+            "G2",
+            "G2"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "K0": {
+          "predictions": [
+            "B7",
+            "B7",
+            "B7",
+            "B7"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "K3": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M0": {
+          "predictions": [
+            "B2",
+            "B2",
+            "B2",
+            "B2"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M3": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        }
+      },
+      "joint": 0,
+      "first_token_any": 0,
+      "first_argmax_correct": 0
+    },
+    "d822_sham": {
+      "rows": [
+        {
+          "row": 0,
+          "id": "A2",
+          "prediction": "D1",
+          "target": "A2",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 1,
+          "id": "M3",
+          "prediction": "M3",
+          "target": "M3",
+          "first_token": 372,
+          "target_first": 372,
+          "first_token_correct": true,
+          "joint": true
+        },
+        {
+          "row": 2,
+          "id": "M0",
+          "prediction": "D4",
+          "target": "M0",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 3,
+          "id": "C4",
+          "prediction": "D4",
+          "target": "C4",
+          "first_token": 422,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 4,
+          "id": "K3",
+          "prediction": "G3",
+          "target": "K3",
+          "first_token": 452,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 5,
+          "id": "A0",
+          "prediction": "D1",
+          "target": "A0",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 6,
+          "id": "A2",
+          "prediction": "D1",
+          "target": "A2",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 7,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 8,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 9,
+          "id": "A0",
+          "prediction": "D4",
+          "target": "A0",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 10,
+          "id": "M3",
+          "prediction": "M3",
+          "target": "M3",
+          "first_token": 372,
+          "target_first": 372,
+          "first_token_correct": true,
+          "joint": true
+        },
+        {
+          "row": 11,
+          "id": "M3",
+          "prediction": "M3",
+          "target": "M3",
+          "first_token": 372,
+          "target_first": 372,
+          "first_token_correct": true,
+          "joint": true
+        },
+        {
+          "row": 12,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 13,
+          "id": "C4",
+          "prediction": "D4",
+          "target": "C4",
+          "first_token": 422,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 14,
+          "id": "A0",
+          "prediction": "D1",
+          "target": "A0",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 15,
+          "id": "A2",
+          "prediction": "D1",
+          "target": "A2",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 16,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 17,
+          "id": "I2",
+          "prediction": "G2",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 18,
+          "id": "M0",
+          "prediction": "D4",
+          "target": "M0",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 19,
+          "id": "I2",
+          "prediction": "G3",
+          "target": "I2",
+          "first_token": 452,
+          "target_first": 339,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 20,
+          "id": "K3",
+          "prediction": "G3",
+          "target": "K3",
+          "first_token": 452,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 21,
+          "id": "A0",
+          "prediction": "D4",
+          "target": "A0",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 22,
+          "id": "C4",
+          "prediction": "D4",
+          "target": "C4",
+          "first_token": 422,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 23,
+          "id": "K3",
+          "prediction": "G3",
+          "target": "K3",
+          "first_token": 452,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 24,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 25,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 26,
+          "id": "A2",
+          "prediction": "D1",
+          "target": "A2",
+          "first_token": 422,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 27,
+          "id": "M3",
+          "prediction": "M3",
+          "target": "M3",
+          "first_token": 372,
+          "target_first": 372,
+          "first_token_correct": true,
+          "joint": true
+        },
+        {
+          "row": 28,
+          "id": "M0",
+          "prediction": "D4",
+          "target": "M0",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 29,
+          "id": "K3",
+          "prediction": "G3",
+          "target": "K3",
+          "first_token": 452,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 30,
+          "id": "C4",
+          "prediction": "D4",
+          "target": "C4",
+          "first_token": 422,
+          "target_first": 340,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 31,
+          "id": "M0",
+          "prediction": "D4",
+          "target": "M0",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        }
+      ],
+      "per_id": {
+        "A0": {
+          "predictions": [
+            "D1",
+            "D4",
+            "D1",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "A2": {
+          "predictions": [
+            "D1",
+            "D1",
+            "D1",
+            "D1"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "C4": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "I2": {
+          "predictions": [
+            "G2",
+            "G2",
+            "G2",
+            "G3"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "K0": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "K3": {
+          "predictions": [
+            "G3",
+            "G3",
+            "G3",
+            "G3"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M0": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M3": {
+          "predictions": [
+            "M3",
+            "M3",
+            "M3",
+            "M3"
+          ],
+          "first_token_correct": 4,
+          "joint": 4
+        }
+      },
+      "joint": 4,
+      "first_token_any": 4,
+      "first_argmax_correct": 4
+    },
+    "d822_R1": {
+      "rows": [
+        {
+          "row": 0,
+          "id": "A2",
+          "prediction": "K3",
+          "target": "A2",
+          "first_token": 659,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 1,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 2,
+          "id": "M0",
+          "prediction": "D4",
+          "target": "M0",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 3,
+          "id": "C4",
+          "prediction": "C7",
+          "target": "C4",
+          "first_token": 340,
+          "target_first": 340,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 4,
+          "id": "K3",
+          "prediction": "C3",
+          "target": "K3",
+          "first_token": 340,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 5,
+          "id": "A0",
+          "prediction": "B3",
+          "target": "A0",
+          "first_token": 389,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 6,
+          "id": "A2",
+          "prediction": "K3",
+          "target": "A2",
+          "first_token": 659,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 7,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 8,
+          "id": "I2",
+          "prediction": "I3",
+          "target": "I2",
+          "first_token": 339,
+          "target_first": 339,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 9,
+          "id": "A0",
+          "prediction": "B3",
+          "target": "A0",
+          "first_token": 389,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 10,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 11,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 12,
+          "id": "I2",
+          "prediction": "I3",
+          "target": "I2",
+          "first_token": 339,
+          "target_first": 339,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 13,
+          "id": "C4",
+          "prediction": "C7",
+          "target": "C4",
+          "first_token": 340,
+          "target_first": 340,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 14,
+          "id": "A0",
+          "prediction": "B3",
+          "target": "A0",
+          "first_token": 389,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 15,
+          "id": "A2",
+          "prediction": "K3",
+          "target": "A2",
+          "first_token": 659,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 16,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 17,
+          "id": "I2",
+          "prediction": "I3",
+          "target": "I2",
+          "first_token": 339,
+          "target_first": 339,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 18,
+          "id": "M0",
+          "prediction": "D4",
+          "target": "M0",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 19,
+          "id": "I2",
+          "prediction": "I3",
+          "target": "I2",
+          "first_token": 339,
+          "target_first": 339,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 20,
+          "id": "K3",
+          "prediction": "C3",
+          "target": "K3",
+          "first_token": 340,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 21,
+          "id": "A0",
+          "prediction": "B3",
+          "target": "A0",
+          "first_token": 389,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 22,
+          "id": "C4",
+          "prediction": "C7",
+          "target": "C4",
+          "first_token": 340,
+          "target_first": 340,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 23,
+          "id": "K3",
+          "prediction": "C3",
+          "target": "K3",
+          "first_token": 340,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 24,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 25,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 26,
+          "id": "A2",
+          "prediction": "K3",
+          "target": "A2",
+          "first_token": 659,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 27,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 28,
+          "id": "M0",
+          "prediction": "D4",
+          "target": "M0",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 29,
+          "id": "K3",
+          "prediction": "C3",
+          "target": "K3",
+          "first_token": 340,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 30,
+          "id": "C4",
+          "prediction": "C7",
+          "target": "C4",
+          "first_token": 340,
+          "target_first": 340,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 31,
+          "id": "M0",
+          "prediction": "D4",
+          "target": "M0",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        }
+      ],
+      "per_id": {
+        "A0": {
+          "predictions": [
+            "B3",
+            "B3",
+            "B3",
+            "B3"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "A2": {
+          "predictions": [
+            "K3",
+            "K3",
+            "K3",
+            "K3"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "C4": {
+          "predictions": [
+            "C7",
+            "C7",
+            "C7",
+            "C7"
+          ],
+          "first_token_correct": 4,
+          "joint": 0
+        },
+        "I2": {
+          "predictions": [
+            "I3",
+            "I3",
+            "I3",
+            "I3"
+          ],
+          "first_token_correct": 4,
+          "joint": 0
+        },
+        "K0": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "K3": {
+          "predictions": [
+            "C3",
+            "C3",
+            "C3",
+            "C3"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M0": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M3": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        }
+      },
+      "joint": 0,
+      "first_token_any": 8,
+      "first_argmax_correct": 8
+    },
+    "d822_R2": {
+      "rows": [
+        {
+          "row": 0,
+          "id": "A2",
+          "prediction": "L1",
+          "target": "A2",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 1,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 2,
+          "id": "M0",
+          "prediction": "D4",
+          "target": "M0",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 3,
+          "id": "C4",
+          "prediction": "C7",
+          "target": "C4",
+          "first_token": 340,
+          "target_first": 340,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 4,
+          "id": "K3",
+          "prediction": "C3",
+          "target": "K3",
+          "first_token": 340,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 5,
+          "id": "A0",
+          "prediction": "G3",
+          "target": "A0",
+          "first_token": 452,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 6,
+          "id": "A2",
+          "prediction": "L1",
+          "target": "A2",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 7,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 8,
+          "id": "I2",
+          "prediction": "I3",
+          "target": "I2",
+          "first_token": 339,
+          "target_first": 339,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 9,
+          "id": "A0",
+          "prediction": "G3",
+          "target": "A0",
+          "first_token": 452,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 10,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 11,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 12,
+          "id": "I2",
+          "prediction": "I3",
+          "target": "I2",
+          "first_token": 339,
+          "target_first": 339,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 13,
+          "id": "C4",
+          "prediction": "C7",
+          "target": "C4",
+          "first_token": 340,
+          "target_first": 340,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 14,
+          "id": "A0",
+          "prediction": "G3",
+          "target": "A0",
+          "first_token": 452,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 15,
+          "id": "A2",
+          "prediction": "L1",
+          "target": "A2",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 16,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 17,
+          "id": "I2",
+          "prediction": "I3",
+          "target": "I2",
+          "first_token": 339,
+          "target_first": 339,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 18,
+          "id": "M0",
+          "prediction": "D4",
+          "target": "M0",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 19,
+          "id": "I2",
+          "prediction": "I3",
+          "target": "I2",
+          "first_token": 339,
+          "target_first": 339,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 20,
+          "id": "K3",
+          "prediction": "C3",
+          "target": "K3",
+          "first_token": 340,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 21,
+          "id": "A0",
+          "prediction": "G3",
+          "target": "A0",
+          "first_token": 452,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 22,
+          "id": "C4",
+          "prediction": "C7",
+          "target": "C4",
+          "first_token": 340,
+          "target_first": 340,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 23,
+          "id": "K3",
+          "prediction": "C3",
+          "target": "K3",
+          "first_token": 340,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 24,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 25,
+          "id": "K0",
+          "prediction": "D4",
+          "target": "K0",
+          "first_token": 422,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 26,
+          "id": "A2",
+          "prediction": "L1",
+          "target": "A2",
+          "first_token": 450,
+          "target_first": 330,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 27,
+          "id": "M3",
+          "prediction": "D4",
+          "target": "M3",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 28,
+          "id": "M0",
+          "prediction": "D4",
+          "target": "M0",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 29,
+          "id": "K3",
+          "prediction": "C3",
+          "target": "K3",
+          "first_token": 340,
+          "target_first": 659,
+          "first_token_correct": false,
+          "joint": false
+        },
+        {
+          "row": 30,
+          "id": "C4",
+          "prediction": "C7",
+          "target": "C4",
+          "first_token": 340,
+          "target_first": 340,
+          "first_token_correct": true,
+          "joint": false
+        },
+        {
+          "row": 31,
+          "id": "M0",
+          "prediction": "D4",
+          "target": "M0",
+          "first_token": 422,
+          "target_first": 372,
+          "first_token_correct": false,
+          "joint": false
+        }
+      ],
+      "per_id": {
+        "A0": {
+          "predictions": [
+            "G3",
+            "G3",
+            "G3",
+            "G3"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "A2": {
+          "predictions": [
+            "L1",
+            "L1",
+            "L1",
+            "L1"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "C4": {
+          "predictions": [
+            "C7",
+            "C7",
+            "C7",
+            "C7"
+          ],
+          "first_token_correct": 4,
+          "joint": 0
+        },
+        "I2": {
+          "predictions": [
+            "I3",
+            "I3",
+            "I3",
+            "I3"
+          ],
+          "first_token_correct": 4,
+          "joint": 0
+        },
+        "K0": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "K3": {
+          "predictions": [
+            "C3",
+            "C3",
+            "C3",
+            "C3"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M0": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        },
+        "M3": {
+          "predictions": [
+            "D4",
+            "D4",
+            "D4",
+            "D4"
+          ],
+          "first_token_correct": 0,
+          "joint": 0
+        }
+      },
+      "joint": 0,
+      "first_token_any": 8,
+      "first_argmax_correct": 8
+    }
+  },
+  "cap_s": 3600,
+  "arms_order": [
+    "f61_sham",
+    "f61_R3",
+    "f61_R1",
+    "f61_R2",
+    "d822_sham",
+    "d822_R1",
+    "d822_R2"
+  ],
+  "receiver_hash": {
+    "before": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3",
+    "after": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3",
+    "restored_exact": true,
+    "no_hooks": true
+  },
+  "elapsed_s": 407.1404753610004
+}

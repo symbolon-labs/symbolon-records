@@ -1,0 +1,40 @@
+{
+  "completed": true,
+  "folds_completed": 4,
+  "novel_evaluated": false,
+  "historical_exact": true,
+  "totals": {
+    "0": {
+      "joint": 32,
+      "sequential": 32,
+      "rows": 224
+    },
+    "50": {
+      "joint": 23,
+      "sequential": 23,
+      "rows": 224
+    },
+    "100": {
+      "joint": 22,
+      "sequential": 25,
+      "rows": 224
+    },
+    "200": {
+      "joint": 17,
+      "sequential": 20,
+      "rows": 224
+    }
+  },
+  "selection": {
+    "selected_step": 100,
+    "qualifies": false,
+    "rule": "max sequential across positive grid, tie earlier; both metrics must exceed step0"
+  },
+  "before": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3",
+  "after": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3",
+  "restoration_exact": true,
+  "no_hooks": true,
+  "no_gradients": true,
+  "elapsed_s": 13143.717283768998,
+  "peak_rss_kib": 2960504
+}

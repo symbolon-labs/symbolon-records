@@ -1,0 +1,1418 @@
+{
+  "checks": {
+    "familiar_memory_eq_training_features": 0.0
+  },
+  "qdiff": {
+    "sham": 0.0,
+    "loo": 777.8314384762795,
+    "null": 1617.8322173611507
+  },
+  "arms": {
+    "sham": {
+      "joint": 153,
+      "letters": 224,
+      "digits": 153,
+      "per_id": {
+        "A3": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "A3"
+          ]
+        },
+        "A6": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "A3"
+          ]
+        },
+        "B0": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "B0"
+          ]
+        },
+        "B2": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "B2"
+          ]
+        },
+        "B3": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "B3"
+          ]
+        },
+        "B6": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "B3",
+            "B7"
+          ]
+        },
+        "C1": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "C1"
+          ]
+        },
+        "C5": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "C5"
+          ]
+        },
+        "C7": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "C7"
+          ]
+        },
+        "D1": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "D1"
+          ]
+        },
+        "D4": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "D5": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "D5"
+          ]
+        },
+        "D7": {
+          "letters": 4,
+          "digits": 3,
+          "joint": 3,
+          "predictions": [
+            "D5",
+            "D7"
+          ]
+        },
+        "E0": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "E0"
+          ]
+        },
+        "E2": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "E2"
+          ]
+        },
+        "E3": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "E3"
+          ]
+        },
+        "E6": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "E4"
+          ]
+        },
+        "F1": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "F1"
+          ]
+        },
+        "F4": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "F4"
+          ]
+        },
+        "F5": {
+          "letters": 4,
+          "digits": 1,
+          "joint": 1,
+          "predictions": [
+            "F2",
+            "F5",
+            "F7"
+          ]
+        },
+        "F7": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "F7"
+          ]
+        },
+        "G0": {
+          "letters": 4,
+          "digits": 1,
+          "joint": 1,
+          "predictions": [
+            "G0",
+            "G2"
+          ]
+        },
+        "G2": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "G2"
+          ]
+        },
+        "G3": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "G3"
+          ]
+        },
+        "G6": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "G6"
+          ]
+        },
+        "H0": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "H1"
+          ]
+        },
+        "H2": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "H1"
+          ]
+        },
+        "H3": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "H1"
+          ]
+        },
+        "H6": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "H1",
+            "H4"
+          ]
+        },
+        "I0": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "I0"
+          ]
+        },
+        "I3": {
+          "letters": 4,
+          "digits": 3,
+          "joint": 3,
+          "predictions": [
+            "I1",
+            "I3"
+          ]
+        },
+        "I6": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "I4"
+          ]
+        },
+        "J1": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "J1"
+          ]
+        },
+        "J4": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "J4"
+          ]
+        },
+        "J5": {
+          "letters": 4,
+          "digits": 1,
+          "joint": 1,
+          "predictions": [
+            "J5",
+            "J7"
+          ]
+        },
+        "J7": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "J7"
+          ]
+        },
+        "K2": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "K2"
+          ]
+        },
+        "K6": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "K5",
+            "K7"
+          ]
+        },
+        "L1": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "L1"
+          ]
+        },
+        "L4": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "L4"
+          ]
+        },
+        "L5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "L7"
+          ]
+        },
+        "L7": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "L7"
+          ]
+        },
+        "M2": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "M2"
+          ]
+        },
+        "M6": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "M4"
+          ]
+        },
+        "N1": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "N1"
+          ]
+        },
+        "N4": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "N4"
+          ]
+        },
+        "N5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "N1",
+            "N4"
+          ]
+        },
+        "N7": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "N1"
+          ]
+        },
+        "O1": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "O1"
+          ]
+        },
+        "O4": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "O4"
+          ]
+        },
+        "O5": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "O5"
+          ]
+        },
+        "O7": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O5"
+          ]
+        },
+        "P1": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "P1"
+          ]
+        },
+        "P4": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "P4"
+          ]
+        },
+        "P5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "P4"
+          ]
+        },
+        "P7": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "P7"
+          ]
+        }
+      }
+    },
+    "loo": {
+      "joint": 32,
+      "letters": 91,
+      "digits": 62,
+      "per_id": {
+        "A3": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "M4"
+          ]
+        },
+        "A6": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "A2",
+            "A4"
+          ]
+        },
+        "B0": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "B2": {
+          "letters": 0,
+          "digits": 1,
+          "joint": 0,
+          "predictions": [
+            "K2",
+            "K3"
+          ]
+        },
+        "B3": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "B6": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "B3"
+          ]
+        },
+        "C1": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "C1"
+          ]
+        },
+        "C5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "C7"
+          ]
+        },
+        "C7": {
+          "letters": 1,
+          "digits": 1,
+          "joint": 1,
+          "predictions": [
+            "B3",
+            "C7"
+          ]
+        },
+        "D1": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "P1"
+          ]
+        },
+        "D4": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "D5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "D7": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D5"
+          ]
+        },
+        "E0": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "E2": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "L1",
+            "L7"
+          ]
+        },
+        "E3": {
+          "letters": 4,
+          "digits": 2,
+          "joint": 2,
+          "predictions": [
+            "E3",
+            "E7"
+          ]
+        },
+        "E6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "L7"
+          ]
+        },
+        "F1": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "J1"
+          ]
+        },
+        "F4": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "F5": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "K4"
+          ]
+        },
+        "F7": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "L7"
+          ]
+        },
+        "G0": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "G2"
+          ]
+        },
+        "G2": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "G2"
+          ]
+        },
+        "G3": {
+          "letters": 4,
+          "digits": 2,
+          "joint": 2,
+          "predictions": [
+            "G2",
+            "G3"
+          ]
+        },
+        "G6": {
+          "letters": 0,
+          "digits": 2,
+          "joint": 0,
+          "predictions": [
+            "B7",
+            "D6"
+          ]
+        },
+        "H0": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "G3"
+          ]
+        },
+        "H2": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "G3"
+          ]
+        },
+        "H3": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "N1"
+          ]
+        },
+        "H6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O4"
+          ]
+        },
+        "I0": {
+          "letters": 2,
+          "digits": 3,
+          "joint": 1,
+          "predictions": [
+            "E0",
+            "I0",
+            "I1"
+          ]
+        },
+        "I3": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "I0"
+          ]
+        },
+        "I6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "J1": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "L1"
+          ]
+        },
+        "J4": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "J4"
+          ]
+        },
+        "J5": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O4"
+          ]
+        },
+        "J7": {
+          "letters": 4,
+          "digits": 1,
+          "joint": 1,
+          "predictions": [
+            "J3",
+            "J7"
+          ]
+        },
+        "K2": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "K6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "L7"
+          ]
+        },
+        "L1": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "L4": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "L4"
+          ]
+        },
+        "L5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "L7"
+          ]
+        },
+        "L7": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "M2": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "M6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "P7"
+          ]
+        },
+        "N1": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "N1"
+          ]
+        },
+        "N4": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "N1"
+          ]
+        },
+        "N5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "N1"
+          ]
+        },
+        "N7": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "N1"
+          ]
+        },
+        "O1": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "B3"
+          ]
+        },
+        "O4": {
+          "letters": 4,
+          "digits": 1,
+          "joint": 1,
+          "predictions": [
+            "O4",
+            "O5"
+          ]
+        },
+        "O5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O4"
+          ]
+        },
+        "O7": {
+          "letters": 0,
+          "digits": 1,
+          "joint": 0,
+          "predictions": [
+            "L4",
+            "L7"
+          ]
+        },
+        "P1": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "P4": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "P5": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O4"
+          ]
+        },
+        "P7": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        }
+      }
+    },
+    "null": {
+      "joint": 15,
+      "letters": 95,
+      "digits": 43,
+      "per_id": {
+        "A3": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "B4"
+          ]
+        },
+        "A6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O1"
+          ]
+        },
+        "B0": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O4"
+          ]
+        },
+        "B2": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "G3"
+          ]
+        },
+        "B3": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "B3"
+          ]
+        },
+        "B6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "C1": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "C3"
+          ]
+        },
+        "C5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "C7"
+          ]
+        },
+        "C7": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "D1": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "D4": {
+          "letters": 4,
+          "digits": 2,
+          "joint": 2,
+          "predictions": [
+            "D4",
+            "D5"
+          ]
+        },
+        "D5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "D7": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "L1",
+            "L4"
+          ]
+        },
+        "E0": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "L7"
+          ]
+        },
+        "E2": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "E3",
+            "E7"
+          ]
+        },
+        "E3": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "G3"
+          ]
+        },
+        "E6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "L1"
+          ]
+        },
+        "F1": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "N1"
+          ]
+        },
+        "F4": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "O4"
+          ]
+        },
+        "F5": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "K3"
+          ]
+        },
+        "F7": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "G0": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "G2"
+          ]
+        },
+        "G2": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "G3"
+          ]
+        },
+        "G3": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "G2"
+          ]
+        },
+        "G6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O4"
+          ]
+        },
+        "H0": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "G2"
+          ]
+        },
+        "H2": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "H1"
+          ]
+        },
+        "H3": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "N1"
+          ]
+        },
+        "H6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O1",
+            "O4"
+          ]
+        },
+        "I0": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "I3"
+          ]
+        },
+        "I3": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "G3"
+          ]
+        },
+        "I6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "J1": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "L1"
+          ]
+        },
+        "J4": {
+          "letters": 4,
+          "digits": 4,
+          "joint": 4,
+          "predictions": [
+            "J4"
+          ]
+        },
+        "J5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "J7"
+          ]
+        },
+        "J7": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O4"
+          ]
+        },
+        "K2": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "K3"
+          ]
+        },
+        "K6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O4"
+          ]
+        },
+        "L1": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "N1"
+          ]
+        },
+        "L4": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "L7"
+          ]
+        },
+        "L5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "L7"
+          ]
+        },
+        "L7": {
+          "letters": 3,
+          "digits": 3,
+          "joint": 3,
+          "predictions": [
+            "L7",
+            "O4"
+          ]
+        },
+        "M2": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "M6": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O4"
+          ]
+        },
+        "N1": {
+          "letters": 4,
+          "digits": 2,
+          "joint": 2,
+          "predictions": [
+            "N1",
+            "N6"
+          ]
+        },
+        "N4": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "N1"
+          ]
+        },
+        "N5": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "N1"
+          ]
+        },
+        "N7": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "L1"
+          ]
+        },
+        "O1": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O3"
+          ]
+        },
+        "O4": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O5"
+          ]
+        },
+        "O5": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "L7"
+          ]
+        },
+        "O7": {
+          "letters": 4,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "O4"
+          ]
+        },
+        "P1": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "P4": {
+          "letters": 0,
+          "digits": 4,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "P5": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        },
+        "P7": {
+          "letters": 0,
+          "digits": 0,
+          "joint": 0,
+          "predictions": [
+            "D4"
+          ]
+        }
+      }
+    }
+  },
+  "cap_s": 3600,
+  "receiver_hash": {
+    "before": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3",
+    "after": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3",
+    "no_hooks": true
+  },
+  "decision": {
+    "letters_ratio": 0.40625,
+    "joint_vs_null": 2.1333333333333333,
+    "null_letters_ratio": 0.42410714285714285,
+    "pass_gate": false
+  },
+  "elapsed_s": 1071.8067820560027
+}

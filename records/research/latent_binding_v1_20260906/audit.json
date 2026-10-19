@@ -1,0 +1,319 @@
+{
+  "status": "PASS",
+  "scope": "Recorded artifacts only, not a research verdict",
+  "utc": "2026-09-06T10:50:42Z",
+  "code_snapshot_exact": true,
+  "pool_components_balanced": true,
+  "source_answers_rederived": true,
+  "tiny_tables": 8,
+  "tiny_queries": 32,
+  "data_directories": [
+    "tiny"
+  ],
+  "text": {
+    "sender_accuracy": 0.96875,
+    "actual_text_accuracy": 0.96875,
+    "oracle_text_accuracy": 1.0,
+    "oracle_per_color": {
+      "red": 1.0,
+      "green": 1.0,
+      "blue": 1.0,
+      "yellow": 1.0
+    }
+  },
+  "evaluations": {
+    "eval_0000": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.03125,
+        "shuffled": 0.03125,
+        "wrong_binding": 0.03125,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.03125,
+        "wrong_binding": 0.0
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0020": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.0,
+        "shuffled": 0.0,
+        "wrong_binding": 0.0,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.0,
+        "wrong_binding": 0.0
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0040": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.03125,
+        "shuffled": 0.03125,
+        "wrong_binding": 0.03125,
+        "random_71001": 0.0,
+        "random_71002": 0.0,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.03125,
+        "wrong_binding": 0.03125
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0060": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.03125,
+        "shuffled": 0.0,
+        "wrong_binding": 0.03125,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.03125,
+        "wrong_binding": 0.03125
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0080": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.03125,
+        "shuffled": 0.03125,
+        "wrong_binding": 0.09375,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.03125,
+        "wrong_binding": 0.03125
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0100": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.09375,
+        "shuffled": 0.03125,
+        "wrong_binding": 0.09375,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.09375,
+        "wrong_binding": 0.0625
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0120": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.1875,
+        "shuffled": 0.0,
+        "wrong_binding": 0.1875,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.1875,
+        "wrong_binding": 0.125
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0140": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.125,
+        "shuffled": 0.03125,
+        "wrong_binding": 0.09375,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.125,
+        "wrong_binding": 0.125
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0160": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.09375,
+        "shuffled": 0.0,
+        "wrong_binding": 0.125,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.09375,
+        "wrong_binding": 0.15625
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0180": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.21875,
+        "shuffled": 0.0,
+        "wrong_binding": 0.1875,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.21875,
+        "wrong_binding": 0.1875
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0200": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.28125,
+        "shuffled": 0.0,
+        "wrong_binding": 0.1875,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.28125,
+        "wrong_binding": 0.0625
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0220": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.28125,
+        "shuffled": 0.0,
+        "wrong_binding": 0.34375,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.28125,
+        "wrong_binding": 0.09375
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0240": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.4375,
+        "shuffled": 0.0,
+        "wrong_binding": 0.40625,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.4375,
+        "wrong_binding": 0.125
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0260": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.3125,
+        "shuffled": 0.0,
+        "wrong_binding": 0.375,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.3125,
+        "wrong_binding": 0.125
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0280": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.09375,
+        "shuffled": 0.09375,
+        "wrong_binding": 0.09375,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.09375,
+        "wrong_binding": 0.09375
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "eval_0300": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.0625,
+        "shuffled": 0.03125,
+        "wrong_binding": 0.0625,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.0625,
+        "wrong_binding": 0.03125
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    },
+    "terminal_repeat": {
+      "accuracies": {
+        "receiver_only": 0.03125,
+        "correct": 0.0625,
+        "shuffled": 0.03125,
+        "wrong_binding": 0.0625,
+        "random_71001": 0.03125,
+        "random_71002": 0.03125,
+        "zero": 0.03125
+      },
+      "donor_following": {
+        "shuffled": 0.0625,
+        "wrong_binding": 0.03125
+      },
+      "zero_exact": true,
+      "shuffled_donor_scores_exact": true
+    }
+  },
+  "terminal_repeat_exact": true,
+  "tiny_pass_independently_rederived": false,
+  "best_checkpoint_step_from_raw_scores": 240,
+  "recorded_verdict": "MECHANICS/TRAINING NO-GO"
+}

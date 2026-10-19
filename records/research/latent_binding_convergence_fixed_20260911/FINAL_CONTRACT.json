@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "receiver_loaded": false,
+  "new_native_scores": false,
+  "results": {
+    "familiar": {
+      "correct": {
+        "exported_reader_five_state_exact": true,
+        "saved_six_prefix_exact": true,
+        "routing_exact": true
+      },
+      "wrong_binding": {
+        "exported_reader_five_state_exact": true,
+        "saved_six_prefix_exact": true,
+        "routing_exact": true
+      }
+    },
+    "novel": {
+      "correct": {
+        "exported_reader_five_state_exact": true,
+        "saved_six_prefix_exact": true,
+        "routing_exact": true
+      },
+      "wrong_binding": {
+        "exported_reader_five_state_exact": true,
+        "saved_six_prefix_exact": true,
+        "routing_exact": true
+      }
+    }
+  },
+  "scope": "Component replay on saved actual states; unchanged receiver before the sole block15 hook makes those input states applicable to the exported candidate. QueryOnlyReader concatenates hidden[:,5:] unchanged for every input."
+}

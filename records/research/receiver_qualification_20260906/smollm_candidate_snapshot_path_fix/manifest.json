@@ -1,0 +1,149 @@
+{
+  "identity": {
+    "repo": "HuggingFaceTB/SmolLM2-360M-Instruct",
+    "revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+    "path": "<local>/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM2-360M-Instruct/snapshots/a10cc1512eabd3dde888204e902eca88bddb4951",
+    "files": {
+      "README.md": {
+        "sha256": "6b88794416ac9da8f254ebb0bec228967a2bdd0badf9a2853863928b25facd95",
+        "bytes": 7304
+      },
+      "all_results.json": {
+        "sha256": "71face5e244d784819f937a25206865c295c8889fe4359eec28bbec85d02da0d",
+        "bytes": 786
+      },
+      "config.json": {
+        "sha256": "224f72354f10d617a359cc82ad15a3c96e866b9b2ffadb81997eeea9e88e22ee",
+        "bytes": 846
+      },
+      "eval_results.json": {
+        "sha256": "db9bcb5c4f2a3be0d7e88f86af26f375c22c240954af86942d1554d87a488ce8",
+        "bytes": 589
+      },
+      "generation_config.json": {
+        "sha256": "87b916edaaab66b3899b9d0dd0752727dff6666686da0504d89ae0a6e055a013",
+        "bytes": 132
+      },
+      "merges.txt": {
+        "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+        "bytes": 466391
+      },
+      "model.safetensors": {
+        "sha256": "e6bffe7435d7ddc10fd3b9a9efd429dafbacb1cb17015fb5562664e7532bf86e",
+        "bytes": 723674912
+      },
+      "special_tokens_map.json": {
+        "sha256": "2b7379f3ae813529281a5c602bc5a11c1d4e0a99107aaa597fe936c1e813ca52",
+        "bytes": 655
+      },
+      "tokenizer.json": {
+        "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+        "bytes": 2104556
+      },
+      "tokenizer_config.json": {
+        "sha256": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df",
+        "bytes": 3764
+      },
+      "train_results.json": {
+        "sha256": "fceae2634b0a268a8adbda73fd0b2192922b496054011f588d2c6e888db1cea1",
+        "bytes": 232
+      },
+      "trainer_state.json": {
+        "sha256": "2263f580ae0d7890acc11253b83138b3fc1250dc6728688a3387ce813b92eed1",
+        "bytes": 57621
+      },
+      "vocab.json": {
+        "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+        "bytes": 800662
+      }
+    },
+    "dtype": "float32",
+    "quantization": "none"
+  },
+  "model_config": {
+    "transformers_version": "5.10.2",
+    "architectures": [
+      "LlamaForCausalLM"
+    ],
+    "output_hidden_states": false,
+    "return_dict": true,
+    "dtype": "float32",
+    "chunk_size_feed_forward": 0,
+    "is_encoder_decoder": false,
+    "id2label": {
+      "0": "LABEL_0",
+      "1": "LABEL_1"
+    },
+    "label2id": {
+      "LABEL_0": 0,
+      "LABEL_1": 1
+    },
+    "problem_type": null,
+    "vocab_size": 49152,
+    "hidden_size": 960,
+    "intermediate_size": 2560,
+    "num_hidden_layers": 32,
+    "num_attention_heads": 15,
+    "num_key_value_heads": 5,
+    "hidden_act": "silu",
+    "max_position_embeddings": 8192,
+    "initializer_range": 0.02,
+    "rms_norm_eps": 1e-05,
+    "use_cache": true,
+    "pad_token_id": 2,
+    "bos_token_id": 1,
+    "eos_token_id": 2,
+    "pretraining_tp": 1,
+    "tie_word_embeddings": true,
+    "rope_parameters": {
+      "rope_theta": 100000,
+      "rope_type": "default"
+    },
+    "attention_bias": false,
+    "attention_dropout": 0.0,
+    "mlp_bias": false,
+    "head_dim": 64,
+    "_name_or_path": "<local>/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM2-360M-Instruct/snapshots/a10cc1512eabd3dde888204e902eca88bddb4951",
+    "is_llama_config": true,
+    "model_type": "llama",
+    "rope_interleaved": false,
+    "transformers.js_config": {
+      "kv_cache_dtype": {
+        "q4f16": "float16",
+        "fp16": "float16"
+      }
+    },
+    "output_attentions": false
+  },
+  "runtime_file": ".venv/lib/python3.14/site-packages/transformers/models/llama/modeling_llama.py",
+  "runtime_sha256": "46d313ec0f1116bcc1bb7f2379467ab249c140415c64fb758e2d5915cd8b89a5",
+  "versions": {
+    "python": "3.14.7 (main, Aug 10 2026, 07:46:56) [GCC 16.1.1 20260728]",
+    "torch": "2.13.0+cu130",
+    "transformers": "5.10.2",
+    "numpy": "2.4.6"
+  },
+  "frozen_parameter_sha256": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3",
+  "parameter_count": 361821120,
+  "prompts": [
+    "<|im_start|>system\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>\n<|im_start|>user\nCopy the Signal value. Reply with exactly one letter: A, B, C, or D.\n\nSignal: A<|im_end|>\n<|im_start|>assistant\n",
+    "<|im_start|>system\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>\n<|im_start|>user\nCopy the Signal value. Reply with exactly one letter: A, B, C, or D.\n\nSignal: B<|im_end|>\n<|im_start|>assistant\n",
+    "<|im_start|>system\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>\n<|im_start|>user\nCopy the Signal value. Reply with exactly one letter: A, B, C, or D.\n\nSignal: C<|im_end|>\n<|im_start|>assistant\n",
+    "<|im_start|>system\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>\n<|im_start|>user\nCopy the Signal value. Reply with exactly one letter: A, B, C, or D.\n\nSignal: D<|im_end|>\n<|im_start|>assistant\n"
+  ],
+  "prompt_sha256": [
+    "4773a5729974bca309f298f0a90a01ebe01d01292e04e9a98e4cbe61f40d4b05",
+    "89e5c0f38bb01d67ad30c7f09ef85637180874970572214496d95fabf423ecde",
+    "6ec6396aa3ad29e471f810cb541c73e7ae0f6be3c7a5f083a7c1e2933b8d7e6f",
+    "dfcd125e3d34abe9f1d14e2397e57b10be1f259ffe990fa94a693369d472d3c0"
+  ],
+  "missing_prompt": "<|im_start|>system\nYou are a helpful AI assistant named SmolLM, trained by Hugging Face<|im_end|>\n<|im_start|>user\nCopy the Signal value. Reply with exactly one letter: A, B, C, or D.\n\nThe Signal value was withheld.<|im_end|>\n<|im_start|>assistant\n",
+  "tokenizer_class": "GPT2Tokenizer",
+  "scorer_sha256": "8bee1fff96c1b44e844bb40c91058f816e956e76d602224127a836f67172033e",
+  "native_loader_sha256": "e2de36c051ba503b441c2d84b959728cb09f8d064791012b5f673462039f6fbd",
+  "seed": 93001,
+  "threads": 4,
+  "interop_threads": 1,
+  "dtype": "float32",
+  "quantization": "none"
+}

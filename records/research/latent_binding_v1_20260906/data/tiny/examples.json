@@ -1,0 +1,401 @@
+{
+  "split": "tiny",
+  "pool": "known",
+  "records": [
+    {
+      "group": 0,
+      "source": "C1 = blue\nD5 = green\nH6 = red\nP1 = yellow",
+      "wrong_source": "C1 = yellow\nD5 = blue\nH6 = green\nP1 = red",
+      "bindings": {
+        "red": "H6",
+        "green": "D5",
+        "blue": "C1",
+        "yellow": "P1"
+      },
+      "wrong_bindings": {
+        "yellow": "C1",
+        "blue": "D5",
+        "green": "H6",
+        "red": "P1"
+      }
+    },
+    {
+      "group": 1,
+      "source": "I3 = red\nN7 = green\nI0 = blue\nP7 = yellow",
+      "wrong_source": "I3 = blue\nN7 = yellow\nI0 = red\nP7 = green",
+      "bindings": {
+        "red": "I3",
+        "green": "N7",
+        "blue": "I0",
+        "yellow": "P7"
+      },
+      "wrong_bindings": {
+        "blue": "I3",
+        "yellow": "N7",
+        "red": "I0",
+        "green": "P7"
+      }
+    },
+    {
+      "group": 2,
+      "source": "N5 = green\nJ5 = red\nP4 = blue\nN4 = yellow",
+      "wrong_source": "N5 = red\nJ5 = yellow\nP4 = green\nN4 = blue",
+      "bindings": {
+        "red": "J5",
+        "green": "N5",
+        "blue": "P4",
+        "yellow": "N4"
+      },
+      "wrong_bindings": {
+        "red": "N5",
+        "yellow": "J5",
+        "green": "P4",
+        "blue": "N4"
+      }
+    },
+    {
+      "group": 3,
+      "source": "K6 = green\nG2 = yellow\nJ4 = blue\nO1 = red",
+      "wrong_source": "K6 = yellow\nG2 = green\nJ4 = red\nO1 = blue",
+      "bindings": {
+        "red": "O1",
+        "green": "K6",
+        "blue": "J4",
+        "yellow": "G2"
+      },
+      "wrong_bindings": {
+        "yellow": "K6",
+        "green": "G2",
+        "red": "J4",
+        "blue": "O1"
+      }
+    },
+    {
+      "group": 4,
+      "source": "A6 = blue\nE3 = green\nP5 = red\nE2 = yellow",
+      "wrong_source": "A6 = red\nE3 = yellow\nP5 = blue\nE2 = green",
+      "bindings": {
+        "red": "P5",
+        "green": "E3",
+        "blue": "A6",
+        "yellow": "E2"
+      },
+      "wrong_bindings": {
+        "red": "A6",
+        "yellow": "E3",
+        "blue": "P5",
+        "green": "E2"
+      }
+    },
+    {
+      "group": 5,
+      "source": "O5 = blue\nF4 = yellow\nO7 = green\nK2 = red",
+      "wrong_source": "O5 = green\nF4 = blue\nO7 = red\nK2 = yellow",
+      "bindings": {
+        "red": "K2",
+        "green": "O7",
+        "blue": "O5",
+        "yellow": "F4"
+      },
+      "wrong_bindings": {
+        "green": "O5",
+        "blue": "F4",
+        "red": "O7",
+        "yellow": "K2"
+      }
+    },
+    {
+      "group": 6,
+      "source": "B6 = red\nH0 = blue\nC5 = yellow\nG6 = green",
+      "wrong_source": "B6 = blue\nH0 = red\nC5 = green\nG6 = yellow",
+      "bindings": {
+        "red": "B6",
+        "green": "G6",
+        "blue": "H0",
+        "yellow": "C5"
+      },
+      "wrong_bindings": {
+        "blue": "B6",
+        "red": "H0",
+        "green": "C5",
+        "yellow": "G6"
+      }
+    },
+    {
+      "group": 7,
+      "source": "L4 = red\nJ1 = blue\nH2 = yellow\nD7 = green",
+      "wrong_source": "L4 = green\nJ1 = yellow\nH2 = red\nD7 = blue",
+      "bindings": {
+        "red": "L4",
+        "green": "D7",
+        "blue": "J1",
+        "yellow": "H2"
+      },
+      "wrong_bindings": {
+        "green": "L4",
+        "yellow": "J1",
+        "red": "H2",
+        "blue": "D7"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "group": 2,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "N4",
+      "wrong_answer": "J5",
+      "id": "tiny-000000"
+    },
+    {
+      "group": 1,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "N7",
+      "wrong_answer": "P7",
+      "id": "tiny-000001"
+    },
+    {
+      "group": 4,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "E2",
+      "wrong_answer": "E3",
+      "id": "tiny-000002"
+    },
+    {
+      "group": 6,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "C5",
+      "wrong_answer": "G6",
+      "id": "tiny-000003"
+    },
+    {
+      "group": 0,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "D5",
+      "wrong_answer": "H6",
+      "id": "tiny-000004"
+    },
+    {
+      "group": 0,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "H6",
+      "wrong_answer": "P1",
+      "id": "tiny-000005"
+    },
+    {
+      "group": 3,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "G2",
+      "wrong_answer": "K6",
+      "id": "tiny-000006"
+    },
+    {
+      "group": 0,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "C1",
+      "wrong_answer": "D5",
+      "id": "tiny-000007"
+    },
+    {
+      "group": 3,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "O1",
+      "wrong_answer": "J4",
+      "id": "tiny-000008"
+    },
+    {
+      "group": 6,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "G6",
+      "wrong_answer": "C5",
+      "id": "tiny-000009"
+    },
+    {
+      "group": 6,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "B6",
+      "wrong_answer": "H0",
+      "id": "tiny-000010"
+    },
+    {
+      "group": 1,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "P7",
+      "wrong_answer": "N7",
+      "id": "tiny-000011"
+    },
+    {
+      "group": 1,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "I0",
+      "wrong_answer": "I3",
+      "id": "tiny-000012"
+    },
+    {
+      "group": 7,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "D7",
+      "wrong_answer": "L4",
+      "id": "tiny-000013"
+    },
+    {
+      "group": 5,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "O5",
+      "wrong_answer": "F4",
+      "id": "tiny-000014"
+    },
+    {
+      "group": 2,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "N5",
+      "wrong_answer": "P4",
+      "id": "tiny-000015"
+    },
+    {
+      "group": 3,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "K6",
+      "wrong_answer": "G2",
+      "id": "tiny-000016"
+    },
+    {
+      "group": 1,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "I3",
+      "wrong_answer": "I0",
+      "id": "tiny-000017"
+    },
+    {
+      "group": 4,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "A6",
+      "wrong_answer": "P5",
+      "id": "tiny-000018"
+    },
+    {
+      "group": 5,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "K2",
+      "wrong_answer": "O7",
+      "id": "tiny-000019"
+    },
+    {
+      "group": 6,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "H0",
+      "wrong_answer": "B6",
+      "id": "tiny-000020"
+    },
+    {
+      "group": 7,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "J1",
+      "wrong_answer": "D7",
+      "id": "tiny-000021"
+    },
+    {
+      "group": 5,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "O7",
+      "wrong_answer": "O5",
+      "id": "tiny-000022"
+    },
+    {
+      "group": 7,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "L4",
+      "wrong_answer": "H2",
+      "id": "tiny-000023"
+    },
+    {
+      "group": 4,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "P5",
+      "wrong_answer": "A6",
+      "id": "tiny-000024"
+    },
+    {
+      "group": 2,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "J5",
+      "wrong_answer": "N5",
+      "id": "tiny-000025"
+    },
+    {
+      "group": 0,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "P1",
+      "wrong_answer": "C1",
+      "id": "tiny-000026"
+    },
+    {
+      "group": 2,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "P4",
+      "wrong_answer": "N4",
+      "id": "tiny-000027"
+    },
+    {
+      "group": 4,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "E3",
+      "wrong_answer": "E2",
+      "id": "tiny-000028"
+    },
+    {
+      "group": 5,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "F4",
+      "wrong_answer": "K2",
+      "id": "tiny-000029"
+    },
+    {
+      "group": 3,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "J4",
+      "wrong_answer": "O1",
+      "id": "tiny-000030"
+    },
+    {
+      "group": 7,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "H2",
+      "wrong_answer": "J1",
+      "id": "tiny-000031"
+    }
+  ],
+  "seed": 121001
+}

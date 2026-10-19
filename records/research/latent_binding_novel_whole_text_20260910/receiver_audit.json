@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "freeze_sha256": "7fb4c4a273a7229431625c07524b40635bd4a831c9c1bfa9411e7035f3b1d922",
+  "inputs_sha256": "67cd0b333444f9ba029722a5ccd985ad081a53957bd528bac312fcc973e0bfe8",
+  "model_tokenizer_files": 22,
+  "sender_requests": 64,
+  "possible_receiver_messages": 128,
+  "view": 0,
+  "counts": {
+    "original": {
+      "sender_prediction": 32,
+      "actual_prediction": 32,
+      "oracle_prediction": 32
+    },
+    "changed": {
+      "sender_prediction": 29,
+      "actual_prediction": 29,
+      "oracle_prediction": 32
+    }
+  },
+  "unique_receiver_messages": 8,
+  "actual_text_complete": true,
+  "role": "receiver",
+  "outputs_sha256": "b2c7b431576864cec8474f6d11be7a5bbc5f0682ac67e45c1823e8ea5d328e9f",
+  "native_parity_error": 5.245208740234375e-06,
+  "elapsed_s": 137.43945017499937,
+  "peak_rss_kib": 2881496
+}

@@ -1,0 +1,40 @@
+{
+  "purpose": "Post-outcome independent core audit, not the final verdict; strong text remains mandatory.",
+  "source_sha256": "87671525ca45cf6df9e52155a24b8250ea22a3ff7fffa8a93f6eddafec05d71d",
+  "audit_code_sha256": "706148b74e16e872bbaefe455fd8761a4709233ed4081d629a9d26587adf4533",
+  "all_shuffled_log_probabilities_equal_matching_donor_correct_exactly": true,
+  "shuffled_donor_following": 1.0,
+  "accuracy": {
+    "correct": 1.0,
+    "receiver_only": 0.25,
+    "shuffled": 0.263671875,
+    "random_71001": 0.2548828125,
+    "random_71002": 0.2568359375,
+    "zero": 0.25
+  },
+  "correct_minus_control_ci99": {
+    "receiver_only": [
+      0.75,
+      0.75
+    ],
+    "shuffled": [
+      0.701171875,
+      0.7714892578124992
+    ],
+    "random_71001": [
+      0.7275390625,
+      0.7626953125
+    ],
+    "random_71002": [
+      0.7275390625,
+      0.7587890625
+    ],
+    "zero": [
+      0.75,
+      0.75
+    ]
+  },
+  "bootstrap_unit": "256 nonce groups, each containing all four classes",
+  "draws": 10000,
+  "seed": 81001
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "fresh_synthetic_tests": 7,
+  "runtime_verify": {
+    "status": "PASS",
+    "conditions_verified": 24,
+    "source_identity": "PASS",
+    "saved_forward_replay": "EXACT",
+    "normal_equations": "PASS",
+    "max_backend_score_error": 3.1429303604113557e-12,
+    "no_refit": true
+  },
+  "independent_outcome_replay": "PASS",
+  "execution": {
+    "exit_code": 0,
+    "timeout": false,
+    "interrupted": false,
+    "signal": null,
+    "forced_kill": false,
+    "child_reaped": true,
+    "restoration_verified": false,
+    "elapsed_s": 1.4339187709997532,
+    "peak_rss_kib": 709824,
+    "utc": "2026-09-14T00:33:51Z",
+    "new_external_spend_usd": 0
+  },
+  "broader_goal_complete": false,
+  "model_training_steps": 0,
+  "new_native_evaluations": 0
+}

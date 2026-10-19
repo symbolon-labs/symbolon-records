@@ -1,0 +1,59 @@
+{
+  "model": {
+    "repo": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "path": "<local>/.cache/huggingface/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "files": {
+      "config.json": {
+        "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+        "bytes": 726
+      },
+      "generation_config.json": {
+        "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+        "bytes": 239
+      },
+      "merges.txt": {
+        "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "bytes": 1671853
+      },
+      "model-00001-of-00002.safetensors": {
+        "sha256": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5",
+        "bytes": 3441185608
+      },
+      "model-00002-of-00002.safetensors": {
+        "sha256": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9",
+        "bytes": 622329984
+      },
+      "model.safetensors.index.json": {
+        "sha256": "0d660e94b165eb912669a5249dff44b83188c4777a07ddb9611fb78d91b0578d",
+        "bytes": 25605
+      },
+      "tokenizer.json": {
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+        "bytes": 11422654
+      },
+      "tokenizer_config.json": {
+        "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+        "bytes": 9732
+      },
+      "vocab.json": {
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "bytes": 2776833
+      }
+    },
+    "dtype": "float32",
+    "quantization": "none"
+  },
+  "examples_sha256": "e1b736bf2678911b760afd4234097f268d55deb8477290356ad11d2046a2581c",
+  "capture_sha256": "2f0bef9ae8d02782abf1d0a217f7932d2ecbd6f9804b01f1fd4d0367f99e16f3",
+  "code_sha256": "e2de36c051ba503b441c2d84b959728cb09f8d064791012b5f673462039f6fbd",
+  "preregistration_sha256": "a9d0dd1edaf6df659268e4e6ecc308808eea2270374d50e671362f5fbdcd4089",
+  "layer_zero_based": 13,
+  "shape": [
+    32,
+    22,
+    2048
+  ],
+  "elapsed_s": 30.461190903002716,
+  "external_cost_usd": 0
+}

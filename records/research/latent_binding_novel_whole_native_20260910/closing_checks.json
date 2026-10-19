@@ -1,0 +1,72 @@
+[
+  {
+    "command": [
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "research/latent_binding_novel_whole_native_20260910",
+      "-p",
+      "test_core.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_burn_before_forward_and_no_training (test_core.Tests.test_burn_before_forward_and_no_training) ... ok\ntest_dev_bootstrap_independent_and_exact_code (test_core.Tests.test_dev_bootstrap_independent_and_exact_code) ... ok\ntest_exact_platform_allowance (test_core.Tests.test_exact_platform_allowance) ... ok\ntest_gate_boundaries (test_core.Tests.test_gate_boundaries) ... ok\ntest_historical_last_token_shape (test_core.Tests.test_historical_last_token_shape) ... ok\ntest_import_identity (test_core.Tests.test_import_identity) ... ok\ntest_query_join_reorders_and_rejects_absent (test_core.Tests.test_query_join_reorders_and_rejects_absent) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.026s\n\nOK\n",
+    "elapsed_s": 2.918383188000007
+  },
+  {
+    "command": [
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "research/latent_binding_value_span_20260908",
+      "-p",
+      "test_span.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_linear_types_and_gradient (test_span.SpanTests.test_linear_types_and_gradient) ... ok\ntest_mro_reuses_query_only (test_span.SpanTests.test_mro_reuses_query_only) ... ok\ntest_no_implicit_dtype_expansion (test_span.SpanTests.test_no_implicit_dtype_expansion) ... ok\ntest_only_two_mixing_casts_change_constant_forward (test_span.SpanTests.test_only_two_mixing_casts_change_constant_forward) ... ok\ntest_real_bridge_install_and_zero (test_span.SpanTests.test_real_bridge_install_and_zero) ... ok\ntest_runtime_predecessor_is_exact_file (test_span.SpanTests.test_runtime_predecessor_is_exact_file) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.038s\n\nOK\n",
+    "elapsed_s": 2.8927512410009513
+  },
+  {
+    "command": [
+      "research/latent_binding_novel_whole_native_20260910/runtime.py",
+      "check"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "elapsed_s": 21.141924848998315
+  },
+  {
+    "command": [
+      "research/latent_binding_novel_whole_native_20260910/analysis.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"verdict\": \"NOVEL WHOLE-ID BINDING NO-GO; TEXT PENDING\", \"original\": {\"receiver_only\": 0, \"correct\": 0, \"shuffled\": 0, \"wrong_binding\": 0, \"random_71001\": 0, \"random_71002\": 0, \"zero\": 0, \"canonical_only\": 0}, \"changed\": {\"receiver_only\": 0, \"correct\": 0, \"shuffled\": 0, \"wrong_binding\": 0, \"random_71001\": 0, \"random_71002\": 0, \"zero\": 0, \"canonical_only\": 0}, \"shuffled_donor\": 0}\n",
+    "stderr": "",
+    "elapsed_s": 23.37316682600067
+  },
+  {
+    "command": [
+      "research/latent_binding_novel_whole_native_20260910/audit.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"status\": \"PASS\", \"verdict\": \"NOVEL WHOLE-ID BINDING NO-GO; TEXT PENDING\", \"original_counts\": {\"receiver_only\": 0, \"correct\": 0, \"shuffled\": 0, \"wrong_binding\": 0, \"random_71001\": 0, \"random_71002\": 0, \"zero\": 0, \"canonical_only\": 0}, \"shuffled_donor\": 0, \"changed_donor\": 0, \"rows\": 32, \"tables\": 8, \"conditions\": 8, \"model_tokenizer_files\": 22, \"scalar_bootstrap_decision_exact\": true, \"numpy_state_equations_exact\": true, \"replays_stock_and_source_export_exact\": true, \"analysis_sha256\": \"f155c4075a79aabd9adc30cdcae75dcfdf02bc018fc5cae9639543015c528dea\", \"checkpoint\": \"d0f16cb9705ba53daf6cc8f2bfad03a08efa96cbb4f77dd836c9533e948cba87\"}\n",
+    "stderr": "",
+    "elapsed_s": 7.4339176709981984
+  },
+  {
+    "command": [
+      "research/latent_binding_novel_whole_native_20260910/report.py",
+      "verify"
+    ],
+    "exit_code": 0,
+    "stdout": "REPORT VERIFIED\n",
+    "stderr": "",
+    "elapsed_s": 0.043207283997617196
+  }
+]

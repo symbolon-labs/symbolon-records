@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "frozen_identity",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "research/latent_binding_training_fold_recovery_20260913/runtime.py",
+        "check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_s": 10.034371575999103
+    },
+    {
+      "name": "independent_analysis_replay",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "research/latent_binding_training_fold_recovery_20260913/analysis.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{'status': 'PASS', 'totals': {0: {'joint': 32, 'sequential': 32, 'rows': 224}, 50: {'joint': 23, 'sequential': 23, 'rows': 224}, 100: {'joint': 22, 'sequential': 25, 'rows': 224}, 200: {'joint': 17, 'sequential': 20, 'rows': 224}}, 'selected_step': 100, 'qualifies': False, 'maximum_numpy_weight_relative': 0.0, 'scope': 'Developmental alignment validation, not pristine novel binding; no automatic all56 refit'}\n",
+      "stderr": "",
+      "elapsed_s": 28.88305377099823
+    },
+    {
+      "name": "failure_modes_replay",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "research/latent_binding_fold_failure_modes_20260913/analyze.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"totals\": {\"0\": {\"rows\": 224, \"ids\": 56, \"joint_correct\": 32, \"sequential_correct\": 32, \"prefix_correct\": 56, \"gold_prefix_digit_correct\": 36, \"wrong_sequential_is_fit_id\": 156, \"wrong_predictions\": {\"B3\": 28, \"D4\": 48, \"G3\": 72, \"L1\": 4, \"L7\": 16, \"N1\": 12, \"O1\": 4, \"O4\": 8}, \"component_outcomes\": {\"prefix_correct/gold_digit_correct\": 32, \"prefix_correct/gold_digit_wrong\": 24, \"prefix_wrong/gold_digit_correct\": 4, \"prefix_wrong/gold_digit_wrong\": 164}}, \"50\": {\"rows\": 224, \"ids\": 56, \"joint_correct\": 23, \"sequential_correct\": 23, \"prefix_correct\": 68, \"gold_prefix_digit_correct\": 39, \"wrong_sequential_is_fit_id\": 171, \"wrong_predictions\": {\"B3\": 13, \"B4\": 3, \"D4\": 51, \"D5\": 1, \"G3\": 44, \"J1\": 3, \"J3\": 4, \"J7\": 13, \"K4\": 4, \"L1\": 16, \"L7\": 15, \"N1\": 20, \"O4\": 13, \"O5\": 1}, \"component_outcomes\": {\"prefix_correct/gold_digit_correct\": 23, \"prefix_correct/gold_digit_wrong\": 45, \"prefix_wrong/gold_digit_correct\": 16, \"prefix_wrong/gold_digit_wrong\": 140}}, \"100\": {\"rows\": 224, \"ids\": 56, \"joint_correct\": 22, \"sequential_correct\": 25, \"prefix_correct\": 60, \"gold_prefix_digit_correct\": 41, \"wrong_sequential_is_fit_id\": 178, \"wrong_predictions\": {\"B2\": 3, \"B3\": 9, \"D4\": 60, \"D5\": 5, \"E0\": 4, \"G2\": 5, \"G3\": 36, \"I2\": 3, \"I3\": 1, \"J1\": 4, \"J3\": 1, \"J7\": 11, \"K4\": 4, \"L1\": 22, \"L4\": 6, \"L7\": 12, \"N1\": 8, \"O4\": 5}, \"component_outcomes\": {\"prefix_correct/gold_digit_correct\": 25, \"prefix_correct/gold_digit_wrong\": 35, \"prefix_wrong/gold_digit_correct\": 16, \"prefix_wrong/gold_digit_wrong\": 148}}, \"200\": {\"rows\": 224, \"ids\": 56, \"joint_correct\": 17, \"sequential_correct\": 20, \"prefix_correct\": 56, \"gold_prefix_digit_correct\": 54, \"wrong_sequential_is_fit_id\": 172, \"wrong_predictions\": {\"B2\": 8, \"B3\": 8, \"C7\": 4, \"D4\": 53, \"D5\": 7, \"D6\": 3, \"E7\": 4, \"G2\": 12, \"G3\": 24, \"I0\": 4, \"J3\": 4, \"J7\": 4, \"K4\": 4, \"L1\": 11, \"L4\": 2, \"L7\": 16, \"N1\": 8, \"O1\": 4, \"O4\": 7, \"O5\": 2, \"O7\": 3, \"P1\": 4, \"P4\": 8}, \"component_outcomes\": {\"prefix_correct/gold_digit_correct\": 20, \"prefix_correct/gold_digit_wrong\": 36, \"prefix_wrong/gold_digit_correct\": 34, \"prefix_wrong/gold_digit_wrong\": 134}}}, \"selected_step\": 100, \"qualifies\": false}\n",
+      "stderr": "",
+      "elapsed_s": 1.9280715259992576
+    },
+    {
+      "name": "execution_audit_replay",
+      "command": [
+        ".venv/bin/python",
+        "-B",
+        "research/latent_binding_fold_failure_modes_20260913/audit_execution.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Supplemental execution audit PASS\n",
+      "stderr": "",
+      "elapsed_s": 1.8339944830004242
+    }
+  ],
+  "synthetic_tests": {
+    "command": [
+      ".venv/bin/python",
+      "-B",
+      "-m",
+      "unittest",
+      "test_folds",
+      "test_job"
+    ],
+    "cwd": "research/latent_binding_training_fold_recovery_20260913",
+    "exit_code": 0,
+    "tests_run": 9,
+    "output": "Ran 9 tests in 0.461s; OK",
+    "evidence": "tool session80344 terminal exit0"
+  }
+}

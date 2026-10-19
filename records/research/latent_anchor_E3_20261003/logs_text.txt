@@ -1,0 +1,11 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:   0%|          | 1/311 [00:00<01:53,  2.73it/s]Loading weights:   1%|          | 2/311 [00:01<03:52,  1.33it/s]Loading weights:  58%|█████▊    | 180/311 [00:01<00:00, 176.04it/s]Loading weights:  80%|███████▉  | 248/311 [00:01<00:00, 171.57it/s]Loading weights:  95%|█████████▌| 296/311 [00:02<00:00, 175.01it/s]Loading weights: 100%|██████████| 311/311 [00:02<00:00, 137.75it/s]
+{"event": "sender_text", "utc": "16:31:13", "split": "final_novel_pure", "arm": "original", "rows": 224, "tokens": 54, "s": 27.1}
+{"event": "sender_text", "utc": "16:31:39", "split": "final_novel_pure", "arm": "changed", "rows": 224, "tokens": 54, "s": 25.9}
+{"event": "sender_text", "utc": "16:33:23", "split": "final_mixed", "arm": "original", "rows": 896, "tokens": 54, "s": 103.6}
+{"event": "sender_text", "utc": "16:35:06", "split": "final_mixed", "arm": "changed", "rows": 896, "tokens": 54, "s": 103.6}
+{"event": "sender_text", "utc": "16:35:32", "split": "final_known", "arm": "original", "rows": 224, "tokens": 54, "s": 25.9}
+{"event": "sender_text", "utc": "16:35:58", "split": "final_known", "arm": "changed", "rows": 224, "tokens": 54, "s": 25.9}
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:52,  5.51it/s]Loading weights:  43%|████▎     | 126/290 [00:00<00:00, 551.58it/s]Loading weights:  69%|██████▉   | 200/290 [00:00<00:00, 573.28it/s]Loading weights:  92%|█████████▏| 268/290 [00:00<00:00, 513.49it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 489.02it/s]
+final_novel_pure {'original': {'sender': 0.9732142857142857, 'actual_text': 0.9732142857142857, 'oracle_text': 1.0}, 'changed': {'sender': 0.96875, 'actual_text': 0.96875, 'oracle_text': 1.0}, 'novel_rows_actual_text': 0.9732142857142857}
+final_mixed {'original': {'sender': 0.9520089285714286, 'actual_text': 0.9520089285714286, 'oracle_text': 1.0}, 'changed': {'sender': 0.9553571428571429, 'actual_text': 0.9553571428571429, 'oracle_text': 1.0}, 'novel_rows_actual_text': 0.96875}
+final_known {'original': {'sender': 0.9375, 'actual_text': 0.9375, 'oracle_text': 1.0}, 'changed': {'sender': 0.9375, 'actual_text': 0.9375, 'oracle_text': 1.0}}

@@ -1,0 +1,55 @@
+[
+  {
+    "command": [
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "research/latent_binding_convergence_fixed_20260911",
+      "-p",
+      "test_convergence.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_budget_arithmetic (test_convergence.Tests.test_budget_arithmetic) ... ok\ntest_only_one_entry_may_change (test_convergence.Tests.test_only_one_entry_may_change) ... ok\ntest_optimizer_state_roundtrip (test_convergence.Tests.test_optimizer_state_roundtrip) ... ok\ntest_parent_inputs_are_the_continuation_data (test_convergence.Tests.test_parent_inputs_are_the_continuation_data) ... ok\ntest_replace_only_query_sites (test_convergence.Tests.test_replace_only_query_sites) ... ok\ntest_scalar_counts_match_library (test_convergence.Tests.test_scalar_counts_match_library) ... ok\ntest_start_reproduces_sealed_candidate (test_convergence.Tests.test_start_reproduces_sealed_candidate) ... ok\ntest_start_step_is_the_frozen_budget (test_convergence.Tests.test_start_step_is_the_frozen_budget) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.052s\n\nOK\n",
+    "elapsed_s": 3.232215347001329
+  },
+  {
+    "command": [
+      "research/latent_binding_convergence_fixed_20260911/runtime.py",
+      "check"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "elapsed_s": 7.622397600996919
+  },
+  {
+    "command": [
+      "research/latent_binding_convergence_fixed_20260911/analysis.py"
+    ],
+    "exit_code": 0,
+    "stdout": "CONVERGENCE NOVEL NO-GO PASS\n",
+    "stderr": "",
+    "elapsed_s": 8.426794324001094
+  },
+  {
+    "command": [
+      "research/latent_binding_convergence_fixed_20260911/final_contract.py"
+    ],
+    "exit_code": 0,
+    "stdout": "PASS\n",
+    "stderr": "",
+    "elapsed_s": 12.564350520002336
+  },
+  {
+    "command": [
+      "research/latent_binding_convergence_fixed_20260911/per_id.py"
+    ],
+    "exit_code": 0,
+    "stdout": "{'reference': {'correct': -6.2959911751095206, 'wrong_binding': -6.352843539323658}, 'trained': {'correct': -10.666171015032887, 'wrong_binding': -10.7305201576346}}\n",
+    "stderr": "",
+    "elapsed_s": 8.048841703999642
+  }
+]

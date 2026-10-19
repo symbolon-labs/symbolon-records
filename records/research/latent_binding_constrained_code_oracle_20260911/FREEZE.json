@@ -1,0 +1,34 @@
+{
+  "identity": {
+    "code": {
+      "PLAN.md": "afeea0188dcb5a0005b7b9172cf824875bfaf755db066b2e88f51addd702fe6b",
+      "runtime.py": "3c549acafd3c2da81ee7acb7c92cc80eecfb0d4cd93c7172add4a83b7fd1f3c0",
+      "seam.py": "8b7e98577f5e2a6f91237fdd41ebe7be5c7f3970ddb76415c3221861d40b1637",
+      "test_seam.py": "176469f02de45d835caa57f530fbe0602ca41145e0998772e80f0e34422333b0",
+      "job.py": "a02c4fdf4985b1ddc56b72139f4b8cafc06f377b523f29644566f96a790fba1e",
+      "analysis.py": "a866693c32d533125fee1e5731e67474d5348e79c5ef4440e8ad7865640e044c",
+      "close.py": "2c797e3ca968f67e84ae22de9d7f2c5a67f5782fc96a49fabc1217357cd5a74e"
+    },
+    "parents": {
+      "latent_binding_literal_id_swap_20260910": "7ae446cc945af7e9eb23e77f59ee078618f3d2b39877db30c4ee3afd5bb272ce",
+      "latent_binding_sequential_readout_20260911": "4ef7234281ab686780ffa3cb88c4dd02a8eb4db6910307ebf443c4a266e4f480",
+      "latent_binding_query_code_oracle_20260911": "af10421b1e3f7cbb721e2ed6ceadce03b774b308a935a23abc22cd748282d1c9",
+      "latent_binding_oracle_representability_20260911": "d6050d6f8d945b7031c99992d1d036a1408653637d8f0b6b79af2f4ce4939ca7"
+    },
+    "inputs": "99818789ea4d6c3f00ac078336191cf17f11b93f5fc09429896e62152ab3f5ed",
+    "initial": "c49745a3e2a12ee522cf2352e9ec83d6b0cb31872ddd4eecf1e753b304a88c5d",
+    "coordinates": "310a93de60461381fb4d0883246635ca62880aba3df678a8f7375bcec5fc4794",
+    "candidate": "d0f16cb9705ba53daf6cc8f2bfad03a08efa96cbb4f77dd836c9533e948cba87"
+  },
+  "cap_s": 1800,
+  "steps": 40,
+  "lr": 0.19364916731037085,
+  "seed": 60113,
+  "tests": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_only_replaced_sites_send_gradient_to_payload (test_seam.GradientTests.test_only_replaced_sites_send_gradient_to_payload) ... ok\ntest_reset_on_exception (test_seam.Tests.test_reset_on_exception) ... ok\ntest_support_both_lengths (test_seam.Tests.test_support_both_lengths) ... ok\ntest_wrong_shape_rejected (test_seam.Tests.test_wrong_shape_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.002s\n\nOK\n"
+  },
+  "supervised_oracle_activation_fit": true,
+  "model_training": false
+}

@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "purpose": "Integrity and independent arithmetic verification, not a new scientific decision",
+  "scientific_verdict": "A \u2014 LATENT COMMUNICATION CHANNEL ESTABLISHED",
+  "independent_statistics_exact": true,
+  "frozen_models_tokenizers_components_checkpoint_rehashed": true,
+  "qualified_receiver_parameter_hash_matches": true,
+  "historical_sealed_files_reverified": {
+    "latent_channel_v1_20260906": 82,
+    "latent_channel_v2_20260906": 163,
+    "latent_channel_crossfamily_20260906": 96,
+    "receiver_qualification_20260906": 48
+  },
+  "all_jobs_complete": true,
+  "external_spend_usd": 0,
+  "sequential_job_wall_seconds": 6962.674792405996,
+  "stages": {
+    "tiny": {
+      "prepare_tiny": 29.851488340005744,
+      "train_tiny": 335.53840521700477
+    },
+    "development": {
+      "text_tiny": 65.28685063699959,
+      "prepare_train": 676.7668054860042,
+      "prepare_dev": 155.65795258500293,
+      "train_full": 1942.0701874229999
+    },
+    "confirmation": {
+      "reproduce_dev": 161.92106134400092,
+      "text_dev": 433.4316190179961,
+      "freeze": 11.248191329999827,
+      "prepare_final": 584.8188110080009,
+      "score_final": 750.123718849005,
+      "text_final": 1762.1050922729992,
+      "sender_reproduce": 42.66982422100409,
+      "analyze_final": 11.18046096299804
+    }
+  },
+  "cumulative_child_peak_rss_kib": 12756428,
+  "source_sha256": {
+    "run_final/analysis.json": "18e4a0f5df4b1f9c5386a2075d5a5096a5d9c77d2228889280ed40926e967826",
+    "independent_core_audit.json": "1be287c4b2f0ae438221e075700e2a6e7207a6103c0640f700c42bd4fa067305",
+    "postfreeze_input_audit.json": "22798087d8a0c14079ee4526392af9c8562cfb2b24e8564c881db2a9164b1d52",
+    "run_full/FINAL_FREEZE.json": "f7265cd842b69b05865f78ceb00fef1463d948ca42a855286e9adf0070a643a2"
+  },
+  "utc": "2026-09-06T08:06:05Z"
+}

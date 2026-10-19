@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "disabled_bit_exact": true,
+  "zero_bit_exact": true,
+  "rerun_bit_exact": true,
+  "gradient_norms": {
+    "resampler.queries": 8.343181252712384e-05,
+    "resampler.key.weight": 0.0008541181450709701,
+    "resampler.value.weight": 0.08125454932451248,
+    "projector.weight": 0.014602645300328732,
+    "reader.gate": 0.07271875441074371,
+    "reader.query.weight": 1.1901880725417868e-06,
+    "reader.key.weight": 1.5243764437400387e-06,
+    "reader.value.weight": 0.05954739823937416,
+    "reader.output.weight": 0.012679588049650192
+  },
+  "max_logit_change": 0.008448600769042969,
+  "endpoint_gradients": false
+}

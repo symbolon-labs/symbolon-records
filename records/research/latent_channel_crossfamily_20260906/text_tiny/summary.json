@@ -1,0 +1,82 @@
+{
+  "metrics": {
+    "sender": {
+      "accuracy": 1.0,
+      "per_class": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "text_sender": {
+      "accuracy": 0.25,
+      "per_class": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "text_oracle": {
+      "accuracy": 0.25,
+      "per_class": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "receiver_chat_only": {
+      "accuracy": 0.25,
+      "per_class": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "oracle_text_sanity_pass": false,
+  "sender_inference_s": 34.859754115001124,
+  "receiver_unique_inference_s": 4.949450195999816,
+  "elapsed_s": 71.73571748100221,
+  "external_spend_usd": 0,
+  "code_sha256": "8bee1fff96c1b44e844bb40c91058f816e956e76d602224127a836f67172033e",
+  "text_preregistration_sha256": "f1a3866d3f71513ed30f63a19e8008ae3f8c5d6ae946c9b521ce28aabc5c66b1",
+  "data_sha256": "e1b736bf2678911b760afd4234097f268d55deb8477290356ad11d2046a2581c",
+  "provenance": {
+    "extension_sha256": "fe9f0566ed2a43c1231982c91a761549fe0e0bbfb8b7732591f9249517fbab0c",
+    "base_sha256": "e2de36c051ba503b441c2d84b959728cb09f8d064791012b5f673462039f6fbd",
+    "bounded_operations_sha256": "ee773ac60f7068f3e350ce60120f5f5bed268beece1e9fd7793a48fcb57eaf29",
+    "preregistration_sha256": "a9d0dd1edaf6df659268e4e6ecc308808eea2270374d50e671362f5fbdcd4089",
+    "receiver_layer_zero_based": 7,
+    "receiver_width": 2048,
+    "source_layer_zero_based": 13,
+    "split_seeds": {
+      "tiny": [
+        11003,
+        8
+      ],
+      "train": [
+        22003,
+        256
+      ],
+      "dev": [
+        33003,
+        64
+      ],
+      "final": [
+        44003,
+        256
+      ]
+    },
+    "command": [
+      "research/latent_channel_crossfamily_20260906/text_cf.py",
+      "--split",
+      "tiny"
+    ],
+    "utc": "2026-09-06T05:40:00Z",
+    "external_spend_usd": 0
+  }
+}

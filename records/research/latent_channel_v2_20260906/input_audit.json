@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "receiver_query_ids": [
+    17506,
+    8286,
+    320,
+    32,
+    16276,
+    11295,
+    14953,
+    1648
+  ],
+  "answer_ids": [
+    [
+      362
+    ],
+    [
+      425
+    ],
+    [
+      356
+    ],
+    [
+      422
+    ]
+  ],
+  "joint_continuation_tokenization_exact": true,
+  "source_final_token_is_gold": true,
+  "all_source_lengths": 22,
+  "receiver_query_identical": true,
+  "all_v1_sealed_hashes_match": true,
+  "v1_sealed_files": 82,
+  "provenance": {
+    "extension_sha256": "ee773ac60f7068f3e350ce60120f5f5bed268beece1e9fd7793a48fcb57eaf29",
+    "base_sha256": "e2de36c051ba503b441c2d84b959728cb09f8d064791012b5f673462039f6fbd",
+    "base_path": "research/latent_channel_v1_20260906/channel.py",
+    "preregistration_sha256": "eb1be3758008f3debddcc7cf007d5fa7ba4dba215027166eefb7b1f21094246e",
+    "attention": "2*cosine(q,k), eps1e-8, both bridge attention operations",
+    "split_seeds": {
+      "tiny": [
+        11002,
+        8
+      ],
+      "train": [
+        22002,
+        256
+      ],
+      "dev": [
+        33002,
+        64
+      ],
+      "final": [
+        44002,
+        256
+      ]
+    },
+    "command": [
+      "research/latent_channel_v2_20260906/input_audit.py"
+    ],
+    "utc": "2026-09-06T02:38:15Z",
+    "external_spend_usd": 0
+  }
+}

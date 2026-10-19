@@ -1,0 +1,37 @@
+[
+  {
+    "command": [
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "research/latent_binding_constrained_code_extended_20260911",
+      "-p",
+      "test_seam.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_only_replaced_sites_send_gradient_to_payload (test_seam.GradientTests.test_only_replaced_sites_send_gradient_to_payload) ... ok\ntest_reset_on_exception (test_seam.Tests.test_reset_on_exception) ... ok\ntest_support_both_lengths (test_seam.Tests.test_support_both_lengths) ... ok\ntest_wrong_shape_rejected (test_seam.Tests.test_wrong_shape_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.002s\n\nOK\n",
+    "elapsed_s": 1.2695005380010116
+  },
+  {
+    "command": [
+      "research/latent_binding_constrained_code_extended_20260911/runtime.py",
+      "check"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "elapsed_s": 7.011513330999151
+  },
+  {
+    "command": [
+      "research/latent_binding_constrained_code_extended_20260911/analysis.py"
+    ],
+    "exit_code": 0,
+    "stdout": "# Query-context oracle activation codes\n\n**ORACLE QUERY CODE REACHABLE; SOURCE TRANSFER UNPROVEN**\n\nSupervised fitting of shared64-value codes through the unchanged output map at block15; receiver and bridge weights frozen.200fixed Adamsteps in SVD-conditioned coordinates per opened pool, no selected checkpoint. Labels supplied during fitting and evaluation lookup. This is oracle reachability, not novel-ID transfer or a trained bridge. Native d0novel0/0/0 unchanged.\n\n| Pool/condition | Matched joint/seq | Wrong inserted joint/seq | Wrong intended joint/seq | Random intended joint/seq | Gate |\n|---|---|---|---|---|---|\n| familiar/original | 32/32 | 32/32 | 0/0 | 0/0 | True |\n| novel/original | 32/32 | 32/32 | 0/0 | 0/0 | True |\n| novel/changed | 32/32 | 32/32 | 0/0 | 0/0 | True |\n\nSequential is candidate-constrained16prefix/8digit decoding. Terminal full-vocabulary teacher-forced token diagnostics, every loss/gradient norm, code norm movement, per-row predictions and all counts are in ANALYSIS.json. No unrestricted generation evaluated.\n\nJob 1437.617s, peak2881208KiB,exit0/childreaped. Independent scalar audit, exact baseline and scoring repeats, direct parity, live parameter identity/restoration and no-parameter-gradient checks pass.22model snapshots checked through frozen parent identity. No sender/reset/newdata/final/Arabic/cloud/browser/Rust/push. USD0external.\n\nA successful supervised oracle code is not an automatically qualified training target for source transfer. Changed contexts reuse the same fitted codebook. No bridge training or parameter schedule search follows automatically.\n\n",
+    "stderr": "",
+    "elapsed_s": 7.529259004997584
+  }
+]

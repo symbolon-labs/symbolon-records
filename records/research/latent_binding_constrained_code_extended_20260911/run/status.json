@@ -1,0 +1,76 @@
+{
+  "completed": true,
+  "novel_fit_opened": true,
+  "supervised_oracle_only": true,
+  "before": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3",
+  "baseline_exact": true,
+  "teacher_parity_error": 6.258487701416016e-07,
+  "familiar": {
+    "original": {
+      "matched": {
+        "joint": 32,
+        "sequential": 32
+      },
+      "wrong": {
+        "joint": 0,
+        "sequential": 0,
+        "inserted": {
+          "joint": 32,
+          "sequential": 32
+        }
+      },
+      "random": {
+        "joint": 0,
+        "sequential": 0
+      },
+      "pass": true
+    }
+  },
+  "novel": {
+    "original": {
+      "matched": {
+        "joint": 32,
+        "sequential": 32
+      },
+      "wrong": {
+        "joint": 0,
+        "sequential": 0,
+        "inserted": {
+          "joint": 32,
+          "sequential": 32
+        }
+      },
+      "random": {
+        "joint": 0,
+        "sequential": 0
+      },
+      "pass": true
+    },
+    "changed": {
+      "matched": {
+        "joint": 32,
+        "sequential": 32
+      },
+      "wrong": {
+        "joint": 0,
+        "sequential": 0,
+        "inserted": {
+          "joint": 32,
+          "sequential": 32
+        }
+      },
+      "random": {
+        "joint": 0,
+        "sequential": 0
+      },
+      "pass": true
+    }
+  },
+  "verdict": "ORACLE QUERY CODE REACHABLE; SOURCE TRANSFER UNPROVEN",
+  "after": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3",
+  "restored_exact": true,
+  "no_parameter_gradients": true,
+  "no_hooks": true,
+  "elapsed_s": 1434.406327662,
+  "peak_rss_kib": 2881208
+}

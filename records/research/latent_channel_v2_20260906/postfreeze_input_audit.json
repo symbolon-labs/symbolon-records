@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "splits": {
+    "tiny": {
+      "examples": 32,
+      "nonce_groups": 8,
+      "source_tokens": 22,
+      "query_tokens": 8,
+      "examples_sha256": "9e1b12680c4c65c7967beeba1845bb639b005631404a8423cf6f4ad271a0b0c4",
+      "capture_sha256": "dae31915e34f9b239622c97fc39c181d3ee7e286157abfaa567bdcde85229aad"
+    },
+    "train": {
+      "examples": 1024,
+      "nonce_groups": 256,
+      "source_tokens": 22,
+      "query_tokens": 8,
+      "examples_sha256": "f93e11026db3f351a01c7fd0bc3cc28dbb24111db8110a377a908ed1c87c2ec5",
+      "capture_sha256": "eab2be3a3cf5ec836b327bd4ec3447e23661ba7dca6c0bbcd55ae65feddf267a"
+    },
+    "dev": {
+      "examples": 256,
+      "nonce_groups": 64,
+      "source_tokens": 22,
+      "query_tokens": 8,
+      "examples_sha256": "e8f40a751181ef7ddeaadeff48eac0dd3ba429e95f83cd1e3ba9e1285b48017a",
+      "capture_sha256": "5eccd7818f1cd956c14c41cbcca99c93deafeb5a94e05b63d133fcb0675c4495"
+    },
+    "final": {
+      "examples": 1024,
+      "nonce_groups": 256,
+      "source_tokens": 22,
+      "query_tokens": 8,
+      "examples_sha256": "e5cb26974701e24271f5fa1544c75375bce77168a2119deea1c3adbcf8c3ce83",
+      "capture_sha256": "97ebe5a23841cdb7c1541cc79f2b5f536a5c166595bfb7515080b8a00553569f"
+    }
+  },
+  "frozen_component_hashes_match": true,
+  "cross_split_nonce_disjoint": true,
+  "v1_observed_nonces_excluded": true,
+  "counterfactual_balance": true,
+  "constant_receiver_query": true,
+  "source_ids_independently_retokenized": true,
+  "joint_continuation_boundaries_exact": true,
+  "final_freeze_utc": "2026-09-06T03:42:51Z",
+  "final_prepare_utc": "2026-09-06T03:42:56Z",
+  "chronology_caveat": "Local timestamps/hashes are not third-party timestamp attestations.",
+  "freeze_sha256": "6e7743d5dc0e6fdcdffa6bb2fa44860ae3840b81084a1aabe1ecbf4b0ec83509",
+  "audit_code_sha256": "4a00ea803dc27dd06878d69946728d5fdbe3c304c44ac2351a959a21eda495b2",
+  "utc": "2026-09-06T03:53:39Z"
+}

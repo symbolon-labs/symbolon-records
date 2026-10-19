@@ -1,0 +1,41 @@
+{
+  "pid": 81175,
+  "status": "complete",
+  "stages": [
+    {
+      "name": "prepare_tiny",
+      "command": [
+        ".venv/bin/python",
+        "research/latent_channel_crossfamily_20260906/channel_cf.py",
+        "prepare",
+        "--split",
+        "tiny"
+      ],
+      "status": "complete",
+      "utc_start": "2026-09-06T05:15:06Z",
+      "pid": 81176,
+      "exit_code": 0,
+      "elapsed_s": 35.73413591899953,
+      "peak_child_rss_kib": 12249616
+    },
+    {
+      "name": "train_tiny",
+      "command": [
+        ".venv/bin/python",
+        "research/latent_channel_crossfamily_20260906/channel_cf.py",
+        "train",
+        "--mode",
+        "tiny"
+      ],
+      "status": "complete",
+      "utc_start": "2026-09-06T05:15:41Z",
+      "pid": 81272,
+      "exit_code": 0,
+      "elapsed_s": 1271.9347121319988,
+      "peak_child_rss_kib": 12249616
+    }
+  ],
+  "utc_start": "2026-09-06T05:15:06Z",
+  "external_spend_usd": 0,
+  "elapsed_s": 1307.6696852530004
+}

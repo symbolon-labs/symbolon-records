@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scope": "Integrity, scoring audit and tests; scientific verdict remains NO-GO",
+  "utc": "2026-09-06T10:50:50Z",
+  "historical_verification": {
+    "status": "PASS",
+    "source_files": 569,
+    "model_files_rehashed": 22,
+    "documentation_seal_checked": true,
+    "inference": false,
+    "writes": false
+  },
+  "independent_audit": "PASS",
+  "tests": ".........                                                                [100%]\n9 passed in 5.44s\n",
+  "svg_data_points": 64,
+  "git_commit": "ae550f0fbcf9dea1a5507f5695b077d2cc77d02b",
+  "git_status_unchanged": true,
+  "git_status": " M src/lib.rs\n M src/main.rs\n?? .cache/\n?? .commandcode/\n?? docs/phase2-optimization-report.md\n?? examples/tmp_vits_ids.rs\n?? inf-eng-interactive.html\n?? inf-eng.txt\n?? research/embersec/comparative/disclosure/report_S1_llama_cpp.md\n?? research/embersec/comparative/disclosure/report_S2_llama_cpp.md\n?? research/embersec/comparative/disclosure/report_S3_llama_cpp.md\n?? research/embersec/comparative/disclosure/report_S4_candle.md\n?? research/embersec/comparative/disclosure/report_S5_llama_cpp.md\n?? research/embersec/comparative/results/diff_fuzz/blobs/\n?? research/embersec/comparative/results/diff_fuzz/crashes/\n?? src/cli_handoff.rs\n?? src/cli_intervene.rs\n?? src/residual_patch.rs\n?? tools/build_inf_eng_interactive.py\n",
+  "versions": {
+    "torch": "2.13.0",
+    "transformers": "5.10.2",
+    "numpy": "2.4.6",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0"
+  },
+  "python": "3.14.7 (main, Aug 10 2026, 07:46:56) [GCC 16.1.1 20260728]",
+  "platform": "Linux-7.2.2-arch1-1-x86_64-with-glibc2.44",
+  "cpu": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+  "memory": "MemTotal:       16056396 kB",
+  "job_elapsed_s": 6128.053631984003,
+  "external_spend_usd": 0,
+  "local_energy_and_assistant_service_cost": "not metered",
+  "only_tiny_data_exists": true,
+  "endpoint_models_rehashed": true
+}

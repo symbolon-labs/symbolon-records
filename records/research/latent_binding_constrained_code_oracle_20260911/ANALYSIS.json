@@ -1,0 +1,1768 @@
+{
+  "verdict": "NOVEL ORACLE QUERY CODE NO-GO",
+  "independent_audit": "PASS",
+  "supervised_activation_fit": true,
+  "native_novel": "0/0/0 unchanged",
+  "results": {
+    "familiar": {
+      "original": {
+        "pass": true,
+        "arms": {
+          "matched": {
+            "counts": {
+              "joint": 32,
+              "sequential": 32
+            },
+            "joint": [
+              "N1",
+              "N1",
+              "D4",
+              "O4",
+              "D4",
+              "L7",
+              "L7",
+              "G3",
+              "N1",
+              "L7",
+              "B3",
+              "L1",
+              "B3",
+              "C7",
+              "G3",
+              "L1",
+              "L1",
+              "D4",
+              "D4",
+              "B3",
+              "L7",
+              "B3",
+              "C7",
+              "L1",
+              "G3",
+              "C7",
+              "O4",
+              "C7",
+              "O4",
+              "N1",
+              "G3",
+              "O4"
+            ],
+            "sequential": [
+              "N1",
+              "N1",
+              "D4",
+              "O4",
+              "D4",
+              "L7",
+              "L7",
+              "G3",
+              "N1",
+              "L7",
+              "B3",
+              "L1",
+              "B3",
+              "C7",
+              "G3",
+              "L1",
+              "L1",
+              "D4",
+              "D4",
+              "B3",
+              "L7",
+              "B3",
+              "C7",
+              "L1",
+              "G3",
+              "C7",
+              "O4",
+              "C7",
+              "O4",
+              "N1",
+              "G3",
+              "O4"
+            ],
+            "targets": [
+              "N1",
+              "N1",
+              "D4",
+              "O4",
+              "D4",
+              "L7",
+              "L7",
+              "G3",
+              "N1",
+              "L7",
+              "B3",
+              "L1",
+              "B3",
+              "C7",
+              "G3",
+              "L1",
+              "L1",
+              "D4",
+              "D4",
+              "B3",
+              "L7",
+              "B3",
+              "C7",
+              "L1",
+              "G3",
+              "C7",
+              "O4",
+              "C7",
+              "O4",
+              "N1",
+              "G3",
+              "O4"
+            ]
+          },
+          "wrong": {
+            "counts": {
+              "joint": 0,
+              "sequential": 0,
+              "inserted": {
+                "joint": 32,
+                "sequential": 32
+              }
+            },
+            "joint": [
+              "O4",
+              "O4",
+              "G3",
+              "B3",
+              "G3",
+              "N1",
+              "N1",
+              "L1",
+              "O4",
+              "N1",
+              "C7",
+              "L7",
+              "C7",
+              "D4",
+              "L1",
+              "L7",
+              "L7",
+              "G3",
+              "G3",
+              "C7",
+              "N1",
+              "C7",
+              "D4",
+              "L7",
+              "L1",
+              "D4",
+              "B3",
+              "D4",
+              "B3",
+              "O4",
+              "L1",
+              "B3"
+            ],
+            "sequential": [
+              "O4",
+              "O4",
+              "G3",
+              "B3",
+              "G3",
+              "N1",
+              "N1",
+              "L1",
+              "O4",
+              "N1",
+              "C7",
+              "L7",
+              "C7",
+              "D4",
+              "L1",
+              "L7",
+              "L7",
+              "G3",
+              "G3",
+              "C7",
+              "N1",
+              "C7",
+              "D4",
+              "L7",
+              "L1",
+              "D4",
+              "B3",
+              "D4",
+              "B3",
+              "O4",
+              "L1",
+              "B3"
+            ],
+            "targets": [
+              "N1",
+              "N1",
+              "D4",
+              "O4",
+              "D4",
+              "L7",
+              "L7",
+              "G3",
+              "N1",
+              "L7",
+              "B3",
+              "L1",
+              "B3",
+              "C7",
+              "G3",
+              "L1",
+              "L1",
+              "D4",
+              "D4",
+              "B3",
+              "L7",
+              "B3",
+              "C7",
+              "L1",
+              "G3",
+              "C7",
+              "O4",
+              "C7",
+              "O4",
+              "N1",
+              "G3",
+              "O4"
+            ]
+          },
+          "random": {
+            "counts": {
+              "joint": 0,
+              "sequential": 0
+            },
+            "joint": [
+              "E1",
+              "K1",
+              "K1",
+              "G2",
+              "E3",
+              "L1",
+              "E1",
+              "I1",
+              "E1",
+              "K1",
+              "A3",
+              "J1",
+              "A3",
+              "A1",
+              "C6",
+              "J1",
+              "J1",
+              "E1",
+              "A1",
+              "F2",
+              "K1",
+              "F1",
+              "A1",
+              "J1",
+              "I1",
+              "A1",
+              "G2",
+              "A1",
+              "G2",
+              "K1",
+              "I1",
+              "G2"
+            ],
+            "sequential": [
+              "E1",
+              "E3",
+              "E1",
+              "G2",
+              "E3",
+              "E3",
+              "E1",
+              "I1",
+              "E1",
+              "E1",
+              "A3",
+              "J1",
+              "A3",
+              "A1",
+              "I1",
+              "J1",
+              "J1",
+              "E1",
+              "E3",
+              "A1",
+              "E1",
+              "A3",
+              "A1",
+              "J1",
+              "I1",
+              "A1",
+              "G2",
+              "A1",
+              "G2",
+              "E3",
+              "I1",
+              "G2"
+            ],
+            "targets": [
+              "N1",
+              "N1",
+              "D4",
+              "O4",
+              "D4",
+              "L7",
+              "L7",
+              "G3",
+              "N1",
+              "L7",
+              "B3",
+              "L1",
+              "B3",
+              "C7",
+              "G3",
+              "L1",
+              "L1",
+              "D4",
+              "D4",
+              "B3",
+              "L7",
+              "B3",
+              "C7",
+              "L1",
+              "G3",
+              "C7",
+              "O4",
+              "C7",
+              "O4",
+              "N1",
+              "G3",
+              "O4"
+            ]
+          }
+        }
+      }
+    },
+    "novel": {
+      "original": {
+        "pass": false,
+        "arms": {
+          "matched": {
+            "counts": {
+              "joint": 26,
+              "sequential": 26
+            },
+            "joint": [
+              "A2",
+              "M3",
+              "M4",
+              "C4",
+              "K3",
+              "A0",
+              "A2",
+              "K0",
+              "I2",
+              "A0",
+              "M3",
+              "M3",
+              "I2",
+              "C4",
+              "A0",
+              "A2",
+              "K0",
+              "I1",
+              "M4",
+              "I1",
+              "K3",
+              "A0",
+              "C4",
+              "K3",
+              "K0",
+              "K0",
+              "A2",
+              "M3",
+              "M4",
+              "K3",
+              "C4",
+              "M4"
+            ],
+            "sequential": [
+              "A2",
+              "M3",
+              "M4",
+              "C4",
+              "K3",
+              "A0",
+              "A2",
+              "K0",
+              "I2",
+              "A0",
+              "M3",
+              "M3",
+              "I2",
+              "C4",
+              "A0",
+              "A2",
+              "K0",
+              "I1",
+              "M4",
+              "I1",
+              "K3",
+              "A0",
+              "C4",
+              "K3",
+              "K0",
+              "K0",
+              "A2",
+              "M3",
+              "M4",
+              "K3",
+              "C4",
+              "M4"
+            ],
+            "targets": [
+              "A2",
+              "M3",
+              "M0",
+              "C4",
+              "K3",
+              "A0",
+              "A2",
+              "K0",
+              "I2",
+              "A0",
+              "M3",
+              "M3",
+              "I2",
+              "C4",
+              "A0",
+              "A2",
+              "K0",
+              "I2",
+              "M0",
+              "I2",
+              "K3",
+              "A0",
+              "C4",
+              "K3",
+              "K0",
+              "K0",
+              "A2",
+              "M3",
+              "M0",
+              "K3",
+              "C4",
+              "M0"
+            ]
+          },
+          "wrong": {
+            "counts": {
+              "joint": 0,
+              "sequential": 0,
+              "inserted": {
+                "joint": 26,
+                "sequential": 26
+              }
+            },
+            "joint": [
+              "C4",
+              "A0",
+              "M3",
+              "I2",
+              "M4",
+              "A2",
+              "C4",
+              "K3",
+              "K0",
+              "A2",
+              "A0",
+              "A0",
+              "K0",
+              "I2",
+              "A2",
+              "C4",
+              "K3",
+              "K0",
+              "M3",
+              "K0",
+              "M4",
+              "A2",
+              "I1",
+              "M4",
+              "K3",
+              "K3",
+              "C4",
+              "A0",
+              "M3",
+              "M4",
+              "I1",
+              "M3"
+            ],
+            "sequential": [
+              "C4",
+              "A0",
+              "M3",
+              "I2",
+              "M4",
+              "A2",
+              "C4",
+              "K3",
+              "K0",
+              "A2",
+              "A0",
+              "A0",
+              "K0",
+              "I2",
+              "A2",
+              "C4",
+              "K3",
+              "K0",
+              "M3",
+              "K0",
+              "M4",
+              "A2",
+              "I1",
+              "M4",
+              "K3",
+              "K3",
+              "C4",
+              "A0",
+              "M3",
+              "M4",
+              "I1",
+              "M3"
+            ],
+            "targets": [
+              "A2",
+              "M3",
+              "M0",
+              "C4",
+              "K3",
+              "A0",
+              "A2",
+              "K0",
+              "I2",
+              "A0",
+              "M3",
+              "M3",
+              "I2",
+              "C4",
+              "A0",
+              "A2",
+              "K0",
+              "I2",
+              "M0",
+              "I2",
+              "K3",
+              "A0",
+              "C4",
+              "K3",
+              "K0",
+              "K0",
+              "A2",
+              "M3",
+              "M0",
+              "K3",
+              "C4",
+              "M0"
+            ]
+          },
+          "random": {
+            "counts": {
+              "joint": 0,
+              "sequential": 0
+            },
+            "joint": [
+              "A1",
+              "G2",
+              "K1",
+              "E1",
+              "K1",
+              "F1",
+              "A1",
+              "J1",
+              "I1",
+              "A3",
+              "G2",
+              "G2",
+              "C6",
+              "K1",
+              "F2",
+              "A1",
+              "J1",
+              "I1",
+              "E1",
+              "I1",
+              "L1",
+              "A3",
+              "E3",
+              "K1",
+              "J1",
+              "J1",
+              "A1",
+              "G2",
+              "E3",
+              "E1",
+              "A1",
+              "E1"
+            ],
+            "sequential": [
+              "A1",
+              "G2",
+              "E3",
+              "E1",
+              "E1",
+              "A3",
+              "A1",
+              "J1",
+              "I1",
+              "A3",
+              "G2",
+              "G2",
+              "I1",
+              "E1",
+              "A1",
+              "A1",
+              "J1",
+              "I1",
+              "E1",
+              "I1",
+              "E3",
+              "A3",
+              "E3",
+              "E1",
+              "J1",
+              "J1",
+              "A1",
+              "G2",
+              "E3",
+              "E1",
+              "E3",
+              "E1"
+            ],
+            "targets": [
+              "A2",
+              "M3",
+              "M0",
+              "C4",
+              "K3",
+              "A0",
+              "A2",
+              "K0",
+              "I2",
+              "A0",
+              "M3",
+              "M3",
+              "I2",
+              "C4",
+              "A0",
+              "A2",
+              "K0",
+              "I2",
+              "M0",
+              "I2",
+              "K3",
+              "A0",
+              "C4",
+              "K3",
+              "K0",
+              "K0",
+              "A2",
+              "M3",
+              "M0",
+              "K3",
+              "C4",
+              "M0"
+            ]
+          }
+        }
+      },
+      "changed": {
+        "pass": false,
+        "arms": {
+          "matched": {
+            "counts": {
+              "joint": 26,
+              "sequential": 26
+            },
+            "joint": [
+              "A0",
+              "M4",
+              "A2",
+              "M4",
+              "A0",
+              "M3",
+              "K3",
+              "C4",
+              "K0",
+              "K3",
+              "A0",
+              "I2",
+              "A0",
+              "M3",
+              "I1",
+              "I2",
+              "I1",
+              "A2",
+              "C4",
+              "M3",
+              "A2",
+              "K3",
+              "K0",
+              "K0",
+              "A2",
+              "M4",
+              "M4",
+              "C4",
+              "K0",
+              "C4",
+              "M3",
+              "K3"
+            ],
+            "sequential": [
+              "A0",
+              "M4",
+              "A2",
+              "M4",
+              "A0",
+              "M3",
+              "K3",
+              "C4",
+              "K0",
+              "K3",
+              "A0",
+              "I2",
+              "A0",
+              "M3",
+              "I1",
+              "I2",
+              "I1",
+              "A2",
+              "C4",
+              "M3",
+              "A2",
+              "K3",
+              "K0",
+              "K0",
+              "A2",
+              "M4",
+              "M4",
+              "C4",
+              "K0",
+              "C4",
+              "M3",
+              "K3"
+            ],
+            "targets": [
+              "A0",
+              "M0",
+              "A2",
+              "M0",
+              "A0",
+              "M3",
+              "K3",
+              "C4",
+              "K0",
+              "K3",
+              "A0",
+              "I2",
+              "A0",
+              "M3",
+              "I2",
+              "I2",
+              "I2",
+              "A2",
+              "C4",
+              "M3",
+              "A2",
+              "K3",
+              "K0",
+              "K0",
+              "A2",
+              "M0",
+              "M0",
+              "C4",
+              "K0",
+              "C4",
+              "M3",
+              "K3"
+            ]
+          },
+          "wrong": {
+            "counts": {
+              "joint": 0,
+              "sequential": 0,
+              "inserted": {
+                "joint": 26,
+                "sequential": 26
+              }
+            },
+            "joint": [
+              "A2",
+              "M3",
+              "C4",
+              "M3",
+              "A2",
+              "A0",
+              "M4",
+              "I2",
+              "K3",
+              "M4",
+              "A2",
+              "K0",
+              "A2",
+              "A0",
+              "K0",
+              "K0",
+              "K0",
+              "C4",
+              "I1",
+              "A0",
+              "C4",
+              "M4",
+              "K3",
+              "K3",
+              "C4",
+              "M3",
+              "M3",
+              "I1",
+              "K3",
+              "I2",
+              "A0",
+              "M4"
+            ],
+            "sequential": [
+              "A2",
+              "M3",
+              "C4",
+              "M3",
+              "A2",
+              "A0",
+              "M4",
+              "I2",
+              "K3",
+              "M4",
+              "A2",
+              "K0",
+              "A2",
+              "A0",
+              "K0",
+              "K0",
+              "K0",
+              "C4",
+              "I1",
+              "A0",
+              "C4",
+              "M4",
+              "K3",
+              "K3",
+              "C4",
+              "M3",
+              "M3",
+              "I1",
+              "K3",
+              "I2",
+              "A0",
+              "M4"
+            ],
+            "targets": [
+              "A0",
+              "M0",
+              "A2",
+              "M0",
+              "A0",
+              "M3",
+              "K3",
+              "C4",
+              "K0",
+              "K3",
+              "A0",
+              "I2",
+              "A0",
+              "M3",
+              "I2",
+              "I2",
+              "I2",
+              "A2",
+              "C4",
+              "M3",
+              "A2",
+              "K3",
+              "K0",
+              "K0",
+              "A2",
+              "M0",
+              "M0",
+              "C4",
+              "K0",
+              "C4",
+              "M3",
+              "K3"
+            ]
+          },
+          "random": {
+            "counts": {
+              "joint": 0,
+              "sequential": 0
+            },
+            "joint": [
+              "F2",
+              "E1",
+              "A1",
+              "E1",
+              "F2",
+              "G2",
+              "K1",
+              "E1",
+              "J1",
+              "E1",
+              "F2",
+              "I1",
+              "A3",
+              "G2",
+              "I1",
+              "C6",
+              "I1",
+              "A1",
+              "E3",
+              "G2",
+              "A1",
+              "K1",
+              "J1",
+              "J1",
+              "A1",
+              "K1",
+              "E3",
+              "A1",
+              "J1",
+              "E1",
+              "G2",
+              "E1"
+            ],
+            "sequential": [
+              "A1",
+              "E1",
+              "A1",
+              "E1",
+              "A1",
+              "G2",
+              "E1",
+              "E1",
+              "J1",
+              "E1",
+              "A1",
+              "I1",
+              "A3",
+              "G2",
+              "I1",
+              "I1",
+              "I1",
+              "A1",
+              "E3",
+              "G2",
+              "A1",
+              "E1",
+              "J1",
+              "J1",
+              "A1",
+              "E3",
+              "E3",
+              "E3",
+              "J1",
+              "E1",
+              "G2",
+              "E1"
+            ],
+            "targets": [
+              "A0",
+              "M0",
+              "A2",
+              "M0",
+              "A0",
+              "M3",
+              "K3",
+              "C4",
+              "K0",
+              "K3",
+              "A0",
+              "I2",
+              "A0",
+              "M3",
+              "I2",
+              "I2",
+              "I2",
+              "A2",
+              "C4",
+              "M3",
+              "A2",
+              "K3",
+              "K0",
+              "K0",
+              "A2",
+              "M0",
+              "M0",
+              "C4",
+              "K0",
+              "C4",
+              "M3",
+              "K3"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "fits": {
+    "familiar": {
+      "boundary_movement_norm": 49.100765228271484,
+      "history": [
+        {
+          "step_before_update": 0,
+          "loss": 0.11437339708209038,
+          "gradient_norm": 0.1755300670820869,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 1,
+          "loss": 0.06622812524437904,
+          "gradient_norm": 0.06833477730166698,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 2,
+          "loss": 0.04115334479138255,
+          "gradient_norm": 0.023201770310277908,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 3,
+          "loss": 0.029201043769717216,
+          "gradient_norm": 0.013673426207237166,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 4,
+          "loss": 0.02354526030831039,
+          "gradient_norm": 0.011946725670264849,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 5,
+          "loss": 0.02075262158177793,
+          "gradient_norm": 0.01244410823572891,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 6,
+          "loss": 0.019594024633988738,
+          "gradient_norm": 0.020006961032854167,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 7,
+          "loss": 0.015577543061226606,
+          "gradient_norm": 0.011790427231858407,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 8,
+          "loss": 0.012362915556877851,
+          "gradient_norm": 0.007021836486196618,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 9,
+          "loss": 0.010259521077387035,
+          "gradient_norm": 0.00452086911717305,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 10,
+          "loss": 0.008905052207410336,
+          "gradient_norm": 0.003325611053109621,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 11,
+          "loss": 0.008015812374651432,
+          "gradient_norm": 0.002846967858626767,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 12,
+          "loss": 0.007411931408569217,
+          "gradient_norm": 0.002777949242933885,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 13,
+          "loss": 0.006970189628191292,
+          "gradient_norm": 0.0029132800930791337,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 14,
+          "loss": 0.00660021003568545,
+          "gradient_norm": 0.0030828719592484264,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 15,
+          "loss": 0.0062402571784332395,
+          "gradient_norm": 0.0031556178275869216,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 16,
+          "loss": 0.00586226093582809,
+          "gradient_norm": 0.0030608196695101854,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 17,
+          "loss": 0.005471927695907652,
+          "gradient_norm": 0.002799720414152377,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 18,
+          "loss": 0.0050957443891093135,
+          "gradient_norm": 0.00243400238269563,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 19,
+          "loss": 0.004761496791616082,
+          "gradient_norm": 0.002065810155795582,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 20,
+          "loss": 0.004482771328184754,
+          "gradient_norm": 0.00182624020104314,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 21,
+          "loss": 0.004258213739376515,
+          "gradient_norm": 0.0018836690479045609,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 22,
+          "loss": 0.004075613105669618,
+          "gradient_norm": 0.0023093348776656976,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 23,
+          "loss": 0.0039045627927407622,
+          "gradient_norm": 0.002778737138672202,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 24,
+          "loss": 0.0037057469016872346,
+          "gradient_norm": 0.002806264073868689,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 25,
+          "loss": 0.0034773425140883774,
+          "gradient_norm": 0.002326117830363783,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 26,
+          "loss": 0.003255843708757311,
+          "gradient_norm": 0.0016943284343628763,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 27,
+          "loss": 0.003067892335820943,
+          "gradient_norm": 0.0012198788175609746,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 28,
+          "loss": 0.0029145935841370374,
+          "gradient_norm": 0.0009735741504390199,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 29,
+          "loss": 0.0027858889661729336,
+          "gradient_norm": 0.0008795579542075961,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 30,
+          "loss": 0.00267179126967676,
+          "gradient_norm": 0.0008441910292588875,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 31,
+          "loss": 0.002565913018770516,
+          "gradient_norm": 0.0008167210795816184,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 32,
+          "loss": 0.002465313795255497,
+          "gradient_norm": 0.0007795348970851588,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 33,
+          "loss": 0.0023697569267824292,
+          "gradient_norm": 0.0007298963746580503,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 34,
+          "loss": 0.002279999214806594,
+          "gradient_norm": 0.0006715104014692158,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 35,
+          "loss": 0.0021973162511130795,
+          "gradient_norm": 0.0006110705526663902,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 36,
+          "loss": 0.0021225035015959293,
+          "gradient_norm": 0.0005569582197789631,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 37,
+          "loss": 0.0020555609953589737,
+          "gradient_norm": 0.0005159746131774882,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 38,
+          "loss": 0.001995412341784686,
+          "gradient_norm": 0.0004898788732099334,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        },
+        {
+          "step_before_update": 39,
+          "loss": 0.0019403352198423818,
+          "gradient_norm": 0.0004744577143413263,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            32
+          ]
+        }
+      ],
+      "movement_norm": 318.5167380962459,
+      "initial_norm": 844.6476314185072,
+      "terminal_norm": 896.7025624474753,
+      "steps": 40,
+      "terminal_full_vocab_teacher_forced_correct": [
+        32,
+        32
+      ]
+    },
+    "novel": {
+      "boundary_movement_norm": 61.38589859008789,
+      "history": [
+        {
+          "step_before_update": 0,
+          "loss": 9.35976505279541,
+          "gradient_norm": 0.9710059955576174,
+          "full_vocab_teacher_forced_correct": [
+            0,
+            4
+          ]
+        },
+        {
+          "step_before_update": 1,
+          "loss": 6.921711564064026,
+          "gradient_norm": 1.2835331325078558,
+          "full_vocab_teacher_forced_correct": [
+            0,
+            4
+          ]
+        },
+        {
+          "step_before_update": 2,
+          "loss": 4.977249622344971,
+          "gradient_norm": 1.0040522056104066,
+          "full_vocab_teacher_forced_correct": [
+            4,
+            4
+          ]
+        },
+        {
+          "step_before_update": 3,
+          "loss": 4.3207812905311584,
+          "gradient_norm": 0.7492069157869005,
+          "full_vocab_teacher_forced_correct": [
+            12,
+            4
+          ]
+        },
+        {
+          "step_before_update": 4,
+          "loss": 3.9006693363189697,
+          "gradient_norm": 0.5783819802550101,
+          "full_vocab_teacher_forced_correct": [
+            16,
+            4
+          ]
+        },
+        {
+          "step_before_update": 5,
+          "loss": 3.5047247409820557,
+          "gradient_norm": 0.4056495198665607,
+          "full_vocab_teacher_forced_correct": [
+            20,
+            4
+          ]
+        },
+        {
+          "step_before_update": 6,
+          "loss": 3.1944618225097656,
+          "gradient_norm": 0.4110571678760371,
+          "full_vocab_teacher_forced_correct": [
+            20,
+            4
+          ]
+        },
+        {
+          "step_before_update": 7,
+          "loss": 2.8815330266952515,
+          "gradient_norm": 0.4142020780307871,
+          "full_vocab_teacher_forced_correct": [
+            20,
+            4
+          ]
+        },
+        {
+          "step_before_update": 8,
+          "loss": 2.5838571190834045,
+          "gradient_norm": 0.309420292052309,
+          "full_vocab_teacher_forced_correct": [
+            24,
+            4
+          ]
+        },
+        {
+          "step_before_update": 9,
+          "loss": 2.348624050617218,
+          "gradient_norm": 0.30612093652555217,
+          "full_vocab_teacher_forced_correct": [
+            24,
+            6
+          ]
+        },
+        {
+          "step_before_update": 10,
+          "loss": 2.1236520409584045,
+          "gradient_norm": 0.23498579504760314,
+          "full_vocab_teacher_forced_correct": [
+            28,
+            8
+          ]
+        },
+        {
+          "step_before_update": 11,
+          "loss": 1.9644758999347687,
+          "gradient_norm": 0.17309777451355038,
+          "full_vocab_teacher_forced_correct": [
+            28,
+            8
+          ]
+        },
+        {
+          "step_before_update": 12,
+          "loss": 1.839908629655838,
+          "gradient_norm": 0.17027085504504427,
+          "full_vocab_teacher_forced_correct": [
+            28,
+            8
+          ]
+        },
+        {
+          "step_before_update": 13,
+          "loss": 1.729838103055954,
+          "gradient_norm": 0.19353142216706767,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            10
+          ]
+        },
+        {
+          "step_before_update": 14,
+          "loss": 1.6283845603466034,
+          "gradient_norm": 0.2033191807873331,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            12
+          ]
+        },
+        {
+          "step_before_update": 15,
+          "loss": 1.5371407866477966,
+          "gradient_norm": 0.16907060222004605,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            12
+          ]
+        },
+        {
+          "step_before_update": 16,
+          "loss": 1.464860275387764,
+          "gradient_norm": 0.1518622601500149,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            12
+          ]
+        },
+        {
+          "step_before_update": 17,
+          "loss": 1.4055351912975311,
+          "gradient_norm": 0.15306836946899743,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            15
+          ]
+        },
+        {
+          "step_before_update": 18,
+          "loss": 1.3497844636440277,
+          "gradient_norm": 0.15113239900071151,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            16
+          ]
+        },
+        {
+          "step_before_update": 19,
+          "loss": 1.2930821776390076,
+          "gradient_norm": 0.14368320169790894,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            16
+          ]
+        },
+        {
+          "step_before_update": 20,
+          "loss": 1.2344229817390442,
+          "gradient_norm": 0.1283674101731199,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            16
+          ]
+        },
+        {
+          "step_before_update": 21,
+          "loss": 1.176686242222786,
+          "gradient_norm": 0.10939550563036131,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            16
+          ]
+        },
+        {
+          "step_before_update": 22,
+          "loss": 1.1232846975326538,
+          "gradient_norm": 0.09456730518867781,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            16
+          ]
+        },
+        {
+          "step_before_update": 23,
+          "loss": 1.0751029700040817,
+          "gradient_norm": 0.0846376661309918,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            16
+          ]
+        },
+        {
+          "step_before_update": 24,
+          "loss": 1.0316457748413086,
+          "gradient_norm": 0.07651680810741418,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            16
+          ]
+        },
+        {
+          "step_before_update": 25,
+          "loss": 0.9926215410232544,
+          "gradient_norm": 0.07024335563436762,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            16
+          ]
+        },
+        {
+          "step_before_update": 26,
+          "loss": 0.9579161256551743,
+          "gradient_norm": 0.07393699864890024,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            16
+          ]
+        },
+        {
+          "step_before_update": 27,
+          "loss": 0.9259624779224396,
+          "gradient_norm": 0.08629744586521321,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            17
+          ]
+        },
+        {
+          "step_before_update": 28,
+          "loss": 0.8938603848218918,
+          "gradient_norm": 0.08085986214388297,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            17
+          ]
+        },
+        {
+          "step_before_update": 29,
+          "loss": 0.8619634285569191,
+          "gradient_norm": 0.06663425570258222,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            17
+          ]
+        },
+        {
+          "step_before_update": 30,
+          "loss": 0.8315475359559059,
+          "gradient_norm": 0.06386800445106049,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            17
+          ]
+        },
+        {
+          "step_before_update": 31,
+          "loss": 0.8017880618572235,
+          "gradient_norm": 0.06384848213160986,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            18
+          ]
+        },
+        {
+          "step_before_update": 32,
+          "loss": 0.7721015065908432,
+          "gradient_norm": 0.06087683438317704,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            18
+          ]
+        },
+        {
+          "step_before_update": 33,
+          "loss": 0.7431012392044067,
+          "gradient_norm": 0.057720929198903995,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            18
+          ]
+        },
+        {
+          "step_before_update": 34,
+          "loss": 0.7159090787172318,
+          "gradient_norm": 0.059159185817031806,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            21
+          ]
+        },
+        {
+          "step_before_update": 35,
+          "loss": 0.6910202279686928,
+          "gradient_norm": 0.0710401119584403,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            22
+          ]
+        },
+        {
+          "step_before_update": 36,
+          "loss": 0.6661668568849564,
+          "gradient_norm": 0.08073877245173612,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            25
+          ]
+        },
+        {
+          "step_before_update": 37,
+          "loss": 0.6388724744319916,
+          "gradient_norm": 0.07236707922948554,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            26
+          ]
+        },
+        {
+          "step_before_update": 38,
+          "loss": 0.6111626848578453,
+          "gradient_norm": 0.05378665326686762,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            26
+          ]
+        },
+        {
+          "step_before_update": 39,
+          "loss": 0.5863173231482506,
+          "gradient_norm": 0.04725911829605035,
+          "full_vocab_teacher_forced_correct": [
+            32,
+            26
+          ]
+        }
+      ],
+      "movement_norm": 376.73212854522825,
+      "initial_norm": 846.3965983853776,
+      "terminal_norm": 924.3168110934691,
+      "steps": 40,
+      "terminal_full_vocab_teacher_forced_correct": [
+        32,
+        26
+      ]
+    }
+  },
+  "job": {
+    "exit_code": 0,
+    "timeout": false,
+    "child_reaped": true,
+    "elapsed_s": 721.3228909499994,
+    "peak_rss_kib": 2881536,
+    "utc": "2026-09-10T23:11:34Z",
+    "new_external_spend_usd": 0
+  }
+}

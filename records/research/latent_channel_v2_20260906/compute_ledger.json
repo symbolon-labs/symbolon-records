@@ -1,0 +1,98 @@
+{
+  "jobs": [
+    {
+      "name": "tiny_sender_capture",
+      "elapsed_s": 23.979660982000496,
+      "source": "prepare_tiny_completion.json"
+    },
+    {
+      "name": "tiny_training",
+      "elapsed_s": 448.00291223500244,
+      "source": "train_tiny_completion.json"
+    },
+    {
+      "name": "tiny_strong_text",
+      "elapsed_s": 76.17608508300327,
+      "source": "text_tiny/summary.json"
+    },
+    {
+      "name": "prepare_train",
+      "elapsed_s": 685.6696490100003,
+      "source": "development_job/state.json"
+    },
+    {
+      "name": "prepare_dev",
+      "elapsed_s": 176.51764789799927,
+      "source": "development_job/state.json"
+    },
+    {
+      "name": "train_full",
+      "elapsed_s": 1909.4718813830004,
+      "source": "development_job/state.json"
+    },
+    {
+      "name": "dev_reproduce",
+      "elapsed_s": 200.1181254740004,
+      "source": "confirmation_job/state.json"
+    },
+    {
+      "name": "text_dev",
+      "elapsed_s": 377.80024116999994,
+      "source": "confirmation_job/state.json"
+    },
+    {
+      "name": "freeze",
+      "elapsed_s": 12.0347222470009,
+      "source": "confirmation_job/state.json"
+    },
+    {
+      "name": "prepare_final",
+      "elapsed_s": 576.6484140139983,
+      "source": "confirmation_job/state.json"
+    },
+    {
+      "name": "score_final",
+      "elapsed_s": 827.7553881250024,
+      "source": "confirmation_job/state.json"
+    },
+    {
+      "name": "text_final",
+      "elapsed_s": 1450.2531176979974,
+      "source": "confirmation_job/state.json"
+    },
+    {
+      "name": "analyze_final",
+      "elapsed_s": 13.94651499000247,
+      "source": "confirmation_job/state.json"
+    },
+    {
+      "name": "sender_reproduction",
+      "elapsed_s": 46.191438917001506,
+      "source": "sender_reproduction/verification.json"
+    },
+    {
+      "name": "bridge_component_profile",
+      "elapsed_s": 11.410328600999492,
+      "source": "bridge_profile.json"
+    }
+  ],
+  "v2_primary_job_wall_s": 6778.374360309008,
+  "v2_recorded_job_wall_s": 6835.976127827009,
+  "v2_recorded_job_wall_h": 1.8988822577297246,
+  "v1_prior_reported_components_s": 838.13,
+  "v1_prior_reported_download_s_approx": 374,
+  "v1_v2_recorded_components_plus_approx_download_h": 2.2355850355075026,
+  "accounting": "Sum stage times, not parent waiting time or nested per-condition times. Tiny text excludes CLI startup. V1 values are the sealed report's rounded subtotal, not a new independent remeasurement.",
+  "exclusions": "Unlogged orchestration, some audits/tests/sealing, initial failed V1 pre-training exporter and the older Arabic branch. Processor CPU-time, electricity, assistant-service billing and deployment latency are not measured.",
+  "text_sender_prompt_token_lengths": [
+    61
+  ],
+  "text_receiver_prompt_token_lengths": [
+    35
+  ],
+  "text_payload_utf8_bytes": 1,
+  "latent_payload_bytes": 2048,
+  "external_cloud_spend_usd": 0,
+  "budget_ceiling_usd_approx": 30,
+  "cloud_resources_created": 0
+}

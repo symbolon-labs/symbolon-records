@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "provenance": {
+    "extension_sha256": "deb001a66dc5126652dfeb5479f7b0f98e1758152cf44f1c81d2dd4eb5a71887",
+    "base_sha256": "e2de36c051ba503b441c2d84b959728cb09f8d064791012b5f673462039f6fbd",
+    "bounded_operations_sha256": "ee773ac60f7068f3e350ce60120f5f5bed268beece1e9fd7793a48fcb57eaf29",
+    "preregistration_sha256": "0b3195f765599ed1c2074a65c5900f05becf07a2484a786e185e4f13eb602cfb",
+    "receiver_layer_zero_based": 15,
+    "receiver_width": 960,
+    "source_layer_zero_based": 13,
+    "split_seeds": {
+      "tiny": [
+        11004,
+        8
+      ],
+      "train": [
+        22004,
+        256
+      ],
+      "dev": [
+        33004,
+        64
+      ],
+      "final": [
+        44004,
+        256
+      ]
+    },
+    "command": [
+      "research/latent_channel_smollm_20260906/channel_cf.py",
+      "train",
+      "--mode",
+      "tiny"
+    ],
+    "utc": "2026-09-06T06:08:47Z",
+    "external_spend_usd": 0
+  },
+  "elapsed_s": 331.42202374200133
+}

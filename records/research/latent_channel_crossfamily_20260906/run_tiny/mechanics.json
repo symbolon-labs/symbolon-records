@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "stock_disabled_full_vocab_exact": true,
+  "stock_zero_full_vocab_exact": true,
+  "disabled_bit_exact": true,
+  "zero_bit_exact": true,
+  "rerun_bit_exact": true,
+  "gradient_norms": {
+    "resampler.queries": 0.0010763723403215408,
+    "resampler.key.weight": 0.00914748478680849,
+    "resampler.value.weight": 0.6006662249565125,
+    "projector.weight": 0.1269892007112503,
+    "reader.gate": 2.0257673263549805,
+    "reader.query.weight": 0.00020483233674895018,
+    "reader.key.weight": 0.00022023280325811356,
+    "reader.value.weight": 0.7041398882865906,
+    "reader.output.weight": 0.1183261126279831
+  },
+  "endpoint_gradients": false,
+  "max_logit_change": 0.08184003829956055,
+  "receiver_layer_zero_based": 7
+}

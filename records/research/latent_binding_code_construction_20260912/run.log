@@ -1,0 +1,34 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:51,  5.60it/s]Loading weights:  28%|██▊       | 81/290 [00:00<00:00, 358.29it/s]Loading weights:  44%|████▍     | 129/290 [00:00<00:00, 356.13it/s]Loading weights:  59%|█████▉    | 171/290 [00:00<00:00, 372.24it/s]Loading weights:  73%|███████▎  | 213/290 [00:00<00:00, 380.13it/s]Loading weights:  88%|████████▊ | 255/290 [00:00<00:00, 375.52it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 356.14it/s]
+{"event": "stage0_arm", "utc": "2026-09-12T08:29:09Z", "arm": "f61_sham", "joint": 1, "first_any": 4}
+{"event": "stage0_arm", "utc": "2026-09-12T08:29:53Z", "arm": "f61_R3", "joint": 0, "first_any": 0}
+{"event": "stage0_arm", "utc": "2026-09-12T08:30:37Z", "arm": "f61_R1", "joint": 1, "first_any": 4}
+{"event": "stage0_arm", "utc": "2026-09-12T08:31:24Z", "arm": "f61_R2", "joint": 0, "first_any": 0}
+{"event": "stage0_arm", "utc": "2026-09-12T08:32:10Z", "arm": "d822_sham", "joint": 4, "first_any": 4}
+{"event": "stage0_arm", "utc": "2026-09-12T08:32:58Z", "arm": "d822_R1", "joint": 0, "first_any": 8}
+{"event": "stage0_arm", "utc": "2026-09-12T08:33:46Z", "arm": "d822_R2", "joint": 0, "first_any": 8}
+{
+  "checks": {
+    "f61_sham_eq_capture": 0.0,
+    "d822_sham_eq_capture": 0.0,
+    "d822_weight_reconstruction": 0.0,
+    "f61_weight_reconstruction": 0.0,
+    "f61_sham_sealed_replay": {
+      "token_lp": 0.0,
+      "lp": 0.0
+    },
+    "f61_sham_prediction_replay": true,
+    "d822_sham_sealed_replay": {
+      "token_lp": 0.0,
+      "lp": 0.0
+    },
+    "d822_sham_prediction_replay": true,
+    "direct_parity_error": 3.814697265625e-06
+  }
+}
+f61_sham {"A0": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "A2": {"first_token_correct": 0, "joint": 0, "predictions": ["C1", "C1", "C1", "C1"]}, "C4": {"first_token_correct": 0, "joint": 0, "predictions": ["L1", "L1", "L1", "L1"]}, "I2": {"first_token_correct": 0, "joint": 0, "predictions": ["G2", "G2", "G2", "G2"]}, "K0": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "K3": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "M0": {"first_token_correct": 0, "joint": 0, "predictions": ["G2", "G2", "G2", "G2"]}, "M3": {"first_token_correct": 4, "joint": 1, "predictions": ["M2", "M3", "M2", "M2"]}}
+f61_R3 {"A0": {"first_token_correct": 0, "joint": 0, "predictions": ["L1", "L1", "L1", "L1"]}, "A2": {"first_token_correct": 0, "joint": 0, "predictions": ["N1", "N1", "N1", "N1"]}, "C4": {"first_token_correct": 0, "joint": 0, "predictions": ["J1", "J1", "J1", "J1"]}, "I2": {"first_token_correct": 0, "joint": 0, "predictions": ["G2", "G2", "G2", "G2"]}, "K0": {"first_token_correct": 0, "joint": 0, "predictions": ["B7", "B7", "B7", "B7"]}, "K3": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "M0": {"first_token_correct": 0, "joint": 0, "predictions": ["B2", "B2", "B2", "B2"]}, "M3": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}}
+f61_R1 {"A0": {"first_token_correct": 0, "joint": 0, "predictions": ["L1", "L1", "L1", "L1"]}, "A2": {"first_token_correct": 0, "joint": 0, "predictions": ["G3", "G3", "G3", "G3"]}, "C4": {"first_token_correct": 4, "joint": 1, "predictions": ["C3", "C3", "C3", "C4"]}, "I2": {"first_token_correct": 0, "joint": 0, "predictions": ["G2", "G2", "G2", "G2"]}, "K0": {"first_token_correct": 0, "joint": 0, "predictions": ["J2", "B3", "B3", "B3"]}, "K3": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "M0": {"first_token_correct": 0, "joint": 0, "predictions": ["B3", "B3", "B2", "B3"]}, "M3": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}}
+f61_R2 {"A0": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "L3", "L3", "D4"]}, "A2": {"first_token_correct": 0, "joint": 0, "predictions": ["D3", "D3", "D3", "D3"]}, "C4": {"first_token_correct": 0, "joint": 0, "predictions": ["J1", "J1", "J1", "J1"]}, "I2": {"first_token_correct": 0, "joint": 0, "predictions": ["G2", "G2", "G2", "G2"]}, "K0": {"first_token_correct": 0, "joint": 0, "predictions": ["B7", "B7", "B7", "B7"]}, "K3": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "M0": {"first_token_correct": 0, "joint": 0, "predictions": ["B2", "B2", "B2", "B2"]}, "M3": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}}
+d822_sham {"A0": {"first_token_correct": 0, "joint": 0, "predictions": ["D1", "D4", "D1", "D4"]}, "A2": {"first_token_correct": 0, "joint": 0, "predictions": ["D1", "D1", "D1", "D1"]}, "C4": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "I2": {"first_token_correct": 0, "joint": 0, "predictions": ["G2", "G2", "G2", "G3"]}, "K0": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "K3": {"first_token_correct": 0, "joint": 0, "predictions": ["G3", "G3", "G3", "G3"]}, "M0": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "M3": {"first_token_correct": 4, "joint": 4, "predictions": ["M3", "M3", "M3", "M3"]}}
+d822_R1 {"A0": {"first_token_correct": 0, "joint": 0, "predictions": ["B3", "B3", "B3", "B3"]}, "A2": {"first_token_correct": 0, "joint": 0, "predictions": ["K3", "K3", "K3", "K3"]}, "C4": {"first_token_correct": 4, "joint": 0, "predictions": ["C7", "C7", "C7", "C7"]}, "I2": {"first_token_correct": 4, "joint": 0, "predictions": ["I3", "I3", "I3", "I3"]}, "K0": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "K3": {"first_token_correct": 0, "joint": 0, "predictions": ["C3", "C3", "C3", "C3"]}, "M0": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "M3": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}}
+d822_R2 {"A0": {"first_token_correct": 0, "joint": 0, "predictions": ["G3", "G3", "G3", "G3"]}, "A2": {"first_token_correct": 0, "joint": 0, "predictions": ["L1", "L1", "L1", "L1"]}, "C4": {"first_token_correct": 4, "joint": 0, "predictions": ["C7", "C7", "C7", "C7"]}, "I2": {"first_token_correct": 4, "joint": 0, "predictions": ["I3", "I3", "I3", "I3"]}, "K0": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "K3": {"first_token_correct": 0, "joint": 0, "predictions": ["C3", "C3", "C3", "C3"]}, "M0": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}, "M3": {"first_token_correct": 0, "joint": 0, "predictions": ["D4", "D4", "D4", "D4"]}}

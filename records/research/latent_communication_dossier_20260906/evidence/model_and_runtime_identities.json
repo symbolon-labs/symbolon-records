@@ -1,0 +1,193 @@
+{
+  "models": {
+    "sender": {
+      "repo": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "path": "<local>/.cache/huggingface/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "files": {
+        "config.json": {
+          "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+          "bytes": 726
+        },
+        "generation_config.json": {
+          "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+          "bytes": 239
+        },
+        "merges.txt": {
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+          "bytes": 1671853
+        },
+        "model-00001-of-00002.safetensors": {
+          "sha256": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5",
+          "bytes": 3441185608
+        },
+        "model-00002-of-00002.safetensors": {
+          "sha256": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9",
+          "bytes": 622329984
+        },
+        "model.safetensors.index.json": {
+          "sha256": "0d660e94b165eb912669a5249dff44b83188c4777a07ddb9611fb78d91b0578d",
+          "bytes": 25605
+        },
+        "tokenizer.json": {
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "bytes": 11422654
+        },
+        "tokenizer_config.json": {
+          "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+          "bytes": 9732
+        },
+        "vocab.json": {
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "bytes": 2776833
+        }
+      },
+      "dtype": "float32",
+      "quantization": "none"
+    },
+    "receiver": {
+      "repo": "HuggingFaceTB/SmolLM2-360M-Instruct",
+      "revision": "a10cc1512eabd3dde888204e902eca88bddb4951",
+      "path": "<local>/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM2-360M-Instruct/snapshots/a10cc1512eabd3dde888204e902eca88bddb4951",
+      "files": {
+        "README.md": {
+          "sha256": "6b88794416ac9da8f254ebb0bec228967a2bdd0badf9a2853863928b25facd95",
+          "bytes": 7304
+        },
+        "all_results.json": {
+          "sha256": "71face5e244d784819f937a25206865c295c8889fe4359eec28bbec85d02da0d",
+          "bytes": 786
+        },
+        "config.json": {
+          "sha256": "224f72354f10d617a359cc82ad15a3c96e866b9b2ffadb81997eeea9e88e22ee",
+          "bytes": 846
+        },
+        "eval_results.json": {
+          "sha256": "db9bcb5c4f2a3be0d7e88f86af26f375c22c240954af86942d1554d87a488ce8",
+          "bytes": 589
+        },
+        "generation_config.json": {
+          "sha256": "87b916edaaab66b3899b9d0dd0752727dff6666686da0504d89ae0a6e055a013",
+          "bytes": 132
+        },
+        "merges.txt": {
+          "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+          "bytes": 466391
+        },
+        "model.safetensors": {
+          "sha256": "e6bffe7435d7ddc10fd3b9a9efd429dafbacb1cb17015fb5562664e7532bf86e",
+          "bytes": 723674912
+        },
+        "special_tokens_map.json": {
+          "sha256": "2b7379f3ae813529281a5c602bc5a11c1d4e0a99107aaa597fe936c1e813ca52",
+          "bytes": 655
+        },
+        "tokenizer.json": {
+          "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+          "bytes": 2104556
+        },
+        "tokenizer_config.json": {
+          "sha256": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df",
+          "bytes": 3764
+        },
+        "train_results.json": {
+          "sha256": "fceae2634b0a268a8adbda73fd0b2192922b496054011f588d2c6e888db1cea1",
+          "bytes": 232
+        },
+        "trainer_state.json": {
+          "sha256": "2263f580ae0d7890acc11253b83138b3fc1250dc6728688a3387ce813b92eed1",
+          "bytes": 57621
+        },
+        "vocab.json": {
+          "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+          "bytes": 800662
+        }
+      },
+      "dtype": "float32",
+      "quantization": "none"
+    }
+  },
+  "components": {
+    "channel_cf.py": {
+      "path": "research/latent_channel_smollm_20260906/channel_cf.py",
+      "sha256": "deb001a66dc5126652dfeb5479f7b0f98e1758152cf44f1c81d2dd4eb5a71887"
+    },
+    "final_cf.py": {
+      "path": "research/latent_channel_smollm_20260906/final_cf.py",
+      "sha256": "e229af7623c35f27a21e11483f98f182e350a16c5c1398fe41d92d4b956e7a8b"
+    },
+    "text_cf.py": {
+      "path": "research/latent_channel_smollm_20260906/text_cf.py",
+      "sha256": "a4b6443b87919e696241c8cd3482a12d74d780d41eea75d605f813ec492aa9ca"
+    },
+    "job.py": {
+      "path": "research/latent_channel_smollm_20260906/job.py",
+      "sha256": "2bea55e76c4ac1ceb63258e1ad649055a4aef7d06308abb03141193a568a66ab"
+    },
+    "preflight.py": {
+      "path": "research/latent_channel_smollm_20260906/preflight.py",
+      "sha256": "305410faa61289c861ca2971a2dc98c8eb5c58d9e1853c7d43362094b61a3f2a"
+    },
+    "PREREGISTRATION.md": {
+      "path": "research/latent_channel_smollm_20260906/PREREGISTRATION.md",
+      "sha256": "0b3195f765599ed1c2074a65c5900f05becf07a2484a786e185e4f13eb602cfb"
+    },
+    "TEXT_BASELINE_PREREGISTRATION.md": {
+      "path": "research/latent_channel_smollm_20260906/TEXT_BASELINE_PREREGISTRATION.md",
+      "sha256": "c3e60ca20aac8d64c3658e7fe8737ba11b030355c08f4aa78bb427b6198aaecd"
+    },
+    "PRIOR_BOUNDARIES.md": {
+      "path": "research/latent_channel_smollm_20260906/PRIOR_BOUNDARIES.md",
+      "sha256": "bb442230faf924db5cca1215f8d13280258c72d19b951d1b15b38947dcf1c129"
+    },
+    "acquisition.json": {
+      "path": "research/latent_channel_smollm_20260906/acquisition.json",
+      "sha256": "3bfb8f13bdd9adb5fe29dc59d68c5a958ea1302b5aca518bc865f64b783213e3"
+    },
+    "test_cf.py": {
+      "path": "research/latent_channel_smollm_20260906/test_cf.py",
+      "sha256": "6573674d0406d2d4fc4113f82ce5e78bf5158b365664623f37099deb9a1dba55"
+    },
+    "test_final_cf.py": {
+      "path": "research/latent_channel_smollm_20260906/test_final_cf.py",
+      "sha256": "c11488422d03f9f02fb354a1f01c997f4f77de2deb082161e686b5c6cd705020"
+    },
+    "sender_reproduce.py": {
+      "path": "research/latent_channel_smollm_20260906/sender_reproduce.py",
+      "sha256": "859a810ba1493ae38e11e2302f6efe9cdc53c8eaf5d6d98e1001e9ddd30d5841"
+    },
+    "base": {
+      "path": "research/latent_channel_v1_20260906/channel.py",
+      "sha256": "e2de36c051ba503b441c2d84b959728cb09f8d064791012b5f673462039f6fbd"
+    },
+    "bounded": {
+      "path": "research/latent_channel_v2_20260906/channel_v2.py",
+      "sha256": "ee773ac60f7068f3e350ce60120f5f5bed268beece1e9fd7793a48fcb57eaf29"
+    },
+    "statistics": {
+      "path": "research/latent_channel_v2_20260906/analysis_v2.py",
+      "sha256": "3fb4a087b1f75d438060e25358b636915c455c603a6d1e93b3404ec7e2554498"
+    },
+    "text": {
+      "path": "research/latent_channel_v2_20260906/text_baseline.py",
+      "sha256": "8bee1fff96c1b44e844bb40c91058f816e956e76d602224127a836f67172033e"
+    },
+    "qwen_runtime": {
+      "path": ".venv/lib/python3.14/site-packages/transformers/models/qwen3/modeling_qwen3.py",
+      "sha256": "fbdcfeeb1b54135ca67ba7df924da92f4b264e1252b517eea2de989289ebaeab"
+    },
+    "llama_runtime": {
+      "path": ".venv/lib/python3.14/site-packages/transformers/models/llama/modeling_llama.py",
+      "sha256": "46d313ec0f1116bcc1bb7f2379467ab249c140415c64fb758e2d5915cd8b89a5"
+    }
+  },
+  "versions": {
+    "torch": "2.13.0+cu130",
+    "numpy": "2.4.6",
+    "transformers": "5.10.2",
+    "python": "3.14.7 (main, Aug 10 2026, 07:46:56) [GCC 16.1.1 20260728]"
+  },
+  "checkpoint_sha256": "e75da6bfc6dc180b973696de763f944b83396e4d966e783c91b00343c9cd4170",
+  "final_freeze_sha256": "f7265cd842b69b05865f78ceb00fef1463d948ca42a855286e9adf0070a643a2",
+  "note": "Identities copied from frozen records; model weight rehash requires verify.py --models."
+}

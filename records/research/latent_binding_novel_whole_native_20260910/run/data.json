@@ -1,0 +1,411 @@
+{
+  "split": "one_shot_whole_id_development",
+  "arm": "novel",
+  "seed": 191003,
+  "selected_ids": [
+    "A0",
+    "A2",
+    "C4",
+    "I2",
+    "K0",
+    "K3",
+    "M0",
+    "M3"
+  ],
+  "records": [
+    {
+      "group": 0,
+      "source": "K0 = green\nC4 = yellow\nM3 = red\nI2 = blue",
+      "wrong_source": "K0 = yellow\nC4 = green\nM3 = blue\nI2 = red",
+      "bindings": {
+        "red": "M3",
+        "green": "K0",
+        "blue": "I2",
+        "yellow": "C4"
+      },
+      "wrong_bindings": {
+        "yellow": "K0",
+        "green": "C4",
+        "blue": "M3",
+        "red": "I2"
+      }
+    },
+    {
+      "group": 1,
+      "source": "I2 = green\nA0 = yellow\nK3 = blue\nA2 = red",
+      "wrong_source": "I2 = yellow\nA0 = green\nK3 = red\nA2 = blue",
+      "bindings": {
+        "red": "A2",
+        "green": "I2",
+        "blue": "K3",
+        "yellow": "A0"
+      },
+      "wrong_bindings": {
+        "yellow": "I2",
+        "green": "A0",
+        "red": "K3",
+        "blue": "A2"
+      }
+    },
+    {
+      "group": 2,
+      "source": "K3 = yellow\nK0 = red\nM0 = blue\nA0 = green",
+      "wrong_source": "K3 = green\nK0 = blue\nM0 = red\nA0 = yellow",
+      "bindings": {
+        "red": "K0",
+        "green": "A0",
+        "blue": "M0",
+        "yellow": "K3"
+      },
+      "wrong_bindings": {
+        "green": "K3",
+        "blue": "K0",
+        "red": "M0",
+        "yellow": "A0"
+      }
+    },
+    {
+      "group": 3,
+      "source": "A0 = red\nK3 = green\nC4 = blue\nM3 = yellow",
+      "wrong_source": "A0 = yellow\nK3 = red\nC4 = green\nM3 = blue",
+      "bindings": {
+        "red": "A0",
+        "green": "K3",
+        "blue": "C4",
+        "yellow": "M3"
+      },
+      "wrong_bindings": {
+        "yellow": "A0",
+        "red": "K3",
+        "green": "C4",
+        "blue": "M3"
+      }
+    },
+    {
+      "group": 4,
+      "source": "A2 = yellow\nM3 = green\nA0 = blue\nM0 = red",
+      "wrong_source": "A2 = red\nM3 = blue\nA0 = yellow\nM0 = green",
+      "bindings": {
+        "red": "M0",
+        "green": "M3",
+        "blue": "A0",
+        "yellow": "A2"
+      },
+      "wrong_bindings": {
+        "red": "A2",
+        "blue": "M3",
+        "yellow": "A0",
+        "green": "M0"
+      }
+    },
+    {
+      "group": 5,
+      "source": "M0 = green\nA2 = blue\nK0 = yellow\nK3 = red",
+      "wrong_source": "M0 = blue\nA2 = yellow\nK0 = red\nK3 = green",
+      "bindings": {
+        "red": "K3",
+        "green": "M0",
+        "blue": "A2",
+        "yellow": "K0"
+      },
+      "wrong_bindings": {
+        "blue": "M0",
+        "yellow": "A2",
+        "red": "K0",
+        "green": "K3"
+      }
+    },
+    {
+      "group": 6,
+      "source": "M3 = blue\nI2 = yellow\nA2 = green\nC4 = red",
+      "wrong_source": "M3 = red\nI2 = green\nA2 = yellow\nC4 = blue",
+      "bindings": {
+        "red": "C4",
+        "green": "A2",
+        "blue": "M3",
+        "yellow": "I2"
+      },
+      "wrong_bindings": {
+        "red": "M3",
+        "green": "I2",
+        "yellow": "A2",
+        "blue": "C4"
+      }
+    },
+    {
+      "group": 7,
+      "source": "C4 = green\nM0 = yellow\nI2 = red\nK0 = blue",
+      "wrong_source": "C4 = yellow\nM0 = green\nI2 = blue\nK0 = red",
+      "bindings": {
+        "red": "I2",
+        "green": "C4",
+        "blue": "K0",
+        "yellow": "M0"
+      },
+      "wrong_bindings": {
+        "yellow": "C4",
+        "green": "M0",
+        "blue": "I2",
+        "red": "K0"
+      }
+    }
+  ],
+  "rows": [
+    {
+      "id": "context-novel-000000",
+      "group": 4,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "A2",
+      "wrong_answer": "A0"
+    },
+    {
+      "id": "context-novel-000001",
+      "group": 4,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "M3",
+      "wrong_answer": "M0"
+    },
+    {
+      "id": "context-novel-000002",
+      "group": 4,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "M0",
+      "wrong_answer": "A2"
+    },
+    {
+      "id": "context-novel-000003",
+      "group": 7,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "C4",
+      "wrong_answer": "M0"
+    },
+    {
+      "id": "context-novel-000004",
+      "group": 2,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "K3",
+      "wrong_answer": "A0"
+    },
+    {
+      "id": "context-novel-000005",
+      "group": 4,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "A0",
+      "wrong_answer": "M3"
+    },
+    {
+      "id": "context-novel-000006",
+      "group": 1,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "A2",
+      "wrong_answer": "K3"
+    },
+    {
+      "id": "context-novel-000007",
+      "group": 0,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "K0",
+      "wrong_answer": "C4"
+    },
+    {
+      "id": "context-novel-000008",
+      "group": 7,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "I2",
+      "wrong_answer": "K0"
+    },
+    {
+      "id": "context-novel-000009",
+      "group": 2,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "A0",
+      "wrong_answer": "K3"
+    },
+    {
+      "id": "context-novel-000010",
+      "group": 3,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "M3",
+      "wrong_answer": "A0"
+    },
+    {
+      "id": "context-novel-000011",
+      "group": 0,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "M3",
+      "wrong_answer": "I2"
+    },
+    {
+      "id": "context-novel-000012",
+      "group": 1,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "I2",
+      "wrong_answer": "A0"
+    },
+    {
+      "id": "context-novel-000013",
+      "group": 6,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "C4",
+      "wrong_answer": "M3"
+    },
+    {
+      "id": "context-novel-000014",
+      "group": 1,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "A0",
+      "wrong_answer": "I2"
+    },
+    {
+      "id": "context-novel-000015",
+      "group": 6,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "A2",
+      "wrong_answer": "I2"
+    },
+    {
+      "id": "context-novel-000016",
+      "group": 7,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "K0",
+      "wrong_answer": "I2"
+    },
+    {
+      "id": "context-novel-000017",
+      "group": 6,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "I2",
+      "wrong_answer": "A2"
+    },
+    {
+      "id": "context-novel-000018",
+      "group": 7,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "M0",
+      "wrong_answer": "C4"
+    },
+    {
+      "id": "context-novel-000019",
+      "group": 0,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "I2",
+      "wrong_answer": "M3"
+    },
+    {
+      "id": "context-novel-000020",
+      "group": 1,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "K3",
+      "wrong_answer": "A2"
+    },
+    {
+      "id": "context-novel-000021",
+      "group": 3,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "A0",
+      "wrong_answer": "K3"
+    },
+    {
+      "id": "context-novel-000022",
+      "group": 0,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "C4",
+      "wrong_answer": "K0"
+    },
+    {
+      "id": "context-novel-000023",
+      "group": 5,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "K3",
+      "wrong_answer": "K0"
+    },
+    {
+      "id": "context-novel-000024",
+      "group": 5,
+      "color": "yellow",
+      "query": "Which ID is yellow?",
+      "answer": "K0",
+      "wrong_answer": "A2"
+    },
+    {
+      "id": "context-novel-000025",
+      "group": 2,
+      "color": "red",
+      "query": "Which ID is red?",
+      "answer": "K0",
+      "wrong_answer": "M0"
+    },
+    {
+      "id": "context-novel-000026",
+      "group": 5,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "A2",
+      "wrong_answer": "M0"
+    },
+    {
+      "id": "context-novel-000027",
+      "group": 6,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "M3",
+      "wrong_answer": "C4"
+    },
+    {
+      "id": "context-novel-000028",
+      "group": 2,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "M0",
+      "wrong_answer": "K0"
+    },
+    {
+      "id": "context-novel-000029",
+      "group": 3,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "K3",
+      "wrong_answer": "C4"
+    },
+    {
+      "id": "context-novel-000030",
+      "group": 3,
+      "color": "blue",
+      "query": "Which ID is blue?",
+      "answer": "C4",
+      "wrong_answer": "M3"
+    },
+    {
+      "id": "context-novel-000031",
+      "group": 5,
+      "color": "green",
+      "query": "Which ID is green?",
+      "answer": "M0",
+      "wrong_answer": "K3"
+    }
+  ]
+}

@@ -1,0 +1,533 @@
+{
+  "accuracy": {
+    "receiver_only": {
+      "mean": 0.25,
+      "ci95": [
+        0.25,
+        0.25
+      ],
+      "per_class": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "per_class_ci95": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "full_vocab_ce": 5.2965560257434845,
+      "margin_mean": -2.2896875739097595,
+      "margin_median": -4.305393576622009
+    },
+    "correct": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "per_class": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_ci95": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "full_vocab_ce": 0.0009876958520180779,
+      "margin_mean": 9.631806729039454,
+      "margin_median": 8.339307768517756
+    },
+    "shuffled": {
+      "mean": 0.3125,
+      "ci95": [
+        0.15625,
+        0.46875
+      ],
+      "per_class": [
+        0.5,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "per_class_ci95": [
+        [
+          0.125,
+          0.875
+        ],
+        [
+          0.0,
+          0.625
+        ],
+        [
+          0.0,
+          0.625
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "full_vocab_ce": 9.709388832556215,
+      "margin_mean": -6.867353770549016,
+      "margin_median": -9.08476053578488
+    },
+    "random_71001": {
+      "mean": 0.25,
+      "ci95": [
+        0.125,
+        0.375
+      ],
+      "per_class": [
+        0.625,
+        0.0,
+        0.0,
+        0.375
+      ],
+      "per_class_ci95": [
+        [
+          0.25,
+          0.875
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.75
+        ]
+      ],
+      "full_vocab_ce": 5.695502885871974,
+      "margin_mean": -1.86289622887125,
+      "margin_median": -2.158449649810791
+    },
+    "random_71002": {
+      "mean": 0.1875,
+      "ci95": [
+        0.09375,
+        0.3125
+      ],
+      "per_class": [
+        0.375,
+        0.0,
+        0.0,
+        0.375
+      ],
+      "per_class_ci95": [
+        [
+          0.125,
+          0.75
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.125,
+          0.75
+        ]
+      ],
+      "full_vocab_ce": 6.049249617615715,
+      "margin_mean": -3.0048039570668834,
+      "margin_median": -2.2824416160583496
+    },
+    "zero": {
+      "mean": 0.25,
+      "ci95": [
+        0.25,
+        0.25
+      ],
+      "per_class": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "per_class_ci95": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "full_vocab_ce": 5.2965560257434845,
+      "margin_mean": -2.2896875739097595,
+      "margin_median": -4.305393576622009
+    },
+    "text": {
+      "mean": 0.03125,
+      "ci95": [
+        0.0,
+        0.09375
+      ],
+      "per_class": [
+        0.125,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "per_class_ci95": [
+        [
+          0.0,
+          0.375
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "full_vocab_ce": 4.7532709389925,
+      "margin_mean": -1.2179681025445461,
+      "margin_median": -1.339896559715271
+    },
+    "text_sender": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "per_class": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_ci95": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "full_vocab_ce": 0.22604313120245934,
+      "margin_mean": 2.23456809297204,
+      "margin_median": 2.169006235897541
+    },
+    "text_oracle": {
+      "mean": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "per_class": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "per_class_ci95": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ],
+      "full_vocab_ce": 0.22604313120245934,
+      "margin_mean": 2.23456809297204,
+      "margin_median": 2.169006235897541
+    },
+    "receiver_chat_only": {
+      "mean": 0.25,
+      "ci95": [
+        0.25,
+        0.25
+      ],
+      "per_class": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "per_class_ci95": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "full_vocab_ce": 1.858869083225727,
+      "margin_mean": -1.1190533488988876,
+      "margin_median": -1.364685982465744
+    }
+  },
+  "correct_minus": {
+    "receiver_only": {
+      "accuracy_mean": 0.75,
+      "accuracy_ci99": [
+        0.75,
+        0.75
+      ],
+      "accuracy_ci95": [
+        0.75,
+        0.75
+      ],
+      "margin_change_mean": 11.921494302949213,
+      "margin_change_median": 12.498896330900607,
+      "margin_change_ci99": [
+        11.65792845277704,
+        12.080036478715288
+      ]
+    },
+    "shuffled": {
+      "accuracy_mean": 0.6875,
+      "accuracy_ci99": [
+        0.46875,
+        0.875156249999975
+      ],
+      "accuracy_ci95": [
+        0.53125,
+        0.84375
+      ],
+      "margin_change_mean": 16.49916049958847,
+      "margin_change_median": 16.122991556607303,
+      "margin_change_ci99": [
+        11.35145435336699,
+        22.038725779502055
+      ]
+    },
+    "random_71001": {
+      "accuracy_mean": 0.75,
+      "accuracy_ci99": [
+        0.59375,
+        0.90625
+      ],
+      "accuracy_ci95": [
+        0.625,
+        0.875
+      ],
+      "margin_change_mean": 11.494702957910704,
+      "margin_change_median": 11.23048889292113,
+      "margin_change_ci99": [
+        10.532189735701253,
+        12.276009674045781
+      ]
+    },
+    "random_71002": {
+      "accuracy_mean": 0.8125,
+      "accuracy_ci99": [
+        0.65625,
+        0.9375
+      ],
+      "accuracy_ci95": [
+        0.6875,
+        0.90625
+      ],
+      "margin_change_mean": 12.636610686106337,
+      "margin_change_median": 12.048542161122896,
+      "margin_change_ci99": [
+        10.401397781298241,
+        15.25636645787472
+      ]
+    },
+    "zero": {
+      "accuracy_mean": 0.75,
+      "accuracy_ci99": [
+        0.75,
+        0.75
+      ],
+      "accuracy_ci95": [
+        0.75,
+        0.75
+      ],
+      "margin_change_mean": 11.921494302949213,
+      "margin_change_median": 12.498896330900607,
+      "margin_change_ci99": [
+        11.65792845277704,
+        12.080036478715288
+      ]
+    },
+    "text": {
+      "accuracy_mean": 0.96875,
+      "accuracy_ci99": [
+        0.875,
+        1.0
+      ],
+      "accuracy_ci95": [
+        0.90625,
+        1.0
+      ],
+      "margin_change_mean": 10.849774831584,
+      "margin_change_median": 9.463145464964327,
+      "margin_change_ci99": [
+        10.539161817265267,
+        11.066911488043285
+      ]
+    },
+    "text_sender": {
+      "accuracy_mean": 0.0,
+      "accuracy_ci99": [
+        0.0,
+        0.0
+      ],
+      "accuracy_ci95": [
+        0.0,
+        0.0
+      ],
+      "margin_change_mean": 7.397238636067414,
+      "margin_change_median": 6.915830655270838,
+      "margin_change_ci99": [
+        7.133672785895242,
+        7.555780811833488
+      ]
+    },
+    "text_oracle": {
+      "accuracy_mean": 0.0,
+      "accuracy_ci99": [
+        0.0,
+        0.0
+      ],
+      "accuracy_ci95": [
+        0.0,
+        0.0
+      ],
+      "margin_change_mean": 7.397238636067414,
+      "margin_change_median": 6.915830655270838,
+      "margin_change_ci99": [
+        7.133672785895242,
+        7.555780811833488
+      ]
+    },
+    "receiver_chat_only": {
+      "accuracy_mean": 0.75,
+      "accuracy_ci99": [
+        0.75,
+        0.75
+      ],
+      "accuracy_ci95": [
+        0.75,
+        0.75
+      ],
+      "margin_change_mean": 10.750860077938341,
+      "margin_change_median": 9.913207829304156,
+      "margin_change_ci99": [
+        10.487294227766169,
+        10.909402253704416
+      ]
+    }
+  },
+  "control_equivalence_ci95": {
+    "shuffled": [
+      -0.09375,
+      0.21875
+    ],
+    "random_71001": [
+      -0.125,
+      0.125
+    ],
+    "random_71002": [
+      -0.15625,
+      0.0625
+    ]
+  },
+  "statistical_checks": {
+    "correct_ge90": true,
+    "each_class_ge85": true,
+    "receiver_exact_chance": true,
+    "randomized_controls_le35": true,
+    "paired99_gain_gt50": false,
+    "randomized_controls_equivalent": false
+  },
+  "shuffled_prediction_matches_donor": 1.0,
+  "bootstrap": {
+    "unit": "nonce group with four counterfactual labels",
+    "seed": 81001,
+    "draws": 10000
+  },
+  "n_examples": 32,
+  "n_groups": 8,
+  "purpose": "Analysis-harness rehearsal on trained-on tiny data, not a final scientific result",
+  "held_out": false,
+  "final_data_materialized": false,
+  "code_sha256": "3fb4a087b1f75d438060e25358b636915c455c603a6d1e93b3404ec7e2554498"
+}

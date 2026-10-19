@@ -1,0 +1,72 @@
+{
+  "verified": {
+    "qwen_control": {
+      "oracle_accuracy": 1.0,
+      "donor_following": 1.0,
+      "donor_original_accuracy": 0.0,
+      "qualified": true,
+      "result_sha256": "5976cedfa3119ae67fb3007c991314d0466ad945dbc6840a9ef386b3d1376a07",
+      "manifest_sha256": "7fca4cf323dde4e78a50695c6bd53b4904be9ac1584b968df35c953cee39ca8e",
+      "margins": [
+        2.2945556640625,
+        2.04345703125,
+        0.552398681640625,
+        4.047861099243164
+      ],
+      "parameter_count": 596049920
+    },
+    "llama_diagnostic": {
+      "oracle_accuracy": 0.25,
+      "donor_following": 0.25,
+      "donor_original_accuracy": 0.25,
+      "qualified": false,
+      "result_sha256": "1f7501c390c9bec418ab66e1f8f65aa638848c64e55e795b28cd8c02600f2295",
+      "manifest_sha256": "20ab438bf4945bee0eac380ffcaeb9360abe6c72ce20752ec7c4e5f1fb0ff356",
+      "margins": [
+        -3.3593482971191406,
+        -3.3288745880126953,
+        -2.7838001251220703,
+        4.198849678039551
+      ],
+      "parameter_count": 1235814400
+    },
+    "smollm_candidate_snapshot_path_fix": {
+      "oracle_accuracy": 1.0,
+      "donor_following": 1.0,
+      "donor_original_accuracy": 0.0,
+      "qualified": true,
+      "result_sha256": "58e7e9116b8ff5bca347e292c675aa4dd89da92caf6fbf788b76aed175898ccd",
+      "manifest_sha256": "3100142af0cc0ffb5e4afa7efc0348234b949fce5cfb2eabc337710873902520",
+      "margins": [
+        1.0647220611572266,
+        0.806402325630188,
+        0.7136430740356445,
+        2.023289680480957
+      ],
+      "parameter_count": 361821120
+    }
+  },
+  "upstream_candidate_sha256": "e6bffe7435d7ddc10fd3b9a9efd429dafbacb1cb17015fb5562664e7532bf86e",
+  "historical_seals": {
+    "latent_channel_v2_20260906": 163,
+    "latent_channel_crossfamily_20260906": 96
+  },
+  "status": "RECEIVER QUALIFIED \u2014 NOT A LATENT COMMUNICATION RESULT",
+  "completed_native_stage_seconds": 88.18949898499704,
+  "external_spend_usd": 0,
+  "requirements": {
+    "exact_oracle_task": true,
+    "non_qwen_receiver": true,
+    "no_prompt_search": true,
+    "no_bridge_training": true,
+    "all_four_symbols": true,
+    "donor_counterfactual": true,
+    "baseline_chance": true,
+    "determinism_and_batching": true,
+    "full_logit_seam": true,
+    "frozen_identities": true,
+    "historical_integrity": true
+  },
+  "code_sha256": "97727da37e0a59062e5e426d3b3ff085ca81b0ade3c8012512218165438ce351",
+  "utc": "2026-09-06T05:56:18Z"
+}
