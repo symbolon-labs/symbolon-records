@@ -1,0 +1,127 @@
+[22:00:26] data: train=64 test=32
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 6456.58it/s]
+[22:00:50] sender train: n=64 acc=0.766 21s
+[22:01:00] sender test: n=32 acc=0.781 10s
+[22:01:11] probes: T3 lam=1.0 cv_nll=0.4991; T4 lam=1.0 cv_nll=1.0044; T4@28 cv_nll=0.7735
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:54,  5.32it/s]Loading weights:  48%|████▊     | 138/290 [00:00<00:00, 585.20it/s]Loading weights:  75%|███████▍  | 217/290 [00:00<00:00, 531.32it/s]Loading weights:  97%|█████████▋| 282/290 [00:00<00:00, 535.32it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 499.44it/s]
+[22:01:12] text arm T0 done
+[22:01:13] text arm T1 done
+[22:01:14] text arm T2 done
+[22:01:14] text arm T3 done
+[22:01:15] text arm T4 done
+[22:01:18] text arm Card done
+[22:01:18] embedding route identity max abs diff: 0.00e+00
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 4389.42it/s]
+research/latent_uncertainty_pilot_20261020/pilot.py:324: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:823.)
+  tot += float(loss) * len(j)
+[22:01:27] latent lr=3e-05: best val NLL 1.3777 at epoch 8 (8s)
+[22:01:33] latent lr=0.0001: best val NLL 1.3397 at epoch 6 (15s)
+[22:01:40] latent lr=0.0003: best val NLL 1.2172 at epoch 5 (22s)
+[22:01:47] latent lr=0.001: best val NLL 1.0137 at epoch 6 (29s)
+[22:01:59] latent: lr=0.001 epochs=6 test NLL L=1.0520 L-shuf=1.4358 L-testshuf=1.8922 (41s)
+| arm | NLL | gap to Bayes | Brier | acc | ECE | zero-shot NLL | zero-shot acc |
+|---|---|---|---|---|---|---|---|
+| T0 | 0.8448 | 0.4510 | 0.3985 | 0.781 | 0.1458 | 1.9138 | 0.250 |
+| T1 | 0.8503 | 0.4565 | 0.4038 | 0.781 | 0.1540 | 1.6031 | 0.312 |
+| T2 | 0.8145 | 0.4207 | 0.3722 | 0.781 | 0.1895 | 1.4430 | 0.656 |
+| T3 | 0.8472 | 0.4534 | 0.3996 | 0.719 | 0.1189 | 1.4480 | 0.625 |
+| T4 | 0.7580 | 0.3643 | 0.3504 | 0.812 | 0.2127 | 2.1197 | 0.250 |
+| Card | 0.8320 | 0.4383 | 0.4704 | 0.656 | 0.2107 | 2.1661 | 0.250 |
+| L | 1.0520 | 0.6582 | 0.5568 | 0.531 | 0.1910 | 2.2036 | 0.281 |
+| L-shuf | 1.4358 | 1.0420 | 0.7869 | 0.250 | 0.1764 | 2.1949 | 0.250 |
+| L-testshuf | 1.8922 | 1.4984 | 0.9459 | 0.281 | 0.3635 | 1.9485 | 0.281 |
+| ref: Bayes | 0.3938 | 0.0000 | 0.2441 | 0.812 | 0.0742 | | |
+| ref: Prior | 1.3863 | 0.9925 | 0.7500 | 0.344 | 0.0938 | | |
+| ref: sender_softmax_direct | 0.8122 | 0.4184 | 0.4093 | 0.781 | 0.2258 | | |
+| ref: probe4_block21_direct | 0.9018 | 0.5080 | 0.4648 | 0.750 | 0.3308 | | |
+| ref: probe4_block28_direct | 0.8397 | 0.4459 | 0.4483 | 0.750 | 0.2129 | | |
+
+| difference (NLL) | mean | 95% CI |
+|---|---|---|
+| T0 minus L | -0.2072 | [-0.6092, +0.2106] |
+| T1 minus L | -0.2017 | [-0.6001, +0.2130] |
+| T2 minus L | -0.2375 | [-0.6429, +0.2124] |
+| T3 minus L | -0.2048 | [-0.6093, +0.2010] |
+| T4 minus L | -0.2939 | [-0.6867, +0.1177] |
+| Card minus L | -0.2199 | [-0.5604, +0.1050] |
+| L-shuf minus L | +0.3838 | [+0.0198, +0.7508] |
+| L-testshuf minus L | +0.8402 | [+0.3341, +1.3385] |
+| T0 minus T2 | +0.0303 | [-0.0478, +0.1028] |
+| T2 minus T4 | +0.0565 | [-0.1192, +0.1980] |
+| T3 minus T4 | +0.0891 | [-0.0052, +0.1843] |
+| T0 minus Card | +0.0128 | [-0.3156, +0.3526] |
+{
+ "best_of_T0_T2": "T2",
+ "L_beats_best_text": false,
+ "L_beats_T3": false,
+ "L_beats_T4": false,
+ "case": 3,
+ "sanity_Lshuf_ok": true,
+ "sanity_Card_ok": true,
+ "valid": true,
+ "margin_nats": 0.02,
+ "ln4": 1.3862943611198906
+}
+{
+ "sender_acc": {
+  "train": 0.765625,
+  "test": 0.78125
+ },
+ "bayes_argmax_acc_test": 0.8125,
+ "sender_agrees_with_bayes_argmax_test": 0.84375,
+ "digit_histograms_test": {
+  "T1": {
+   "7": 30,
+   "9": 2
+  },
+  "T2": {
+   "4": 1,
+   "6": 2,
+   "8": 9,
+   "9": 20
+  },
+  "T3": {
+   "1": 3,
+   "2": 1,
+   "4": 1,
+   "5": 1,
+   "6": 3,
+   "7": 3,
+   "8": 5,
+   "9": 15
+  }
+ },
+ "digit_auc_for_sender_correct_test": {
+  "T1": 0.54,
+  "T2": 0.7571428571428572,
+  "T3": 0.7542857142857143
+ },
+ "probe3_auc_test": 0.7714285714285715,
+ "latent_info": {
+  "lr": 0.001,
+  "epochs": 6,
+  "n_inner_train": 52,
+  "n_inner_val": 12,
+  "seconds": 41.097055196762085
+ },
+ "latent_grid": {
+  "3e-05": {
+   "best_val_nll": 1.3776559679340288,
+   "best_epoch": 8
+  },
+  "0.0001": {
+   "best_val_nll": 1.3396678079351012,
+   "best_epoch": 6
+  },
+  "0.0003": {
+   "best_val_nll": 1.2171815692319907,
+   "best_epoch": 5
+  },
+  "0.001": {
+   "best_val_nll": 1.0137472935630802,
+   "best_epoch": 6
+  }
+ }
+}
+[22:02:48] done

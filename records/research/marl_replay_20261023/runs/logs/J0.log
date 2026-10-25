@@ -1,0 +1,16 @@
+[gate 2026-10-23 23:04:09]
+  lab jobs: none
+  hot python: none
+  power: ac=1 battery=100% charger=140W
+  swap: total = 2048.00M  used = 404.31M  free = 1643.69M  (encrypted)
+  free disk: 119 GB
+  freeze: OK: 16 files and 2 inputs equal FREEZE.json (2026-10-23T18:11:30+00:00)
+  unit tests: Ran 39 tests in 6.384s OK 
+  gate result: PASS
+[launch 2026-10-23 23:04:17] job=J0 pid=37610 script=jobs.py args=j0 --job J0
+[23:04:17] start mode=j0 cond=None seeds=1-20 job=J0 torch=2.13.0
+[23:04:36] J0 D1 seed 9001: {"gate": {"n": 2000, "n_C": 1990, "n_Z": 599, "success_C": 0.995, "success_Z": 0.2995, "set_seed": 409001, "action_seed": 1409001}, "passed": true, "train_seconds_cumulative": 17.395449125004234, "nan": null}
+[23:04:53] J0 D1 seed 9002: {"gate": {"n": 2000, "n_C": 1957, "n_Z": 589, "success_C": 0.9785, "success_Z": 0.2945, "set_seed": 409002, "action_seed": 1409002}, "passed": true, "train_seconds_cumulative": 17.168603375001112, "nan": null}
+[23:06:15] J0 decision: {"selected": "D1", "stop": null, "plan": {"minutes_per_team_W1": 0.3467722132161725, "minutes_per_team_W0": 0.3349553284831927, "minutes_per_team_J3": 1.3102538555666494, "J1": {"teams_per_job": 20, "n_jobs": 1, "projected_min_per_job": 6.935444264323451}, "J2": {"teams_per_job": 20, "n_jobs": 1, "projected_min_per_job": 6.699106569663854}, "J3": {"teams_per_job": 20, "n_jobs": 1, "projected_min_per_job": 26.20507711133299}}}
+END {"status": "complete", "selected": "D1", "stop": null, "wall_seconds": 117.82555612499709}
+[launch 2026-10-23 23:06:17] job=J0 exit=0

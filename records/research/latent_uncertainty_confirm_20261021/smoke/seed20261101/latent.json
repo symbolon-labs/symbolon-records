@@ -1,0 +1,80 @@
+{
+ "history": {
+  "L": [
+   {
+    "epoch": 1,
+    "train_loss": 1.3487894535064697,
+    "seconds": 4.312981128692627
+   },
+   {
+    "epoch": 2,
+    "train_loss": 0.6037864883740743,
+    "seconds": 8.02517294883728
+   }
+  ],
+  "L-shuf": [
+   {
+    "epoch": 1,
+    "train_loss": 1.2778400182724,
+    "seconds": 3.7312519550323486
+   },
+   {
+    "epoch": 2,
+    "train_loss": 0.632684608300527,
+    "seconds": 7.451697826385498
+   }
+  ],
+  "L-probe": [
+   {
+    "epoch": 1,
+    "train_loss": 0.9812362591425577,
+    "seconds": 3.7557532787323
+   },
+   {
+    "epoch": 2,
+    "train_loss": 0.7905963261922201,
+    "seconds": 7.46530818939209
+   },
+   {
+    "epoch": 3,
+    "train_loss": 0.37883104880650836,
+    "seconds": 11.17277717590332
+   }
+  ]
+ },
+ "finite": {
+  "L": true,
+  "L-shuf": true,
+  "L-probe": true
+ },
+ "specs": {
+  "L": {
+   "kind": "L",
+   "rank": 16,
+   "lr": 0.01
+  },
+  "L_probe": {
+   "kind": "L-probe",
+   "rank": null,
+   "lr": 0.01
+  }
+ },
+ "epochs": {
+  "L": 2,
+  "L_probe": 3
+ },
+ "receiver_param_sha256": {
+  "L": [
+   "fe5f214635a19e4d8052924e712fb52e517279e8161d212e8d1e60d0ee9628f4",
+   "fe5f214635a19e4d8052924e712fb52e517279e8161d212e8d1e60d0ee9628f4"
+  ],
+  "L-shuf": [
+   "fe5f214635a19e4d8052924e712fb52e517279e8161d212e8d1e60d0ee9628f4",
+   "fe5f214635a19e4d8052924e712fb52e517279e8161d212e8d1e60d0ee9628f4"
+  ],
+  "L-probe": [
+   "fe5f214635a19e4d8052924e712fb52e517279e8161d212e8d1e60d0ee9628f4",
+   "fe5f214635a19e4d8052924e712fb52e517279e8161d212e8d1e60d0ee9628f4"
+  ]
+ }
+}

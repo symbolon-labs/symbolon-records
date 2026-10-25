@@ -1,0 +1,2861 @@
+{
+ "inputs": {
+  "run_folder": "research/split_equal_bits_20261023",
+  "results_json_sha256": "c4f91b4430ba93175e0e8898b0767b83e6db7c94e5a9c54a2807a85ad136ba95",
+  "results_json_time": "2026-10-24 16:25:21",
+  "python": "3.12.14",
+  "numpy": "2.4.6",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "time_start": "2026-10-24 16:35:24",
+  "time_end": "2026-10-24 16:35:26"
+ },
+ "check1_sha256": {
+  "cifar10_train.npz": {
+   "freeze": "3718a9a09265eb5e1b478fc87f49ff46f36397e04fd03f151173b44ee928f95c",
+   "independent": "3718a9a09265eb5e1b478fc87f49ff46f36397e04fd03f151173b44ee928f95c"
+  },
+  "cifar10_test_images.npz": {
+   "freeze": "4b19da3a0393bc5bc233d475551b7b4cd6fc3bd725bb6c897b4468ddef00cf4e",
+   "independent": "4b19da3a0393bc5bc233d475551b7b4cd6fc3bd725bb6c897b4468ddef00cf4e"
+  },
+  "cifar10_test_labels.npz": {
+   "freeze": "fec3b140ee9cc86565710c177dc1ff8abc36d8f06e158568576a36648d6b63c1",
+   "independent": "fec3b140ee9cc86565710c177dc1ff8abc36d8f06e158568576a36648d6b63c1"
+  }
+ },
+ "data_shapes": {
+  "x_train": [
+   50000,
+   3,
+   32,
+   32
+  ],
+  "x_test": [
+   10000,
+   3,
+   32,
+   32
+  ],
+  "test_class_counts": [
+   1000,
+   1000,
+   1000,
+   1000,
+   1000,
+   1000,
+   1000,
+   1000,
+   1000,
+   1000
+  ]
+ },
+ "check2_primary": {
+  "sym": "TOPK@64",
+  "act": "BOT@64",
+  "d_acc": 13.67,
+  "d_acc_ci": [
+   13.09,
+   14.26666666666667
+  ],
+  "d_acc_seeds": [
+   14.42,
+   13.36,
+   13.23
+  ],
+  "d_leak": 0.5496044431405254,
+  "d_leak_ci": [
+   0.5268899954619487,
+   0.572313210778331
+  ],
+  "d_leak_seeds": [
+   0.5124317022466987,
+   0.48907973210776673,
+   0.6473018950671109
+  ],
+  "A": "A+",
+  "A_hits": [
+   "A+"
+  ],
+  "L": "L+",
+  "L_hits": [
+   "L+"
+  ],
+  "case_by_rule_before_validity": "S",
+  "bootstrap": {
+   "seed": 20261024,
+   "draws": 10000,
+   "chunks": "40 x integers(0, 10000, size=(250, 10000))",
+   "percentile_method": "linear",
+   "acc_boot_mean": 13.671443333333334,
+   "leak_boot_mean": 0.5495841394569568
+  },
+  "margins": {
+   "d_leak_minus_0.5": 0.04960444314052537,
+   "d_leak_ci_low": 0.5268899954619487,
+   "min_d_leak_seed": 0.48907973210776673,
+   "d_acc_ci_low_minus_-1": 14.09
+  },
+  "valid": true,
+  "case": "S",
+  "case_final": "S"
+ },
+ "check3_decoder": {
+  "d_leak_L_seed1": 0.5039099120393447,
+  "d_leak_S_seed1": 0.5124317022466987,
+  "sign_differs": false,
+  "differ_more_than_1dB": false,
+  "abs_difference": 0.008521790207353996,
+  "decoder_dependent": false,
+  "psnr_L_seed1": {
+   "TOPK@64": 13.405752370570763,
+   "BOT@64": 13.909662282610109
+  }
+ },
+ "check4_descriptive": {
+  "RAW@64": {
+   "acc": 0.6359333333333334,
+   "acc_seeds": [
+    0.6361,
+    0.6366,
+    0.6351
+   ],
+   "psnr": 14.422334877591199,
+   "psnr_seeds": [
+    14.38004617454138,
+    14.425793449245306,
+    14.46116500898691
+   ]
+  },
+  "BOT@64": {
+   "acc": 0.6896,
+   "acc_seeds": [
+    0.6849,
+    0.6916,
+    0.6923
+   ],
+   "psnr": 13.976150582177118,
+   "psnr_seeds": [
+    13.899521147994744,
+    13.902494419167104,
+    14.126436179369508
+   ]
+  },
+  "TOPK@64": {
+   "acc": 0.8263000000000001,
+   "acc_seeds": [
+    0.8291,
+    0.8252,
+    0.8246
+   ],
+   "psnr": 13.426546139036594,
+   "psnr_seeds": [
+    13.387089445748042,
+    13.413414687059337,
+    13.479134284302397
+   ]
+  },
+  "LAB": {
+   "acc": 0.8263000000000001,
+   "acc_seeds": [
+    0.8291,
+    0.8252,
+    0.8246
+   ],
+   "psnr": 13.092185133295992,
+   "psnr_seeds": [
+    13.088535912720365,
+    13.09666693744468,
+    13.091352549722929
+   ]
+  },
+  "RAW_native": {
+   "acc": 0.8793666666666667,
+   "acc_seeds": [
+    0.8799,
+    0.8781,
+    0.8801
+   ],
+   "psnr": 22.237798854124964,
+   "psnr_seeds": [
+    22.20154937737925,
+    22.13746659308628,
+    22.37438059190936
+   ]
+  }
+ },
+ "check5_bits": {
+  "s20261111/BOT@1024": {
+   "nbits": 1024,
+   "allowed": [
+    1024
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 1024,
+   "packed_shape": [
+    10000,
+    128
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/BOT@16": {
+   "nbits": 16,
+   "allowed": [
+    16
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 16,
+   "packed_shape": [
+    10000,
+    2
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/BOT@256": {
+   "nbits": 256,
+   "allowed": [
+    256
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 256,
+   "packed_shape": [
+    10000,
+    32
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/BOT@64": {
+   "nbits": 64,
+   "allowed": [
+    64
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 64,
+   "packed_shape": [
+    10000,
+    8
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/BOT_float": {
+   "nbits": 2048,
+   "allowed": [
+    2048
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 2048,
+   "packed_shape": [
+    10000,
+    256
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_test",
+    "logits_test",
+    "pred_test"
+   ],
+   "pass": true
+  },
+  "s20261111/LAB": {
+   "nbits": 4,
+   "allowed": [
+    4
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 4,
+   "packed_shape": [
+    10000,
+    1
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/LAB_full": {
+   "nbits": 4,
+   "allowed": [
+    4
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 4,
+   "packed_shape": [
+    10000,
+    1
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/RAW@1024": {
+   "nbits": 1024,
+   "allowed": [
+    1024
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 1024,
+   "packed_shape": [
+    10000,
+    128
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/RAW@16": {
+   "nbits": 16,
+   "allowed": [
+    16
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 16,
+   "packed_shape": [
+    10000,
+    2
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/RAW@256": {
+   "nbits": 256,
+   "allowed": [
+    256
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 256,
+   "packed_shape": [
+    10000,
+    32
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/RAW@64": {
+   "nbits": 64,
+   "allowed": [
+    64
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 64,
+   "packed_shape": [
+    10000,
+    8
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/RAW_native": {
+   "nbits": 32768,
+   "allowed": [
+    32768
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 32768,
+   "packed_shape": [
+    10000,
+    4096
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_test",
+    "logits_test",
+    "pred_test"
+   ],
+   "pass": true
+  },
+  "s20261111/TOPK@16": {
+   "nbits": 16,
+   "allowed": [
+    13,
+    16
+   ],
+   "exact_from_selection": 16,
+   "unpacked_columns": 16,
+   "packed_shape": [
+    10000,
+    2
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/TOPK@256": {
+   "nbits": 148,
+   "allowed": [
+    148
+   ],
+   "exact_from_selection": 148,
+   "unpacked_columns": 148,
+   "packed_shape": [
+    10000,
+    19
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/TOPK@64": {
+   "nbits": 58,
+   "allowed": [
+    58,
+    61,
+    63
+   ],
+   "exact_from_selection": 58,
+   "unpacked_columns": 58,
+   "packed_shape": [
+    10000,
+    8
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/TOPK_float": {
+   "nbits": 320,
+   "allowed": [
+    320
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 320,
+   "packed_shape": [
+    10000,
+    40
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261111/TOPK_full": {
+   "nbits": 58,
+   "allowed": [
+    58,
+    61,
+    63
+   ],
+   "exact_from_selection": 58,
+   "unpacked_columns": 58,
+   "packed_shape": [
+    10000,
+    8
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/BOT@1024": {
+   "nbits": 1024,
+   "allowed": [
+    1024
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 1024,
+   "packed_shape": [
+    10000,
+    128
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/BOT@16": {
+   "nbits": 16,
+   "allowed": [
+    16
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 16,
+   "packed_shape": [
+    10000,
+    2
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/BOT@256": {
+   "nbits": 256,
+   "allowed": [
+    256
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 256,
+   "packed_shape": [
+    10000,
+    32
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/BOT@64": {
+   "nbits": 64,
+   "allowed": [
+    64
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 64,
+   "packed_shape": [
+    10000,
+    8
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/LAB": {
+   "nbits": 4,
+   "allowed": [
+    4
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 4,
+   "packed_shape": [
+    10000,
+    1
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/LAB_full": {
+   "nbits": 4,
+   "allowed": [
+    4
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 4,
+   "packed_shape": [
+    10000,
+    1
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/RAW@1024": {
+   "nbits": 1024,
+   "allowed": [
+    1024
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 1024,
+   "packed_shape": [
+    10000,
+    128
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/RAW@16": {
+   "nbits": 16,
+   "allowed": [
+    16
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 16,
+   "packed_shape": [
+    10000,
+    2
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/RAW@256": {
+   "nbits": 256,
+   "allowed": [
+    256
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 256,
+   "packed_shape": [
+    10000,
+    32
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/RAW@64": {
+   "nbits": 64,
+   "allowed": [
+    64
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 64,
+   "packed_shape": [
+    10000,
+    8
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/RAW_native": {
+   "nbits": 32768,
+   "allowed": [
+    32768
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 32768,
+   "packed_shape": [
+    10000,
+    4096
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_test",
+    "logits_test",
+    "pred_test"
+   ],
+   "pass": true
+  },
+  "s20261112/TOPK@16": {
+   "nbits": 16,
+   "allowed": [
+    13,
+    16
+   ],
+   "exact_from_selection": 16,
+   "unpacked_columns": 16,
+   "packed_shape": [
+    10000,
+    2
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/TOPK@256": {
+   "nbits": 148,
+   "allowed": [
+    148
+   ],
+   "exact_from_selection": 148,
+   "unpacked_columns": 148,
+   "packed_shape": [
+    10000,
+    19
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/TOPK@64": {
+   "nbits": 58,
+   "allowed": [
+    58,
+    61,
+    63
+   ],
+   "exact_from_selection": 58,
+   "unpacked_columns": 58,
+   "packed_shape": [
+    10000,
+    8
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/TOPK_float": {
+   "nbits": 320,
+   "allowed": [
+    320
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 320,
+   "packed_shape": [
+    10000,
+    40
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261112/TOPK_full": {
+   "nbits": 58,
+   "allowed": [
+    58,
+    61,
+    63
+   ],
+   "exact_from_selection": 58,
+   "unpacked_columns": 58,
+   "packed_shape": [
+    10000,
+    8
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/BOT@1024": {
+   "nbits": 1024,
+   "allowed": [
+    1024
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 1024,
+   "packed_shape": [
+    10000,
+    128
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/BOT@16": {
+   "nbits": 16,
+   "allowed": [
+    16
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 16,
+   "packed_shape": [
+    10000,
+    2
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/BOT@256": {
+   "nbits": 256,
+   "allowed": [
+    256
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 256,
+   "packed_shape": [
+    10000,
+    32
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/BOT@64": {
+   "nbits": 64,
+   "allowed": [
+    64
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 64,
+   "packed_shape": [
+    10000,
+    8
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/LAB": {
+   "nbits": 4,
+   "allowed": [
+    4
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 4,
+   "packed_shape": [
+    10000,
+    1
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/LAB_full": {
+   "nbits": 4,
+   "allowed": [
+    4
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 4,
+   "packed_shape": [
+    10000,
+    1
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/RAW@1024": {
+   "nbits": 1024,
+   "allowed": [
+    1024
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 1024,
+   "packed_shape": [
+    10000,
+    128
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/RAW@16": {
+   "nbits": 16,
+   "allowed": [
+    16
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 16,
+   "packed_shape": [
+    10000,
+    2
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/RAW@256": {
+   "nbits": 256,
+   "allowed": [
+    256
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 256,
+   "packed_shape": [
+    10000,
+    32
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/RAW@64": {
+   "nbits": 64,
+   "allowed": [
+    64
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 64,
+   "packed_shape": [
+    10000,
+    8
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/RAW_native": {
+   "nbits": 32768,
+   "allowed": [
+    32768
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 32768,
+   "packed_shape": [
+    10000,
+    4096
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_test",
+    "logits_test",
+    "pred_test"
+   ],
+   "pass": true
+  },
+  "s20261113/TOPK@16": {
+   "nbits": 16,
+   "allowed": [
+    13,
+    16
+   ],
+   "exact_from_selection": 16,
+   "unpacked_columns": 16,
+   "packed_shape": [
+    10000,
+    2
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/TOPK@256": {
+   "nbits": 148,
+   "allowed": [
+    148
+   ],
+   "exact_from_selection": 148,
+   "unpacked_columns": 148,
+   "packed_shape": [
+    10000,
+    19
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/TOPK@64": {
+   "nbits": 58,
+   "allowed": [
+    58,
+    61,
+    63
+   ],
+   "exact_from_selection": 58,
+   "unpacked_columns": 58,
+   "packed_shape": [
+    10000,
+    8
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/TOPK_float": {
+   "nbits": 320,
+   "allowed": [
+    320
+   ],
+   "exact_from_selection": null,
+   "unpacked_columns": 320,
+   "packed_shape": [
+    10000,
+    40
+   ],
+   "padding_zero": true,
+   "pred_source": "argmax logits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  },
+  "s20261113/TOPK_full": {
+   "nbits": 58,
+   "allowed": [
+    58,
+    61,
+    63
+   ],
+   "exact_from_selection": 58,
+   "unpacked_columns": 58,
+   "packed_shape": [
+    10000,
+    8
+   ],
+   "padding_zero": true,
+   "pred_source": "first class in bits_test",
+   "pred_mismatch_count": 0,
+   "keys": [
+    "T",
+    "nbits",
+    "bits_aux",
+    "bits_auxF",
+    "bits_dev",
+    "logits_dev",
+    "pred_dev",
+    "bits_devF",
+    "bits_test",
+    "logits_test",
+    "pred_test",
+    "bits_testF",
+    "bits_mem"
+   ],
+   "pass": true
+  }
+ },
+ "check5_summary": {
+  "files": 49,
+  "all_pass": true,
+  "pred_mismatch": {},
+  "padding_not_zero": []
+ },
+ "check6_floors": {
+  "split_sizes": {
+   "D_task": 35000,
+   "D_dev": 5000,
+   "D_aux": 10000
+  },
+  "D_aux_sha256_of_sorted_int64_indices": "7d132086fac08fc0346f0cd7f0528f919e948ef5c8b2b95f61a56f5259bf1547",
+  "targets": 20000,
+  "F0_psnr": 12.692791981008565,
+  "FY_psnr": 13.065110518763419,
+  "rounding": "numpy round (half to even)",
+  "exact_half_ties": {
+   "F0": 0,
+   "FY": 10
+  },
+  "half_up_variant": {
+   "F0_psnr": 12.692791981008565,
+   "FY_psnr": 13.065110399168814
+  }
+ },
+ "check7_checks": {
+  "s20261111": {
+   "records": 135,
+   "not_ok_lines": []
+  },
+  "s20261112": {
+   "records": 74,
+   "not_ok_lines": []
+  },
+  "s20261113": {
+   "records": 74,
+   "not_ok_lines": []
+  },
+  "records_by_check": {
+   "V6": 3,
+   "V3": 226,
+   "V4": 49,
+   "V1": 3,
+   "V2": 2
+  },
+  "results_json_checks": {
+   "V1": {
+    "ok": true,
+    "records": 3
+   },
+   "V2": {
+    "ok": true,
+    "records": 2
+   },
+   "V3": {
+    "ok": true,
+    "records": 226
+   },
+   "V4": {
+    "ok": true,
+    "records": 49
+   },
+   "V5": {
+    "ok": true,
+    "records": 3
+   },
+   "V6": {
+    "ok": true,
+    "records": 3
+   }
+  }
+ },
+ "planned_decoder_outputs": {
+  "missing": [],
+  "expected_count": 57
+ },
+ "check8_logs": {
+  "j0": {
+   "data_lines": [
+    {
+     "line": 2,
+     "mode": "scratch",
+     "files": [
+      "train"
+     ],
+     "inside_unit_test_output": true
+    },
+    {
+     "line": 42,
+     "mode": "train",
+     "files": [
+      "train"
+     ],
+     "inside_unit_test_output": true
+    },
+    {
+     "line": 159,
+     "mode": "train",
+     "files": [
+      "train"
+     ],
+     "inside_unit_test_output": true
+    },
+    {
+     "line": 191,
+     "mode": "confirm",
+     "files": [
+      "train",
+      "test images"
+     ],
+     "inside_unit_test_output": true
+    },
+    {
+     "line": 283,
+     "mode": "confirm",
+     "files": [
+      "train",
+      "test images"
+     ],
+     "inside_unit_test_output": true
+    },
+    {
+     "line": 320,
+     "mode": "confirm",
+     "files": [
+      "train",
+      "test images"
+     ],
+     "inside_unit_test_output": true
+    },
+    {
+     "line": 444,
+     "mode": "confirm",
+     "files": [
+      "train",
+      "test images"
+     ],
+     "inside_unit_test_output": true
+    },
+    {
+     "line": 568,
+     "mode": "analysis",
+     "files": [
+      "train",
+      "test images",
+      "test labels"
+     ],
+     "inside_unit_test_output": true
+    },
+    {
+     "line": 573,
+     "mode": "confirm",
+     "files": [
+      "train",
+      "test images"
+     ],
+     "inside_unit_test_output": true
+    },
+    {
+     "line": 580,
+     "mode": "scratch",
+     "files": [
+      "train"
+     ],
+     "inside_unit_test_output": false
+    }
+   ],
+   "job_lines": 1,
+   "job_opened_test_labels": false,
+   "unit_test_output_mentions_test_labels": true,
+   "unit_test_block_end_line": 577,
+   "pass": true
+  },
+  "j1": {
+   "data_lines": [
+    {
+     "line": 2,
+     "mode": "train",
+     "files": [
+      "train"
+     ],
+     "inside_unit_test_output": false
+    }
+   ],
+   "job_lines": 1,
+   "job_opened_test_labels": false,
+   "unit_test_output_mentions_test_labels": false,
+   "unit_test_block_end_line": null,
+   "pass": true
+  },
+  "j2": {
+   "data_lines": [
+    {
+     "line": 2,
+     "mode": "confirm",
+     "files": [
+      "train",
+      "test images"
+     ],
+     "inside_unit_test_output": false
+    }
+   ],
+   "job_lines": 1,
+   "job_opened_test_labels": false,
+   "unit_test_output_mentions_test_labels": false,
+   "unit_test_block_end_line": null,
+   "pass": true
+  },
+  "j3": {
+   "data_lines": [
+    {
+     "line": 2,
+     "mode": "confirm",
+     "files": [
+      "train",
+      "test images"
+     ],
+     "inside_unit_test_output": false
+    }
+   ],
+   "job_lines": 1,
+   "job_opened_test_labels": false,
+   "unit_test_output_mentions_test_labels": false,
+   "unit_test_block_end_line": null,
+   "pass": true
+  },
+  "j4": {
+   "data_lines": [
+    {
+     "line": 2,
+     "mode": "confirm",
+     "files": [
+      "train",
+      "test images"
+     ],
+     "inside_unit_test_output": false
+    }
+   ],
+   "job_lines": 1,
+   "job_opened_test_labels": false,
+   "unit_test_output_mentions_test_labels": false,
+   "unit_test_block_end_line": null,
+   "pass": true
+  },
+  "j5": {
+   "data_lines": [
+    {
+     "line": 2,
+     "mode": "confirm",
+     "files": [
+      "train",
+      "test images"
+     ],
+     "inside_unit_test_output": false
+    }
+   ],
+   "job_lines": 1,
+   "job_opened_test_labels": false,
+   "unit_test_output_mentions_test_labels": false,
+   "unit_test_block_end_line": null,
+   "pass": true
+  },
+  "j6": {
+   "data_lines": [
+    {
+     "line": 2,
+     "mode": "analysis",
+     "files": [
+      "train",
+      "test images",
+      "test labels"
+     ],
+     "inside_unit_test_output": false
+    }
+   ],
+   "job_lines": 1,
+   "job_opened_test_labels": true,
+   "unit_test_output_mentions_test_labels": false,
+   "unit_test_block_end_line": null,
+   "pass": true
+  }
+ },
+ "wrapper_rc": {
+  "data": [
+   0
+  ],
+  "j0": [
+   0
+  ],
+  "j1": [
+   0
+  ],
+  "j2": [
+   0
+  ],
+  "j3": [
+   0
+  ],
+  "j4": [
+   0
+  ],
+  "j5": [
+   0
+  ],
+  "j6": [
+   0
+  ]
+ },
+ "rows": [
+  {
+   "group": "1 data",
+   "quantity": "sha256 cifar10_train.npz (FREEZE.json)",
+   "results_json": "3718a9a09265eb5e1b478fc87f49ff46f36397e04fd03f151173b44ee928f95c",
+   "independent": "3718a9a09265eb5e1b478fc87f49ff46f36397e04fd03f151173b44ee928f95c",
+   "abs_diff": null,
+   "kind": "str",
+   "pass": true
+  },
+  {
+   "group": "1 data",
+   "quantity": "sha256 cifar10_test_images.npz (FREEZE.json)",
+   "results_json": "4b19da3a0393bc5bc233d475551b7b4cd6fc3bd725bb6c897b4468ddef00cf4e",
+   "independent": "4b19da3a0393bc5bc233d475551b7b4cd6fc3bd725bb6c897b4468ddef00cf4e",
+   "abs_diff": null,
+   "kind": "str",
+   "pass": true
+  },
+  {
+   "group": "1 data",
+   "quantity": "sha256 cifar10_test_labels.npz (FREEZE.json)",
+   "results_json": "fec3b140ee9cc86565710c177dc1ff8abc36d8f06e158568576a36648d6b63c1",
+   "independent": "fec3b140ee9cc86565710c177dc1ff8abc36d8f06e158568576a36648d6b63c1",
+   "abs_diff": null,
+   "kind": "str",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "SYM arm",
+   "results_json": "TOPK@64",
+   "independent": "TOPK@64",
+   "abs_diff": null,
+   "kind": "str",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "ACT arm",
+   "results_json": "BOT@64",
+   "independent": "BOT@64",
+   "abs_diff": null,
+   "kind": "str",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "d_acc (points)",
+   "results_json": 13.67,
+   "independent": 13.67,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "d_acc CI low",
+   "results_json": 13.09,
+   "independent": 13.09,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "d_acc CI high",
+   "results_json": 14.26666666666667,
+   "independent": 14.26666666666667,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "d_acc seed 20261111",
+   "results_json": 14.42,
+   "independent": 14.42,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "d_acc seed 20261112",
+   "results_json": 13.36,
+   "independent": 13.36,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "d_acc seed 20261113",
+   "results_json": 13.23,
+   "independent": 13.23,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "d_leak (dB)",
+   "results_json": 0.5496044431405254,
+   "independent": 0.5496044431405254,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "d_leak CI low",
+   "results_json": 0.5268899954619487,
+   "independent": 0.5268899954619487,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "d_leak CI high",
+   "results_json": 0.572313210778331,
+   "independent": 0.572313210778331,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "d_leak seed 20261111",
+   "results_json": 0.5124317022466987,
+   "independent": 0.5124317022466987,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "d_leak seed 20261112",
+   "results_json": 0.48907973210776673,
+   "independent": 0.48907973210776673,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "d_leak seed 20261113",
+   "results_json": 0.6473018950671108,
+   "independent": 0.6473018950671109,
+   "abs_diff": 1.1102230246251565e-16,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "accuracy outcome A",
+   "results_json": "A+",
+   "independent": "A+",
+   "abs_diff": null,
+   "kind": "str",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "leakage outcome L",
+   "results_json": "L+",
+   "independent": "L+",
+   "abs_diff": null,
+   "kind": "str",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "leakage conditions that hold (L_hits)",
+   "results_json": [
+    "L+"
+   ],
+   "independent": [
+    "L+"
+   ],
+   "abs_diff": null,
+   "kind": "list",
+   "pass": true
+  },
+  {
+   "group": "3 decoder",
+   "quantity": "seed-1 d_leak, Decoder-L (L1_)",
+   "results_json": 0.5039099120393447,
+   "independent": 0.5039099120393447,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "3 decoder",
+   "quantity": "seed-1 d_leak, Decoder-S (S1_)",
+   "results_json": 0.5124317022466987,
+   "independent": 0.5124317022466987,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "3 decoder",
+   "quantity": "decoder_dependent",
+   "results_json": false,
+   "independent": false,
+   "abs_diff": null,
+   "kind": "bool",
+   "pass": true
+  },
+  {
+   "group": "3 decoder",
+   "quantity": "primary.decoder_dependent",
+   "results_json": false,
+   "independent": false,
+   "abs_diff": null,
+   "kind": "bool",
+   "pass": true
+  },
+  {
+   "group": "3 decoder",
+   "quantity": "PSNR Decoder-L seed 1 TOPK@64",
+   "results_json": 13.405752370570763,
+   "independent": 13.405752370570763,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "3 decoder",
+   "quantity": "PSNR Decoder-L seed 1 BOT@64",
+   "results_json": 13.909662282610109,
+   "independent": 13.909662282610109,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive",
+   "quantity": "acc RAW@64",
+   "results_json": 0.6359333333333334,
+   "independent": 0.6359333333333334,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive",
+   "quantity": "PSNR RAW@64",
+   "results_json": 14.422334877591195,
+   "independent": 14.422334877591199,
+   "abs_diff": 3.552713678800501e-15,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc RAW@64 seed 20261111",
+   "results_json": 0.6361,
+   "independent": 0.6361,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR RAW@64 seed 20261111",
+   "results_json": 14.38004617454138,
+   "independent": 14.38004617454138,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc RAW@64 seed 20261112",
+   "results_json": 0.6366,
+   "independent": 0.6366,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR RAW@64 seed 20261112",
+   "results_json": 14.425793449245306,
+   "independent": 14.425793449245306,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc RAW@64 seed 20261113",
+   "results_json": 0.6351,
+   "independent": 0.6351,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR RAW@64 seed 20261113",
+   "results_json": 14.46116500898691,
+   "independent": 14.46116500898691,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive",
+   "quantity": "acc BOT@64",
+   "results_json": 0.6896,
+   "independent": 0.6896,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive",
+   "quantity": "PSNR BOT@64",
+   "results_json": 13.976150582177118,
+   "independent": 13.976150582177118,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc BOT@64 seed 20261111",
+   "results_json": 0.6849,
+   "independent": 0.6849,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR BOT@64 seed 20261111",
+   "results_json": 13.899521147994744,
+   "independent": 13.899521147994744,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc BOT@64 seed 20261112",
+   "results_json": 0.6916,
+   "independent": 0.6916,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR BOT@64 seed 20261112",
+   "results_json": 13.902494419167104,
+   "independent": 13.902494419167104,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc BOT@64 seed 20261113",
+   "results_json": 0.6923,
+   "independent": 0.6923,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR BOT@64 seed 20261113",
+   "results_json": 14.126436179369508,
+   "independent": 14.126436179369508,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive",
+   "quantity": "acc TOPK@64",
+   "results_json": 0.8263000000000001,
+   "independent": 0.8263000000000001,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive",
+   "quantity": "PSNR TOPK@64",
+   "results_json": 13.426546139036592,
+   "independent": 13.426546139036594,
+   "abs_diff": 1.7763568394002505e-15,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc TOPK@64 seed 20261111",
+   "results_json": 0.8291,
+   "independent": 0.8291,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR TOPK@64 seed 20261111",
+   "results_json": 13.387089445748042,
+   "independent": 13.387089445748042,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc TOPK@64 seed 20261112",
+   "results_json": 0.8252,
+   "independent": 0.8252,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR TOPK@64 seed 20261112",
+   "results_json": 13.413414687059337,
+   "independent": 13.413414687059337,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc TOPK@64 seed 20261113",
+   "results_json": 0.8246,
+   "independent": 0.8246,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR TOPK@64 seed 20261113",
+   "results_json": 13.479134284302397,
+   "independent": 13.479134284302397,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive",
+   "quantity": "acc LAB",
+   "results_json": 0.8263000000000001,
+   "independent": 0.8263000000000001,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive",
+   "quantity": "PSNR LAB",
+   "results_json": 13.092185133295992,
+   "independent": 13.092185133295992,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc LAB seed 20261111",
+   "results_json": 0.8291,
+   "independent": 0.8291,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR LAB seed 20261111",
+   "results_json": 13.088535912720365,
+   "independent": 13.088535912720365,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc LAB seed 20261112",
+   "results_json": 0.8252,
+   "independent": 0.8252,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR LAB seed 20261112",
+   "results_json": 13.096666937444681,
+   "independent": 13.09666693744468,
+   "abs_diff": 1.7763568394002505e-15,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc LAB seed 20261113",
+   "results_json": 0.8246,
+   "independent": 0.8246,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR LAB seed 20261113",
+   "results_json": 13.091352549722929,
+   "independent": 13.091352549722929,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive",
+   "quantity": "acc RAW_native",
+   "results_json": 0.8793666666666667,
+   "independent": 0.8793666666666667,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive",
+   "quantity": "PSNR RAW_native",
+   "results_json": 22.237798854124964,
+   "independent": 22.237798854124964,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc RAW_native seed 20261111",
+   "results_json": 0.8799,
+   "independent": 0.8799,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR RAW_native seed 20261111",
+   "results_json": 22.20154937737925,
+   "independent": 22.20154937737925,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc RAW_native seed 20261112",
+   "results_json": 0.8781,
+   "independent": 0.8781,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR RAW_native seed 20261112",
+   "results_json": 22.13746659308628,
+   "independent": 22.13746659308628,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "acc RAW_native seed 20261113",
+   "results_json": 0.8801,
+   "independent": 0.8801,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "4 descriptive seeds",
+   "quantity": "PSNR RAW_native seed 20261113",
+   "results_json": 22.37438059190936,
+   "independent": 22.37438059190936,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits BOT@1024 (s1, s2, s3)",
+   "results_json": 1024,
+   "independent": "1024/1024/1024 (rule: 1024)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits BOT@16 (s1, s2, s3)",
+   "results_json": 16,
+   "independent": "16/16/16 (rule: 16)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits BOT@256 (s1, s2, s3)",
+   "results_json": 256,
+   "independent": "256/256/256 (rule: 256)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits BOT@64 (s1, s2, s3)",
+   "results_json": 64,
+   "independent": "64/64/64 (rule: 64)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits BOT_float (s1)",
+   "results_json": 2048,
+   "independent": "2048 (rule: 2048)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits LAB (s1, s2, s3)",
+   "results_json": 4,
+   "independent": "4/4/4 (rule: 4)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits LAB_full (s1, s2, s3)",
+   "results_json": 4,
+   "independent": "4/4/4 (rule: 4)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits RAW@1024 (s1, s2, s3)",
+   "results_json": 1024,
+   "independent": "1024/1024/1024 (rule: 1024)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits RAW@16 (s1, s2, s3)",
+   "results_json": 16,
+   "independent": "16/16/16 (rule: 16)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits RAW@256 (s1, s2, s3)",
+   "results_json": 256,
+   "independent": "256/256/256 (rule: 256)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits RAW@64 (s1, s2, s3)",
+   "results_json": 64,
+   "independent": "64/64/64 (rule: 64)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits RAW_native (s1, s2, s3)",
+   "results_json": 32768,
+   "independent": "32768/32768/32768 (rule: 32768)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits TOPK@16 (s1, s2, s3)",
+   "results_json": 16,
+   "independent": "16/16/16 (rule: 16)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits TOPK@256 (s1, s2, s3)",
+   "results_json": 148,
+   "independent": "148/148/148 (rule: 148)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits TOPK@64 (s1, s2, s3)",
+   "results_json": 58,
+   "independent": "58/58/58 (rule: 58)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits TOPK_float (s1, s2, s3)",
+   "results_json": 320,
+   "independent": "320/320/320 (rule: 320)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "nbits TOPK_full (s1, s2, s3)",
+   "results_json": 58,
+   "independent": "58/58/58 (rule: 58)",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "5 bits",
+   "quantity": "pred_test equals message class or logit argmax (49 files)",
+   "results_json": "n/a",
+   "independent": "0 files with a mismatch",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "6 floors",
+   "quantity": "F0 PSNR (test)",
+   "results_json": 12.692791981008561,
+   "independent": 12.692791981008565,
+   "abs_diff": 3.552713678800501e-15,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "6 floors",
+   "quantity": "FY PSNR (test)",
+   "results_json": 13.065110518763419,
+   "independent": 13.065110518763419,
+   "abs_diff": 0.0,
+   "kind": "float",
+   "pass": true
+  },
+  {
+   "group": "7 checks",
+   "quantity": "every checks.jsonl record has ok true (283 records)",
+   "results_json": "all ok",
+   "independent": "all ok",
+   "abs_diff": null,
+   "kind": "str",
+   "pass": true
+  },
+  {
+   "group": "7 checks",
+   "quantity": "planned decoder outputs exist (57 files)",
+   "results_json": "n/a",
+   "independent": "0 missing",
+   "abs_diff": null,
+   "kind": "int",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "case",
+   "results_json": "S",
+   "independent": "S",
+   "abs_diff": null,
+   "kind": "str",
+   "pass": true
+  },
+  {
+   "group": "2 primary",
+   "quantity": "case_final",
+   "results_json": "S",
+   "independent": "S",
+   "abs_diff": null,
+   "kind": "str",
+   "pass": true
+  },
+  {
+   "group": "8 logs",
+   "quantity": "no job except j6 opened the test labels (job lines)",
+   "results_json": "n/a",
+   "independent": "pass",
+   "abs_diff": null,
+   "kind": "str",
+   "pass": true
+  },
+  {
+   "group": "8 logs",
+   "quantity": "every job wrapper log ends with rc=0 (data, j0 to j6)",
+   "results_json": "n/a",
+   "independent": "all rc=0",
+   "abs_diff": null,
+   "kind": "str",
+   "pass": true
+  }
+ ],
+ "notes": [
+  "logs/j0.log: a 'test labels' data line occurs inside the unit-test output (before the line 'Ran ... tests'). test_sebits.py runs that end-to-end test on synthetic data in a temporary folder."
+ ],
+ "summary": {
+  "rows": 92,
+  "failed": 0,
+  "max_abs_float_diff": 3.552713678800501e-15,
+  "tolerance": 1e-09,
+  "verdict": "PASS"
+ }
+}

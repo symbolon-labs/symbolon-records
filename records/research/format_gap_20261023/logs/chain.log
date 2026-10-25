@@ -1,0 +1,33 @@
+[chain 2026-10-23 21:09:38] wait for ../marl_replay_20261023/DONE
+[chain 2026-10-23 23:45:39] ../marl_replay_20261023/DONE exists
+[chain 2026-10-23 23:45:40] machine checks pass
+[chain 2026-10-23 23:45:40] start Dp: dev --stages gate
+[chain 2026-10-23 23:52:49] Dp exit=0
+[chain 2026-10-23 23:54:24] machine checks pass
+[chain 2026-10-23 23:54:24] start S1: confirm --stages sender --pool V
+[chain 2026-10-24 01:03:18] S1 exit=0
+[chain 2026-10-24 01:03:18] machine checks pass
+[chain 2026-10-24 01:03:18] start S2: confirm --stages sender --pool S0
+[chain 2026-10-24 02:01:19] S2 exit=0
+[chain 2026-10-24 02:01:19] machine checks pass
+[chain 2026-10-24 02:01:19] start S3: confirm --stages sender --pool S1 --chunks 0:8
+[chain 2026-10-24 03:08:45] S3 exit=0
+[chain 2026-10-24 03:08:45] machine checks pass
+[chain 2026-10-24 03:08:45] start S4: confirm --stages sender --pool S1 --chunks 8:16
+[chain 2026-10-24 04:18:35] S4 exit=0
+[chain 2026-10-24 04:18:35] machine checks pass
+[chain 2026-10-24 04:18:35] start Q1: confirm --stages seeds --t0c --seeds 20261101
+[chain 2026-10-24 05:25:18] Q1 exit=0
+[chain 2026-10-24 05:25:18] machine checks pass
+[chain 2026-10-24 05:25:18] start Q2: confirm --stages seeds --seeds 20261102
+[chain 2026-10-24 06:28:14] Q2 exit=0
+[chain 2026-10-24 06:28:14] machine checks pass
+[chain 2026-10-24 06:28:14] start Q3: confirm --stages seeds --seeds 20261103
+[chain 2026-10-24 07:30:02] Q3 exit=0
+[chain 2026-10-24 07:30:02] machine checks pass
+[chain 2026-10-24 07:30:02] start Q4: confirm --stages seeds --seeds 20261104,20261105,20261106
+[chain 2026-10-24 08:40:41] Q4 exit=0
+[chain 2026-10-24 08:40:41] machine checks pass
+[chain 2026-10-24 08:40:41] start A: confirm --stages analysis
+[chain 2026-10-24 12:32:28] A exit=0
+[chain 2026-10-24 12:32:28] Plan M chain complete

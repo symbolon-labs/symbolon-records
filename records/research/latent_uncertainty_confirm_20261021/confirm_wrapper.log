@@ -1,0 +1,106 @@
+== preconditions 2026-10-21 22:49:01 mode confirm
+python processes:
+  none
+swap: total = 2048.00M  used = 1207.88M  free = 840.12M  (encrypted)
+charger:  Wattage = 140W  Current = 5000mA  Voltage = 28000mV  AdapterID = 5717  Manufacturer = Apple inc.  Family Code = 0xe000400a  Serial String = C0624560SRBQCHXD8  Adapter Name = 140W USB-C Power Adapter  Hardware Version = 1.0  Firmware Version = 00x015AC0 
+free disk: 145 GiB
+== start 2026-10-21 22:49:01 (time limit 120 min): uconfirm.py confirm --stages sender --split fit
+pid 88565 (caffeinate -i -w 88565; watchdog 88568)
+== STOP 2026-10-22 00:49:01: time limit 120 min reached, kill 88565
+== end 2026-10-22 00:49:01 rc=143
+swap after: total = 2048.00M  used = 727.88M  free = 1320.12M  (encrypted)
+== preconditions 2026-10-22 00:49:24 mode confirm
+python processes:
+ 3297       01:50 /bin/zsh -c source <local>/.claude/shell-snapshots/snapshot-zsh-1792585995334-9kifaa.sh 2>/dev/null || true && setopt NO_EXTENDED_GLOB NO_BARE_GLOB_QUAL 2>/dev/null || true && { uiltin unalias -- 'unsetenv'; uiltin unset -f -- 'unsetenv'; } >/dev/null 2>&1 || true && eval 'S=<tmp>/ebcedc80-6127-43bc-a3ce-84db3c7ba88d/scratchpad && D=<local>/.cache/ember/dictionaries/geaming-llama-3.2-1b-instruct-0475543 && python3 - <<EOF
+for name in ['"'"'sae-fit'"'"','"'"'featpatch'"'"','"'"'featidentity'"'"']:
+    p='"'"'$S/'"'"'+name+'"'"'.toml'"'"'; s=open(p).read()
+    s=s.replace('"'"'sha256 = "99cf6db12aa182020067f1ae9874185ec4074e51481c12e67a62592e05f18236"
+'"'"','"'"'sha256 = "99cf6db12aa182020067f1ae9874185ec4074e51481c12e67a62592e05f18236"
+config_sha256 = "e2ae73fd63a01c8b9863d476d628c11fb27b2a349fe4f5449e6bbc469a9400c9"
+'"'"')
+    s=s.replace('"'"'sha256 = "75180698b1301d1b27ebc1f6a843bb9ead335d80d49073fab6b50db13f58af26"
+'"'"','"'"'sha256 = "75180698b1301d1b27ebc1f6a843bb9ead335d80d49073fab6b50db13f58af26"
+config_sha256 = "0826e56653b5bd0dd6390c06b3bd995ace7e9bcae4f091e5f11ebed70cba8051"
+'"'"')
+    open(p,'"'"'w'"'"').write(s)
+EOF
+CARGO_BUILD_JOBS=2 cargo build --locked --release --bin ember 2>&1 | grep -E "^error|Finished" ; ./target/release/ember experiment run $S/sae-fit.toml 2>&1 | tail -1 && ./target/release/ember experiment verify $S/runs/sae-fit --tokenizer tokenizer.json 2>&1 | grep -E "feature dictionaries|verdict" && <local>/Projects/ember/.venv/bin/python -I $S/scripts/sae_reference.py $S/runs/sae-fit resid9=$D/blocks_9_hook_resid_post_8X_2048_jumprelu resid9relu=$D/blocks_9_hook_resid_post_8X_2048_standard | grep "reference agreement" && for n in featpatch featidentity; do ./target/release/ember experiment run $S/$n.toml 2>&1 | grep -E "^  layer-09 +9 +- +[-0-9]|sweep hash"; done' && pwd -P >| /tmp/claude-b15d-cwd
+swap: total = 2048.00M  used = 727.88M  free = 1320.12M  (encrypted)
+charger:  Wattage = 140W  Current = 5000mA  Voltage = 28000mV  AdapterID = 5717  Manufacturer = Apple inc.  Family Code = 0xe000400a  Serial String = C0624560SRBQCHXD8  Adapter Name = 140W USB-C Power Adapter  Hardware Version = 1.0  Firmware Version = 00x015AC0 
+free disk: 136 GiB
+== start 2026-10-22 00:49:24 (time limit 120 min): uconfirm.py confirm --stages sender --split fit
+pid 3537 (caffeinate -i -w 3537; watchdog 3540)
+== end 2026-10-22 01:05:58 rc=0
+swap after: total = 2048.00M  used = 703.88M  free = 1344.12M  (encrypted)
+== preconditions 2026-10-22 01:06:08 mode confirm
+python processes:
+  none
+swap: total = 2048.00M  used = 703.88M  free = 1344.12M  (encrypted)
+charger:  Wattage = 140W  Current = 5000mA  Voltage = 28000mV  AdapterID = 5717  Manufacturer = Apple inc.  Family Code = 0xe000400a  Serial String = C0624560SRBQCHXD8  Adapter Name = 140W USB-C Power Adapter  Hardware Version = 1.0  Firmware Version = 00x015AC0 
+free disk: 131 GiB
+== start 2026-10-22 01:06:08 (time limit 120 min): uconfirm.py confirm --stages sender --split eval
+pid 10928 (caffeinate -i -w 10928; watchdog 10931)
+== STOP 2026-10-22 03:06:08: time limit 120 min reached, kill 10928
+== end 2026-10-22 03:06:08 rc=143
+swap after: total = 2048.00M  used = 663.88M  free = 1384.12M  (encrypted)
+== preconditions 2026-10-22 03:06:27 mode confirm
+python processes:
+  none
+swap: total = 2048.00M  used = 663.88M  free = 1384.12M  (encrypted)
+charger:  Wattage = 140W  Current = 5000mA  Voltage = 28000mV  AdapterID = 5717  Manufacturer = Apple inc.  Family Code = 0xe000400a  Serial String = C0624560SRBQCHXD8  Adapter Name = 140W USB-C Power Adapter  Hardware Version = 1.0  Firmware Version = 00x015AC0 
+free disk: 133 GiB
+== start 2026-10-22 03:06:27 (time limit 120 min): uconfirm.py confirm --stages sender --split eval
+pid 22499 (caffeinate -i -w 22499; watchdog 22502)
+== end 2026-10-22 04:41:13 rc=0
+swap after: total = 2048.00M  used = 663.88M  free = 1384.12M  (encrypted)
+== preconditions 2026-10-22 04:41:31 mode confirm
+python processes:
+  none
+swap: total = 2048.00M  used = 663.88M  free = 1384.12M  (encrypted)
+charger:  Wattage = 140W  Current = 5000mA  Voltage = 28000mV  AdapterID = 5717  Manufacturer = Apple inc.  Family Code = 0xe000400a  Serial String = C0624560SRBQCHXD8  Adapter Name = 140W USB-C Power Adapter  Hardware Version = 1.0  Firmware Version = 00x015AC0 
+free disk: 133 GiB
+== start 2026-10-22 04:41:32 (time limit 120 min): uconfirm.py confirm --stages ctext,seeds --seeds 20261101
+pid 24981 (caffeinate -i -w 24981; watchdog 24984)
+== STOP 2026-10-22 06:41:32: time limit 120 min reached, kill 24981
+== end 2026-10-22 06:41:33 rc=143
+swap after: total = 7168.00M  used = 5705.31M  free = 1462.69M  (encrypted)
+== preconditions 2026-10-22 07:13:43 mode confirm
+python processes:
+  none
+swap: total = 2048.00M  used = 431.69M  free = 1616.31M  (encrypted)
+charger:  Wattage = 140W  Current = 5000mA  Voltage = 28000mV  AdapterID = 5717  Manufacturer = Apple inc.  Family Code = 0xe000400a  Serial String = C0624560SRBQCHXD8  Adapter Name = 140W USB-C Power Adapter  Hardware Version = 1.0  Firmware Version = 00x015AC0 
+free disk: 141 GiB
+== start 2026-10-22 07:13:43 (time limit 120 min): uconfirm.py confirm --stages seeds --seeds 20261101
+pid 31870 (caffeinate -i -w 31870; watchdog 31873)
+== end 2026-10-22 08:08:30 rc=0
+swap after: total = 9216.00M  used = 7834.88M  free = 1381.12M  (encrypted)
+== preconditions 2026-10-22 08:09:13 mode confirm
+python processes:
+  none
+swap: total = 2048.00M  used = 1149.31M  free = 898.69M  (encrypted)
+charger:  Wattage = 140W  Current = 5000mA  Voltage = 28000mV  AdapterID = 5717  Manufacturer = Apple inc.  Family Code = 0xe000400a  Serial String = C0624560SRBQCHXD8  Adapter Name = 140W USB-C Power Adapter  Hardware Version = 1.0  Firmware Version = 00x015AC0 
+free disk: 149 GiB
+== start 2026-10-22 08:09:13 (time limit 120 min): uconfirm.py confirm --stages seeds --seeds 20261102
+pid 34808 (caffeinate -i -w 34808; watchdog 34811)
+== end 2026-10-22 09:08:40 rc=0
+swap after: total = 2048.00M  used = 1259.38M  free = 788.62M  (encrypted)
+== preconditions 2026-10-22 09:09:19 mode confirm
+python processes:
+  none
+swap: total = 2048.00M  used = 1243.38M  free = 804.62M  (encrypted)
+charger:  Wattage = 140W  Current = 5000mA  Voltage = 28000mV  AdapterID = 5717  Manufacturer = Apple inc.  Family Code = 0xe000400a  Serial String = C0624560SRBQCHXD8  Adapter Name = 140W USB-C Power Adapter  Hardware Version = 1.0  Firmware Version = 00x015AC0 
+free disk: 148 GiB
+== start 2026-10-22 09:09:19 (time limit 120 min): uconfirm.py confirm --stages seeds --seeds 20261103
+pid 36961 (caffeinate -i -w 36961; watchdog 36964)
+== end 2026-10-22 10:08:13 rc=0
+swap after: total = 2048.00M  used = 1308.06M  free = 739.94M  (encrypted)
+== preconditions 2026-10-22 10:08:44 mode confirm
+python processes:
+  none
+swap: total = 2048.00M  used = 1300.06M  free = 747.94M  (encrypted)
+charger:  Wattage = 140W  Current = 5000mA  Voltage = 28000mV  AdapterID = 5717  Manufacturer = Apple inc.  Family Code = 0xe000400a  Serial String = C0624560SRBQCHXD8  Adapter Name = 140W USB-C Power Adapter  Hardware Version = 1.0  Firmware Version = 00x015AC0 
+free disk: 147 GiB
+== start 2026-10-22 10:08:44 (time limit 120 min): uconfirm.py confirm --stages analysis
+pid 38798 (caffeinate -i -w 38798; watchdog 38801)
+== end 2026-10-22 10:37:28 rc=0
+swap after: total = 2048.00M  used = 1244.06M  free = 803.94M  (encrypted)

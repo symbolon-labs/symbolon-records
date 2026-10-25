@@ -1,0 +1,109 @@
+{"event":"t5_completed_start_c1","utc":"2026-10-21T18:26:30Z"}
+{"event":"preflight","utc":"2026-10-21T18:26:30Z"}
+vm.swapusage: total = 2048.00M  used = 1223.88M  free = 824.12M  (encrypted)
+ Wattage = 140W
+ Adapter Name = 140W USB-C Power Adapter
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=26476643)	100%; charged; 0:00 remaining present: true
+PREFLIGHT PASS: AC 140 W
+{"event":"launch","utc":"2026-10-21T18:26:32Z","job":"c1","pid":66324}
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<01:24,  3.44it/s]Loading weights:  44%|████▍     | 129/290 [00:00<00:00, 412.03it/s]Loading weights:  69%|██████▊   | 199/290 [00:00<00:00, 431.11it/s]Loading weights:  89%|████████▉ | 258/290 [00:00<00:00, 440.25it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 392.55it/s]
+{"event": "gates_pass", "utc": "2026-10-21T18:27:32Z", "arm": "c1"}
+{"event": "fit_step", "utc": "2026-10-21T18:27:38Z", "tag": "c1_fold0", "step": 1, "loss": 7.4245608150959015, "seconds": 5.404004042000452}
+{"event": "fit_step", "utc": "2026-10-21T18:27:43Z", "tag": "c1_fold0", "step": 2, "loss": 5.622239820659161, "seconds": 5.366306500000064}
+{"event": "fit_step", "utc": "2026-10-21T18:27:48Z", "tag": "c1_fold0", "step": 3, "loss": 3.9603651463985443, "seconds": 5.335749167003087}
+{"event": "fit_step", "utc": "2026-10-21T18:28:26Z", "tag": "c1_fold0", "step": 10, "loss": 1.508983738720417, "seconds": 5.368276708002668}
+{"event": "fit_step", "utc": "2026-10-21T18:29:20Z", "tag": "c1_fold0", "step": 20, "loss": 0.6538365558953956, "seconds": 5.391661166999256}
+{"event": "fit_step", "utc": "2026-10-21T18:30:14Z", "tag": "c1_fold0", "step": 30, "loss": 0.3719998474698514, "seconds": 5.354828042000008}
+{"event": "fit_step", "utc": "2026-10-21T18:31:08Z", "tag": "c1_fold0", "step": 40, "loss": 0.22133047017268836, "seconds": 5.318778583001404}
+{"event": "fit_step", "utc": "2026-10-21T18:32:02Z", "tag": "c1_fold0", "step": 50, "loss": 0.1396376210032031, "seconds": 5.447251999998116}
+{"event": "fit_step", "utc": "2026-10-21T18:32:55Z", "tag": "c1_fold0", "step": 60, "loss": 0.09714703739155084, "seconds": 5.418220125000516}
+{"event": "fit_step", "utc": "2026-10-21T18:33:49Z", "tag": "c1_fold0", "step": 70, "loss": 0.07207369350362569, "seconds": 5.302018791997398}
+{"event": "fit_step", "utc": "2026-10-21T18:34:46Z", "tag": "c1_fold0", "step": 80, "loss": 0.057262873800937086, "seconds": 5.766491000002134}
+{"event": "fit_step", "utc": "2026-10-21T18:35:45Z", "tag": "c1_fold0", "step": 90, "loss": 0.047618078999221325, "seconds": 5.877256874999148}
+{"event": "fit_step", "utc": "2026-10-21T18:36:43Z", "tag": "c1_fold0", "step": 100, "loss": 0.04061094316421077, "seconds": 5.724742042002617}
+{"event": "fit_step", "utc": "2026-10-21T18:37:39Z", "tag": "c1_fold0", "step": 110, "loss": 0.03536581827211194, "seconds": 5.62182975000178}
+{"event": "fit_step", "utc": "2026-10-21T18:38:35Z", "tag": "c1_fold0", "step": 120, "loss": 0.03130519314436242, "seconds": 5.6013863750049495}
+{"event": "fit_step", "utc": "2026-10-21T18:39:32Z", "tag": "c1_fold0", "step": 130, "loss": 0.028069826716091484, "seconds": 5.617168958997354}
+{"event": "fit_step", "utc": "2026-10-21T18:40:25Z", "tag": "c1_fold0", "step": 140, "loss": 0.025430330453673378, "seconds": 5.378312540997285}
+{"event": "fit_step", "utc": "2026-10-21T18:41:19Z", "tag": "c1_fold0", "step": 150, "loss": 0.023234105086885393, "seconds": 5.295794749996276}
+{"event": "fit_step", "utc": "2026-10-21T18:42:14Z", "tag": "c1_fold0", "step": 160, "loss": 0.02137762022903189, "seconds": 5.30455187500047}
+{"event": "fit_step", "utc": "2026-10-21T18:43:10Z", "tag": "c1_fold0", "step": 170, "loss": 0.01978823181707412, "seconds": 5.572730750005576}
+{"event": "fit_step", "utc": "2026-10-21T18:44:09Z", "tag": "c1_fold0", "step": 180, "loss": 0.018413161538774148, "seconds": 5.982074790998013}
+{"event": "fit_step", "utc": "2026-10-21T18:45:06Z", "tag": "c1_fold0", "step": 190, "loss": 0.017212520964676514, "seconds": 5.749559959003818}
+{"event": "fit_step", "utc": "2026-10-21T18:46:04Z", "tag": "c1_fold0", "step": 200, "loss": 0.016155741031980142, "seconds": 5.735046166999382}
+{"event": "fold_done", "utc": "2026-10-21T18:46:45Z", "arm": "c1", "fold": 0}
+{"event": "fit_step", "utc": "2026-10-21T18:46:50Z", "tag": "c1_fold1", "step": 1, "loss": 7.878111222758889, "seconds": 5.755681457994797}
+{"event": "fit_step", "utc": "2026-10-21T18:46:56Z", "tag": "c1_fold1", "step": 2, "loss": 6.721256617456675, "seconds": 5.794900041997607}
+{"event": "fit_step", "utc": "2026-10-21T18:47:02Z", "tag": "c1_fold1", "step": 3, "loss": 4.460091881453991, "seconds": 5.76958816700062}
+{"event": "fit_step", "utc": "2026-10-21T18:47:42Z", "tag": "c1_fold1", "step": 10, "loss": 1.74863769300282, "seconds": 5.672429457998078}
+{"event": "fit_step", "utc": "2026-10-21T18:48:41Z", "tag": "c1_fold1", "step": 20, "loss": 0.9178690556436777, "seconds": 6.132826291999663}
+{"event": "fit_step", "utc": "2026-10-21T18:49:40Z", "tag": "c1_fold1", "step": 30, "loss": 0.5792621113359928, "seconds": 5.632818792000762}
+{"event": "fit_step", "utc": "2026-10-21T18:50:36Z", "tag": "c1_fold1", "step": 40, "loss": 0.3915235288441181, "seconds": 5.645371541999339}
+{"event": "fit_step", "utc": "2026-10-21T18:51:33Z", "tag": "c1_fold1", "step": 50, "loss": 0.2807393323164433, "seconds": 5.658177874996909}
+{"event": "fit_step", "utc": "2026-10-21T18:52:31Z", "tag": "c1_fold1", "step": 60, "loss": 0.21163673931732774, "seconds": 5.866624083006172}
+{"event": "fit_step", "utc": "2026-10-21T18:53:29Z", "tag": "c1_fold1", "step": 70, "loss": 0.16633374034427106, "seconds": 5.930622458996368}
+{"event": "fit_step", "utc": "2026-10-21T18:54:28Z", "tag": "c1_fold1", "step": 80, "loss": 0.1351947602815926, "seconds": 5.8331815830024425}
+{"event": "fit_step", "utc": "2026-10-21T18:55:28Z", "tag": "c1_fold1", "step": 90, "loss": 0.11235466692596674, "seconds": 5.89457612499973}
+{"event": "fit_step", "utc": "2026-10-21T18:56:26Z", "tag": "c1_fold1", "step": 100, "loss": 0.09533557074610144, "seconds": 5.597252708001179}
+{"event": "fit_step", "utc": "2026-10-21T18:57:22Z", "tag": "c1_fold1", "step": 110, "loss": 0.08218930393923074, "seconds": 5.555685999999696}
+{"event": "fit_step", "utc": "2026-10-21T18:58:17Z", "tag": "c1_fold1", "step": 120, "loss": 0.07174837274942547, "seconds": 5.530337417003466}
+{"event": "fit_step", "utc": "2026-10-21T18:59:13Z", "tag": "c1_fold1", "step": 130, "loss": 0.063238171976991, "seconds": 5.673479667006177}
+{"event": "fit_step", "utc": "2026-10-21T19:00:08Z", "tag": "c1_fold1", "step": 140, "loss": 0.05613012216053903, "seconds": 5.5194736669946}
+{"event": "fit_step", "utc": "2026-10-21T19:01:04Z", "tag": "c1_fold1", "step": 150, "loss": 0.05010401038452983, "seconds": 5.627288292002049}
+{"event": "fit_step", "utc": "2026-10-21T19:02:01Z", "tag": "c1_fold1", "step": 160, "loss": 0.044953644450288266, "seconds": 5.543880750003154}
+{"event": "fit_step", "utc": "2026-10-21T19:02:57Z", "tag": "c1_fold1", "step": 170, "loss": 0.04053862497676164, "seconds": 5.68345812500047}
+{"event": "fit_step", "utc": "2026-10-21T19:03:54Z", "tag": "c1_fold1", "step": 180, "loss": 0.03674888948444277, "seconds": 5.64876829199784}
+{"event": "fit_step", "utc": "2026-10-21T19:04:50Z", "tag": "c1_fold1", "step": 190, "loss": 0.033490996225737035, "seconds": 5.626242500002263}
+{"event": "fit_step", "utc": "2026-10-21T19:05:46Z", "tag": "c1_fold1", "step": 200, "loss": 0.03068065526895225, "seconds": 5.5186935829988215}
+{"event": "fold_done", "utc": "2026-10-21T19:06:22Z", "arm": "c1", "fold": 1}
+{"event": "fit_step", "utc": "2026-10-21T19:06:27Z", "tag": "c1_fold2", "step": 1, "loss": 7.810146391391754, "seconds": 5.593135582996183}
+{"event": "fit_step", "utc": "2026-10-21T19:06:33Z", "tag": "c1_fold2", "step": 2, "loss": 6.315544240176678, "seconds": 5.477392500004498}
+{"event": "fit_step", "utc": "2026-10-21T19:06:38Z", "tag": "c1_fold2", "step": 3, "loss": 4.600550331175327, "seconds": 5.485646749999432}
+{"event": "fit_step", "utc": "2026-10-21T19:07:17Z", "tag": "c1_fold2", "step": 10, "loss": 1.7579898685216904, "seconds": 5.540995167000801}
+{"event": "fit_step", "utc": "2026-10-21T19:08:13Z", "tag": "c1_fold2", "step": 20, "loss": 0.8784645078703761, "seconds": 5.5585309579983}
+{"event": "fit_step", "utc": "2026-10-21T19:09:08Z", "tag": "c1_fold2", "step": 30, "loss": 0.5573296486400068, "seconds": 5.547968082995794}
+{"event": "fit_step", "utc": "2026-10-21T19:10:03Z", "tag": "c1_fold2", "step": 40, "loss": 0.3817564027849585, "seconds": 5.411288957999204}
+{"event": "fit_step", "utc": "2026-10-21T19:10:57Z", "tag": "c1_fold2", "step": 50, "loss": 0.2629702795529738, "seconds": 5.470266707998235}
+{"event": "fit_step", "utc": "2026-10-21T19:11:53Z", "tag": "c1_fold2", "step": 60, "loss": 0.19454514037352055, "seconds": 5.694209542001772}
+{"event": "fit_step", "utc": "2026-10-21T19:12:48Z", "tag": "c1_fold2", "step": 70, "loss": 0.1510130868991837, "seconds": 5.483397208001406}
+{"event": "fit_step", "utc": "2026-10-21T19:13:43Z", "tag": "c1_fold2", "step": 80, "loss": 0.1206087056780234, "seconds": 5.6031831669970416}
+{"event": "fit_step", "utc": "2026-10-21T19:14:39Z", "tag": "c1_fold2", "step": 90, "loss": 0.0996991524589248, "seconds": 5.666971582999395}
+{"event": "fit_step", "utc": "2026-10-21T19:15:36Z", "tag": "c1_fold2", "step": 100, "loss": 0.0849693993513938, "seconds": 5.597538000001805}
+{"event": "fit_step", "utc": "2026-10-21T19:16:30Z", "tag": "c1_fold2", "step": 110, "loss": 0.0741192351852078, "seconds": 5.352723791002063}
+{"event": "fit_step", "utc": "2026-10-21T19:17:25Z", "tag": "c1_fold2", "step": 120, "loss": 0.06576004100497812, "seconds": 5.428627082997991}
+{"event": "fit_step", "utc": "2026-10-21T19:18:20Z", "tag": "c1_fold2", "step": 130, "loss": 0.05908911922597326, "seconds": 5.553121999997529}
+{"event": "fit_step", "utc": "2026-10-21T19:19:16Z", "tag": "c1_fold2", "step": 140, "loss": 0.053523301088716835, "seconds": 5.568548290997569}
+{"event": "fit_step", "utc": "2026-10-21T19:20:12Z", "tag": "c1_fold2", "step": 150, "loss": 0.048706497938837856, "seconds": 5.671868375000486}
+{"event": "fit_step", "utc": "2026-10-21T19:21:08Z", "tag": "c1_fold2", "step": 160, "loss": 0.04446210924652405, "seconds": 5.4972206669990555}
+{"event": "fit_step", "utc": "2026-10-21T19:22:02Z", "tag": "c1_fold2", "step": 170, "loss": 0.040692991722607985, "seconds": 5.479855167002825}
+{"event": "fit_step", "utc": "2026-10-21T19:22:59Z", "tag": "c1_fold2", "step": 180, "loss": 0.037333087748265825, "seconds": 5.906943083005899}
+{"event": "fit_step", "utc": "2026-10-21T19:23:57Z", "tag": "c1_fold2", "step": 190, "loss": 0.03433629748178646, "seconds": 5.527341040993633}
+{"event": "fit_step", "utc": "2026-10-21T19:24:56Z", "tag": "c1_fold2", "step": 200, "loss": 0.03165977778553497, "seconds": 5.760847457997443}
+{"event": "fold_done", "utc": "2026-10-21T19:25:33Z", "arm": "c1", "fold": 2}
+{"event": "fit_step", "utc": "2026-10-21T19:25:39Z", "tag": "c1_fold3", "step": 1, "loss": 8.545138537883759, "seconds": 5.96716879199812}
+{"event": "fit_step", "utc": "2026-10-21T19:25:45Z", "tag": "c1_fold3", "step": 2, "loss": 6.666852276772261, "seconds": 5.9769321249987115}
+{"event": "fit_step", "utc": "2026-10-21T19:25:51Z", "tag": "c1_fold3", "step": 3, "loss": 4.934461139142513, "seconds": 5.9538687499953085}
+{"event": "fit_step", "utc": "2026-10-21T19:26:33Z", "tag": "c1_fold3", "step": 10, "loss": 2.164879521355033, "seconds": 6.06667141700018}
+{"event": "fit_step", "utc": "2026-10-21T19:27:34Z", "tag": "c1_fold3", "step": 20, "loss": 1.100262119434774, "seconds": 6.218070000002626}
+{"event": "fit_step", "utc": "2026-10-21T19:28:36Z", "tag": "c1_fold3", "step": 30, "loss": 0.704074464738369, "seconds": 6.030671291002363}
+{"event": "fit_step", "utc": "2026-10-21T19:29:39Z", "tag": "c1_fold3", "step": 40, "loss": 0.5132955438457429, "seconds": 6.2358915000004345}
+{"event": "fit_step", "utc": "2026-10-21T19:30:43Z", "tag": "c1_fold3", "step": 50, "loss": 0.3701554930303246, "seconds": 6.415263374998176}
+{"event": "fit_step", "utc": "2026-10-21T19:31:43Z", "tag": "c1_fold3", "step": 60, "loss": 0.2708992932457477, "seconds": 6.068775125000684}
+{"event": "fit_step", "utc": "2026-10-21T19:32:44Z", "tag": "c1_fold3", "step": 70, "loss": 0.19889272493310273, "seconds": 5.990131541002484}
+{"event": "fit_step", "utc": "2026-10-21T19:33:46Z", "tag": "c1_fold3", "step": 80, "loss": 0.14951715164352208, "seconds": 6.447317124999245}
+{"event": "fit_step", "utc": "2026-10-21T19:34:50Z", "tag": "c1_fold3", "step": 90, "loss": 0.11891292629297823, "seconds": 6.329268375004176}
+{"event": "fit_step", "utc": "2026-10-21T19:35:54Z", "tag": "c1_fold3", "step": 100, "loss": 0.09836329764220864, "seconds": 5.992131375001918}
+{"event": "fit_step", "utc": "2026-10-21T19:36:54Z", "tag": "c1_fold3", "step": 110, "loss": 0.08318646589759737, "seconds": 5.92000608399394}
+{"event": "fit_step", "utc": "2026-10-21T19:37:53Z", "tag": "c1_fold3", "step": 120, "loss": 0.07150666107190773, "seconds": 5.928632041999663}
+{"event": "fit_step", "utc": "2026-10-21T19:38:54Z", "tag": "c1_fold3", "step": 130, "loss": 0.06236073863692582, "seconds": 6.36447891699936}
+{"event": "fit_step", "utc": "2026-10-21T19:39:56Z", "tag": "c1_fold3", "step": 140, "loss": 0.05504188628401607, "seconds": 7.005597291994491}
+{"event": "fit_step", "utc": "2026-10-21T19:40:55Z", "tag": "c1_fold3", "step": 150, "loss": 0.049060154939070344, "seconds": 5.522228459005419}
+{"event": "fit_step", "utc": "2026-10-21T19:41:52Z", "tag": "c1_fold3", "step": 160, "loss": 0.04407411039574072, "seconds": 6.014981459004048}
+{"event": "fit_step", "utc": "2026-10-21T19:42:51Z", "tag": "c1_fold3", "step": 170, "loss": 0.039869825181085616, "seconds": 5.932768792001298}
+{"event": "fit_step", "utc": "2026-10-21T19:43:50Z", "tag": "c1_fold3", "step": 180, "loss": 0.03630894108209759, "seconds": 5.935730375000276}
+{"event": "fit_step", "utc": "2026-10-21T19:44:49Z", "tag": "c1_fold3", "step": 190, "loss": 0.03328036985476501, "seconds": 5.923134875003598}
+{"event": "fit_step", "utc": "2026-10-21T19:45:47Z", "tag": "c1_fold3", "step": 200, "loss": 0.03068629276822321, "seconds": 5.9691909159955685}
+{"event": "fold_done", "utc": "2026-10-21T19:46:22Z", "arm": "c1", "fold": 3}
+{"event": "job_end", "utc": "2026-10-21T19:46:24Z", "arm": "c1", "completed": true}
+{"event":"guard_end","utc":"2026-10-21T19:46:36Z","pid":66324}

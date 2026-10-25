@@ -1,0 +1,11 @@
+== preconditions 2026-10-24 15:38:28 job j5
+python processes:
+
+swap: total = 3072.00M  used = 1341.44M  free = 1730.56M  (encrypted)
+charger:  Wattage = 140W  Current = 5000mA  Voltage = 28000mV  AdapterID = 5717  Manufacturer = Apple inc.  Family Code = 0xe000400a  Serial String = C0624560SRBQCHXD8  Adapter Name = 140W USB-C Power Adapter  Hardware Version = 1.0  Firmware Version = 00x015AC0 
+power source and battery: AC Power|100
+free disk: 110 GiB
+== start 2026-10-24 15:38:28 (running-time limit 120 min): sebits.py j5 
+pid 75282 (caffeinate -i -w 75282)
+== end 2026-10-24 16:21:00 rc=0 (running time about 42 min)
+swap after: total = 3072.00M  used = 1341.44M  free = 1730.56M  (encrypted)

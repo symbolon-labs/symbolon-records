@@ -1,0 +1,146 @@
+[23:54:08] PREREGISTERED (format-gap test, 2026-10-23) ugap.py confirm stages ['freeze'] code 57d6d6771384
+[23:54:08] == stage freeze
+........[23:54:10] items: {'dev_train': 10, 'dev_test': 5, 'train': 15, 'test_pool': 30}; alias normalization agreement 1.0000; window match {'dev_train': 1.0, 'dev_test': 1.0, 'train': 1.0, 'test_pool': 0.0}
+...usage: ugap.py [-h] [--stages STAGES] [--pool {V,S0,S1}] [--chunks CHUNKS]
+               [--seeds SEEDS] [--t0c] [--researcher-said-yes WEST_SAID_YES]
+               [--sender_bs SENDER_BS] [--sample_items SAMPLE_ITEMS]
+               [--recv_bs RECV_BS]
+               {test,prefreeze,dev,confirm}
+ugap.py: error: stages ['sender'] are not part of mode dev: ['gate']
+usage: ugap.py [-h] [--stages STAGES] [--pool {V,S0,S1}] [--chunks CHUNKS]
+               [--seeds SEEDS] [--t0c] [--researcher-said-yes WEST_SAID_YES]
+               [--sender_bs SENDER_BS] [--sample_items SAMPLE_ITEMS]
+               [--recv_bs RECV_BS]
+               {test,prefreeze,dev,confirm}
+ugap.py: error: stages ['gate'] are not part of mode confirm: ['fetch', 'items', 'freeze', 'sender', 'seeds', 'analysis']
+.[23:54:11] items: {'dev_train': 10, 'dev_test': 5, 'train': 15, 'test_pool': 30}; alias normalization agreement 1.0000; window match {'dev_train': 1.0, 'dev_test': 1.0, 'train': 1.0, 'test_pool': 0.0}
+[23:54:11] weight hashes (start): 1 files
+[23:54:11] dev F3 dev_train: 10 passes (0 s)
+[23:54:11] dev F3 dev_test: 5 passes (0 s)
+[23:54:11] dev D2 dev_train: 10 passes (0 s)
+[23:54:11] dev D2 dev_test: 5 passes (0 s)
+[23:54:11] dev D3 dev_train: 10 passes (0 s)
+[23:54:11] dev D3 dev_test: 5 passes (0 s)
+[23:54:11] dev LOs dev_train: 10 passes (0 s)
+[23:54:11] dev LOs dev_test: 5 passes (0 s)
+[23:54:11] dev ICD7 dev_train: 10 passes (0 s)
+[23:54:11] dev ICD7 dev_test: 5 passes (0 s)
+[23:54:11] dev WD2 dev_train: 10 passes (0 s)
+[23:54:11] dev WD2 dev_test: 5 passes (0 s)
+[23:54:11] dev ICD7D2 dev_train: 10 passes (0 s)
+[23:54:11] dev ICD7D2 dev_test: 5 passes (0 s)
+[23:54:11] weight hashes (end): 1 files
+[23:54:11] dev F3: dev-test NLL 0.90805; pooled NLL 0.82942
+[23:54:11] dev D2: dev-test NLL 0.87285; pooled NLL 0.84876
+[23:54:11] dev D3: dev-test NLL 0.83928; pooled NLL 0.85586
+[23:54:11] dev LOs: dev-test NLL 0.95643; pooled NLL 0.85906
+[23:54:11] dev ICD7: dev-test NLL 0.89848; pooled NLL 0.79018
+[23:54:11] dev WD2: dev-test NLL 0.85274; pooled NLL 0.82527
+[23:54:11] dev ICD7D2: dev-test NLL 0.89659; pooled NLL 0.83777
+[23:54:11] gate: G-F2 True (0.90805); F* D2; G-F1 False (gain -0.01935); decision stop: outcome G: G-F1 failed; no fresh item is used (design 7, 12)
+[23:54:11] items: {'V': 10, 'S0': 27, 'S1': 25} (62 fresh items); shard 1 usable rows 40
+[23:54:11] freeze: FREEZE.json written (0 tests pass)
+[23:54:11] weight hashes (start): 3 files
+[23:54:11] sender V chunk 1/1: 10 items, 0 s (0.01 s/item), parser failures 10
+[23:54:11] weight hashes (end): 3 files
+[23:54:11] sender: 1 of 3 chunks exist; no merge yet
+[23:54:11] weight hashes (start): 3 files
+[23:54:11] sender S0 chunk 1/1: 27 items, 0 s (0.01 s/item), parser failures 27
+[23:54:12] sender S1 chunk 1/1: 25 items, 0 s (0.01 s/item), parser failures 25
+[23:54:12] weight hashes (end): 3 files
+[23:54:12] sender: merged 62 fresh items (0.01 s/item)
+[23:54:12] freeze: FREEZE.json written (0 tests pass)
+[23:54:12] weight hashes (start): 3 files
+[23:54:12] recv T0c_train: 15 passes (0 s)
+[23:54:12] recv T0c_fresh: 62 passes (0 s)
+[23:54:12] seed 20261101: probes (L2 weight 1)
+[23:54:12] seed20261101 recv_F3_train: 15 passes (0 s)
+[23:54:12] seed20261101 recv_F3_fresh: 62 passes (0 s)
+[23:54:12] seed20261101 recv_D2_train: 15 passes (0 s)
+[23:54:12] seed20261101 recv_D2_fresh: 62 passes (0 s)
+[23:54:12] seed20261101 recv_D3_train: 15 passes (0 s)
+[23:54:12] seed20261101 recv_D3_fresh: 62 passes (0 s)
+[23:54:12] seed20261101 recv_LOs_train: 15 passes (0 s)
+[23:54:12] seed20261101 recv_LOs_fresh: 62 passes (0 s)
+[23:54:12] seed20261101 recv_ICD7_train: 15 passes (0 s)
+[23:54:12] seed20261101 recv_ICD7_fresh: 62 passes (0 s)
+[23:54:12] seed20261101 recv_WD2_train: 15 passes (0 s)
+[23:54:12] seed20261101 recv_WD2_fresh: 62 passes (0 s)
+[23:54:12] seed20261101 recv_ICD7D2_train: 15 passes (0 s)
+[23:54:12] seed20261101 recv_ICD7D2_fresh: 62 passes (0 s)
+[23:54:12] seed 20261101 L-probe: 3 epochs, last train loss 0.7164 (0 s)
+[23:54:12] seed 20261101 L: 2 epochs, last train loss 0.7400 (0 s)
+[23:54:12] seed 20261101: done (0 s)
+[23:54:12] weight hashes (end): 3 files
+[23:54:12] seed 20261101: done (0 s)
+[23:54:12] seed 20261102: probes (L2 weight 0.01)
+[23:54:12] weight hashes (start): 3 files
+[23:54:12] seed20261102 recv_F3_train: 15 passes (0 s)
+[23:54:12] seed20261102 recv_F3_fresh: 62 passes (0 s)
+[23:54:12] seed20261102 recv_D2_train: 15 passes (0 s)
+[23:54:12] seed20261102 recv_D2_fresh: 62 passes (0 s)
+[23:54:12] seed20261102 recv_D3_train: 15 passes (0 s)
+[23:54:12] seed20261102 recv_D3_fresh: 62 passes (0 s)
+[23:54:12] seed20261102 recv_LOs_train: 15 passes (0 s)
+[23:54:12] seed20261102 recv_LOs_fresh: 62 passes (0 s)
+[23:54:12] seed20261102 recv_ICD7_train: 15 passes (0 s)
+[23:54:12] seed20261102 recv_ICD7_fresh: 62 passes (0 s)
+[23:54:12] seed20261102 recv_WD2_train: 15 passes (0 s)
+[23:54:12] seed20261102 recv_WD2_fresh: 62 passes (0 s)
+[23:54:12] seed20261102 recv_ICD7D2_train: 15 passes (0 s)
+[23:54:12] seed20261102 recv_ICD7D2_fresh: 62 passes (0 s)
+[23:54:12] seed 20261102 L-probe: 3 epochs, last train loss 0.7447 (0 s)
+[23:54:12] seed 20261102 L: 2 epochs, last train loss 0.7638 (0 s)
+[23:54:12] seed 20261102: done (0 s)
+[23:54:12] seed 20261103: probes (L2 weight 1)
+[23:54:12] seed20261103 recv_F3_train: 15 passes (0 s)
+[23:54:12] seed20261103 recv_F3_fresh: 62 passes (0 s)
+[23:54:12] seed20261103 recv_D2_train: 15 passes (0 s)
+[23:54:12] seed20261103 recv_D2_fresh: 62 passes (0 s)
+[23:54:12] seed20261103 recv_D3_train: 15 passes (0 s)
+[23:54:12] seed20261103 recv_D3_fresh: 62 passes (0 s)
+[23:54:12] seed20261103 recv_LOs_train: 15 passes (0 s)
+[23:54:12] seed20261103 recv_LOs_fresh: 62 passes (0 s)
+[23:54:12] seed20261103 recv_ICD7_train: 15 passes (0 s)
+[23:54:12] seed20261103 recv_ICD7_fresh: 62 passes (0 s)
+[23:54:12] seed20261103 recv_WD2_train: 15 passes (0 s)
+[23:54:12] seed20261103 recv_WD2_fresh: 62 passes (0 s)
+[23:54:12] seed20261103 recv_ICD7D2_train: 15 passes (0 s)
+[23:54:12] seed20261103 recv_ICD7D2_fresh: 62 passes (0 s)
+[23:54:12] seed 20261103 L-probe: 3 epochs, last train loss 0.7112 (0 s)
+[23:54:12] seed 20261103 L: 2 epochs, last train loss 0.6828 (0 s)
+[23:54:12] seed 20261103: done (0 s)
+[23:54:12] seed 20261104: probes (L2 weight 1)
+[23:54:12] seed 20261104 L-probe: 3 epochs, last train loss 0.6761 (0 s)
+[23:54:12] seed 20261104: done (0 s)
+[23:54:13] seed 20261105: probes (L2 weight 1)
+[23:54:13] seed 20261105 L-probe: 3 epochs, last train loss 0.7897 (0 s)
+[23:54:13] seed 20261105: done (0 s)
+[23:54:13] seed 20261106: probes (L2 weight 1)
+[23:54:13] seed 20261106 L-probe: 3 epochs, last train loss 1.0403 (0 s)
+[23:54:13] seed 20261106: done (0 s)
+[23:54:13] weight hashes (end): 3 files
+[23:54:13] analysis seed 20261101: text readouts done
+[23:54:14] analysis seed 20261102: text readouts done
+[23:54:14] analysis seed 20261103: text readouts done
+[23:54:14] analysis: L-probe-R readouts done
+Status: CONFIRMATORY (frozen run; the independent audit is still to do)
+
+Case D: unresolved. F* = ICD7; F° = D2; C* = L-probe-R. Validity: {'V1': True, 'V2': True, 'V3': True, 'V4': True}.
+
+
+
+Share of the F3 gap that F* removes: -0.143
+
+
+
+
+[23:54:16] analysis: case D (unresolved)
+......
+----------------------------------------------------------------------
+Ran 18 tests in 8.325s
+
+OK
+[23:54:17] freeze: FREEZE.json written (18 tests pass)
+[23:54:17] == stage freeze done (9 s)
+[23:54:17] done

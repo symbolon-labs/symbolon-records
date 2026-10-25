@@ -1,0 +1,33 @@
+{
+ "name": "L_r16_lr0.01_ep3",
+ "spec": {
+  "kind": "L",
+  "rank": 16,
+  "lr": 0.01,
+  "max_epochs": 3
+ },
+ "best_val_nll": 0.47440085804003324,
+ "best_epoch": 2,
+ "epochs_run": 3,
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 0.7323644035740903,
+   "seconds": 3.1810052394866943,
+   "val_nll": 1.4592580249539318
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.669445298219982,
+   "seconds": 6.721697092056274,
+   "val_nll": 0.47440085804003324
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.20758001427901418,
+   "seconds": 10.07144808769226,
+   "val_nll": 0.6227744725223864
+  }
+ ],
+ "finite": true
+}

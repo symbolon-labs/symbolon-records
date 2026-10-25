@@ -1,0 +1,27 @@
+{
+ "name": "Lprobe_lr0.01_ep2",
+ "spec": {
+  "kind": "L-probe",
+  "rank": null,
+  "lr": 0.01,
+  "max_epochs": 2
+ },
+ "best_val_nll": 0.7012788993193901,
+ "best_epoch": 2,
+ "epochs_run": 2,
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 0.8261967646448236,
+   "seconds": 3.180119037628174,
+   "val_nll": 1.8125415033845376
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.7950796359463742,
+   "seconds": 6.727679014205933,
+   "val_nll": 0.7012788993193901
+  }
+ ],
+ "finite": true
+}

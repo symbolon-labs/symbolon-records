@@ -1,0 +1,9 @@
+== preconditions 2026-10-24 06:28:14 job Q3
+swap: total = 4096.00M  used = 2503.69M  free = 1592.31M  (encrypted)
+battery: Now drawing from 'AC Power'  -InternalBattery-0 (id=26476643)	100%; charged; 0:00 remaining present: true 
+charger:  Wattage = 140W  Current = 5000mA  Voltage = 28000mV  AdapterID = 5717  Manufacturer = Apple inc.  Family Code = 0xe000400a  Serial String = C0624560SRBQCHXD8  Adapter Name = 140W USB-C Power Adapter  Hardware Version = 1.0  Firmware Version = 00x015AC0 
+free disk: 112 GiB
+== start 2026-10-24 06:28:14 (run-time limit 120 min): ugap.py confirm --stages seeds --seeds 20261103
+pid 61208 (caffeinate -i -w 61208; guard 61212)
+== end 2026-10-24 07:30:02 rc=0
+swap after: total = 3072.00M  used = 2454.75M  free = 617.25M  (encrypted)

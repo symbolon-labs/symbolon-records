@@ -1,0 +1,56 @@
+{
+ "time": "2026-10-23 21:26:40",
+ "sha256": {
+  "PREREGISTRATION.md": "f8a812656f072747323f744243e6e8e3bd35ba7d396d724c592bdbad2d984ed5",
+  "sebits.py": "db0f25b468ee55046a4ab94b3398c875b5157409f6c2577fef0496045de08696",
+  "test_sebits.py": "e46d3530efcd254260922471026d69b1a4f16ef4399c26d6cc32206f5b7eb5e4",
+  "run_sebits.sh": "e22accb6214783a2af2675bc14c1b890a83fc63248db555ac60cb738cc5ef999"
+ },
+ "tests": {
+  "run": 44,
+  "failures": 0,
+  "errors": 0
+ },
+ "data": {
+  "url": "https://cave.cs.toronto.edu/kriz/cifar-10-binary.tar.gz",
+  "archive": "cifar-10-binary.tar.gz",
+  "bytes": 170052171,
+  "sha256": "c4a38c50a1bc5f3a1c5537f2155ab9d68f9f25eb1ed8d9ddda3db29a59bca1dd",
+  "md5": "c32a1d4ab5d03f1284b67883e8d87530",
+  "md5_page": "c32a1d4ab5d03f1284b67883e8d87530",
+  "time": "2026-10-24 13:04:10",
+  "npz_sha256": {
+   "cifar10_train.npz": "3718a9a09265eb5e1b478fc87f49ff46f36397e04fd03f151173b44ee928f95c",
+   "cifar10_test_images.npz": "4b19da3a0393bc5bc233d475551b7b4cd6fc3bd725bb6c897b4468ddef00cf4e",
+   "cifar10_test_labels.npz": "fec3b140ee9cc86565710c177dc1ff8abc36d8f06e158568576a36648d6b63c1"
+  },
+  "class_counts": {
+   "train": [
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000
+   ],
+   "test": [
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000
+   ]
+  }
+ },
+ "amends": null,
+ "rule": "Every job checks these hashes and stops on a difference. The data step fills 'data' one time (archive and npz sha256)."
+}

@@ -1,0 +1,32 @@
+[gate 2026-10-23 23:40:50]
+  lab jobs: none
+  hot python: none
+  power: ac=1 battery=100% charger=140W
+  swap: total = 2048.00M  used = 404.31M  free = 1643.69M  (encrypted)
+  free disk: 115 GB
+  freeze: OK: 16 files and 2 inputs equal FREEZE.json (2026-10-23T18:11:30+00:00)
+  unit tests: Ran 39 tests in 5.974s OK 
+  gate result: PASS
+[launch 2026-10-23 23:40:57] job=J3_analysis pid=39856 script=analysis.py args= 
+{
+  "Q1-RT": "HARM",
+  "Q1-RE": "HARM",
+  "Q3-RT": "MAC HURTS",
+  "Q3-RE": "MAC HELPS",
+  "P-kNN|RT": "CANNOT FLAG",
+  "P-kNN|RE": "CANNOT FLAG",
+  "P-PCA|RT": "CANNOT FLAG",
+  "P-PCA|RE": "CANNOT FLAG",
+  "S3": "FALLBACK TRAINING HELPS",
+  "void": {
+    "run_void": false,
+    "q1_q3_void": false
+  },
+  "V": {
+    "V1": true,
+    "V2": true,
+    "V3": true,
+    "V4": true
+  }
+}
+[launch 2026-10-23 23:41:02] job=J3_analysis exit=0

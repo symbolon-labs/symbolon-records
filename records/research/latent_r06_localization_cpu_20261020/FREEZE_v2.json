@@ -1,0 +1,57 @@
+{
+ "label": "EXPLORATORY",
+ "code": {
+  "PLAN.md": "564e0d316364e8cd749c28587c889527c3f0d7da0546b448101d450199af47dd",
+  "PLAN_AMENDMENT_1.md": "84e8ab0a882ad4381b5d088363ee77f8bfe802c54201339c5cd29943783ceca5",
+  "t2_t3_v2.py": "3a08f064a67e18e7a915ea9a7f38cc501c83d3d8f34931824b926e9e301479c9"
+ },
+ "inputs": {
+  "ids": {
+   "path": "latent_binding_alignment_source_20260911/inputs.json",
+   "sha256": "a2112f7216747b03361641f584820b52e80d78932b0a602342868031586ed056"
+  },
+  "captures": {
+   "path": "latent_binding_alignment_source_20260911/run/captures.pt",
+   "sha256": "b4972c450368709366398646d5c2cf363ebc32a2f4280671cd74fd29ba4207ba"
+  },
+  "features": {
+   "path": "latent_binding_alignment_source_20260911/run/features.pt",
+   "sha256": "c06470467607db0c5d78749f5dd40a8ca9f0404ff40ab9462a0fc83fb7b5cd15"
+  },
+  "stages": {
+   "path": "latent_binding_identity_localization_20260910/stages.pt",
+   "sha256": "0460ea5ce5966c93e37256cbc1ba57cb323b25d0d4f52877fba763b159784117"
+  },
+  "align_candidate": {
+   "path": "latent_binding_training_alignment_20260911/run/candidate.pt",
+   "sha256": "822db91d7aee1c598321c8d217397bc875ae43671b1e178dae5db1d609b2f831"
+  },
+  "d0_candidate": {
+   "path": "latent_binding_training_fold_recovery_20260913/run/fold0/step0/candidate.pt",
+   "sha256": "d0f16cb9705ba53daf6cc8f2bfad03a08efa96cbb4f77dd836c9533e948cba87"
+  },
+  "d0_coordinates": {
+   "path": "latent_binding_training_fold_recovery_20260913/coordinates.pt",
+   "sha256": "b7a6ce8607e34b7c1f92a77e5ed5d8e51983692c838027e1022976b4be214266"
+  },
+  "folds": {
+   "path": "latent_binding_training_fold_recovery_20260913/folds.json",
+   "sha256": "21bfd5cd4dda02c966e9f136360663aa417b00cbccf9d6900f3eba3a2fba9a70"
+  },
+  "novel_fit": {
+   "path": "latent_binding_constrained_code_extended_20260911/run/novel_fit.pt",
+   "sha256": "6c4575242f701efb2d030f2f4cc5ce94bba280ca4d6cbef3c4882857a600cc15"
+  },
+  "familiar_fit": {
+   "path": "latent_binding_constrained_code_extended_20260911/run/familiar_fit.pt",
+   "sha256": "6f6ea0c6439088d090cfa2b986f3220804d1ea6806b6868a80da34a68c18ce18"
+  }
+ },
+ "runtime": {
+  "python": "3.12.14",
+  "numpy": "2.4.6",
+  "torch": "2.13.0",
+  "threads": 2,
+  "device": "cpu"
+ }
+}

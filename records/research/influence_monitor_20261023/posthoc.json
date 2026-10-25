@@ -1,0 +1,89 @@
+{
+  "A": {
+    "benign_S_block_range_by_label": {
+      "0": {
+        "max": 0.1933456364263165,
+        "min": 0.1933074372834171
+      },
+      "1": {
+        "max": 2.3726427953907643,
+        "min": 2.3725750003048014
+      },
+      "2": {
+        "max": 2.765607258333479,
+        "min": 2.7655954672210448
+      },
+      "3": {
+        "max": 3.926767238523225,
+        "min": 3.926671733565798
+      }
+    },
+    "distinct_benign_S_block": 96,
+    "distinct_benign_lp_rows": 96,
+    "median_benign_answer_prob": 0.9999967324680236,
+    "zero_equals_block_max_abs": 0.0
+  },
+  "B": {
+    "benign_S_block_range_by_label": {
+      "0": {
+        "max": 0.19334662513386325,
+        "min": 0.1932430449246157
+      },
+      "1": {
+        "max": 2.372642698560312,
+        "min": 2.3722904280573305
+      },
+      "2": {
+        "max": 2.7656081316500387,
+        "min": 2.765595576310068
+      },
+      "3": {
+        "max": 3.9267668614163163,
+        "min": 3.9265713888942453
+      }
+    },
+    "distinct_benign_S_block": 96,
+    "distinct_benign_lp_rows": 96,
+    "median_benign_answer_prob": 0.9999966695232467,
+    "zero_equals_block_max_abs": 0.0
+  },
+  "C": {
+    "benign_S_block_range_by_label": {
+      "0": {
+        "max": 0.19334737750873698,
+        "min": 0.19331959819773986
+      },
+      "1": {
+        "max": 2.3726389604129188,
+        "min": 2.3725177251261433
+      },
+      "2": {
+        "max": 2.765608226000197,
+        "min": 2.76559320297147
+      },
+      "3": {
+        "max": 3.926766421911541,
+        "min": 3.926683248514022
+      }
+    },
+    "distinct_benign_S_block": 64,
+    "distinct_benign_lp_rows": 64,
+    "median_benign_answer_prob": 0.9999960935294692,
+    "zero_equals_block_max_abs": 0.0
+  },
+  "labels_A_equal_B": true,
+  "labels_C_equal_A_first64": true,
+  "random_refs_A_vs_B_max_abs": 1.7642974853515625e-05,
+  "random_refs_C_vs_A_first64_max_abs": 2.09808349609375e-05,
+  "sensitivity_S_rand_replay_vs_benign_sets_A_C": {
+    "auroc": 0.5266015625,
+    "hi": 0.5630078125,
+    "lo": 0.487109375,
+    "n_boot": 10000,
+    "n_neg": 160,
+    "n_pos": 160,
+    "reading_with_the_same_rule": "E-NULL",
+    "seed": 20261023
+  },
+  "sensitivity_harmful_rows_sets_A_C": 119
+}

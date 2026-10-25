@@ -1,0 +1,27 @@
+{
+ "time": "2026-10-23 23:54:17",
+ "sha256": {
+  "PREREGISTRATION.md": "e7b8f105f8e1b5fdc3ab33fa61136044d9971280a103d7a5787504eb3a5d2596",
+  "ugap.py": "57d6d6771384fd7b4e0de09f92468c0b11328a7a04c849edccb9aafcd00131d8",
+  "test_ugap.py": "81fb2db1bdff9c43d10347ee871d0061852042cfed52b4fdff68c7aa5f043b4d",
+  "run_ugap.sh": "7301e34005a1763a308ad7933748ab90e5eec11c6eb9988c1a39fddc05665f37",
+  "guard.sh": "09d91bbc6e1d30ef6cd626c1ccfb55b471e881b8c09385a7ee9b35404543f287",
+  "chain.sh": "830640edc4b55907d3f21aeb66b7f87047d3c245a8c22c242f47a1e9cc3e6bd3",
+  "fresh/fresh_items.json": "44c02856bac8bdbd65a1d6b7f0cdb38463ca32f93cea467531fd1eddfe09d4ea",
+  "fresh/fresh_manifest.json": "70531b13dbc1b7cda27ca71663b07ce14fa7eaf7a55e2525d3e00c69770031d2",
+  "dev/dev_selection.json": "ac50917964efd3a75e8e6a03c4a09f0efe40f46f01ec645e88bed6a929825e02",
+  "dev/dev_result.json": "d95d42c2b8a5af43b4b2c78f56d92ef3ced49e8bee1cccbb4ddc9913c46eb00c",
+  "data/trivia_qa/rc.wikipedia/train-00001-of-00007.parquet": "55cd82902467361c86f350f95c408e741bef13d23ad3ecbc07cb6eca2d9def59"
+ },
+ "tests": {
+  "run": 18,
+  "failures": 0,
+  "errors": 0
+ },
+ "seal_check": {
+  "ok": true,
+  "files": 28,
+  "bad": {}
+ },
+ "rule": "Every Phase C' stage checks these hashes and stops on a difference (G25)."
+}

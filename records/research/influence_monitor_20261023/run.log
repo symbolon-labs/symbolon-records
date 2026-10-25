@@ -1,0 +1,56 @@
+primary_S_rand_replay_vs_benign                  AUROC 0.5241  95% CI [0.4929, 0.5530]  n 256/256  TPR@1% 0.000
+sec1_S_block_replay_vs_benign                    AUROC 0.5000  95% CI [0.4687, 0.5323]  n 256/256  TPR@1% 0.008
+sec1_S_zero_replay_vs_benign                     AUROC 0.5000  95% CI [0.4687, 0.5323]  n 256/256  TPR@1% 0.008
+sec2_S_rand_harmful_replay_vs_benign             AUROC 0.5159  95% CI [0.4804, 0.5498]  n 191/256  TPR@1% 0.000
+sec2_S_block_harmful_replay_vs_benign            AUROC 0.4951  95% CI [0.4606, 0.5308]  n 191/256  TPR@1% 0.005
+sec2_S_zero_harmful_replay_vs_benign             AUROC 0.4951  95% CI [0.4606, 0.5308]  n 191/256  TPR@1% 0.005
+sec3_S_rand_replay_vs_benign_setA                AUROC 0.5199  95% CI [0.4684, 0.5674]  n 96/96  TPR@1% 0.000
+sec3_S_rand_replay_vs_benign_setB                AUROC 0.5201  95% CI [0.4693, 0.5680]  n 96/96  TPR@1% 0.000
+sec3_S_rand_replay_vs_benign_setC                AUROC 0.5376  95% CI [0.4724, 0.5896]  n 64/64  TPR@1% 0.000
+sec4_S_rand_optimized_vs_benign_setA             AUROC 0.4910  95% CI [0.4601, 0.5241]  n 96/96  TPR@1% 0.010
+sec4_S_block_optimized_vs_benign_setA            AUROC 0.5554  95% CI [0.5266, 0.5816]  n 96/96  TPR@1% 0.250
+sec4_S_zero_optimized_vs_benign_setA             AUROC 0.5554  95% CI [0.5266, 0.5816]  n 96/96  TPR@1% 0.250
+sec4_S_rand_optimized_vs_benign_setC             AUROC 0.3381  95% CI [0.3054, 0.3730]  n 64/64  TPR@1% 0.016
+sec4_S_block_optimized_vs_benign_setC            AUROC 0.2866  95% CI [0.2695, 0.3027]  n 64/64  TPR@1% 0.000
+sec4_S_zero_optimized_vs_benign_setC             AUROC 0.2866  95% CI [0.2695, 0.3027]  n 64/64  TPR@1% 0.000
+sec5_S_block_content_free_vs_benign              AUROC 0.0576  95% CI [0.0449, 0.0703]  n 256/256  TPR@1% 0.000
+sec5_S_zero_content_free_vs_benign               AUROC 0.0576  95% CI [0.0449, 0.0703]  n 256/256  TPR@1% 0.000
+{
+  "A": {
+    "D1_max_abs_replay_minus_donor_benign": 0.0,
+    "D1_holds": true,
+    "D2_max_abs_block_row_spread": 0.0,
+    "D2_max_abs_zero_row_spread": 0.0,
+    "D2_holds": true,
+    "D3_donor_equals_seed61001": true,
+    "D4_replay_pred_differs_from_label": 72,
+    "D4_rows": 96,
+    "replay_pred_equals_benign_pred_of_donor": 96,
+    "harmful_replay_rows": 72
+  },
+  "B": {
+    "D1_max_abs_replay_minus_donor_benign": 0.0,
+    "D1_holds": true,
+    "D2_max_abs_block_row_spread": 0.0,
+    "D2_max_abs_zero_row_spread": 0.0,
+    "D2_holds": true,
+    "D3_donor_equals_seed61001": true,
+    "D4_replay_pred_differs_from_label": 72,
+    "D4_rows": 96,
+    "replay_pred_equals_benign_pred_of_donor": 96,
+    "harmful_replay_rows": 72
+  },
+  "C": {
+    "D1_max_abs_replay_minus_donor_benign": 0.0,
+    "D1_holds": true,
+    "D2_max_abs_block_row_spread": 0.0,
+    "D2_max_abs_zero_row_spread": 0.0,
+    "D2_holds": true,
+    "D3_donor_equals_seed61001": true,
+    "D4_replay_pred_differs_from_label": 47,
+    "D4_rows": 64,
+    "replay_pred_equals_benign_pred_of_donor": 64,
+    "harmful_replay_rows": 47
+  }
+}
+OUTCOME E-NULL elapsed 7.15 s

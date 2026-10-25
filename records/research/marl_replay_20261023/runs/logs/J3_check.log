@@ -1,0 +1,21 @@
+[gate 2026-10-23 23:41:03]
+  lab jobs: none
+  hot python: none
+  power: ac=1 battery=100% charger=140W
+  swap: total = 2048.00M  used = 404.31M  free = 1643.69M  (encrypted)
+  free disk: 115 GB
+  freeze: OK: 16 files and 2 inputs equal FREEZE.json (2026-10-23T18:11:30+00:00)
+  unit tests: Ran 39 tests in 5.932s OK 
+  gate result: PASS
+[launch 2026-10-23 23:41:09] job=J3_check pid=39966 script=stats_check.py args= 
+{
+  "agreement": "AGREE",
+  "max_abs_diff": 2.6139090891774686e-12,
+  "problems": [],
+  "t": {
+    "n20_98.75": 2.7585858990534007,
+    "n18_98.75": 2.792541960607764,
+    "n20_95": 2.0930240544061007
+  }
+}
+[launch 2026-10-23 23:41:14] job=J3_check exit=0

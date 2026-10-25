@@ -1,0 +1,367 @@
+{
+ "status": "DEVELOPMENT (Phase D', scratch mode). Not evidence (design 7).",
+ "time": "2026-10-23 23:52:47",
+ "formats": {
+  "F3": {
+   "dev_test_nll": 0.40903614283793316,
+   "dev_train_oof_nll": 0.42285138058456356,
+   "pooled_nll": 0.41824630133568674,
+   "readout": {
+    "family": "logistic",
+    "lam": 0.1,
+    "cv_nll": 0.42285138058456356,
+    "cv_grid": {
+     "1e-05": 1.878269874895618,
+     "0.0001": 1.3744340107982038,
+     "0.001": 0.8106758650098098,
+     "0.01": 0.49616449289939657,
+     "0.1": 0.42285138058456356,
+     "1.0": 0.43942011174280277,
+     "10.0": 0.5080421320305578
+    },
+    "at_grid_end": false
+   },
+   "dev_test_metrics": {
+    "nll": 0.40903614283793316,
+    "auroc": 0.8194408602150538,
+    "brier": 0.12825758867101714,
+    "ece": 0.04293453168202997,
+    "acc": 0.813
+   }
+  },
+  "D2": {
+   "dev_test_nll": 0.4363909746554056,
+   "dev_train_oof_nll": 0.44530119611997426,
+   "pooled_nll": 0.44233112229845134,
+   "readout": {
+    "family": "logistic",
+    "lam": 0.1,
+    "cv_nll": 0.44530119611997426,
+    "cv_grid": {
+     "1e-05": 2.1440428916779806,
+     "0.0001": 1.5428781198026997,
+     "0.001": 0.8766527758476537,
+     "0.01": 0.5236559680886462,
+     "0.1": 0.44530119611997426,
+     "1.0": 0.45473139659825096,
+     "10.0": 0.5118620550251702
+    },
+    "at_grid_end": false
+   },
+   "dev_test_metrics": {
+    "nll": 0.4363909746554056,
+    "auroc": 0.7913290322580645,
+    "brier": 0.13914258418839795,
+    "ece": 0.03560046454202622,
+    "acc": 0.799
+   }
+  },
+  "D3": {
+   "dev_test_nll": 0.4330082394979775,
+   "dev_train_oof_nll": 0.45176213549254945,
+   "pooled_nll": 0.44551083682769216,
+   "readout": {
+    "family": "logistic",
+    "lam": 0.1,
+    "cv_nll": 0.45176213549254945,
+    "cv_grid": {
+     "1e-05": 2.2059813124415597,
+     "0.0001": 1.6051843316604917,
+     "0.001": 0.9077786182136861,
+     "0.01": 0.5367602051614256,
+     "0.1": 0.45176213549254945,
+     "1.0": 0.45836277777194195,
+     "10.0": 0.5133188947621834
+    },
+    "at_grid_end": false
+   },
+   "dev_test_metrics": {
+    "nll": 0.4330082394979775,
+    "auroc": 0.7945003584229391,
+    "brier": 0.13818745982882838,
+    "ece": 0.04465490205355264,
+    "acc": 0.808
+   }
+  },
+  "LOs": {
+   "dev_test_nll": 0.42059343491985246,
+   "dev_train_oof_nll": 0.4306593816695843,
+   "pooled_nll": 0.4273040660863403,
+   "readout": {
+    "family": "logistic",
+    "lam": 0.1,
+    "cv_nll": 0.4306593816695843,
+    "cv_grid": {
+     "1e-05": 2.0186814627720286,
+     "0.0001": 1.4557441616986846,
+     "0.001": 0.8021344057949489,
+     "0.01": 0.4836914449127092,
+     "0.1": 0.4306593816695843,
+     "1.0": 0.4512653084944941,
+     "10.0": 0.5085148821274863
+    },
+    "at_grid_end": false
+   },
+   "dev_test_metrics": {
+    "nll": 0.42059343491985246,
+    "auroc": 0.8039397849462365,
+    "brier": 0.13380114374597457,
+    "ece": 0.03243585779306681,
+    "acc": 0.812
+   }
+  },
+  "ICD7": {
+   "dev_test_nll": 0.40550568573694457,
+   "dev_train_oof_nll": 0.42401855843985536,
+   "pooled_nll": 0.4178476008722185,
+   "readout": {
+    "family": "logistic",
+    "lam": 0.1,
+    "cv_nll": 0.42401855843985536,
+    "cv_grid": {
+     "1e-05": 1.9116875707776457,
+     "0.0001": 1.39949337366941,
+     "0.001": 0.8214776510336734,
+     "0.01": 0.49908318571346705,
+     "0.1": 0.42401855843985536,
+     "1.0": 0.4358077388865978,
+     "10.0": 0.5047075865643902
+    },
+    "at_grid_end": false
+   },
+   "dev_test_metrics": {
+    "nll": 0.40550568573694457,
+    "auroc": 0.8246824372759857,
+    "brier": 0.1280676179334315,
+    "ece": 0.032826365101484,
+    "acc": 0.816
+   }
+  },
+  "WD2": {
+   "dev_test_nll": 0.4099403192866439,
+   "dev_train_oof_nll": 0.41084790542415944,
+   "pooled_nll": 0.41054537671165425,
+   "readout": {
+    "family": "logistic",
+    "lam": 0.1,
+    "cv_nll": 0.41084790542415944,
+    "cv_grid": {
+     "1e-05": 1.9451510178928555,
+     "0.0001": 1.453050270542188,
+     "0.001": 0.8309280146266369,
+     "0.01": 0.4775064602438261,
+     "0.1": 0.41084790542415944,
+     "1.0": 0.43560468688209014,
+     "10.0": 0.5092584633467083
+    },
+    "at_grid_end": false
+   },
+   "dev_test_metrics": {
+    "nll": 0.4099403192866439,
+    "auroc": 0.82144229390681,
+    "brier": 0.12798498387137563,
+    "ece": 0.046442468271278126,
+    "acc": 0.817
+   }
+  },
+  "ICD7D2": {
+   "dev_test_nll": 0.40913700442076084,
+   "dev_train_oof_nll": 0.4148154403688719,
+   "pooled_nll": 0.4129226283861682,
+   "readout": {
+    "family": "logistic",
+    "lam": 0.1,
+    "cv_nll": 0.4148154403688719,
+    "cv_grid": {
+     "1e-05": 1.8838416085281822,
+     "0.0001": 1.3857810371461394,
+     "0.001": 0.8166451438621654,
+     "0.01": 0.4835627612830681,
+     "0.1": 0.4148154403688719,
+     "1.0": 0.43380238694926965,
+     "10.0": 0.506134509469372
+    },
+    "at_grid_end": false
+   },
+   "dev_test_metrics": {
+    "nll": 0.40913700442076084,
+    "auroc": 0.8226695340501792,
+    "brier": 0.12906260183214266,
+    "ece": 0.03487365579220708,
+    "acc": 0.815
+   }
+  }
+ },
+ "tokens": {
+  "F3": {
+   "tag_mean": 3.9691709844559586,
+   "tag_max": 4,
+   "message_max": 121,
+   "message_mean": 56.831
+  },
+  "D2": {
+   "tag_mean": 6.0,
+   "tag_max": 6,
+   "message_max": 127,
+   "message_mean": 62.057
+  },
+  "D3": {
+   "tag_mean": 7.0,
+   "tag_max": 7,
+   "message_max": 130,
+   "message_mean": 64.63033333333334
+  },
+  "LOs": {
+   "tag_mean": 8.0,
+   "tag_max": 8,
+   "message_max": 133,
+   "message_mean": 67.20366666666666
+  },
+  "ICD7": {
+   "tag_mean": 4.472279792746114,
+   "tag_max": 5,
+   "message_max": 124,
+   "message_mean": 58.12566666666667
+  },
+  "WD2": {
+   "tag_mean": 9.96917098445596,
+   "tag_max": 10,
+   "message_max": 139,
+   "message_mean": 72.271
+  },
+  "ICD7D2": {
+   "tag_mean": 10.472279792746114,
+   "tag_max": 11,
+   "message_max": 142,
+   "message_mean": 73.56566666666667
+  },
+  "T0c": {
+   "tag_mean": 0.0,
+   "tag_max": 0,
+   "message_max": 111,
+   "message_mean": 49.135
+  }
+ },
+ "gain_ci95_item_bootstrap": {
+  "F3 minus D2": {
+   "mean": -0.024084820962764587,
+   "ci95": [
+    -0.03298516117251062,
+    -0.01516962627897974
+   ]
+  },
+  "F3 minus D3": {
+   "mean": -0.027264535492005422,
+   "ci95": [
+    -0.03616661497358475,
+    -0.0183554509804072
+   ]
+  },
+  "F3 minus LOs": {
+   "mean": -0.009057764750653563,
+   "ci95": [
+    -0.017989598333642717,
+    -0.00015931972418691977
+   ]
+  },
+  "F3 minus ICD7": {
+   "mean": 0.0003987004634683314,
+   "ci95": [
+    -0.004618360300000088,
+    0.00534490843200326
+   ]
+  },
+  "F3 minus WD2": {
+   "mean": 0.007700924624032538,
+   "ci95": [
+    0.001600632264467559,
+    0.013846998266966072
+   ]
+  },
+  "F3 minus ICD7D2": {
+   "mean": 0.0053236729495185564,
+   "ci95": [
+    -0.0019873102456513855,
+    0.012736036679864013
+   ]
+  }
+ },
+ "reproduction_of_phase_d_F3": {
+  "dev_train": {
+   "max_abs_h_diff": 0.0,
+   "share_equal": 1.0
+  },
+  "dev_test": {
+   "max_abs_h_diff": 0.0,
+   "share_equal": 1.0
+  }
+ },
+ "receiver_param_sha256": [
+  "fe5f214635a19e4d8052924e712fb52e517279e8161d212e8d1e60d0ee9628f4",
+  "fe5f214635a19e4d8052924e712fb52e517279e8161d212e8d1e60d0ee9628f4"
+ ],
+ "receiver_param_unchanged": true,
+ "weight_files": {
+  "ok": true,
+  "records": 2,
+  "changed_or_unknown": [],
+  "records_with_missing_files": []
+ },
+ "examples": {
+  "F3": [
+   "Message: Question: Which killer was executed by electric chair in January 1989 after confessing to the murder of around 30 young women during the 1970s, mostly by bludgeoning and strangling?\nProposed answer: John Wayne (very unlikely). Other answers: John Hinckley (very unlikely); Clarence Ray Villars (very unlikely).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Mary Helen Mackillop, also known as Saint Mary of the Cross, is the only person from which country to be recognised by the Roman Catholic church as a saint?\nProposed answer: Australia (uncertain).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Ben Macdui is part of which European mountain range?\nProposed answer: Pyrenees (uncertain). Other answers: Appenine Mountains (unlikely); Poiana Capului (very unlikely).\nIs the proposed answer correct? Answer:"
+  ],
+  "D2": [
+   "Message: Question: Which killer was executed by electric chair in January 1989 after confessing to the murder of around 30 young women during the 1970s, mostly by bludgeoning and strangling?\nProposed answer: John Wayne (0.00). Other answers: John Hinckley (0.05); Clarence Ray Villars (0.00).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Mary Helen Mackillop, also known as Saint Mary of the Cross, is the only person from which country to be recognised by the Roman Catholic church as a saint?\nProposed answer: Australia (0.41).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Ben Macdui is part of which European mountain range?\nProposed answer: Pyrenees (0.59). Other answers: Appenine Mountains (0.21); Poiana Capului (0.02).\nIs the proposed answer correct? Answer:"
+  ],
+  "D3": [
+   "Message: Question: Which killer was executed by electric chair in January 1989 after confessing to the murder of around 30 young women during the 1970s, mostly by bludgeoning and strangling?\nProposed answer: John Wayne (0.002). Other answers: John Hinckley (0.051); Clarence Ray Villars (0.002).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Mary Helen Mackillop, also known as Saint Mary of the Cross, is the only person from which country to be recognised by the Roman Catholic church as a saint?\nProposed answer: Australia (0.409).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Ben Macdui is part of which European mountain range?\nProposed answer: Pyrenees (0.591). Other answers: Appenine Mountains (0.205); Poiana Capului (0.016).\nIs the proposed answer correct? Answer:"
+  ],
+  "LOs": [
+   "Message: Question: Which killer was executed by electric chair in January 1989 after confessing to the murder of around 30 young women during the 1970s, mostly by bludgeoning and strangling?\nProposed answer: John Wayne (logit -6.1). Other answers: John Hinckley (logit -2.9); Clarence Ray Villars (logit -6.4).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Mary Helen Mackillop, also known as Saint Mary of the Cross, is the only person from which country to be recognised by the Roman Catholic church as a saint?\nProposed answer: Australia (logit -0.4).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Ben Macdui is part of which European mountain range?\nProposed answer: Pyrenees (logit 0.4). Other answers: Appenine Mountains (logit -1.4); Poiana Capului (logit -4.1).\nIs the proposed answer correct? Answer:"
+  ],
+  "ICD7": [
+   "Message: Question: Which killer was executed by electric chair in January 1989 after confessing to the murder of around 30 young women during the 1970s, mostly by bludgeoning and strangling?\nProposed answer: John Wayne (almost no chance). Other answers: John Hinckley (very unlikely); Clarence Ray Villars (almost no chance).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Mary Helen Mackillop, also known as Saint Mary of the Cross, is the only person from which country to be recognised by the Roman Catholic church as a saint?\nProposed answer: Australia (unlikely).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Ben Macdui is part of which European mountain range?\nProposed answer: Pyrenees (likely). Other answers: Appenine Mountains (unlikely); Poiana Capului (almost no chance).\nIs the proposed answer correct? Answer:"
+  ],
+  "WD2": [
+   "Message: Question: Which killer was executed by electric chair in January 1989 after confessing to the murder of around 30 young women during the 1970s, mostly by bludgeoning and strangling?\nProposed answer: John Wayne (very unlikely, 0.00). Other answers: John Hinckley (very unlikely, 0.05); Clarence Ray Villars (very unlikely, 0.00).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Mary Helen Mackillop, also known as Saint Mary of the Cross, is the only person from which country to be recognised by the Roman Catholic church as a saint?\nProposed answer: Australia (uncertain, 0.41).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Ben Macdui is part of which European mountain range?\nProposed answer: Pyrenees (uncertain, 0.59). Other answers: Appenine Mountains (unlikely, 0.21); Poiana Capului (very unlikely, 0.02).\nIs the proposed answer correct? Answer:"
+  ],
+  "ICD7D2": [
+   "Message: Question: Which killer was executed by electric chair in January 1989 after confessing to the murder of around 30 young women during the 1970s, mostly by bludgeoning and strangling?\nProposed answer: John Wayne (almost no chance, 0.00). Other answers: John Hinckley (very unlikely, 0.05); Clarence Ray Villars (almost no chance, 0.00).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Mary Helen Mackillop, also known as Saint Mary of the Cross, is the only person from which country to be recognised by the Roman Catholic church as a saint?\nProposed answer: Australia (unlikely, 0.41).\nIs the proposed answer correct? Answer:",
+   "Message: Question: Ben Macdui is part of which European mountain range?\nProposed answer: Pyrenees (likely, 0.59). Other answers: Appenine Mountains (unlikely, 0.21); Poiana Capului (almost no chance, 0.02).\nIs the proposed answer correct? Answer:"
+  ]
+ },
+ "seconds_passes": 371.0760111808777,
+ "seconds_total": 426.81542897224426,
+ "s_per_pass": {
+  "F3_dev_train_s_per_pass": 0.015257264852523805,
+  "F3_dev_test_s_per_pass": 0.015508086681365966,
+  "D2_dev_train_s_per_pass": 0.01634594941139221,
+  "D2_dev_test_s_per_pass": 0.016823837995529174,
+  "D3_dev_train_s_per_pass": 0.016973940968513488,
+  "D3_dev_test_s_per_pass": 0.017468016147613525,
+  "LOs_dev_train_s_per_pass": 0.017633002996444703,
+  "LOs_dev_test_s_per_pass": 0.018124714851379394,
+  "ICD7_dev_train_s_per_pass": 0.015311816096305848,
+  "ICD7_dev_test_s_per_pass": 0.015786299228668213,
+  "WD2_dev_train_s_per_pass": 0.018945762991905212,
+  "WD2_dev_test_s_per_pass": 0.019449800968170165,
+  "ICD7D2_dev_train_s_per_pass": 0.019317687511444092,
+  "ICD7D2_dev_test_s_per_pass": 0.019791352033615112
+ },
+ "code_sha256": "57d6d6771384fd7b4e0de09f92468c0b11328a7a04c849edccb9aafcd00131d8",
+ "dev_seed": 2026102113
+}

@@ -1,0 +1,27 @@
+{
+ "name": "L_full_lr3e-05_ep2",
+ "spec": {
+  "kind": "L",
+  "rank": null,
+  "lr": 3e-05,
+  "max_epochs": 2
+ },
+ "best_val_nll": 0.7075800271876326,
+ "best_epoch": 2,
+ "epochs_run": 2,
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 0.7869982468454462,
+   "seconds": 5.2184178829193115,
+   "val_nll": 0.7275245706491109
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.6189660869146648,
+   "seconds": 9.14914083480835,
+   "val_nll": 0.7075800271876326
+  }
+ ],
+ "finite": true
+}

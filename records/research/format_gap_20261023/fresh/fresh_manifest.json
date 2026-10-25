@@ -1,0 +1,52 @@
+{
+ "status": "PREREGISTERED (format-gap test, 2026-10-23)",
+ "time": "2026-10-23 23:54:02",
+ "counts": {
+  "V": 1991,
+  "S0": 1838,
+  "S1": 4000
+ },
+ "n_fresh": 7829,
+ "pools": {
+  "V": {
+   "rows": 1991,
+   "scanned": 1991,
+   "kept": 1991,
+   "removed_spent": 0,
+   "removed_duplicate": 0
+  },
+  "S0": {
+   "rows": 1841,
+   "scanned": 1841,
+   "kept": 1838,
+   "removed_spent": 3,
+   "removed_duplicate": 0
+  },
+  "S1": {
+   "rows": 8841,
+   "scanned": 4004,
+   "kept": 4000,
+   "removed_spent": 3,
+   "removed_duplicate": 1
+  }
+ },
+ "expected": {
+  "V": 1991,
+  "S0": 1838,
+  "S1": 4000
+ },
+ "shard0_usable_rows": 8842,
+ "shard1_usable_rows": 8841,
+ "shard0_rest_rows": 1841,
+ "s1_perm_seed": 2026102320,
+ "n_spent": 13000,
+ "data_sha256": {
+  "validation": "59dcbdde6c1b67b4ef0b7e2591ce682200d32b523cd311e83721716489c104c8",
+  "train0": "d4f952bc93e9b8ff8306d712a6dbc11a60ac90ad17807c34320164b1dc060cb2",
+  "train1": "55cd82902467361c86f350f95c408e741bef13d23ad3ecbc07cb6eca2d9def59"
+ },
+ "sealed_items_sha256": "e8dfd9c4e790fe3854b995d548faad41d2033a3684760be101195343191895f9",
+ "code_sha256": "57d6d6771384fd7b4e0de09f92468c0b11328a7a04c849edccb9aafcd00131d8",
+ "seconds": 3.106971263885498,
+ "fresh_items_sha256": "44c02856bac8bdbd65a1d6b7f0cdb38463ca32f93cea467531fd1eddfe09d4ea"
+}

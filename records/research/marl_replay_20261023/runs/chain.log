@@ -1,0 +1,12 @@
+[chain 2026-10-23 23:06:40] plan: J1 jobs.py teams --cond W1 --seeds 1-20;J2 jobs.py teams --cond W0 --seeds 1-20;J3 jobs.py score --seeds 1-20;J3_analysis analysis.py;J3_check stats_check.py;
+[chain 2026-10-23 23:06:40] start J1
+[chain 2026-10-23 23:13:30] J1 exit=0
+[chain 2026-10-23 23:13:30] start J2
+[chain 2026-10-23 23:20:06] J2 exit=0
+[chain 2026-10-23 23:20:06] start J3
+[chain 2026-10-23 23:40:50] J3 exit=0
+[chain 2026-10-23 23:40:50] start J3_analysis
+[chain 2026-10-23 23:41:02] J3_analysis exit=0
+[chain 2026-10-23 23:41:02] start J3_check
+[chain 2026-10-23 23:41:14] J3_check exit=0
+[chain 2026-10-23 23:41:14] all jobs exit 0

@@ -1,0 +1,416 @@
+[2026-10-24 14:55:43] job j4 start (device mps, part all)
+[2026-10-24 14:55:43] data: mode confirm; files opened: train, test images
+[2026-10-24 14:55:43] unit N: start
+[2026-10-24 14:55:49] N epoch 1/30: mean loss 1.5471
+[2026-10-24 14:55:55] N epoch 2/30: mean loss 1.0405
+[2026-10-24 14:56:00] N epoch 3/30: mean loss 0.8378
+[2026-10-24 14:56:05] N epoch 4/30: mean loss 0.7227
+[2026-10-24 14:56:10] N epoch 5/30: mean loss 0.6444
+[2026-10-24 14:56:15] N epoch 6/30: mean loss 0.5991
+[2026-10-24 14:56:21] N epoch 7/30: mean loss 0.5574
+[2026-10-24 14:56:26] N epoch 8/30: mean loss 0.5297
+[2026-10-24 14:56:31] N epoch 9/30: mean loss 0.4959
+[2026-10-24 14:56:36] N epoch 10/30: mean loss 0.4778
+[2026-10-24 14:56:42] N epoch 11/30: mean loss 0.4538
+[2026-10-24 14:56:47] N epoch 12/30: mean loss 0.4368
+[2026-10-24 14:56:52] N epoch 13/30: mean loss 0.4111
+[2026-10-24 14:56:57] N epoch 14/30: mean loss 0.3971
+[2026-10-24 14:57:02] N epoch 15/30: mean loss 0.3756
+[2026-10-24 14:57:08] N epoch 16/30: mean loss 0.3596
+[2026-10-24 14:57:13] N epoch 17/30: mean loss 0.3409
+[2026-10-24 14:57:18] N epoch 18/30: mean loss 0.3233
+[2026-10-24 14:57:23] N epoch 19/30: mean loss 0.3042
+[2026-10-24 14:57:29] N epoch 20/30: mean loss 0.2844
+[2026-10-24 14:57:34] N epoch 21/30: mean loss 0.2665
+[2026-10-24 14:57:39] N epoch 22/30: mean loss 0.2482
+[2026-10-24 14:57:44] N epoch 23/30: mean loss 0.2262
+[2026-10-24 14:57:50] N epoch 24/30: mean loss 0.2172
+[2026-10-24 14:57:55] N epoch 25/30: mean loss 0.1979
+[2026-10-24 14:58:00] N epoch 26/30: mean loss 0.1894
+[2026-10-24 14:58:05] N epoch 27/30: mean loss 0.1782
+[2026-10-24 14:58:10] N epoch 28/30: mean loss 0.1715
+[2026-10-24 14:58:16] N epoch 29/30: mean loss 0.1640
+[2026-10-24 14:58:21] N epoch 30/30: mean loss 0.1674
+[2026-10-24 14:58:21] N: D_dev accuracy 0.8886, 2.6 min
+[2026-10-24 14:58:21] unit N: end (2.6 min)
+[2026-10-24 14:58:21] unit prep: start
+[2026-10-24 14:58:30] unit prep: end (0.1 min)
+[2026-10-24 14:58:30] unit head: start
+[2026-10-24 14:58:32] HEAD epoch 1/15: mean loss 0.9478 (2.4 s)
+[2026-10-24 14:58:35] HEAD epoch 2/15: mean loss 0.6657 (2.4 s)
+[2026-10-24 14:58:37] HEAD epoch 3/15: mean loss 0.6052 (2.4 s)
+[2026-10-24 14:58:40] HEAD epoch 4/15: mean loss 0.5640 (2.4 s)
+[2026-10-24 14:58:42] HEAD epoch 5/15: mean loss 0.5362 (2.4 s)
+[2026-10-24 14:58:44] HEAD epoch 6/15: mean loss 0.5087 (2.4 s)
+[2026-10-24 14:58:47] HEAD epoch 7/15: mean loss 0.4907 (2.4 s)
+[2026-10-24 14:58:49] HEAD epoch 8/15: mean loss 0.4752 (2.4 s)
+[2026-10-24 14:58:51] HEAD epoch 9/15: mean loss 0.4641 (2.4 s)
+[2026-10-24 14:58:54] HEAD epoch 10/15: mean loss 0.4530 (2.4 s)
+[2026-10-24 14:58:56] HEAD epoch 11/15: mean loss 0.4390 (2.4 s)
+[2026-10-24 14:58:59] HEAD epoch 12/15: mean loss 0.4326 (2.4 s)
+[2026-10-24 14:59:01] HEAD epoch 13/15: mean loss 0.4263 (2.4 s)
+[2026-10-24 14:59:03] HEAD epoch 14/15: mean loss 0.4208 (2.4 s)
+[2026-10-24 14:59:06] HEAD epoch 15/15: mean loss 0.4216 (2.4 s)
+[2026-10-24 14:59:06] unit head: end (0.6 min)
+[2026-10-24 14:59:06] unit topk: start
+[2026-10-24 14:59:11] unit topk: end (0.1 min)
+[2026-10-24 14:59:11] unit full: start
+[2026-10-24 14:59:13] unit full: end (0.0 min)
+[2026-10-24 14:59:13] unit RAW_c16_s1_q1: start
+[2026-10-24 14:59:18] RAW_c16_s1_q1 epoch 1/15: mean loss 1.7022 (4.1 s)
+[2026-10-24 14:59:21] RAW_c16_s1_q1 epoch 2/15: mean loss 1.5365 (3.9 s)
+[2026-10-24 14:59:25] RAW_c16_s1_q1 epoch 3/15: mean loss 1.5245 (3.9 s)
+[2026-10-24 14:59:29] RAW_c16_s1_q1 epoch 4/15: mean loss 1.5224 (3.8 s)
+[2026-10-24 14:59:33] RAW_c16_s1_q1 epoch 5/15: mean loss 1.5113 (3.8 s)
+[2026-10-24 14:59:37] RAW_c16_s1_q1 epoch 6/15: mean loss 1.5029 (3.8 s)
+[2026-10-24 14:59:41] RAW_c16_s1_q1 epoch 7/15: mean loss 1.5043 (3.8 s)
+[2026-10-24 14:59:45] RAW_c16_s1_q1 epoch 8/15: mean loss 1.5060 (3.9 s)
+[2026-10-24 14:59:48] RAW_c16_s1_q1 epoch 9/15: mean loss 1.5007 (3.8 s)
+[2026-10-24 14:59:52] RAW_c16_s1_q1 epoch 10/15: mean loss 1.4965 (3.8 s)
+[2026-10-24 14:59:56] RAW_c16_s1_q1 epoch 11/15: mean loss 1.4921 (3.8 s)
+[2026-10-24 15:00:00] RAW_c16_s1_q1 epoch 12/15: mean loss 1.4926 (3.8 s)
+[2026-10-24 15:00:04] RAW_c16_s1_q1 epoch 13/15: mean loss 1.4891 (3.8 s)
+[2026-10-24 15:00:08] RAW_c16_s1_q1 epoch 14/15: mean loss 1.4855 (3.9 s)
+[2026-10-24 15:00:12] RAW_c16_s1_q1 epoch 15/15: mean loss 1.4873 (3.9 s)
+[2026-10-24 15:00:12] RAW_c16_s1_q1: D_dev acc 0.4608, NLL 1.4799, T 1.05
+[2026-10-24 15:00:12] unit RAW_c16_s1_q1: end (1.0 min)
+[2026-10-24 15:00:12] unit RAW_c64_s1_q1: start
+[2026-10-24 15:00:16] RAW_c64_s1_q1 epoch 1/15: mean loss 1.1579 (4.0 s)
+[2026-10-24 15:00:20] RAW_c64_s1_q1 epoch 2/15: mean loss 1.0407 (4.0 s)
+[2026-10-24 15:00:24] RAW_c64_s1_q1 epoch 3/15: mean loss 1.0280 (4.1 s)
+[2026-10-24 15:00:28] RAW_c64_s1_q1 epoch 4/15: mean loss 1.0138 (4.0 s)
+[2026-10-24 15:00:32] RAW_c64_s1_q1 epoch 5/15: mean loss 1.0092 (4.0 s)
+[2026-10-24 15:00:36] RAW_c64_s1_q1 epoch 6/15: mean loss 1.0014 (4.0 s)
+[2026-10-24 15:00:40] RAW_c64_s1_q1 epoch 7/15: mean loss 0.9971 (4.0 s)
+[2026-10-24 15:00:44] RAW_c64_s1_q1 epoch 8/15: mean loss 0.9888 (4.0 s)
+[2026-10-24 15:00:48] RAW_c64_s1_q1 epoch 9/15: mean loss 0.9796 (4.0 s)
+[2026-10-24 15:00:52] RAW_c64_s1_q1 epoch 10/15: mean loss 0.9727 (4.0 s)
+[2026-10-24 15:00:56] RAW_c64_s1_q1 epoch 11/15: mean loss 0.9715 (4.0 s)
+[2026-10-24 15:01:00] RAW_c64_s1_q1 epoch 12/15: mean loss 0.9681 (4.0 s)
+[2026-10-24 15:01:04] RAW_c64_s1_q1 epoch 13/15: mean loss 0.9614 (4.0 s)
+[2026-10-24 15:01:08] RAW_c64_s1_q1 epoch 14/15: mean loss 0.9638 (4.0 s)
+[2026-10-24 15:01:12] RAW_c64_s1_q1 epoch 15/15: mean loss 0.9595 (4.1 s)
+[2026-10-24 15:01:13] RAW_c64_s1_q1: D_dev acc 0.6396, NLL 1.0058, T 1.15
+[2026-10-24 15:01:13] unit RAW_c64_s1_q1: end (1.0 min)
+[2026-10-24 15:01:13] unit RAW_c64_s2_q1: start
+[2026-10-24 15:01:16] RAW_c64_s2_q1 epoch 1/15: mean loss 0.8544 (3.9 s)
+[2026-10-24 15:01:20] RAW_c64_s2_q1 epoch 2/15: mean loss 0.7389 (3.9 s)
+[2026-10-24 15:01:24] RAW_c64_s2_q1 epoch 3/15: mean loss 0.7079 (3.9 s)
+[2026-10-24 15:01:28] RAW_c64_s2_q1 epoch 4/15: mean loss 0.6957 (3.9 s)
+[2026-10-24 15:01:32] RAW_c64_s2_q1 epoch 5/15: mean loss 0.6711 (3.9 s)
+[2026-10-24 15:01:36] RAW_c64_s2_q1 epoch 6/15: mean loss 0.6649 (3.9 s)
+[2026-10-24 15:01:40] RAW_c64_s2_q1 epoch 7/15: mean loss 0.6552 (3.9 s)
+[2026-10-24 15:01:44] RAW_c64_s2_q1 epoch 8/15: mean loss 0.6424 (3.9 s)
+[2026-10-24 15:01:47] RAW_c64_s2_q1 epoch 9/15: mean loss 0.6383 (3.9 s)
+[2026-10-24 15:01:51] RAW_c64_s2_q1 epoch 10/15: mean loss 0.6349 (3.9 s)
+[2026-10-24 15:01:55] RAW_c64_s2_q1 epoch 11/15: mean loss 0.6302 (3.8 s)
+[2026-10-24 15:01:59] RAW_c64_s2_q1 epoch 12/15: mean loss 0.6233 (3.9 s)
+[2026-10-24 15:02:03] RAW_c64_s2_q1 epoch 13/15: mean loss 0.6139 (3.9 s)
+[2026-10-24 15:02:07] RAW_c64_s2_q1 epoch 14/15: mean loss 0.6186 (3.9 s)
+[2026-10-24 15:02:11] RAW_c64_s2_q1 epoch 15/15: mean loss 0.6108 (3.9 s)
+[2026-10-24 15:02:11] RAW_c64_s2_q1: D_dev acc 0.7732, NLL 0.6637, T 1.25
+[2026-10-24 15:02:11] unit RAW_c64_s2_q1: end (1.0 min)
+[2026-10-24 15:02:11] unit RAW_c64_s4_q1: start
+[2026-10-24 15:02:15] RAW_c64_s4_q1 epoch 1/15: mean loss 0.5738 (3.9 s)
+[2026-10-24 15:02:19] RAW_c64_s4_q1 epoch 2/15: mean loss 0.5087 (3.9 s)
+[2026-10-24 15:02:22] RAW_c64_s4_q1 epoch 3/15: mean loss 0.4904 (3.9 s)
+[2026-10-24 15:02:26] RAW_c64_s4_q1 epoch 4/15: mean loss 0.4721 (3.9 s)
+[2026-10-24 15:02:30] RAW_c64_s4_q1 epoch 5/15: mean loss 0.4591 (3.9 s)
+[2026-10-24 15:02:34] RAW_c64_s4_q1 epoch 6/15: mean loss 0.4556 (3.9 s)
+[2026-10-24 15:02:38] RAW_c64_s4_q1 epoch 7/15: mean loss 0.4461 (3.9 s)
+[2026-10-24 15:02:42] RAW_c64_s4_q1 epoch 8/15: mean loss 0.4361 (3.9 s)
+[2026-10-24 15:02:46] RAW_c64_s4_q1 epoch 9/15: mean loss 0.4292 (3.9 s)
+[2026-10-24 15:02:50] RAW_c64_s4_q1 epoch 10/15: mean loss 0.4274 (3.9 s)
+[2026-10-24 15:02:54] RAW_c64_s4_q1 epoch 11/15: mean loss 0.4202 (3.9 s)
+[2026-10-24 15:02:57] RAW_c64_s4_q1 epoch 12/15: mean loss 0.4191 (3.9 s)
+[2026-10-24 15:03:01] RAW_c64_s4_q1 epoch 13/15: mean loss 0.4158 (3.9 s)
+[2026-10-24 15:03:05] RAW_c64_s4_q1 epoch 14/15: mean loss 0.4136 (3.9 s)
+[2026-10-24 15:03:09] RAW_c64_s4_q1 epoch 15/15: mean loss 0.4145 (3.9 s)
+[2026-10-24 15:03:09] RAW_c64_s4_q1: D_dev acc 0.8268, NLL 0.5065, T 1.25
+[2026-10-24 15:03:09] unit RAW_c64_s4_q1: end (1.0 min)
+[2026-10-24 15:03:09] unit BOT_c16_s1_q1: start
+[2026-10-24 15:03:14] BOT_c16_s1_q1 epoch 1/15: mean loss 2.0820 (4.4 s)
+[2026-10-24 15:03:18] BOT_c16_s1_q1 epoch 2/15: mean loss 1.4760 (4.4 s)
+[2026-10-24 15:03:23] BOT_c16_s1_q1 epoch 3/15: mean loss 1.3327 (4.4 s)
+[2026-10-24 15:03:27] BOT_c16_s1_q1 epoch 4/15: mean loss 1.2551 (4.4 s)
+[2026-10-24 15:03:31] BOT_c16_s1_q1 epoch 5/15: mean loss 1.2028 (4.4 s)
+[2026-10-24 15:03:36] BOT_c16_s1_q1 epoch 6/15: mean loss 1.1696 (4.4 s)
+[2026-10-24 15:03:40] BOT_c16_s1_q1 epoch 7/15: mean loss 1.1430 (4.4 s)
+[2026-10-24 15:03:44] BOT_c16_s1_q1 epoch 8/15: mean loss 1.1250 (4.4 s)
+[2026-10-24 15:03:49] BOT_c16_s1_q1 epoch 9/15: mean loss 1.1075 (4.4 s)
+[2026-10-24 15:03:53] BOT_c16_s1_q1 epoch 10/15: mean loss 1.0964 (4.4 s)
+[2026-10-24 15:03:58] BOT_c16_s1_q1 epoch 11/15: mean loss 1.0922 (4.4 s)
+[2026-10-24 15:04:02] BOT_c16_s1_q1 epoch 12/15: mean loss 1.0835 (4.4 s)
+[2026-10-24 15:04:06] BOT_c16_s1_q1 epoch 13/15: mean loss 1.0859 (4.4 s)
+[2026-10-24 15:04:11] BOT_c16_s1_q1 epoch 14/15: mean loss 1.0750 (4.4 s)
+[2026-10-24 15:04:15] BOT_c16_s1_q1 epoch 15/15: mean loss 1.0725 (4.4 s)
+[2026-10-24 15:04:15] BOT_c16_s1_q1: D_dev acc 0.6124, NLL 1.1116, T 1.05
+[2026-10-24 15:04:15] unit BOT_c16_s1_q1: end (1.1 min)
+[2026-10-24 15:04:15] unit BOT_c16_s2_q1: start
+[2026-10-24 15:04:20] BOT_c16_s2_q1 epoch 1/15: mean loss 1.6231 (4.4 s)
+[2026-10-24 15:04:24] BOT_c16_s2_q1 epoch 2/15: mean loss 1.1284 (4.3 s)
+[2026-10-24 15:04:28] BOT_c16_s2_q1 epoch 3/15: mean loss 1.0185 (4.3 s)
+[2026-10-24 15:04:33] BOT_c16_s2_q1 epoch 4/15: mean loss 0.9586 (4.3 s)
+[2026-10-24 15:04:37] BOT_c16_s2_q1 epoch 5/15: mean loss 0.9253 (4.3 s)
+[2026-10-24 15:04:41] BOT_c16_s2_q1 epoch 6/15: mean loss 0.9071 (4.3 s)
+[2026-10-24 15:04:46] BOT_c16_s2_q1 epoch 7/15: mean loss 0.8827 (4.3 s)
+[2026-10-24 15:04:50] BOT_c16_s2_q1 epoch 8/15: mean loss 0.8786 (4.3 s)
+[2026-10-24 15:04:54] BOT_c16_s2_q1 epoch 9/15: mean loss 0.8635 (4.3 s)
+[2026-10-24 15:04:59] BOT_c16_s2_q1 epoch 10/15: mean loss 0.8615 (4.3 s)
+[2026-10-24 15:05:03] BOT_c16_s2_q1 epoch 11/15: mean loss 0.8519 (4.3 s)
+[2026-10-24 15:05:07] BOT_c16_s2_q1 epoch 12/15: mean loss 0.8341 (4.3 s)
+[2026-10-24 15:05:11] BOT_c16_s2_q1 epoch 13/15: mean loss 0.8397 (4.3 s)
+[2026-10-24 15:05:16] BOT_c16_s2_q1 epoch 14/15: mean loss 0.8444 (4.3 s)
+[2026-10-24 15:05:20] BOT_c16_s2_q1 epoch 15/15: mean loss 0.8388 (4.3 s)
+[2026-10-24 15:05:20] BOT_c16_s2_q1: D_dev acc 0.6970, NLL 0.8628, T 1.2
+[2026-10-24 15:05:20] unit BOT_c16_s2_q1: end (1.1 min)
+[2026-10-24 15:05:20] unit BOT_c16_s4_q1: start
+[2026-10-24 15:05:25] BOT_c16_s4_q1 epoch 1/15: mean loss 1.2902 (4.3 s)
+[2026-10-24 15:05:29] BOT_c16_s4_q1 epoch 2/15: mean loss 0.8600 (4.3 s)
+[2026-10-24 15:05:33] BOT_c16_s4_q1 epoch 3/15: mean loss 0.7699 (4.3 s)
+[2026-10-24 15:05:38] BOT_c16_s4_q1 epoch 4/15: mean loss 0.7214 (4.3 s)
+[2026-10-24 15:05:42] BOT_c16_s4_q1 epoch 5/15: mean loss 0.6930 (4.3 s)
+[2026-10-24 15:05:46] BOT_c16_s4_q1 epoch 6/15: mean loss 0.6707 (4.3 s)
+[2026-10-24 15:05:51] BOT_c16_s4_q1 epoch 7/15: mean loss 0.6616 (4.3 s)
+[2026-10-24 15:05:55] BOT_c16_s4_q1 epoch 8/15: mean loss 0.6392 (4.3 s)
+[2026-10-24 15:05:59] BOT_c16_s4_q1 epoch 9/15: mean loss 0.6330 (4.3 s)
+[2026-10-24 15:06:03] BOT_c16_s4_q1 epoch 10/15: mean loss 0.6221 (4.3 s)
+[2026-10-24 15:06:08] BOT_c16_s4_q1 epoch 11/15: mean loss 0.6150 (4.3 s)
+[2026-10-24 15:06:12] BOT_c16_s4_q1 epoch 12/15: mean loss 0.6142 (4.3 s)
+[2026-10-24 15:06:16] BOT_c16_s4_q1 epoch 13/15: mean loss 0.6021 (4.3 s)
+[2026-10-24 15:06:21] BOT_c16_s4_q1 epoch 14/15: mean loss 0.6111 (4.3 s)
+[2026-10-24 15:06:25] BOT_c16_s4_q1 epoch 15/15: mean loss 0.6093 (4.3 s)
+[2026-10-24 15:06:25] BOT_c16_s4_q1: D_dev acc 0.7826, NLL 0.6400, T 1.2
+[2026-10-24 15:06:25] unit BOT_c16_s4_q1: end (1.1 min)
+[2026-10-24 15:06:25] unit BOT_c16_s8_q1: start
+[2026-10-24 15:06:29] BOT_c16_s8_q1 epoch 1/15: mean loss 1.1640 (3.4 s)
+[2026-10-24 15:06:32] BOT_c16_s8_q1 epoch 2/15: mean loss 0.6934 (3.4 s)
+[2026-10-24 15:06:35] BOT_c16_s8_q1 epoch 3/15: mean loss 0.5898 (3.4 s)
+[2026-10-24 15:06:39] BOT_c16_s8_q1 epoch 4/15: mean loss 0.5361 (3.4 s)
+[2026-10-24 15:06:42] BOT_c16_s8_q1 epoch 5/15: mean loss 0.5099 (3.4 s)
+[2026-10-24 15:06:45] BOT_c16_s8_q1 epoch 6/15: mean loss 0.4818 (3.4 s)
+[2026-10-24 15:06:49] BOT_c16_s8_q1 epoch 7/15: mean loss 0.4634 (3.4 s)
+[2026-10-24 15:06:52] BOT_c16_s8_q1 epoch 8/15: mean loss 0.4544 (3.4 s)
+[2026-10-24 15:06:56] BOT_c16_s8_q1 epoch 9/15: mean loss 0.4461 (3.4 s)
+[2026-10-24 15:06:59] BOT_c16_s8_q1 epoch 10/15: mean loss 0.4377 (3.4 s)
+[2026-10-24 15:07:02] BOT_c16_s8_q1 epoch 11/15: mean loss 0.4279 (3.4 s)
+[2026-10-24 15:07:06] BOT_c16_s8_q1 epoch 12/15: mean loss 0.4216 (3.4 s)
+[2026-10-24 15:07:09] BOT_c16_s8_q1 epoch 13/15: mean loss 0.4193 (3.4 s)
+[2026-10-24 15:07:12] BOT_c16_s8_q1 epoch 14/15: mean loss 0.4192 (3.4 s)
+[2026-10-24 15:07:16] BOT_c16_s8_q1 epoch 15/15: mean loss 0.4160 (3.4 s)
+[2026-10-24 15:07:16] BOT_c16_s8_q1: D_dev acc 0.8312, NLL 0.4966, T 1.2
+[2026-10-24 15:07:16] unit BOT_c16_s8_q1: end (0.8 min)
+[2026-10-24 15:07:16] unit msgs: start
+[2026-10-24 15:07:19] messages RAW@16: 16 bits (3.0 s)
+[2026-10-24 15:07:22] messages RAW@64: 64 bits (3.3 s)
+[2026-10-24 15:07:26] messages RAW@256: 256 bits (3.2 s)
+[2026-10-24 15:07:29] messages RAW@1024: 1024 bits (3.3 s)
+[2026-10-24 15:07:32] messages BOT@16: 16 bits (2.9 s)
+[2026-10-24 15:07:35] messages BOT@64: 64 bits (2.9 s)
+[2026-10-24 15:07:38] messages BOT@256: 256 bits (3.1 s)
+[2026-10-24 15:07:41] messages BOT@1024: 1024 bits (3.1 s)
+[2026-10-24 15:07:43] messages TOPK@16: 16 bits (1.8 s)
+[2026-10-24 15:07:45] messages TOPK@64: 58 bits (1.8 s)
+[2026-10-24 15:07:46] messages TOPK@256: 148 bits (1.9 s)
+[2026-10-24 15:07:48] messages LAB: 4 bits (1.7 s)
+[2026-10-24 15:07:51] messages LAB_full: 4 bits (2.7 s)
+[2026-10-24 15:07:54] messages TOPK_full: 58 bits (2.8 s)
+[2026-10-24 15:07:55] messages TOPK_float: 320 bits (1.7 s)
+[2026-10-24 15:07:58] messages RAW_native: 32768 bits (2.9 s)
+[2026-10-24 15:07:58] unit msgs: end (0.7 min)
+[2026-10-24 15:07:58] unit S1_RAW@16: start
+[2026-10-24 15:08:11]   decoder epoch 2: train MSE 0.05211, D_dev MSE 0.05223
+[2026-10-24 15:08:23]   decoder epoch 4: train MSE 0.05132, D_dev MSE 0.05170
+[2026-10-24 15:08:35]   decoder epoch 6: train MSE 0.05084, D_dev MSE 0.05131
+[2026-10-24 15:08:47]   decoder epoch 8: train MSE 0.05037, D_dev MSE 0.05118
+[2026-10-24 15:08:59]   decoder epoch 10: train MSE 0.04986, D_dev MSE 0.05136
+[2026-10-24 15:09:11]   decoder epoch 12: train MSE 0.04917, D_dev MSE 0.05148
+[2026-10-24 15:09:23]   decoder epoch 14: train MSE 0.04832, D_dev MSE 0.05220
+[2026-10-24 15:09:36]   decoder epoch 16: train MSE 0.04721, D_dev MSE 0.05273
+[2026-10-24 15:09:48]   decoder epoch 18: train MSE 0.04610, D_dev MSE 0.05357
+[2026-10-24 15:10:00]   decoder epoch 20: train MSE 0.04554, D_dev MSE 0.05383
+[2026-10-24 15:10:01] decoder S1_RAW@16: D_dev PSNR 13.519 dB (F0 12.681), best epoch 8, 2.0 min
+[2026-10-24 15:10:01] unit S1_RAW@16: end (2.0 min)
+[2026-10-24 15:10:01] unit S1_RAW@64: start
+[2026-10-24 15:10:13]   decoder epoch 2: train MSE 0.04185, D_dev MSE 0.04212
+[2026-10-24 15:10:25]   decoder epoch 4: train MSE 0.03967, D_dev MSE 0.04148
+[2026-10-24 15:10:38]   decoder epoch 6: train MSE 0.03746, D_dev MSE 0.04201
+[2026-10-24 15:10:50]   decoder epoch 8: train MSE 0.03477, D_dev MSE 0.04246
+[2026-10-24 15:11:02]   decoder epoch 10: train MSE 0.03113, D_dev MSE 0.04413
+[2026-10-24 15:11:14]   decoder epoch 12: train MSE 0.02694, D_dev MSE 0.04627
+[2026-10-24 15:11:26]   decoder epoch 14: train MSE 0.02346, D_dev MSE 0.04791
+[2026-10-24 15:11:38]   decoder epoch 16: train MSE 0.02117, D_dev MSE 0.04933
+[2026-10-24 15:11:50]   decoder epoch 18: train MSE 0.01997, D_dev MSE 0.04975
+[2026-10-24 15:12:02]   decoder epoch 20: train MSE 0.01963, D_dev MSE 0.05009
+[2026-10-24 15:12:04] decoder S1_RAW@64: D_dev PSNR 14.404 dB (F0 12.681), best epoch 4, 2.0 min
+[2026-10-24 15:12:04] unit S1_RAW@64: end (2.0 min)
+[2026-10-24 15:12:04] unit S1_RAW@256: start
+[2026-10-24 15:12:16]   decoder epoch 2: train MSE 0.03071, D_dev MSE 0.03142
+[2026-10-24 15:12:28]   decoder epoch 4: train MSE 0.02816, D_dev MSE 0.03000
+[2026-10-24 15:12:41]   decoder epoch 6: train MSE 0.02615, D_dev MSE 0.02996
+[2026-10-24 15:12:53]   decoder epoch 8: train MSE 0.02402, D_dev MSE 0.02994
+[2026-10-24 15:13:05]   decoder epoch 10: train MSE 0.02203, D_dev MSE 0.03044
+[2026-10-24 15:13:18]   decoder epoch 12: train MSE 0.02004, D_dev MSE 0.03143
+[2026-10-24 15:13:30]   decoder epoch 14: train MSE 0.01837, D_dev MSE 0.03168
+[2026-10-24 15:13:42]   decoder epoch 16: train MSE 0.01711, D_dev MSE 0.03293
+[2026-10-24 15:13:55]   decoder epoch 18: train MSE 0.01640, D_dev MSE 0.03316
+[2026-10-24 15:14:07]   decoder epoch 20: train MSE 0.01614, D_dev MSE 0.03329
+[2026-10-24 15:14:08] decoder S1_RAW@256: D_dev PSNR 15.792 dB (F0 12.681), best epoch 8, 2.1 min
+[2026-10-24 15:14:08] unit S1_RAW@256: end (2.1 min)
+[2026-10-24 15:14:08] unit S1_RAW@1024: start
+[2026-10-24 15:14:21]   decoder epoch 2: train MSE 0.02019, D_dev MSE 0.02065
+[2026-10-24 15:14:33]   decoder epoch 4: train MSE 0.01718, D_dev MSE 0.01932
+[2026-10-24 15:14:45]   decoder epoch 6: train MSE 0.01513, D_dev MSE 0.01923
+[2026-10-24 15:14:57]   decoder epoch 8: train MSE 0.01353, D_dev MSE 0.01893
+[2026-10-24 15:15:09]   decoder epoch 10: train MSE 0.01209, D_dev MSE 0.01902
+[2026-10-24 15:15:21]   decoder epoch 12: train MSE 0.01097, D_dev MSE 0.01939
+[2026-10-24 15:15:34]   decoder epoch 14: train MSE 0.01010, D_dev MSE 0.01957
+[2026-10-24 15:15:46]   decoder epoch 16: train MSE 0.00951, D_dev MSE 0.01982
+[2026-10-24 15:15:58]   decoder epoch 18: train MSE 0.00915, D_dev MSE 0.02008
+[2026-10-24 15:16:10]   decoder epoch 20: train MSE 0.00902, D_dev MSE 0.02026
+[2026-10-24 15:16:11] decoder S1_RAW@1024: D_dev PSNR 17.708 dB (F0 12.681), best epoch 8, 2.0 min
+[2026-10-24 15:16:11] unit S1_RAW@1024: end (2.0 min)
+[2026-10-24 15:16:11] unit S1_BOT@16: start
+[2026-10-24 15:16:23]   decoder epoch 2: train MSE 0.05429, D_dev MSE 0.05440
+[2026-10-24 15:16:35]   decoder epoch 4: train MSE 0.05369, D_dev MSE 0.05370
+[2026-10-24 15:16:47]   decoder epoch 6: train MSE 0.05325, D_dev MSE 0.05397
+[2026-10-24 15:16:59]   decoder epoch 8: train MSE 0.05290, D_dev MSE 0.05372
+[2026-10-24 15:17:12]   decoder epoch 10: train MSE 0.05267, D_dev MSE 0.05358
+[2026-10-24 15:17:24]   decoder epoch 12: train MSE 0.05227, D_dev MSE 0.05359
+[2026-10-24 15:17:36]   decoder epoch 14: train MSE 0.05187, D_dev MSE 0.05382
+[2026-10-24 15:17:48]   decoder epoch 16: train MSE 0.05145, D_dev MSE 0.05370
+[2026-10-24 15:18:00]   decoder epoch 18: train MSE 0.05105, D_dev MSE 0.05387
+[2026-10-24 15:18:12]   decoder epoch 20: train MSE 0.05082, D_dev MSE 0.05406
+[2026-10-24 15:18:13] decoder S1_BOT@16: D_dev PSNR 13.320 dB (F0 12.681), best epoch 10, 2.0 min
+[2026-10-24 15:18:13] unit S1_BOT@16: end (2.0 min)
+[2026-10-24 15:18:13] unit S1_BOT@64: start
+[2026-10-24 15:18:25]   decoder epoch 2: train MSE 0.04759, D_dev MSE 0.04870
+[2026-10-24 15:18:38]   decoder epoch 4: train MSE 0.04582, D_dev MSE 0.04693
+[2026-10-24 15:18:50]   decoder epoch 6: train MSE 0.04459, D_dev MSE 0.04637
+[2026-10-24 15:19:02]   decoder epoch 8: train MSE 0.04316, D_dev MSE 0.04671
+[2026-10-24 15:19:15]   decoder epoch 10: train MSE 0.04169, D_dev MSE 0.04724
+[2026-10-24 15:19:27]   decoder epoch 12: train MSE 0.03973, D_dev MSE 0.04774
+[2026-10-24 15:19:39]   decoder epoch 14: train MSE 0.03734, D_dev MSE 0.04906
+[2026-10-24 15:19:52]   decoder epoch 16: train MSE 0.03499, D_dev MSE 0.05017
+[2026-10-24 15:20:04]   decoder epoch 18: train MSE 0.03339, D_dev MSE 0.05118
+[2026-10-24 15:20:16]   decoder epoch 20: train MSE 0.03282, D_dev MSE 0.05130
+[2026-10-24 15:20:17] decoder S1_BOT@64: D_dev PSNR 13.907 dB (F0 12.681), best epoch 6, 2.1 min
+[2026-10-24 15:20:17] unit S1_BOT@64: end (2.1 min)
+[2026-10-24 15:20:17] unit S1_BOT@256: start
+[2026-10-24 15:20:30]   decoder epoch 2: train MSE 0.03614, D_dev MSE 0.03631
+[2026-10-24 15:20:42]   decoder epoch 4: train MSE 0.03232, D_dev MSE 0.03524
+[2026-10-24 15:20:54]   decoder epoch 6: train MSE 0.02926, D_dev MSE 0.03491
+[2026-10-24 15:21:06]   decoder epoch 8: train MSE 0.02613, D_dev MSE 0.03505
+[2026-10-24 15:21:18]   decoder epoch 10: train MSE 0.02333, D_dev MSE 0.03587
+[2026-10-24 15:21:30]   decoder epoch 12: train MSE 0.02076, D_dev MSE 0.03643
+[2026-10-24 15:21:43]   decoder epoch 14: train MSE 0.01879, D_dev MSE 0.03732
+[2026-10-24 15:21:55]   decoder epoch 16: train MSE 0.01747, D_dev MSE 0.03754
+[2026-10-24 15:22:07]   decoder epoch 18: train MSE 0.01676, D_dev MSE 0.03788
+[2026-10-24 15:22:19]   decoder epoch 20: train MSE 0.01652, D_dev MSE 0.03822
+[2026-10-24 15:22:20] decoder S1_BOT@256: D_dev PSNR 15.073 dB (F0 12.681), best epoch 6, 2.0 min
+[2026-10-24 15:22:20] unit S1_BOT@256: end (2.0 min)
+[2026-10-24 15:22:20] unit S1_BOT@1024: start
+[2026-10-24 15:22:30]   decoder epoch 2: train MSE 0.02482, D_dev MSE 0.02433
+[2026-10-24 15:22:40]   decoder epoch 4: train MSE 0.02191, D_dev MSE 0.02300
+[2026-10-24 15:22:50]   decoder epoch 6: train MSE 0.02041, D_dev MSE 0.02222
+[2026-10-24 15:23:00]   decoder epoch 8: train MSE 0.01927, D_dev MSE 0.02250
+[2026-10-24 15:23:10]   decoder epoch 10: train MSE 0.01834, D_dev MSE 0.02199
+[2026-10-24 15:23:20]   decoder epoch 12: train MSE 0.01755, D_dev MSE 0.02142
+[2026-10-24 15:23:30]   decoder epoch 14: train MSE 0.01685, D_dev MSE 0.02143
+[2026-10-24 15:23:40]   decoder epoch 16: train MSE 0.01630, D_dev MSE 0.02146
+[2026-10-24 15:23:49]   decoder epoch 18: train MSE 0.01595, D_dev MSE 0.02152
+[2026-10-24 15:23:59]   decoder epoch 20: train MSE 0.01581, D_dev MSE 0.02155
+[2026-10-24 15:24:00] decoder S1_BOT@1024: D_dev PSNR 17.101 dB (F0 12.681), best epoch 12, 1.7 min
+[2026-10-24 15:24:00] unit S1_BOT@1024: end (1.7 min)
+[2026-10-24 15:24:00] unit S1_TOPK@16: start
+[2026-10-24 15:24:12]   decoder epoch 2: train MSE 0.05653, D_dev MSE 0.05629
+[2026-10-24 15:24:25]   decoder epoch 4: train MSE 0.05593, D_dev MSE 0.05603
+[2026-10-24 15:24:37]   decoder epoch 6: train MSE 0.05558, D_dev MSE 0.05589
+[2026-10-24 15:24:49]   decoder epoch 8: train MSE 0.05541, D_dev MSE 0.05585
+[2026-10-24 15:25:01]   decoder epoch 10: train MSE 0.05521, D_dev MSE 0.05574
+[2026-10-24 15:25:13]   decoder epoch 12: train MSE 0.05490, D_dev MSE 0.05555
+[2026-10-24 15:25:25]   decoder epoch 14: train MSE 0.05470, D_dev MSE 0.05566
+[2026-10-24 15:25:37]   decoder epoch 16: train MSE 0.05439, D_dev MSE 0.05568
+[2026-10-24 15:25:49]   decoder epoch 18: train MSE 0.05413, D_dev MSE 0.05574
+[2026-10-24 15:26:02]   decoder epoch 20: train MSE 0.05397, D_dev MSE 0.05579
+[2026-10-24 15:26:03] decoder S1_TOPK@16: D_dev PSNR 13.189 dB (F0 12.681), best epoch 12, 2.0 min
+[2026-10-24 15:26:03] unit S1_TOPK@16: end (2.0 min)
+[2026-10-24 15:26:03] unit S1_TOPK@64: start
+[2026-10-24 15:26:15]   decoder epoch 2: train MSE 0.05463, D_dev MSE 0.05432
+[2026-10-24 15:26:27]   decoder epoch 4: train MSE 0.05359, D_dev MSE 0.05373
+[2026-10-24 15:26:39]   decoder epoch 6: train MSE 0.05300, D_dev MSE 0.05340
+[2026-10-24 15:26:51]   decoder epoch 8: train MSE 0.05259, D_dev MSE 0.05360
+[2026-10-24 15:27:03]   decoder epoch 10: train MSE 0.05200, D_dev MSE 0.05314
+[2026-10-24 15:27:15]   decoder epoch 12: train MSE 0.05147, D_dev MSE 0.05321
+[2026-10-24 15:27:28]   decoder epoch 14: train MSE 0.05083, D_dev MSE 0.05331
+[2026-10-24 15:27:40]   decoder epoch 16: train MSE 0.05008, D_dev MSE 0.05328
+[2026-10-24 15:27:52]   decoder epoch 18: train MSE 0.04931, D_dev MSE 0.05354
+[2026-10-24 15:28:04]   decoder epoch 20: train MSE 0.04890, D_dev MSE 0.05383
+[2026-10-24 15:28:05] decoder S1_TOPK@64: D_dev PSNR 13.370 dB (F0 12.681), best epoch 10, 2.0 min
+[2026-10-24 15:28:05] unit S1_TOPK@64: end (2.0 min)
+[2026-10-24 15:28:05] unit S1_TOPK@256: start
+[2026-10-24 15:28:17]   decoder epoch 2: train MSE 0.05455, D_dev MSE 0.05432
+[2026-10-24 15:28:29]   decoder epoch 4: train MSE 0.05350, D_dev MSE 0.05350
+[2026-10-24 15:28:41]   decoder epoch 6: train MSE 0.05288, D_dev MSE 0.05352
+[2026-10-24 15:28:54]   decoder epoch 8: train MSE 0.05239, D_dev MSE 0.05304
+[2026-10-24 15:29:06]   decoder epoch 10: train MSE 0.05194, D_dev MSE 0.05301
+[2026-10-24 15:29:18]   decoder epoch 12: train MSE 0.05131, D_dev MSE 0.05304
+[2026-10-24 15:29:30]   decoder epoch 14: train MSE 0.05071, D_dev MSE 0.05305
+[2026-10-24 15:29:42]   decoder epoch 16: train MSE 0.04989, D_dev MSE 0.05330
+[2026-10-24 15:29:54]   decoder epoch 18: train MSE 0.04906, D_dev MSE 0.05355
+[2026-10-24 15:30:06]   decoder epoch 20: train MSE 0.04866, D_dev MSE 0.05379
+[2026-10-24 15:30:07] decoder S1_TOPK@256: D_dev PSNR 13.382 dB (F0 12.681), best epoch 10, 2.0 min
+[2026-10-24 15:30:07] unit S1_TOPK@256: end (2.0 min)
+[2026-10-24 15:30:07] unit S1_LAB: start
+[2026-10-24 15:30:19]   decoder epoch 2: train MSE 0.05793, D_dev MSE 0.05758
+[2026-10-24 15:30:32]   decoder epoch 4: train MSE 0.05774, D_dev MSE 0.05753
+[2026-10-24 15:30:44]   decoder epoch 6: train MSE 0.05770, D_dev MSE 0.05739
+[2026-10-24 15:30:56]   decoder epoch 8: train MSE 0.05770, D_dev MSE 0.05736
+[2026-10-24 15:31:08]   decoder epoch 10: train MSE 0.05762, D_dev MSE 0.05733
+[2026-10-24 15:31:20]   decoder epoch 12: train MSE 0.05763, D_dev MSE 0.05730
+[2026-10-24 15:31:32]   decoder epoch 14: train MSE 0.05758, D_dev MSE 0.05728
+[2026-10-24 15:31:44]   decoder epoch 16: train MSE 0.05757, D_dev MSE 0.05728
+[2026-10-24 15:31:56]   decoder epoch 18: train MSE 0.05753, D_dev MSE 0.05728
+[2026-10-24 15:32:08]   decoder epoch 20: train MSE 0.05751, D_dev MSE 0.05728
+[2026-10-24 15:32:10] decoder S1_LAB: D_dev PSNR 13.065 dB (F0 12.681), best epoch 20, 2.0 min
+[2026-10-24 15:32:10] unit S1_LAB: end (2.0 min)
+[2026-10-24 15:32:10] unit S1_LAB_full: start
+[2026-10-24 15:32:22]   decoder epoch 2: train MSE 0.05805, D_dev MSE 0.05777
+[2026-10-24 15:32:34]   decoder epoch 4: train MSE 0.05790, D_dev MSE 0.05778
+[2026-10-24 15:32:46]   decoder epoch 6: train MSE 0.05788, D_dev MSE 0.05769
+[2026-10-24 15:32:58]   decoder epoch 8: train MSE 0.05784, D_dev MSE 0.05779
+[2026-10-24 15:33:10]   decoder epoch 10: train MSE 0.05776, D_dev MSE 0.05763
+[2026-10-24 15:33:22]   decoder epoch 12: train MSE 0.05775, D_dev MSE 0.05763
+[2026-10-24 15:33:34]   decoder epoch 14: train MSE 0.05773, D_dev MSE 0.05763
+[2026-10-24 15:33:47]   decoder epoch 16: train MSE 0.05770, D_dev MSE 0.05762
+[2026-10-24 15:33:59]   decoder epoch 18: train MSE 0.05768, D_dev MSE 0.05762
+[2026-10-24 15:34:11]   decoder epoch 20: train MSE 0.05767, D_dev MSE 0.05762
+[2026-10-24 15:34:12] decoder S1_LAB_full: D_dev PSNR 13.042 dB (F0 12.681), best epoch 20, 2.0 min
+[2026-10-24 15:34:12] unit S1_LAB_full: end (2.0 min)
+[2026-10-24 15:34:12] unit S1_TOPK_full: start
+[2026-10-24 15:34:24]   decoder epoch 2: train MSE 0.05560, D_dev MSE 0.05534
+[2026-10-24 15:34:36]   decoder epoch 4: train MSE 0.05458, D_dev MSE 0.05451
+[2026-10-24 15:34:48]   decoder epoch 6: train MSE 0.05407, D_dev MSE 0.05446
+[2026-10-24 15:35:00]   decoder epoch 8: train MSE 0.05338, D_dev MSE 0.05400
+[2026-10-24 15:35:13]   decoder epoch 10: train MSE 0.05296, D_dev MSE 0.05400
+[2026-10-24 15:35:25]   decoder epoch 12: train MSE 0.05236, D_dev MSE 0.05389
+[2026-10-24 15:35:37]   decoder epoch 14: train MSE 0.05158, D_dev MSE 0.05428
+[2026-10-24 15:35:49]   decoder epoch 16: train MSE 0.05075, D_dev MSE 0.05454
+[2026-10-24 15:36:01]   decoder epoch 18: train MSE 0.04987, D_dev MSE 0.05486
+[2026-10-24 15:36:13]   decoder epoch 20: train MSE 0.04941, D_dev MSE 0.05505
+[2026-10-24 15:36:14] decoder S1_TOPK_full: D_dev PSNR 13.352 dB (F0 12.681), best epoch 12, 2.0 min
+[2026-10-24 15:36:14] unit S1_TOPK_full: end (2.0 min)
+[2026-10-24 15:36:14] unit S1_RAW_native: start
+[2026-10-24 15:36:26]   decoder epoch 2: train MSE 0.00984, D_dev MSE 0.00911
+[2026-10-24 15:36:36]   decoder epoch 4: train MSE 0.00802, D_dev MSE 0.00812
+[2026-10-24 15:36:46]   decoder epoch 6: train MSE 0.00740, D_dev MSE 0.00785
+[2026-10-24 15:36:56]   decoder epoch 8: train MSE 0.00692, D_dev MSE 0.00737
+[2026-10-24 15:37:06]   decoder epoch 10: train MSE 0.00650, D_dev MSE 0.00767
+[2026-10-24 15:37:16]   decoder epoch 12: train MSE 0.00625, D_dev MSE 0.00705
+[2026-10-24 15:37:26]   decoder epoch 14: train MSE 0.00596, D_dev MSE 0.00735
+[2026-10-24 15:37:35]   decoder epoch 16: train MSE 0.00579, D_dev MSE 0.00692
+[2026-10-24 15:37:45]   decoder epoch 18: train MSE 0.00569, D_dev MSE 0.00688
+[2026-10-24 15:37:55]   decoder epoch 20: train MSE 0.00560, D_dev MSE 0.00685
+[2026-10-24 15:37:56] decoder S1_RAW_native: D_dev PSNR 22.117 dB (F0 12.681), best epoch 20, 1.7 min
+[2026-10-24 15:37:56] unit S1_RAW_native: end (1.7 min)
+[2026-10-24 15:37:56] job j4 end

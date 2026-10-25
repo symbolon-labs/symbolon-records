@@ -1,0 +1,34 @@
+{
+ "status": "DRAFT",
+ "time": "2026-10-21 13:45:16",
+ "data_sha256": {
+  "validation": "59dcbdde6c1b67b4ef0b7e2591ce682200d32b523cd311e83721716489c104c8",
+  "train0": "d4f952bc93e9b8ff8306d712a6dbc11a60ac90ad17807c34320164b1dc060cb2"
+ },
+ "seeds": [
+  2026102110,
+  2026102111
+ ],
+ "code_sha256": "690305212c48de3fa9aed58a41c7a89b16ab156f2c57f06a37b01eb19df74566",
+ "seconds": 58.24271202087402,
+ "train0_usable_rows": 8842,
+ "validation_usable_rows": 7993,
+ "train_duplicates_skipped": 1,
+ "test_removed_overlap": 2,
+ "test_removed_duplicates": 0,
+ "test_pool": 7991,
+ "dedupe_questions": true,
+ "alias_normalization_agreement": 0.9999243433634418,
+ "window_match_share": {
+  "dev_train": 0.9935,
+  "dev_test": 0.993,
+  "train": 0.992,
+  "test_pool": 0.9914904267300714
+ },
+ "sizes": {
+  "dev_train": 2000,
+  "dev_test": 1000,
+  "train": 4000,
+  "test_pool": 7991
+ }
+}

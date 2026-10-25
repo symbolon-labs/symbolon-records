@@ -15,11 +15,15 @@ Checks:
   5. Each path replacement and each redaction in SCRUB_LOG.json is at the recorded position in the copy.
   6. No file in records/ is absent from MANIFEST.json.
 
-With --home PREFIX, the script also rebuilds each scrubbed original from the copy and the log,
-and compares its SHA-256 with the original SHA-256. Only the owner knows PREFIX.
+With --home PREFIX (version 1.0 files) and --prefix NAME=VALUE (version 1.1 files, for example
+--prefix SNAPSHOT=...), the script also rebuilds each scrubbed original from the copy and the log,
+and compares its SHA-256 with the original SHA-256. Only the owner knows the values. A file whose
+rules need a value that is not given is not rebuilt.
 
-A redacted file cannot be rebuilt, because the removed quote is not in this repository.
+A redacted file cannot be rebuilt, because the removed text is not in this repository.
 The script lists the redacted files separately and does not rebuild them.
+
+Version 1.1 seal files list the file hashes under "sha256". Version 1.0 seal files list them under "files".
 """
 import argparse
 import hashlib
@@ -39,10 +43,25 @@ def read(rel):
         return f.read()
 
 
+def placeholders(shown):
+    """The withheld names in a rule, for example <HOME> or <SNAPSHOT>."""
+    names, i = [], shown.find("<")
+    while i >= 0:
+        j = shown.find(">", i)
+        names.append(shown[i + 1:j])
+        i = shown.find("<", j)
+    return names
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--home", help="the withheld home folder prefix (owner only)")
+    ap.add_argument("--home", help="the withheld home folder prefix of version 1.0 (owner only)")
+    ap.add_argument("--prefix", action="append", default=[], metavar="NAME=VALUE",
+                    help="a withheld value of version 1.1, for example SNAPSHOT=... (owner only)")
     args = ap.parse_args()
+    values = dict(p.split("=", 1) for p in args.prefix)
+    if args.home:
+        values["HOME"] = args.home
     manifest = json.loads(read("MANIFEST.json"))
     scrub = json.loads(read("SCRUB_LOG.json"))
     errors = []
@@ -80,7 +99,10 @@ def main():
     n_seal = 0
     for seal in manifest["seals"]:
         folder = os.path.dirname(seal)
-        listed = json.loads(read(seal)).get("files", {})
+        data = json.loads(read(seal))
+        listed = data.get("files")
+        if not isinstance(listed, dict):
+            listed = data.get("sha256", {})
         for name, digest in listed.items():
             orig = "ember/" + os.path.relpath(os.path.join(folder, name), "records")
             f = by_orig.get(orig)
@@ -116,13 +138,16 @@ def main():
             if text[c:c + len(e["replacement"])] != e["replacement"]:
                 errors.append("replacement not at the logged position: %s line %d" % (s["new_path"], e["line"]))
             by_line.setdefault(e["line"] - 1, []).append(e)
-        if args.home and s["new_path"] not in redacted:
+        needed = {n for e in s["replacements"] for n in placeholders(rule_old[e["rule"]])}
+        if values and s["new_path"] not in redacted and needed <= set(values):
             n_rebuild_target += 1
             for ln, es in by_line.items():
                 t = lines[ln]
                 for e in sorted(es, key=lambda e: -e["col_copy"]):
                     c = e["col_copy"] - 1
-                    old = rule_old[e["rule"]].replace("<HOME>", args.home)
+                    old = rule_old[e["rule"]]
+                    for n in placeholders(old):
+                        old = old.replace("<" + n + ">", values[n])
                     t = t[:c] + old + t[c + len(e["replacement"]):]
                 lines[ln] = t
             if sha256("\n".join(lines).encode("utf-8")) != s["sha256_original"]:
@@ -143,9 +168,9 @@ def main():
     print("seal entries checked:     %d" % n_seal)
     print("scrub entries checked:    %d" % n_rep)
     print("redactions checked:       %d" % n_red)
-    if args.home:
+    if values:
         print("originals rebuilt:        %d of %d scrubbed files that are not redacted" % (n_rebuilt, n_rebuild_target))
-    print("redacted files (not rebuilt; the removed quotes are not in this repository): %d" % len(redacted))
+    print("redacted files (not rebuilt; the removed text is not in this repository): %d" % len(redacted))
     for path in sorted(redacted):
         print("  " + path)
     if errors:

@@ -1,0 +1,29 @@
+[23:45:40] PREREGISTERED (format-gap test, 2026-10-23) ugap.py dev stages ['gate'] code 57d6d6771384
+[23:45:40] == stage gate
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:51,  5.66it/s]Loading weights:  48%|████▊     | 138/290 [00:00<00:00, 602.79it/s]Loading weights:  74%|███████▍  | 216/290 [00:00<00:00, 568.68it/s]Loading weights:  98%|█████████▊| 283/290 [00:00<00:00, 566.09it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 526.47it/s]
+[23:45:44] weight hashes (start): 1 files
+[23:46:15] dev F3 dev_train: 2000 passes (31 s)
+[23:46:31] dev F3 dev_test: 1000 passes (16 s)
+[23:47:03] dev D2 dev_train: 2000 passes (33 s)
+[23:47:20] dev D2 dev_test: 1000 passes (17 s)
+[23:47:54] dev D3 dev_train: 2000 passes (34 s)
+[23:48:12] dev D3 dev_test: 1000 passes (17 s)
+[23:48:47] dev LOs dev_train: 2000 passes (35 s)
+[23:49:05] dev LOs dev_test: 1000 passes (18 s)
+[23:49:36] dev ICD7 dev_train: 2000 passes (31 s)
+[23:49:51] dev ICD7 dev_test: 1000 passes (16 s)
+[23:50:29] dev WD2 dev_train: 2000 passes (38 s)
+[23:50:49] dev WD2 dev_test: 1000 passes (19 s)
+[23:51:27] dev ICD7D2 dev_train: 2000 passes (39 s)
+[23:51:47] dev ICD7D2 dev_test: 1000 passes (20 s)
+[23:51:51] weight hashes (end): 1 files
+[23:51:59] dev F3: dev-test NLL 0.40904; pooled NLL 0.41825
+[23:52:07] dev D2: dev-test NLL 0.43639; pooled NLL 0.44233
+[23:52:16] dev D3: dev-test NLL 0.43301; pooled NLL 0.44551
+[23:52:25] dev LOs: dev-test NLL 0.42059; pooled NLL 0.42730
+[23:52:33] dev ICD7: dev-test NLL 0.40551; pooled NLL 0.41785
+[23:52:40] dev WD2: dev-test NLL 0.40994; pooled NLL 0.41055
+[23:52:47] dev ICD7D2: dev-test NLL 0.40914; pooled NLL 0.41292
+[23:52:47] gate: G-F2 True (0.40904); F* WD2; G-F1 True (gain +0.00770); decision go: G-F2 and G-F1 pass: Plan M runs ([researcher], 2026-10-23, about 20:30)
+[23:52:47] == stage gate done (427 s)
+[23:52:47] done

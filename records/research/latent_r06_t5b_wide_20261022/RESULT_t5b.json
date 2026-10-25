@@ -1,0 +1,323 @@
+{
+ "label": "EXPLORATORY",
+ "arm": "t5b",
+ "freeze_sha256": "50b7d07096c0f4e7cb735a6727fd98e46827bf8c87ede34b513dd5b836fd9613",
+ "completed": true,
+ "folds": {
+  "0": {
+   "fit_rows": 164,
+   "heldout_rows": 60,
+   "matched": {
+    "joint": 25,
+    "sequential": 26,
+    "rows": 60
+   },
+   "fit": {
+    "joint": 164,
+    "sequential": 164,
+    "rows": 164
+   },
+   "wrong_intended": {
+    "joint": 0,
+    "sequential": 0,
+    "rows": 60
+   },
+   "wrong_inserted": {
+    "joint": 25,
+    "sequential": 26,
+    "rows": 60
+   },
+   "random_intended": {
+    "joint": 0,
+    "sequential": 0,
+    "rows": 60
+   },
+   "zero_intended": {
+    "joint": 0,
+    "sequential": 0,
+    "rows": 60
+   },
+   "receiver_only_intended": {
+    "joint": 0,
+    "sequential": 0,
+    "rows": 60
+   },
+   "complement_share_by_id": {
+    "A3": 0.36313489079475403,
+    "B6": 0.36929434537887573,
+    "C7": 0.31111058592796326,
+    "D4": 0.36569949984550476,
+    "E0": 0.34538623690605164,
+    "F7": 0.3346722722053528,
+    "G3": 0.31175172328948975,
+    "H2": 0.3190385103225708,
+    "I0": 0.33537521958351135,
+    "J7": 0.33353391289711,
+    "L4": 0.36949461698532104,
+    "M2": 0.31222817301750183,
+    "N7": 0.30804863572120667,
+    "O5": 0.39246684312820435,
+    "P4": 0.38666030764579773
+   }
+  },
+  "1": {
+   "fit_rows": 168,
+   "heldout_rows": 56,
+   "matched": {
+    "joint": 12,
+    "sequential": 16,
+    "rows": 56
+   },
+   "fit": {
+    "joint": 168,
+    "sequential": 168,
+    "rows": 168
+   },
+   "wrong_intended": {
+    "joint": 0,
+    "sequential": 0,
+    "rows": 56
+   },
+   "wrong_inserted": {
+    "joint": 12,
+    "sequential": 16,
+    "rows": 56
+   },
+   "random_intended": {
+    "joint": 0,
+    "sequential": 1,
+    "rows": 56
+   },
+   "zero_intended": {
+    "joint": 0,
+    "sequential": 0,
+    "rows": 56
+   },
+   "receiver_only_intended": {
+    "joint": 0,
+    "sequential": 0,
+    "rows": 56
+   },
+   "complement_share_by_id": {
+    "A6": 0.40398141741752625,
+    "B0": 0.3395557105541229,
+    "D5": 0.3834490180015564,
+    "E2": 0.3542982339859009,
+    "F1": 0.31664133071899414,
+    "G6": 0.371966153383255,
+    "H3": 0.32008787989616394,
+    "I3": 0.3244785666465759,
+    "J1": 0.31918203830718994,
+    "L5": 0.37653860449790955,
+    "M6": 0.4011177122592926,
+    "N1": 0.2927185595035553,
+    "O7": 0.4190402626991272,
+    "P5": 0.3914152681827545
+   }
+  },
+  "2": {
+   "fit_rows": 168,
+   "heldout_rows": 56,
+   "matched": {
+    "joint": 13,
+    "sequential": 13,
+    "rows": 56
+   },
+   "fit": {
+    "joint": 168,
+    "sequential": 168,
+    "rows": 168
+   },
+   "wrong_intended": {
+    "joint": 0,
+    "sequential": 0,
+    "rows": 56
+   },
+   "wrong_inserted": {
+    "joint": 13,
+    "sequential": 13,
+    "rows": 56
+   },
+   "random_intended": {
+    "joint": 0,
+    "sequential": 0,
+    "rows": 56
+   },
+   "zero_intended": {
+    "joint": 0,
+    "sequential": 0,
+    "rows": 56
+   },
+   "receiver_only_intended": {
+    "joint": 0,
+    "sequential": 0,
+    "rows": 56
+   },
+   "complement_share_by_id": {
+    "B2": 0.3297734260559082,
+    "C1": 0.3128523528575897,
+    "D7": 0.39805078506469727,
+    "E3": 0.34537774324417114,
+    "F4": 0.37485194206237793,
+    "G0": 0.3605897128582001,
+    "H6": 0.34109923243522644,
+    "I6": 0.34481334686279297,
+    "J4": 0.40562599897384644,
+    "K2": 0.3321293294429779,
+    "L7": 0.3719797730445862,
+    "N4": 0.34935858845710754,
+    "O1": 0.35566261410713196,
+    "P7": 0.4142794907093048
+   }
+  },
+  "3": {
+   "fit_rows": 172,
+   "heldout_rows": 52,
+   "matched": {
+    "joint": 7,
+    "sequential": 7,
+    "rows": 52
+   },
+   "fit": {
+    "joint": 172,
+    "sequential": 172,
+    "rows": 172
+   },
+   "wrong_intended": {
+    "joint": 0,
+    "sequential": 0,
+    "rows": 52
+   },
+   "wrong_inserted": {
+    "joint": 7,
+    "sequential": 7,
+    "rows": 52
+   },
+   "random_intended": {
+    "joint": 1,
+    "sequential": 0,
+    "rows": 52
+   },
+   "zero_intended": {
+    "joint": 4,
+    "sequential": 0,
+    "rows": 52
+   },
+   "receiver_only_intended": {
+    "joint": 4,
+    "sequential": 0,
+    "rows": 52
+   },
+   "complement_share_by_id": {
+    "B3": 0.33169734477996826,
+    "C5": 0.34721753001213074,
+    "D1": 0.32734960317611694,
+    "E6": 0.4132179617881775,
+    "F5": 0.4037145674228668,
+    "G2": 0.33470818400382996,
+    "H0": 0.34303727746009827,
+    "J5": 0.3974902033805847,
+    "K6": 0.3819272816181183,
+    "L1": 0.31587663292884827,
+    "N5": 0.32990002632141113,
+    "O4": 0.4165228307247162,
+    "P1": 0.331048846244812
+   }
+  }
+ },
+ "gates": {
+  "g1_branch": {
+   "F": 672,
+   "H": 32,
+   "N": 15,
+   "pass": true
+  },
+  "g2_code_copies": {
+   "t5.py": true,
+   "seam.py": true,
+   "pass": true
+  },
+  "g3_t5_mechanical": {
+   "gate3_native_parity_same_machine": {
+    "template_hard_scores_exact_descriptive": false,
+    "routes_exact": true,
+    "memory_slot_equals_feature": true,
+    "outside_sites_exact": true,
+    "payload_exact": true,
+    "max_abs_logit": 0.0,
+    "same_argmax": true,
+    "rows": 60,
+    "template_hard_equal_descriptive": true,
+    "template_scores_max_abs_descriptive": 9.566545486450195e-06,
+    "pass": true
+   },
+   "stock_disabled_self_exact": true,
+   "parity_seconds_two_scorings": 38.9569461249921,
+   "parity_rows": 60,
+   "cross_platform_max_abs_lp_descriptive": 0.0006418228149414062,
+   "cross_platform_same_predictions_descriptive": true,
+   "direct_max_abs_descriptive": 0.0001354217529296875,
+   "direct_same_argmax": true,
+   "cross_batch_max_abs_descriptive": 0.0001354217529296875,
+   "d0_parity_names_checked": [
+    "A3",
+    "B6",
+    "C7",
+    "D4",
+    "E0",
+    "F7",
+    "G3",
+    "H2",
+    "I0",
+    "J7",
+    "L4",
+    "M2",
+    "N7",
+    "O5",
+    "P4"
+   ]
+  },
+  "g4_coordinates": {
+   "max_abs": 6.683542608243442e-14,
+   "pass": true
+  },
+  "g5_complement": {
+   "qtq_max_abs": 3.3306690738754696e-15,
+   "utq_max_abs": 9.431741270433902e-14,
+   "sha256": "aac64dc8735dd62a8d81e4519fe7e8a00a7b2980cf2532c08de9b678d3576ed2",
+   "pass": true
+  },
+  "g6_start_identity": {
+   "render_equal_224": true,
+   "loss": 7.251722738146782,
+   "t5_loss": 7.251722738146782,
+   "teacher_forced": [
+    36,
+    24
+   ],
+   "t5_teacher_forced": [
+    36,
+    24
+   ],
+   "params_unchanged_lr0": true,
+   "pass": true
+  },
+  "g7_scope": {
+   "training_ids": 56,
+   "burned_overlap": [],
+   "pass": true
+  }
+ },
+ "totals": {
+  "heldout_joint": 57,
+  "heldout_sequential": 62,
+  "fit_joint": 672,
+  "fit_rows": 672
+ },
+ "end": {
+  "restored_exact": true,
+  "hash_after": "6a3e1782ebad58d1e9323d5eeaff191d112848b5f0058394a998d1ac54c492b3"
+ },
+ "elapsed_s": 5317.882236499994,
+ "peak_rss_bytes": 2540240896
+}

@@ -1,0 +1,166 @@
+{
+ "status": "DEVELOPMENT (Phase D). Not evidence for or against the claim (design 9.3).",
+ "time": "2026-10-21 19:48:26",
+ "mode": "dev",
+ "sender": "main",
+ "sender_repo": "Qwen/Qwen3-1.7B",
+ "blocks": [
+  21,
+  28
+ ],
+ "probe_family": "logistic",
+ "probe_info": {
+  "family": "logistic",
+  "lam": 0.1,
+  "cv_nll": 0.250233830763443,
+  "cv_grid": {
+   "1e-05": 0.9951457006053337,
+   "0.0001": 0.721147295291332,
+   "0.001": 0.4359980244736117,
+   "0.01": 0.2783749199764498,
+   "0.1": 0.250233830763443,
+   "1.0": 0.29241191605489575,
+   "10.0": 0.3591482644677533
+  },
+  "at_grid_end": false
+ },
+ "formats": {
+  "T2": "F3",
+  "T3": "F3",
+  "T4": "F3",
+  "T5": "F3",
+  "T6": "counts"
+ },
+ "L": {
+  "rank": 64,
+  "lr": 0.0003,
+  "epochs": 2,
+  "name": "L_r64_lr0.0003_ep15",
+  "inner_val_nll": 0.41881858911492287
+ },
+ "L_probe": {
+  "lr": 0.001,
+  "epochs": 3,
+  "name": "Lprobe_lr0.001_ep15",
+  "inner_val_nll": 0.38256949788183675
+ },
+ "n_test": 6000,
+ "sd_binary_T4_minus_L": 0.3277186587915377,
+ "gates": {
+  "G-D1": {
+   "value": 0.23466666666666666,
+   "rule": "0.20 <= dev accuracy <= 0.80",
+   "pass": true
+  },
+  "G-D4": {
+   "value": 0.9936666666666667,
+   "rule": "alias and token-F1 rules agree on >= 90% of dev items",
+   "pass": true,
+   "disagreements_file": "gd4_disagreements.jsonl"
+  },
+  "parser": {
+   "failure_rate": 0.028333333333333332,
+   "change_needed": false,
+   "view_file": "parser_view.json",
+   "rule": "design 6.1: more than 5% failures -> a dated parser change in the preregistration"
+  },
+  "G-D2": {
+   "value": 0.8893878136200717,
+   "rule": "probe direct on c1: dev-test AUROC >= 0.65",
+   "family": "logistic",
+   "pass": true
+  },
+  "G-D3": {
+   "value": [
+    0.46316534837963047,
+    0.44293914834631887
+   ],
+   "rule": "dev-test NLL(Source) < NLL(T0)",
+   "pass": false
+  }
+ },
+ "times": {
+  "sender_dev_train_s_per_item": 1.9020510675907134,
+  "sender_dev_test_s_per_item": 1.9372860240936278,
+  "probes_seconds": 59.48259520530701,
+  "recv_T0_dev_train_s_per_pass": 0.010556267976760864,
+  "recv_T0c_dev_train_s_per_pass": 0.01316338336467743,
+  "recv_T1_dev_train_s_per_pass": 0.011900987029075622,
+  "recv_Source_dev_train_s_per_pass": 0.06022841608524322,
+  "recv_Q-only_dev_train_s_per_pass": 0.008330229997634888,
+  "recv_T2_F1_dev_train_s_per_pass": 0.012599300503730773,
+  "recv_T2_F2_dev_train_s_per_pass": 0.011489857077598573,
+  "recv_T2_F3_dev_train_s_per_pass": 0.011575215458869935,
+  "recv_T3_F1_dev_train_s_per_pass": 0.012296253442764282,
+  "recv_T3_F2_dev_train_s_per_pass": 0.011400571584701539,
+  "recv_T3_F3_dev_train_s_per_pass": 0.011577144622802734,
+  "recv_T4_F1_dev_train_s_per_pass": 0.019393120527267455,
+  "recv_T4_F2_dev_train_s_per_pass": 0.015916678071022032,
+  "recv_T4_F3_dev_train_s_per_pass": 0.01593509805202484,
+  "recv_T5_F1_dev_train_s_per_pass": 0.01792875599861145,
+  "recv_T5_F2_dev_train_s_per_pass": 0.015889426469802858,
+  "recv_T5_F3_dev_train_s_per_pass": 0.015887976527214052,
+  "recv_T6_list_dev_train_s_per_pass": 0.02680672550201416,
+  "recv_T6_counts_dev_train_s_per_pass": 0.02286151945590973,
+  "recv_T0_dev_test_s_per_pass": 0.011516323804855347,
+  "recv_T0c_dev_test_s_per_pass": 0.014361369132995605,
+  "recv_T1_dev_test_s_per_pass": 0.01276642608642578,
+  "recv_Source_dev_test_s_per_pass": 0.08581408405303956,
+  "recv_Q-only_dev_test_s_per_pass": 0.008746164321899414,
+  "recv_T2_F1_dev_test_s_per_pass": 0.012678075790405273,
+  "recv_T2_F2_dev_test_s_per_pass": 0.011916733980178833,
+  "recv_T2_F3_dev_test_s_per_pass": 0.012010004997253418,
+  "recv_T3_F1_dev_test_s_per_pass": 0.012645196199417114,
+  "recv_T3_F2_dev_test_s_per_pass": 0.011882519006729125,
+  "recv_T3_F3_dev_test_s_per_pass": 0.012048833847045899,
+  "recv_T4_F1_dev_test_s_per_pass": 0.024753889799118044,
+  "recv_T4_F2_dev_test_s_per_pass": 0.016784507989883422,
+  "recv_T4_F3_dev_test_s_per_pass": 0.016702085971832276,
+  "recv_T5_F1_dev_test_s_per_pass": 0.018947571992874144,
+  "recv_T5_F2_dev_test_s_per_pass": 0.01577196741104126,
+  "recv_T5_F3_dev_test_s_per_pass": 0.016179383754730225,
+  "recv_T6_list_dev_test_s_per_pass": 0.02885428023338318,
+  "recv_T6_counts_dev_test_s_per_pass": 0.023380028963088988,
+  "text_seconds": 1212.7670969963074,
+  "text_passes": 57000,
+  "latent_seconds": 6200.131544828415
+ },
+ "code_sha256": "cba5e677c6e98905632c2d5c5483b9155e84e13a3bb8282ddf11b5056d076d4c",
+ "latent_readout_input": "raw",
+ "dedupe_questions": true,
+ "t5_raw": true,
+ "t6_count_top": "samples",
+ "dev_test_nll": {
+  "T0": 0.44293914834631887,
+  "T0c": 0.44552675767977773,
+  "T1": 0.46102702286717084,
+  "Source": 0.46316534837963047,
+  "Q-only": 0.47715205976536473,
+  "T2_F1": 0.4370989286692941,
+  "T2_F2": 0.43921468561604277,
+  "T2_F3": 0.4293014249800402,
+  "T3_F1": 0.4128033928541461,
+  "T3_F2": 0.41792627397014054,
+  "T3_F3": 0.3926616749317061,
+  "T4_F1": 0.42675719266772477,
+  "T4_F2": 0.4298781588640109,
+  "T4_F3": 0.40903614283793316,
+  "T5_F1": 0.43949243350188477,
+  "T5_F2": 0.44103093695846585,
+  "T5_F3": 0.43761043900923335,
+  "T6_list": 0.43321743098354154,
+  "T6_counts": 0.4316405647459334,
+  "L": 0.43870779372341395
+ },
+ "projection_hours": {
+  "s_per_item": 1.9196685458421707,
+  "s_per_pass": 0.01824990460747167,
+  "s_per_step": 2.6583276091681585,
+  "D1_3000_items": 1.599723788201809,
+  "D2a_57000_passes": 0.2889568229516348,
+  "C1_4000_items": 2.1329650509357454,
+  "C2_6000_items": 3.199447576403618,
+  "C3_80000_passes": 0.4055534357215927,
+  "per_seed_20000_passes_plus_3_fits_of_6_epochs": 1.7628431146604973
+ }
+}

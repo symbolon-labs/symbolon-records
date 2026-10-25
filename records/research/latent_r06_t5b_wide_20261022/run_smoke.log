@@ -1,0 +1,24 @@
+{"event":"preflight","utc":"2026-10-22T14:54:22Z"}
+vm.swapusage: total = 2048.00M  used = 516.44M  free = 1531.56M  (encrypted)
+ Wattage = 140W
+ Adapter Name = 140W USB-C Power Adapter
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=26476643)	100%; charged; 0:00 remaining present: true
+PREFLIGHT PASS: AC 140 W
+{"event":"launch","utc":"2026-10-22T14:54:23Z","job":"smoke","pid":45648}
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 4029.72it/s]
+{"event": "fit_step", "utc": "2026-10-22T14:55:23Z", "tag": "gate6_lr0", "step": 1, "loss": 7.251722738146782, "seconds": 4.958257874997798}
+{"event": "fit_step", "utc": "2026-10-22T14:55:28Z", "tag": "smoke_fold0", "step": 1, "loss": 7.251722738146782, "seconds": 4.937917749994085}
+{"event": "fit_step", "utc": "2026-10-22T14:55:33Z", "tag": "smoke_fold0", "step": 2, "loss": 5.6670838072896, "seconds": 4.961964791989885}
+{"event": "fit_step", "utc": "2026-10-22T14:55:38Z", "tag": "smoke_fold0", "step": 3, "loss": 3.89443027228117, "seconds": 4.993721500009997}
+{
+ "setup_seconds": 2.876454167009797,
+ "seconds_per_scored_row": 0.30628128090005097,
+ "seconds_per_step": [
+  4.937917749994085,
+  4.961964791989885,
+  4.993721500009997
+ ],
+ "elapsed_s": 76.53318537501036
+}
+{"event":"guard_end","utc":"2026-10-22T14:56:23Z","pid":45648}

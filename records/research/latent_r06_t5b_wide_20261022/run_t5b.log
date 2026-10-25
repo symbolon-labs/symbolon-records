@@ -1,0 +1,109 @@
+{"event":"preflight","utc":"2026-10-22T14:57:03Z"}
+vm.swapusage: total = 2048.00M  used = 516.44M  free = 1531.56M  (encrypted)
+ Wattage = 140W
+ Adapter Name = 140W USB-C Power Adapter
+Now drawing from 'AC Power'
+ -InternalBattery-0 (id=26476643)	100%; charged; 0:00 remaining present: true
+PREFLIGHT PASS: AC 140 W
+{"event":"launch","utc":"2026-10-22T14:57:04Z","job":"t5b","pid":45760}
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 3827.57it/s]
+{"event": "fit_step", "utc": "2026-10-22T14:58:07Z", "tag": "gate6_lr0", "step": 1, "loss": 7.251722738146782, "seconds": 5.212838833002024}
+{"event": "gates_pass", "utc": "2026-10-22T14:58:07Z", "arm": "t5b"}
+{"event": "fit_step", "utc": "2026-10-22T14:58:12Z", "tag": "t5b_fold0", "step": 1, "loss": 7.251722738146782, "seconds": 5.22329887500382}
+{"event": "fit_step", "utc": "2026-10-22T14:58:17Z", "tag": "t5b_fold0", "step": 2, "loss": 5.6670838072896, "seconds": 5.236312624998391}
+{"event": "fit_step", "utc": "2026-10-22T14:58:23Z", "tag": "t5b_fold0", "step": 3, "loss": 3.89443027228117, "seconds": 5.240136790991528}
+{"event": "fit_step", "utc": "2026-10-22T14:58:59Z", "tag": "t5b_fold0", "step": 10, "loss": 0.7358934916555882, "seconds": 5.212621625003521}
+{"event": "fit_step", "utc": "2026-10-22T14:59:52Z", "tag": "t5b_fold0", "step": 20, "loss": 0.24426471471088007, "seconds": 5.012105083995266}
+{"event": "fit_step", "utc": "2026-10-22T15:00:42Z", "tag": "t5b_fold0", "step": 30, "loss": 0.07464323515159776, "seconds": 5.036483125004452}
+{"event": "fit_step", "utc": "2026-10-22T15:01:32Z", "tag": "t5b_fold0", "step": 40, "loss": 0.024403449875535443, "seconds": 5.010362000000896}
+{"event": "fit_step", "utc": "2026-10-22T15:02:22Z", "tag": "t5b_fold0", "step": 50, "loss": 0.010243615775834769, "seconds": 5.0127757499867585}
+{"event": "fit_step", "utc": "2026-10-22T15:03:12Z", "tag": "t5b_fold0", "step": 60, "loss": 0.006117296899901703, "seconds": 5.007557000004454}
+{"event": "fit_step", "utc": "2026-10-22T15:04:03Z", "tag": "t5b_fold0", "step": 70, "loss": 0.004346663554315455, "seconds": 5.016609792000963}
+{"event": "fit_step", "utc": "2026-10-22T15:04:53Z", "tag": "t5b_fold0", "step": 80, "loss": 0.0034105755839846097, "seconds": 5.03722816699883}
+{"event": "fit_step", "utc": "2026-10-22T15:05:43Z", "tag": "t5b_fold0", "step": 90, "loss": 0.002829800723702647, "seconds": 5.012668499999563}
+{"event": "fit_step", "utc": "2026-10-22T15:06:33Z", "tag": "t5b_fold0", "step": 100, "loss": 0.0024234317170339637, "seconds": 5.016161542007467}
+{"event": "fit_step", "utc": "2026-10-22T15:07:23Z", "tag": "t5b_fold0", "step": 110, "loss": 0.0021163740257179597, "seconds": 5.016479917001561}
+{"event": "fit_step", "utc": "2026-10-22T15:08:13Z", "tag": "t5b_fold0", "step": 120, "loss": 0.0018721009510045405, "seconds": 5.008404541993514}
+{"event": "fit_step", "utc": "2026-10-22T15:09:03Z", "tag": "t5b_fold0", "step": 130, "loss": 0.0016707385602785507, "seconds": 5.0208258330094395}
+{"event": "fit_step", "utc": "2026-10-22T15:09:54Z", "tag": "t5b_fold0", "step": 140, "loss": 0.0015005143268354004, "seconds": 5.007824000000255}
+{"event": "fit_step", "utc": "2026-10-22T15:10:44Z", "tag": "t5b_fold0", "step": 150, "loss": 0.0013539881620090455, "seconds": 5.014898000008543}
+{"event": "fit_step", "utc": "2026-10-22T15:11:34Z", "tag": "t5b_fold0", "step": 160, "loss": 0.0012264007746125571, "seconds": 4.996705709010712}
+{"event": "fit_step", "utc": "2026-10-22T15:12:24Z", "tag": "t5b_fold0", "step": 170, "loss": 0.001114903619964025, "seconds": 5.013085957994917}
+{"event": "fit_step", "utc": "2026-10-22T15:13:17Z", "tag": "t5b_fold0", "step": 180, "loss": 0.0010177596759604057, "seconds": 5.247985459005577}
+{"event": "fit_step", "utc": "2026-10-22T15:14:13Z", "tag": "t5b_fold0", "step": 190, "loss": 0.0009334431615570793, "seconds": 5.505458792002173}
+{"event": "fit_step", "utc": "2026-10-22T15:15:08Z", "tag": "t5b_fold0", "step": 200, "loss": 0.0008602262496424373, "seconds": 5.3489940839936025}
+{"event": "fold_done", "utc": "2026-10-22T15:20:21Z", "arm": "t5b", "fold": 0}
+{"event": "fit_step", "utc": "2026-10-22T15:20:27Z", "tag": "t5b_fold1", "step": 1, "loss": 7.3972803726792336, "seconds": 5.786310791998403}
+{"event": "fit_step", "utc": "2026-10-22T15:20:33Z", "tag": "t5b_fold1", "step": 2, "loss": 5.901688501238823, "seconds": 5.716091332986252}
+{"event": "fit_step", "utc": "2026-10-22T15:20:38Z", "tag": "t5b_fold1", "step": 3, "loss": 3.579145275056362, "seconds": 5.7970417500037}
+{"event": "fit_step", "utc": "2026-10-22T15:21:19Z", "tag": "t5b_fold1", "step": 10, "loss": 0.88938382640481, "seconds": 5.683067082994967}
+{"event": "fit_step", "utc": "2026-10-22T15:22:14Z", "tag": "t5b_fold1", "step": 20, "loss": 0.3013065471313894, "seconds": 5.28757095799665}
+{"event": "fit_step", "utc": "2026-10-22T15:23:08Z", "tag": "t5b_fold1", "step": 30, "loss": 0.08750354792573489, "seconds": 5.365911791988765}
+{"event": "fit_step", "utc": "2026-10-22T15:24:01Z", "tag": "t5b_fold1", "step": 40, "loss": 0.02772245831147302, "seconds": 5.500687040999765}
+{"event": "fit_step", "utc": "2026-10-22T15:24:55Z", "tag": "t5b_fold1", "step": 50, "loss": 0.011901693207619246, "seconds": 5.292926334004733}
+{"event": "fit_step", "utc": "2026-10-22T15:25:48Z", "tag": "t5b_fold1", "step": 60, "loss": 0.006487831658887444, "seconds": 5.330397957994137}
+{"event": "fit_step", "utc": "2026-10-22T15:26:41Z", "tag": "t5b_fold1", "step": 70, "loss": 0.00421937624560087, "seconds": 5.323728041999857}
+{"event": "fit_step", "utc": "2026-10-22T15:27:34Z", "tag": "t5b_fold1", "step": 80, "loss": 0.0031122392902034335, "seconds": 5.3953201249969425}
+{"event": "fit_step", "utc": "2026-10-22T15:28:28Z", "tag": "t5b_fold1", "step": 90, "loss": 0.0024862668087735074, "seconds": 5.368649958007154}
+{"event": "fit_step", "utc": "2026-10-22T15:29:22Z", "tag": "t5b_fold1", "step": 100, "loss": 0.0020843959209742025, "seconds": 5.255023959005484}
+{"event": "fit_step", "utc": "2026-10-22T15:30:17Z", "tag": "t5b_fold1", "step": 110, "loss": 0.0018001676253334153, "seconds": 5.3924090410000645}
+{"event": "fit_step", "utc": "2026-10-22T15:31:10Z", "tag": "t5b_fold1", "step": 120, "loss": 0.0015849286992306588, "seconds": 5.169804250006564}
+{"event": "fit_step", "utc": "2026-10-22T15:32:02Z", "tag": "t5b_fold1", "step": 130, "loss": 0.0014140897819743259, "seconds": 5.088149000002886}
+{"event": "fit_step", "utc": "2026-10-22T15:32:53Z", "tag": "t5b_fold1", "step": 140, "loss": 0.0012742248418362578, "seconds": 5.0732662079972215}
+{"event": "fit_step", "utc": "2026-10-22T15:33:44Z", "tag": "t5b_fold1", "step": 150, "loss": 0.0011571383829505066, "seconds": 5.095367834001081}
+{"event": "fit_step", "utc": "2026-10-22T15:34:35Z", "tag": "t5b_fold1", "step": 160, "loss": 0.0010575859414529987, "seconds": 5.0779201250115875}
+{"event": "fit_step", "utc": "2026-10-22T15:35:26Z", "tag": "t5b_fold1", "step": 170, "loss": 0.0009718846131363534, "seconds": 5.072864999994636}
+{"event": "fit_step", "utc": "2026-10-22T15:36:16Z", "tag": "t5b_fold1", "step": 180, "loss": 0.0008974208176368847, "seconds": 5.067632708000019}
+{"event": "fit_step", "utc": "2026-10-22T15:37:07Z", "tag": "t5b_fold1", "step": 190, "loss": 0.0008320555007230723, "seconds": 5.066682209013379}
+{"event": "fit_step", "utc": "2026-10-22T15:37:57Z", "tag": "t5b_fold1", "step": 200, "loss": 0.0007743428786852746, "seconds": 5.0804409590055}
+{"event": "fold_done", "utc": "2026-10-22T15:42:23Z", "arm": "t5b", "fold": 1}
+{"event": "fit_step", "utc": "2026-10-22T15:42:28Z", "tag": "t5b_fold2", "step": 1, "loss": 7.303618997335434, "seconds": 5.072679916993366}
+{"event": "fit_step", "utc": "2026-10-22T15:42:33Z", "tag": "t5b_fold2", "step": 2, "loss": 6.520235791802406, "seconds": 5.0661364999978105}
+{"event": "fit_step", "utc": "2026-10-22T15:42:38Z", "tag": "t5b_fold2", "step": 3, "loss": 3.4806702062487602, "seconds": 5.108893374999752}
+{"event": "fit_step", "utc": "2026-10-22T15:43:14Z", "tag": "t5b_fold2", "step": 10, "loss": 0.8521943343803287, "seconds": 5.1551486249954905}
+{"event": "fit_step", "utc": "2026-10-22T15:44:05Z", "tag": "t5b_fold2", "step": 20, "loss": 0.23060398921370506, "seconds": 5.094879208001657}
+{"event": "fit_step", "utc": "2026-10-22T15:44:55Z", "tag": "t5b_fold2", "step": 30, "loss": 0.06211124418769032, "seconds": 5.078788124999846}
+{"event": "fit_step", "utc": "2026-10-22T15:45:46Z", "tag": "t5b_fold2", "step": 40, "loss": 0.022027096420060843, "seconds": 5.066422584000975}
+{"event": "fit_step", "utc": "2026-10-22T15:46:37Z", "tag": "t5b_fold2", "step": 50, "loss": 0.011477046980871819, "seconds": 5.065348125004675}
+{"event": "fit_step", "utc": "2026-10-22T15:47:28Z", "tag": "t5b_fold2", "step": 60, "loss": 0.007664120013942011, "seconds": 5.07108008301293}
+{"event": "fit_step", "utc": "2026-10-22T15:48:18Z", "tag": "t5b_fold2", "step": 70, "loss": 0.005719673663406866, "seconds": 5.099645832990063}
+{"event": "fit_step", "utc": "2026-10-22T15:49:09Z", "tag": "t5b_fold2", "step": 80, "loss": 0.004542475347989239, "seconds": 5.086687875009375}
+{"event": "fit_step", "utc": "2026-10-22T15:50:00Z", "tag": "t5b_fold2", "step": 90, "loss": 0.0037597267255478073, "seconds": 5.068543916000635}
+{"event": "fit_step", "utc": "2026-10-22T15:50:51Z", "tag": "t5b_fold2", "step": 100, "loss": 0.0031986737394618103, "seconds": 5.164785750006558}
+{"event": "fit_step", "utc": "2026-10-22T15:51:42Z", "tag": "t5b_fold2", "step": 110, "loss": 0.0027735929543268867, "seconds": 5.088179290993139}
+{"event": "fit_step", "utc": "2026-10-22T15:52:32Z", "tag": "t5b_fold2", "step": 120, "loss": 0.0024387672365264734, "seconds": 5.074051791001693}
+{"event": "fit_step", "utc": "2026-10-22T15:53:23Z", "tag": "t5b_fold2", "step": 130, "loss": 0.002167564989576931, "seconds": 5.114738292002585}
+{"event": "fit_step", "utc": "2026-10-22T15:54:14Z", "tag": "t5b_fold2", "step": 140, "loss": 0.0019434111200098414, "seconds": 5.069283250006265}
+{"event": "fit_step", "utc": "2026-10-22T15:55:05Z", "tag": "t5b_fold2", "step": 150, "loss": 0.00175516457966296, "seconds": 5.072318083010032}
+{"event": "fit_step", "utc": "2026-10-22T15:55:55Z", "tag": "t5b_fold2", "step": 160, "loss": 0.001594951765582664, "seconds": 5.063810249994276}
+{"event": "fit_step", "utc": "2026-10-22T15:56:46Z", "tag": "t5b_fold2", "step": 170, "loss": 0.0014573124408343574, "seconds": 5.070099666991155}
+{"event": "fit_step", "utc": "2026-10-22T15:57:37Z", "tag": "t5b_fold2", "step": 180, "loss": 0.0013378912681218935, "seconds": 5.062474250007654}
+{"event": "fit_step", "utc": "2026-10-22T15:58:28Z", "tag": "t5b_fold2", "step": 190, "loss": 0.0012335361525401822, "seconds": 5.072007124996162}
+{"event": "fit_step", "utc": "2026-10-22T15:59:19Z", "tag": "t5b_fold2", "step": 200, "loss": 0.001141676469160302, "seconds": 5.080144207997364}
+{"event": "fold_done", "utc": "2026-10-22T16:03:45Z", "arm": "t5b", "fold": 2}
+{"event": "fit_step", "utc": "2026-10-22T16:03:50Z", "tag": "t5b_fold3", "step": 1, "loss": 7.711005982011557, "seconds": 5.3274435000057565}
+{"event": "fit_step", "utc": "2026-10-22T16:03:55Z", "tag": "t5b_fold3", "step": 2, "loss": 6.131593465805054, "seconds": 5.264047415999812}
+{"event": "fit_step", "utc": "2026-10-22T16:04:00Z", "tag": "t5b_fold3", "step": 3, "loss": 3.310563812032342, "seconds": 5.319539125004667}
+{"event": "fit_step", "utc": "2026-10-22T16:04:37Z", "tag": "t5b_fold3", "step": 10, "loss": 0.81489481870085, "seconds": 5.240986124990741}
+{"event": "fit_step", "utc": "2026-10-22T16:05:30Z", "tag": "t5b_fold3", "step": 20, "loss": 0.27109661628492177, "seconds": 5.293682458999683}
+{"event": "fit_step", "utc": "2026-10-22T16:06:22Z", "tag": "t5b_fold3", "step": 30, "loss": 0.05438473279355094, "seconds": 5.276830917006009}
+{"event": "fit_step", "utc": "2026-10-22T16:07:14Z", "tag": "t5b_fold3", "step": 40, "loss": 0.016622289156657644, "seconds": 5.251169209004729}
+{"event": "fit_step", "utc": "2026-10-22T16:08:07Z", "tag": "t5b_fold3", "step": 50, "loss": 0.008799387753242627, "seconds": 5.239988041998004}
+{"event": "fit_step", "utc": "2026-10-22T16:09:00Z", "tag": "t5b_fold3", "step": 60, "loss": 0.00590664561605081, "seconds": 5.281467082997551}
+{"event": "fit_step", "utc": "2026-10-22T16:09:52Z", "tag": "t5b_fold3", "step": 70, "loss": 0.004483956588956062, "seconds": 5.230391165998299}
+{"event": "fit_step", "utc": "2026-10-22T16:10:44Z", "tag": "t5b_fold3", "step": 80, "loss": 0.003646557917818427, "seconds": 5.248276124999393}
+{"event": "fit_step", "utc": "2026-10-22T16:11:37Z", "tag": "t5b_fold3", "step": 90, "loss": 0.003096358574111946, "seconds": 5.267253874990274}
+{"event": "fit_step", "utc": "2026-10-22T16:12:29Z", "tag": "t5b_fold3", "step": 100, "loss": 0.002696934672712814, "seconds": 5.213770916001522}
+{"event": "fit_step", "utc": "2026-10-22T16:13:22Z", "tag": "t5b_fold3", "step": 110, "loss": 0.0023860835171944927, "seconds": 5.296742708000238}
+{"event": "fit_step", "utc": "2026-10-22T16:14:14Z", "tag": "t5b_fold3", "step": 120, "loss": 0.0021337908856366994, "seconds": 5.254591165998136}
+{"event": "fit_step", "utc": "2026-10-22T16:15:07Z", "tag": "t5b_fold3", "step": 130, "loss": 0.0019235516319895396, "seconds": 5.25094512499345}
+{"event": "fit_step", "utc": "2026-10-22T16:16:00Z", "tag": "t5b_fold3", "step": 140, "loss": 0.001745215220580576, "seconds": 5.255902374992729}
+{"event": "fit_step", "utc": "2026-10-22T16:16:52Z", "tag": "t5b_fold3", "step": 150, "loss": 0.0015918912649794947, "seconds": 5.2444368330034195}
+{"event": "fit_step", "utc": "2026-10-22T16:17:45Z", "tag": "t5b_fold3", "step": 160, "loss": 0.0014588003468816169, "seconds": 5.247979292005766}
+{"event": "fit_step", "utc": "2026-10-22T16:18:38Z", "tag": "t5b_fold3", "step": 170, "loss": 0.0013424104872683529, "seconds": 5.260526458005188}
+{"event": "fit_step", "utc": "2026-10-22T16:19:30Z", "tag": "t5b_fold3", "step": 180, "loss": 0.001239917268321733, "seconds": 5.248332584000309}
+{"event": "fit_step", "utc": "2026-10-22T16:20:23Z", "tag": "t5b_fold3", "step": 190, "loss": 0.0011491458253658493, "seconds": 5.2350432079983875}
+{"event": "fit_step", "utc": "2026-10-22T16:21:15Z", "tag": "t5b_fold3", "step": 200, "loss": 0.0010683730342861963, "seconds": 5.2311618749954505}
+{"event": "fold_done", "utc": "2026-10-22T16:25:40Z", "arm": "t5b", "fold": 3}
+{"event": "job_end", "utc": "2026-10-22T16:25:41Z", "arm": "t5b", "completed": true}
+{"event":"guard_end","utc":"2026-10-22T16:26:08Z","pid":45760}

@@ -1,0 +1,311 @@
+== preconditions 2026-10-20 23:19:21
+python processes:
+  none
+swap: total = 0.00M  used = 0.00M  free = 0.00M  (encrypted)
+ Wattage = 140W
+ Current = 5000mA
+ Voltage = 28000mV
+ AdapterID = 5717
+ Manufacturer = Apple inc.
+ Family Code = 0xe000400a
+ Serial String = C0624560SRBQCHXD8
+ Adapter Name = 140W USB-C Power Adapter
+ Hardware Version = 1.0
+ Firmware Version = 00x015AC0
+== start 2026-10-20 23:19:21 (time limit 100 min)
+pid 14413 (caffeinate -i -w 14413; watchdog 14416)
+[23:19:23] data: train=2000 test=1000
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 6885.24it/s]
+[23:29:53] sender train: n=2000 acc=0.739 627s
+[23:35:06] sender test: n=1000 acc=0.755 313s
+[23:38:48] probes: T3 lam=0.1 cv_nll=0.3444; T4 lam=0.1 cv_nll=0.4487; T4@28 cv_nll=0.4515
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 4257.45it/s]
+[23:39:01] text arm T0 done
+[23:39:20] text arm T1 done
+[23:39:38] text arm T2 done
+[23:39:57] text arm T3 done
+[23:40:33] text arm T4 done
+[23:41:09] text arm T5 done
+[23:41:36] text arm T6 done
+[23:42:34] text arm Card done
+[23:42:34] embedding route identity max abs diff: 0.00e+00
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 4427.48it/s]
+[23:45:36] latent grid epoch 1: 9 configs trained, 9 continue (182s)
+[23:48:38] latent grid epoch 2: 9 configs trained, 9 continue (364s)
+[23:51:40] latent grid epoch 3: 9 configs trained, 9 continue (546s)
+[23:54:42] latent grid epoch 4: 9 configs trained, 9 continue (728s)
+[23:57:44] latent grid epoch 5: 9 configs trained, 9 continue (910s)
+[00:00:48] latent grid epoch 6: 9 configs trained, 8 continue (1094s)
+[00:03:35] latent grid epoch 7: 8 configs trained, 5 continue (1261s)
+[00:05:22] latent grid epoch 8: 5 configs trained, 2 continue (1368s)
+[00:06:08] latent grid epoch 9: 2 configs trained, 2 continue (1414s)
+[00:06:53] latent grid epoch 10: 2 configs trained, 1 continue (1459s)
+[00:07:18] latent grid epoch 11: 1 configs trained, 1 continue (1484s)
+[00:07:43] latent grid epoch 12: 1 configs trained, 1 continue (1509s)
+[00:08:09] latent grid epoch 13: 1 configs trained, 1 continue (1535s)
+[00:08:35] latent grid epoch 14: 1 configs trained, 1 continue (1561s)
+[00:09:00] latent grid epoch 15: 1 configs trained, 1 continue (1586s)
+[00:09:25] latent grid epoch 16: 1 configs trained, 1 continue (1611s)
+[00:09:50] latent grid epoch 17: 1 configs trained, 1 continue (1636s)
+[00:10:15] latent grid epoch 18: 1 configs trained, 1 continue (1661s)
+[00:10:41] latent grid epoch 19: 1 configs trained, 1 continue (1686s)
+[00:11:06] latent grid epoch 20: 1 configs trained, 0 continue (1712s)
+[00:11:06] grid L_lr1e-05: best val NLL 0.4228 at epoch 17 of 20
+[00:11:06] grid L_lr3e-05: best val NLL 0.4426 at epoch 5 of 8
+[00:11:06] grid L_lr0.0001: best val NLL 0.4437 at epoch 4 of 7
+[00:11:06] grid L-lowrank_r16_lr0.0003: best val NLL 0.4772 at epoch 5 of 8
+[00:11:06] grid L-lowrank_r16_lr0.001: best val NLL 0.4394 at epoch 7 of 10
+[00:11:06] grid L-lowrank_r16_lr0.003: best val NLL 0.5085 at epoch 5 of 8
+[00:11:06] grid L-lowrank_r64_lr0.0003: best val NLL 0.4783 at epoch 4 of 7
+[00:11:06] grid L-lowrank_r64_lr0.001: best val NLL 0.4760 at epoch 3 of 6
+[00:11:06] grid L-lowrank_r64_lr0.003: best val NLL 0.5235 at epoch 4 of 7
+[00:11:06] selected: L=L_lr1e-05 (0.4228), L-lowrank=L-lowrank_r16_lr0.001 (0.4394); L* = L (1712s)
+[00:12:44] latent final epoch 1: 4 configs trained, 4 continue (98s)
+[00:14:22] latent final epoch 2: 4 configs trained, 4 continue (196s)
+[00:15:59] latent final epoch 3: 4 configs trained, 4 continue (294s)
+[00:17:37] latent final epoch 4: 4 configs trained, 4 continue (392s)
+[00:19:15] latent final epoch 5: 4 configs trained, 4 continue (490s)
+[00:20:53] latent final epoch 6: 4 configs trained, 4 continue (588s)
+[00:22:31] latent final epoch 7: 4 configs trained, 4 continue (686s)
+[00:23:23] latent final epoch 8: 2 configs trained, 2 continue (738s)
+[00:24:16] latent final epoch 9: 2 configs trained, 2 continue (790s)
+[00:25:08] latent final epoch 10: 2 configs trained, 2 continue (842s)
+[00:26:00] latent final epoch 11: 2 configs trained, 2 continue (894s)
+[00:26:52] latent final epoch 12: 2 configs trained, 2 continue (947s)
+[00:27:45] latent final epoch 13: 2 configs trained, 2 continue (999s)
+[00:28:37] latent final epoch 14: 2 configs trained, 2 continue (1051s)
+[00:29:29] latent final epoch 15: 2 configs trained, 2 continue (1103s)
+[00:30:21] latent final epoch 16: 2 configs trained, 2 continue (1156s)
+[00:31:13] latent final epoch 17: 2 configs trained, 2 continue (1208s)
+[00:31:31] latent test NLL: L=0.5330, L-lowrank=0.5625, L-testshuf=3.8749, L-lowrank-testshuf=4.2924, L-shuf=1.6321, L-lowrank-shuf=1.4508 (2937s)
+[00:31:34] readout T0: lam=1.0 cv_nll=0.8596
+[00:32:01] readout T1: lam=1e-05 cv_nll=0.8370
+[00:32:27] readout T2: lam=0.01 cv_nll=0.7867
+[00:32:54] readout T3: lam=0.001 cv_nll=0.6570
+[00:33:21] readout T4: lam=0.01 cv_nll=0.5045
+[00:33:46] readout T5: lam=0.01 cv_nll=0.7267
+[00:34:14] readout T6: lam=1.0 cv_nll=0.7770
+[00:34:35] readout Card: lam=0.01 cv_nll=0.6072
+| arm | NLL | gap to Bayes | Brier | acc | ECE | zero-shot NLL | zero-shot acc |
+|---|---|---|---|---|---|---|---|
+| T0 | 0.8265 | 0.4821 | 0.4110 | 0.755 | 0.0253 | 2.2153 | 0.260 |
+| T1 | 0.7945 | 0.4501 | 0.3998 | 0.755 | 0.0205 | 1.8347 | 0.357 |
+| T2 | 0.7587 | 0.4143 | 0.3771 | 0.755 | 0.0284 | 1.6784 | 0.587 |
+| T3 | 0.6138 | 0.2694 | 0.3099 | 0.766 | 0.0354 | 1.6750 | 0.538 |
+| T4 | 0.4827 | 0.1383 | 0.2294 | 0.844 | 0.0146 | 2.4145 | 0.260 |
+| T5 | 0.7081 | 0.3637 | 0.3627 | 0.750 | 0.0433 | 2.3498 | 0.260 |
+| T6 | 0.7615 | 0.4171 | 0.3874 | 0.744 | 0.0242 | 1.3130 | 0.722 |
+| Card | 0.5471 | 0.2027 | 0.2929 | 0.799 | 0.0350 | 2.6299 | 0.262 |
+| L | 0.5330 | 0.1886 | 0.2551 | 0.828 | 0.0777 | 2.3461 | 0.284 |
+| L-lowrank | 0.5625 | 0.2181 | 0.2738 | 0.811 | 0.0884 | 2.7925 | 0.260 |
+| L-shuf | 1.6321 | 1.2877 | 0.8568 | 0.256 | 0.2269 | 2.1517 | 0.267 |
+| L-lowrank-shuf | 1.4508 | 1.1063 | 0.7814 | 0.258 | 0.1123 | 2.3879 | 0.260 |
+| L-testshuf | 3.8749 | 3.5305 | 1.3859 | 0.244 | 0.6617 | 2.2781 | 0.268 |
+| L-lowrank-testshuf | 4.2924 | 3.9480 | 1.3818 | 0.234 | 0.6609 | 2.3791 | 0.262 |
+| ref: Bayes | 0.3444 | 0.0000 | 0.1836 | 0.858 | 0.0149 | | |
+| ref: Bayes-9 | 0.8522 | 0.5078 | 0.1860 | 0.858 | 0.0321 | | |
+| ref: Bayes-9-cal | 0.3513 | 0.0069 | 0.1838 | 0.858 | 0.0148 | | |
+| ref: Prior | 1.3863 | 1.0419 | 0.7500 | 0.247 | 0.0030 | | |
+| ref: sender_softmax_direct | 0.8281 | 0.4837 | 0.3961 | 0.755 | 0.1538 | | |
+| ref: probe4_block21_direct | 0.4395 | 0.0951 | 0.2223 | 0.842 | 0.0295 | | |
+| ref: probe4_block28_direct | 0.4430 | 0.0986 | 0.2281 | 0.841 | 0.0346 | | |
+
+| difference (NLL) | mean | 95% CI |
+|---|---|---|
+| T0 minus L | +0.2935 | [+0.2249, +0.3607] |
+| T1 minus L | +0.2615 | [+0.1925, +0.3290] |
+| T2 minus L | +0.2257 | [+0.1609, +0.2895] |
+| T3 minus L | +0.0808 | [+0.0220, +0.1385] |
+| T4 minus L | -0.0503 | [-0.0921, -0.0107] |
+| T5 minus L | +0.1751 | [+0.1128, +0.2369] |
+| T6 minus L | +0.2285 | [+0.1641, +0.2900] |
+| Card minus L | +0.0141 | [-0.0488, +0.0726] |
+| L-shuf minus L | +1.0991 | [+1.0053, +1.1876] |
+| L-testshuf minus L | +3.3419 | [+3.1608, +3.5223] |
+| T0 minus L-lowrank | +0.2640 | [+0.1943, +0.3342] |
+| T1 minus L-lowrank | +0.2321 | [+0.1621, +0.3019] |
+| T2 minus L-lowrank | +0.1963 | [+0.1292, +0.2645] |
+| T3 minus L-lowrank | +0.0514 | [-0.0082, +0.1106] |
+| T4 minus L-lowrank | -0.0798 | [-0.1230, -0.0355] |
+| T5 minus L-lowrank | +0.1457 | [+0.0826, +0.2104] |
+| T6 minus L-lowrank | +0.1990 | [+0.1322, +0.2672] |
+| Card minus L-lowrank | -0.0154 | [-0.0752, +0.0430] |
+| L-lowrank-shuf minus L-lowrank | +0.8883 | [+0.8075, +0.9684] |
+| L-lowrank-testshuf minus L-lowrank | +3.7300 | [+3.5260, +3.9365] |
+| L minus L-lowrank | -0.0294 | [-0.0786, +0.0213] |
+| T0 minus T2 | +0.0678 | [+0.0463, +0.0883] |
+| T2 minus T4 | +0.2761 | [+0.2242, +0.3279] |
+| T3 minus T4 | +0.1312 | [+0.0835, +0.1784] |
+| T0 minus Card | +0.2794 | [+0.2224, +0.3362] |
+| T5 minus T4 | +0.2255 | [+0.1764, +0.2755] |
+| T6 minus T5 | +0.0533 | [+0.0241, +0.0821] |
+| T2 minus T5 | +0.0506 | [+0.0233, +0.0775] |
+| T6 minus T4 | +0.2788 | [+0.2274, +0.3304] |
+| T6 minus T2 | +0.0027 | [-0.0196, +0.0250] |
+{
+ "selected_latent": "L",
+ "selected_config": "L_lr1e-05",
+ "case": 1,
+ "case_name": "the T4 win stays",
+ "T4_beats_Lstar": true,
+ "Lstar_beats_T4": false,
+ "T4_minus_Lstar": {
+  "mean": -0.05034550867656028,
+  "ci95": [
+   -0.09213822297021472,
+   -0.010733020293817275
+  ]
+ },
+ "fit_limit_not_removed": true,
+ "selected_lr_at_grid_end": true,
+ "selected_epoch_at_max": false,
+ "sanity_shuf_arm": "L-shuf",
+ "sanity_shuf_ok": true,
+ "sanity_Card_ok": true,
+ "valid": true,
+ "pilot_rule": {
+  "best_of_T0_T2": "T2",
+  "Lstar_beats_best_text": true,
+  "Lstar_beats_T3": true,
+  "Lstar_beats_T4": false,
+  "case": 2
+ },
+ "secondary": {
+  "L beats T5": true,
+  "L beats T6": true,
+  "T4 beats T5": true,
+  "T5 beats T6": true,
+  "T5 beats T2": true,
+  "T5 beats L": false,
+  "T6 beats L": false,
+  "T5 beats T4": false,
+  "T6 beats T5": false,
+  "T2 beats T5": false
+ },
+ "bayes9_clause_applies": false,
+ "margin_nats": 0.02,
+ "ln4": 1.3862943611198906
+}
+{
+ "sender_acc": {
+  "train": 0.739,
+  "test": 0.755
+ },
+ "bayes_argmax_acc_test": 0.858,
+ "sender_agrees_with_bayes_argmax_test": 0.794,
+ "digit_histograms_test": {
+  "T1": {
+   "7": 887,
+   "9": 113
+  },
+  "T2": {
+   "4": 21,
+   "5": 46,
+   "6": 59,
+   "7": 67,
+   "8": 182,
+   "9": 625
+  },
+  "T3": {
+   "0": 3,
+   "1": 48,
+   "2": 56,
+   "3": 61,
+   "4": 69,
+   "5": 60,
+   "6": 63,
+   "7": 68,
+   "8": 131,
+   "9": 441
+  }
+ },
+ "digit_auc_for_sender_correct_test": {
+  "T1": 0.5721313691039329,
+  "T2": 0.7108690363562643,
+  "T3": 0.8996756318421408
+ },
+ "t6_all_samples_same_fraction_test": 0.654,
+ "t6_answer_count_auc_for_sender_correct_test": 0.6496661711042033,
+ "probe3_auc_test": 0.9028355183132856,
+ "latent_grid": {
+  "L_lr1e-05": {
+   "best_val_nll": 0.4227791071075046,
+   "best_epoch": 17,
+   "epochs_run": 20
+  },
+  "L_lr3e-05": {
+   "best_val_nll": 0.44258838346585505,
+   "best_epoch": 5,
+   "epochs_run": 8
+  },
+  "L_lr0.0001": {
+   "best_val_nll": 0.4436940837241407,
+   "best_epoch": 4,
+   "epochs_run": 7
+  },
+  "L-lowrank_r16_lr0.0003": {
+   "best_val_nll": 0.4772330524413508,
+   "best_epoch": 5,
+   "epochs_run": 8
+  },
+  "L-lowrank_r16_lr0.001": {
+   "best_val_nll": 0.439446469476743,
+   "best_epoch": 7,
+   "epochs_run": 10
+  },
+  "L-lowrank_r16_lr0.003": {
+   "best_val_nll": 0.5085459701105771,
+   "best_epoch": 5,
+   "epochs_run": 8
+  },
+  "L-lowrank_r64_lr0.0003": {
+   "best_val_nll": 0.47827572201765756,
+   "best_epoch": 4,
+   "epochs_run": 7
+  },
+  "L-lowrank_r64_lr0.001": {
+   "best_val_nll": 0.47603906242697547,
+   "best_epoch": 3,
+   "epochs_run": 6
+  },
+  "L-lowrank_r64_lr0.003": {
+   "best_val_nll": 0.5234547907090422,
+   "best_epoch": 4,
+   "epochs_run": 7
+  }
+ },
+ "latent_fit": {
+  "L": {
+   "config": "L_lr1e-05",
+   "lr": 1e-05,
+   "rank": null,
+   "best_epoch": 17,
+   "best_val_nll": 0.4227791071075046,
+   "train_loss_at_best_epoch": 0.05059336058795452,
+   "val_minus_train_at_best_epoch": 0.37218574651955005,
+   "lr_at_grid_end": true,
+   "map_params": 1967040
+  },
+  "L-lowrank": {
+   "config": "L-lowrank_r16_lr0.001",
+   "lr": 0.001,
+   "rank": 16,
+   "best_epoch": 7,
+   "best_val_nll": 0.439446469476743,
+   "train_loss_at_best_epoch": 0.32675595849752426,
+   "val_minus_train_at_best_epoch": 0.11269051097921873,
+   "lr_at_grid_end": false,
+   "map_params": 49088
+  },
+  "pilot_L_reference": {
+   "lr": 3e-05,
+   "best_epoch": 5,
+   "best_val_nll": 0.518,
+   "train_loss_at_best_epoch": 0.23,
+   "val_minus_train_at_best_epoch": 0.288
+  }
+ }
+}
+[00:34:35] done
+== end 2026-10-21 00:34:35 rc=0
+swap after: total = 0.00M  used = 0.00M  free = 0.00M  (encrypted)

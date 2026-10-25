@@ -1,0 +1,73 @@
+{
+ "label": "EXPLORATORY",
+ "code": {
+  "PLAN.md": "b4b833702316e7104d6fd9737824c163650e89654776c0c603d776a6f296024f",
+  "t5.py": "e6351477e27aa59e84248758421b9d63b6853d47aca9e54ac9984a6f4032f1ee",
+  "seam.py": "8b7e98577f5e2a6f91237fdd41ebe7be5c7f3970ddb76415c3221861d40b1637",
+  "test_t5.py": "815ec0519433696e298923d60dc90edc57a0da9c10dcd364f5b607c60087ee00",
+  "guard.sh": "ca381558442910374ea090c8817ec0878ba91b938db9734fe362de79499f704e",
+  "preflight.sh": "97e0b7b30674a5f29acff8aa3c89fd860a929752d528c627dd77bdc39bddd422",
+  "launch.sh": "001b94f98de79f43ad6a84776f341fc2695dabc024800d68cdb7f389e7b48f36"
+ },
+ "inputs": {
+  "rows": {
+   "path": "latent_binding_training_fold_recovery_20260913/inputs.json",
+   "sha256": "459df92cc22cc65133a49163230112055f1de17eff1bab1e246f9872d2fa68fb"
+  },
+  "folds": {
+   "path": "latent_binding_training_fold_recovery_20260913/folds.json",
+   "sha256": "21bfd5cd4dda02c966e9f136360663aa417b00cbccf9d6900f3eba3a2fba9a70"
+  },
+  "features": {
+   "path": "latent_binding_training_fold_recovery_20260913/features.pt",
+   "sha256": "1d3644c6950904da4dbc82813074924389d5ebf8467be0c9d6cd766434bb9a73"
+  },
+  "candidate": {
+   "path": "latent_binding_shared_id_query_mechanics_20260908/run/candidate.pt",
+   "sha256": "d0f16cb9705ba53daf6cc8f2bfad03a08efa96cbb4f77dd836c9533e948cba87"
+  },
+  "coordinates": {
+   "path": "latent_binding_constrained_code_extended_20260911/coordinates.pt",
+   "sha256": "310a93de60461381fb4d0883246635ca62880aba3df678a8f7375bcec5fc4794"
+  },
+  "parity": {
+   "path": "latent_binding_training_fold_recovery_20260913/run/fold0/step0/scores.pt",
+   "sha256": "b774e2163ae3edb66b4862b4cada7fb3de5eed6fcb26aefaacec4ea3751020a4"
+  },
+  "memories": {
+   "path": "latent_binding_training_fold_recovery_20260913/memories.pt",
+   "sha256": "717c625d2104ad47995f30a2835e175de17608a2aa41359075183e1f85479ae7"
+  },
+  "familiar_prefill": {
+   "path": "latent_binding_fresh_known_native_20260910/run/prefill_correct.pt",
+   "sha256": "86106676ec2780dcff343dfc4d9f4db429b3502035a1569b81d6856a57682ca8"
+  },
+  "fold_core": {
+   "path": "latent_binding_shared_id_native_corrected_20260908/core.py",
+   "sha256": "69ddefc8d91b10d0ca9f556c554b0daa0cba4d28140534d848d683a06d77723e"
+  },
+  "chain": {
+   "path": "latent_binding_literal_id_swap_20260910/runtime.py",
+   "sha256": "552db67e75763e4d788d04b2abc81972b4f2f12f2a6dc3e873b8fc1b5d98013d"
+  },
+  "binding": {
+   "path": "latent_binding_v1_20260906/binding.py",
+   "sha256": "275b280e0f1664febabc4186757312782756149f94944a656c7ef4e3ba574437"
+  },
+  "channel": {
+   "path": "latent_channel_v1_20260906/channel.py",
+   "sha256": "e2de36c051ba503b441c2d84b959728cb09f8d064791012b5f673462039f6fbd"
+  },
+  "oracle_seam": {
+   "path": "latent_binding_constrained_code_extended_20260911/seam.py",
+   "sha256": "8b7e98577f5e2a6f91237fdd41ebe7be5c7f3970ddb76415c3221861d40b1637"
+  }
+ },
+ "smoke_sha256": "4635a9136466458527340be66361ef34bc10f222756633dfa86eb096ab97d6e6",
+ "steps": 200,
+ "seed": 60113,
+ "runtime": {
+  "python": "3.12.14",
+  "torch": "2.13.0"
+ }
+}

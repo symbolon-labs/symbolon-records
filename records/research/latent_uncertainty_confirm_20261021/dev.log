@@ -1,0 +1,88 @@
+[13:53:29] DRAFT uconfirm.py dev stages ['sender', 'gates'] out research/latent_uncertainty_confirm_20261021/dev sender main code 690305212c48
+[13:53:31] weight hashes (start): 3 files
+[13:53:31] == stage sender
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 18229.48it/s]
+[14:01:47] sender dev_train chunk 1/8: 250 items, 493 s (1.97 s/item), parser failures 7
+[14:09:47] sender dev_train chunk 2/8: 250 items, 480 s (1.92 s/item), parser failures 7
+[14:17:21] sender dev_train chunk 3/8: 250 items, 453 s (1.81 s/item), parser failures 2
+[14:25:19] sender dev_train chunk 4/8: 250 items, 479 s (1.91 s/item), parser failures 7
+[14:33:11] sender dev_train chunk 5/8: 250 items, 472 s (1.89 s/item), parser failures 9
+[14:41:09] sender dev_train chunk 6/8: 250 items, 479 s (1.91 s/item), parser failures 6
+[14:49:00] sender dev_train chunk 7/8: 250 items, 471 s (1.88 s/item), parser failures 7
+[14:56:59] sender dev_train chunk 8/8: 250 items, 478 s (1.91 s/item), parser failures 8
+[14:56:59] sender dev_train: merged 2000 items (1.90 s/item)
+[15:05:13] sender dev_test chunk 1/4: 250 items, 494 s (1.98 s/item), parser failures 12
+[15:13:19] sender dev_test chunk 2/4: 250 items, 487 s (1.95 s/item), parser failures 5
+[15:21:21] sender dev_test chunk 3/4: 250 items, 481 s (1.92 s/item), parser failures 8
+[15:29:16] sender dev_test chunk 4/4: 250 items, 475 s (1.90 s/item), parser failures 7
+[15:29:16] sender dev_test: merged 1000 items (1.94 s/item)
+[15:29:16] == stage sender done (5745 s)
+[15:29:16] == stage gates
+[15:29:16] gate G-D1: pass {'value': 0.23466666666666666, 'rule': '0.20 <= dev accuracy <= 0.80', 'pass': True}
+[15:29:16] gate G-D4: pass {'value': 0.9936666666666667, 'rule': 'alias and token-F1 rules agree on >= 90% of dev items', 'pass': True, 'disagreements_file': 'gd4_disagreements.jsonl'}
+[15:29:16] gate parser: (record) {'failure_rate': 0.028333333333333332, 'change_needed': False, 'view_file': 'parser_view.json', 'rule': 'design 6.1: more than 5% failures -> a dated parser change in the preregistration'}
+[15:29:16] == stage gates done (0 s)
+[15:29:19] weight hashes (end): 3 files
+[15:29:19] done
+[15:29:46] DRAFT uconfirm.py dev stages ['probes', 'text'] out research/latent_uncertainty_confirm_20261021/dev sender main code 690305212c48
+[15:29:49] weight hashes (start): 3 files
+[15:29:49] == stage probes
+[15:30:43] probe logistic: dev-test NLL 0.3392 AUROC 0.889
+[15:30:48] probe mlp: dev-test NLL 0.3535 AUROC 0.880
+[15:30:48] gate G-D2: pass {'value': 0.8893878136200717, 'rule': 'probe direct on c1: dev-test AUROC >= 0.65', 'family': 'logistic', 'pass': True}
+[15:30:48] == stage probes done (59 s)
+[15:30:48] == stage text
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 4059.30it/s]
+[15:48:02] text T0: dev-test NLL 0.4429
+[15:48:13] text T0c: dev-test NLL 0.4455
+[15:48:26] text T1: dev-test NLL 0.4610
+[15:48:36] text Source: dev-test NLL 0.4632
+[15:48:46] text Q-only: dev-test NLL 0.4772
+[15:48:55] text T2_F1: dev-test NLL 0.4371
+[15:49:05] text T2_F2: dev-test NLL 0.4392
+[15:49:16] text T2_F3: dev-test NLL 0.4293
+[15:49:26] text T3_F1: dev-test NLL 0.4128
+[15:49:36] text T3_F2: dev-test NLL 0.4179
+[15:49:47] text T3_F3: dev-test NLL 0.3927
+[15:49:56] text T4_F1: dev-test NLL 0.4268
+[15:50:04] text T4_F2: dev-test NLL 0.4299
+[15:50:11] text T4_F3: dev-test NLL 0.4090
+[15:50:21] text T5_F1: dev-test NLL 0.4395
+[15:50:32] text T5_F2: dev-test NLL 0.4410
+[15:50:41] text T5_F3: dev-test NLL 0.4376
+[15:50:52] text T6_list: dev-test NLL 0.4332
+[15:51:01] text T6_counts: dev-test NLL 0.4316
+[15:51:01] gate G-D3: FAIL {'value': [0.46316534837963047, 0.44293914834631887], 'rule': 'dev-test NLL(Source) < NLL(T0)', 'pass': False}
+[15:51:01] == stage text done (1213 s)
+[15:51:04] weight hashes (end): 3 files
+[15:51:04] done
+[16:04:37] DRAFT uconfirm.py dev stages ['latent', 'select'] out research/latent_uncertainty_confirm_20261021/dev sender main code cba5e677c6e9
+[16:04:40] weight hashes (start): 3 files
+[16:04:40] == stage latent
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 3575.87it/s]
+[16:39:28] latent L_full_lr1e-05_ep15: best inner-val NLL 0.4302 at epoch 15 of 15 (2075 s)
+[16:57:38] latent L_full_lr3e-05_ep15: best inner-val NLL 0.4236 at epoch 5 of 8 (1081 s)
+[17:13:22] latent L_full_lr0.0001_ep15: best inner-val NLL 0.4230 at epoch 4 of 7 (935 s)
+[17:24:35] latent L_r16_lr0.0003_ep15: best inner-val NLL 0.4506 at epoch 2 of 5 (664 s)
+[17:33:33] latent L_r16_lr0.001_ep15: best inner-val NLL 0.4474 at epoch 1 of 4 (528 s)
+[17:47:00] latent L_r16_lr0.003_ep15: best inner-val NLL 0.4482 at epoch 3 of 6 (798 s)
+[17:58:12] latent L_r64_lr0.0003_ep15: best inner-val NLL 0.4188 at epoch 2 of 5 (662 s)
+<local>/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+[18:05:04] DRAFT uconfirm.py dev stages ['latent', 'select'] out research/latent_uncertainty_confirm_20261021/dev sender main code cba5e677c6e9
+[18:05:06] weight hashes (start): 3 files
+[18:05:06] == stage latent
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 4201.05it/s]
+[18:16:23] latent L_r64_lr0.001_ep15: best inner-val NLL 0.4466 at epoch 2 of 5 (663 s)
+[18:25:20] latent L_r64_lr0.003_ep15: best inner-val NLL 0.4241 at epoch 1 of 4 (528 s)
+[18:45:26] latent L_r64_lr0.0001_ep15: best inner-val NLL 0.4224 at epoch 6 of 9 (1196 s)
+[19:18:56] latent Lprobe_lr0.0001_ep15: best inner-val NLL 0.4042 at epoch 15 of 15 (2001 s)
+[19:32:22] latent Lprobe_lr0.001_ep15: best inner-val NLL 0.3826 at epoch 3 of 6 (797 s)
+[19:48:02] latent Lprobe_lr0.01_ep15: best inner-val NLL 0.4037 at epoch 4 of 7 (931 s)
+[19:48:26] latent: L* L_r64_lr0.0003_ep15 (0.4188); L-probe* Lprobe_lr0.001_ep15 (0.3826); SD 0.328 -> n_test 6000
+[19:48:26] == stage latent done (6200 s)
+[19:48:26] == stage select
+[19:48:26] select: {"probe_family": "logistic", "formats": {"T2": "F3", "T3": "F3", "T4": "F3", "T5": "F3", "T6": "counts"}, "L": {"rank": 64, "lr": 0.0003, "epochs": 2, "name": "L_r64_lr0.0003_ep15", "inner_val_nll": 0.41881858911492287}, "L_probe": {"lr": 0.001, "epochs": 3, "name": "Lprobe_lr0.001_ep15", "inner_val_nll": 0.38256949788183675}, "n_test": 6000}
+[19:48:26] == stage select done (0 s)
+[19:48:29] weight hashes (end): 3 files
+[19:48:29] done

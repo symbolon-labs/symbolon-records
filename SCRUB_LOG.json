@@ -1,5 +1,5 @@
 {
- "description": "Every change in the copied text files. 'files' lists each replacement of a local path prefix. 'redactions' lists each direct quote of private chat that was replaced by '[redacted: private chat]'. No other text and no number was changed: the build compared every number in each file before and after the change.",
+ "description": "Every change in the copied text files. 'files' lists each replacement of a local path prefix. 'redactions' lists each direct quote of private chat that was replaced by '[redacted: private chat]'. No other text and no number was changed: the build compared every number in each file before and after the change. Version 1.1 adds path rules R5 to R13, the name rule R14 and a second redaction reason.",
  "private_prefix": "<HOME> stands for the home folder of the original Linux account. Its value is withheld. With the value, the log rebuilds each original file exactly (integrity/verify.py --home).",
  "position_convention": "line and col are 1-based. col counts characters. col_copy is the position of the replacement text in the copy.",
  "rules": [
@@ -26,10 +26,76 @@
    "original_shown": "<HOME>",
    "replacement": "<local>",
    "meaning": "The home folder without a slash. Replaced by <local>."
+  },
+  {
+   "rule": "R5",
+   "original_shown": "<SNAPSHOT>/ember/",
+   "replacement": "",
+   "meaning": "Project root of the 2026-10 work with a slash. Replaced by nothing, so the path becomes relative to records/."
+  },
+  {
+   "rule": "R6",
+   "original_shown": "<SNAPSHOT>/ember",
+   "replacement": ".",
+   "meaning": "Project root of the 2026-10 work without a slash. Replaced by '.', the project root (records/)."
+  },
+  {
+   "rule": "R7",
+   "original_shown": "<SNAPSHOT>/",
+   "replacement": "<snapshot>/",
+   "meaning": "Other paths in the 2026-10 snapshot folder (for example reports/ or a virtual environment). The folder becomes <snapshot>."
+  },
+  {
+   "rule": "R8",
+   "original_shown": "<SNAPSHOT>",
+   "replacement": "<snapshot>",
+   "meaning": "The 2026-10 snapshot folder without a slash. Replaced by <snapshot>."
+  },
+  {
+   "rule": "R9",
+   "original_shown": "<TMPA>",
+   "replacement": "<tmp>",
+   "meaning": "A temporary folder of an agent session. Replaced by <tmp>."
+  },
+  {
+   "rule": "R10",
+   "original_shown": "<TMPB>",
+   "replacement": "<tmp>",
+   "meaning": "A temporary folder of an agent session. Replaced by <tmp>."
+  },
+  {
+   "rule": "R11",
+   "original_shown": "<TMPROOT>",
+   "replacement": "<tmp>",
+   "meaning": "The temporary root of the agent sessions. Replaced by <tmp>."
+  },
+  {
+   "rule": "R12",
+   "original_shown": "<MACHOME>/",
+   "replacement": "<local>/",
+   "meaning": "Other paths in the home folder of the 2026-10 account (for example the Hugging Face cache). The home folder becomes <local>."
+  },
+  {
+   "rule": "R13",
+   "original_shown": "<MACHOME>",
+   "replacement": "<local>",
+   "meaning": "The home folder of the 2026-10 account without a slash. Replaced by <local>."
+  },
+  {
+   "rule": "R14",
+   "original_shown": "<NAME>",
+   "replacement": "[researcher]",
+   "meaning": "The researcher's personal name in a process file (report, plan, code comment or log). Replaced by [researcher]. Data files are not changed."
+  },
+  {
+   "rule": "R15",
+   "original_shown": "<NAMELC>",
+   "replacement": "researcher",
+   "meaning": "The researcher's name in lowercase inside the code identifiers <NAMELC>_said_yes and --<NAMELC>-said-yes. Replaced by 'researcher' in every file, so the code stays consistent."
   }
  ],
- "files_scrubbed": 94,
- "replacements": 742,
+ "files_scrubbed": 169,
+ "replacements": 1106,
  "files": [
   {
    "new_path": "records/research/latent_channel_v1_20260906/data/tiny/manifest.json",
@@ -6718,6 +6784,3518 @@
      "replacement": ""
     }
    ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_pilot_20261020/PLAN.md",
+   "original_path": "ember/research/latent_uncertainty_pilot_20261020/PLAN.md",
+   "sha256_original": "a402d08cd49554149bb91300c6e6413f24fb0751b7db9a1f6b478a85bd2a304e",
+   "sha256_copy": "0c1a19c1370a14ba1e7130e5c93e8689751a3f7094e8f095f435da6592c39bf5",
+   "replacements": [
+    {
+     "line": 4,
+     "col_original": 59,
+     "col_copy": 59,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_pilot_20261020/PLAN.original_20261020.md",
+   "original_path": "ember/research/latent_uncertainty_pilot_20261020/PLAN.original_20261020.md",
+   "sha256_original": "248a4d21fd90c7ae6defbacf23926e98a65186103c4a54fe42c98ad8d383cd80",
+   "sha256_copy": "85ba8048f38d86c3cdf94c39d1761fcb064225a24f7143f967fa274852bb2463",
+   "replacements": [
+    {
+     "line": 4,
+     "col_original": 59,
+     "col_copy": 59,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_pilot_20261020/REPORT.md",
+   "original_path": "ember/research/latent_uncertainty_pilot_20261020/REPORT.md",
+   "sha256_original": "a975d03b5d546f0dfa3da68d1e68548170421fea2aa5c6bf841a91b4b6d338e2",
+   "sha256_copy": "485d84d712279c31a1042bc8220f2e523ad6432cd0f4eb8702b18043c0a77295",
+   "replacements": [
+    {
+     "line": 176,
+     "col_original": 49,
+     "col_copy": 49,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_pilot_20261020/RESULTS.json",
+   "original_path": "ember/research/latent_uncertainty_pilot_20261020/RESULTS.json",
+   "sha256_original": "d5b169c29aa39b290f47a7a2d0ae61b4e07a0742b00b183fc5073e20a0214778",
+   "sha256_copy": "9d11910e1ae76af44e038194ca77a18585e3b27920df288a29e25eee63b729ba",
+   "replacements": [
+    {
+     "line": 36,
+     "col_original": 14,
+     "col_copy": 14,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 37,
+     "col_original": 16,
+     "col_copy": 16,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_pilot_20261020/smoke.log",
+   "original_path": "ember/research/latent_uncertainty_pilot_20261020/smoke.log",
+   "sha256_original": "37ce1d2cade9ddf540eaddccd99f7d5f12124fe8ffd5d66cfafcccd826122cef",
+   "sha256_copy": "c2cb35de256d60408243c71b7608cd4d4057fac03cf05b872b0749abc536e1b8",
+   "replacements": [
+    {
+     "line": 15,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_pilot_20261020/run/results.json",
+   "original_path": "ember/research/latent_uncertainty_pilot_20261020/run/results.json",
+   "sha256_original": "fdc59b28b06025167a245a8233d3c04f65171d19cc99a9abdb4a384cd59f96b4",
+   "sha256_copy": "3d63c43f5eae1a0bb8d285e4b98350f5cec89a9e6f2aa7836484e55876b15f5a",
+   "replacements": [
+    {
+     "line": 36,
+     "col_original": 14,
+     "col_copy": 14,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 37,
+     "col_original": 16,
+     "col_copy": 16,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_pilot_20261020/run/results_first_analysis.json",
+   "original_path": "ember/research/latent_uncertainty_pilot_20261020/run/results_first_analysis.json",
+   "sha256_original": "1b1f3a8887ed8759b254d66b438e714ab2597828709759330d47ebbc8b317429",
+   "sha256_copy": "c8f44e755a9b7dd326886c45a17ed47bd2980493c14d98e8a7760b90b8ea86af",
+   "replacements": [
+    {
+     "line": 36,
+     "col_original": 14,
+     "col_copy": 14,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 37,
+     "col_original": 16,
+     "col_copy": 16,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_pilot_20261020/smoke/results.json",
+   "original_path": "ember/research/latent_uncertainty_pilot_20261020/smoke/results.json",
+   "sha256_original": "a4021ec40a4a791194bb4c55581153d91510c47d9753814355b2bc90c071114b",
+   "sha256_copy": "d6f42dcdca2cfe4e7b0988b22e107840132ce1bc98a1080490e97a5b52577ff6",
+   "replacements": [
+    {
+     "line": 36,
+     "col_original": 14,
+     "col_copy": 14,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 37,
+     "col_original": 16,
+     "col_copy": 16,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_followup_20261021/PLAN.md",
+   "original_path": "ember/research/latent_uncertainty_followup_20261021/PLAN.md",
+   "sha256_original": "c4f3b273ef986ff5a61ac00a9f6cc923c6753a9cf7b9b78d832c3ed0bbcafc6f",
+   "sha256_copy": "6446aca1e0317b32196d3aae80be609cc19ea91d4ddd9618aee7212186bb8bbc",
+   "replacements": [
+    {
+     "line": 10,
+     "col_original": 11,
+     "col_copy": 11,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 11,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 185,
+     "col_original": 38,
+     "col_copy": 38,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_followup_20261021/PLAN.original_20261020.md",
+   "original_path": "ember/research/latent_uncertainty_followup_20261021/PLAN.original_20261020.md",
+   "sha256_original": "524e38dc8476d43e80680dc1b6fb898273045d3f3b9a8e37d0ed0ab80246158b",
+   "sha256_copy": "b15a98d1e4632da326697a843191200617dddce91112048291d199133ec17b8f",
+   "replacements": [
+    {
+     "line": 10,
+     "col_original": 11,
+     "col_copy": 11,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 11,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 185,
+     "col_original": 38,
+     "col_copy": 38,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_followup_20261021/REPORT.md",
+   "original_path": "ember/research/latent_uncertainty_followup_20261021/REPORT.md",
+   "sha256_original": "c9a84d5ae2cf83d980b9ef38bdaf3bae9150e99141f630fb0274f09d5b729a2f",
+   "sha256_copy": "fd578a43ee2f76157f511ae030902cf7f9399f2df2e30607110f6992cdb93504",
+   "replacements": [
+    {
+     "line": 257,
+     "col_original": 49,
+     "col_copy": 49,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_followup_20261021/RESULTS.json",
+   "original_path": "ember/research/latent_uncertainty_followup_20261021/RESULTS.json",
+   "sha256_original": "d6a92cf2813aeaea1ebcd7c8469b9943ba29e475748eff9eb6bae7d760682600",
+   "sha256_copy": "3c0f2d563998106abc1220fd0b5e0075ff70ee94b048490ae70ad8e447ab89d9",
+   "replacements": [
+    {
+     "line": 40,
+     "col_original": 14,
+     "col_copy": 14,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 41,
+     "col_original": 16,
+     "col_copy": 16,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_followup_20261021/smoke_wrapper.log",
+   "original_path": "ember/research/latent_uncertainty_followup_20261021/smoke_wrapper.log",
+   "sha256_original": "dff10f145a17da36cfebe887189f67b7f683ffcc9fdebb1105ff426c3384a7d2",
+   "sha256_copy": "54969a0cadbfb62985c597c2c644a3e4cefb58e20c0b95152d72a3ce2c7b1463",
+   "replacements": [
+    {
+     "line": 334,
+     "col_original": 7,
+     "col_copy": 7,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 334,
+     "col_original": 113,
+     "col_copy": 27,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_followup_20261021/run/results.json",
+   "original_path": "ember/research/latent_uncertainty_followup_20261021/run/results.json",
+   "sha256_original": "b497b998bd4259a7f054b8befbe619ae1760ea9106b650d79ab6857e6d73ea1c",
+   "sha256_copy": "b77639461b5b2a802588b82d0fcb4916a5426edb9cad808e2d8892a3ff94d62f",
+   "replacements": [
+    {
+     "line": 40,
+     "col_original": 14,
+     "col_copy": 14,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 41,
+     "col_original": 16,
+     "col_copy": 16,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_followup_20261021/smoke/results.json",
+   "original_path": "ember/research/latent_uncertainty_followup_20261021/smoke/results.json",
+   "sha256_original": "a9c90a86323d8b05e6b1972718eed10b109cd33f5add77155ce90081994fa3f2",
+   "sha256_copy": "486771cbfe16ad0303cb15e0328df0c5e6da3276759d373e668039f20c0005bd",
+   "replacements": [
+    {
+     "line": 40,
+     "col_original": 14,
+     "col_copy": 14,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 41,
+     "col_original": 16,
+     "col_copy": 16,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_followup_20261021/smoke/v1_results.json",
+   "original_path": "ember/research/latent_uncertainty_followup_20261021/smoke/v1_results.json",
+   "sha256_original": "b2c71edc80120d4563df2374888ffb32c10e3e7a0130a8b790b113dbf06e5afd",
+   "sha256_copy": "e87a993abbcf165e57098503faba0f0271961a7cfc7b02d7f1585b3106796ada",
+   "replacements": [
+    {
+     "line": 40,
+     "col_original": 14,
+     "col_copy": 14,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 41,
+     "col_original": 16,
+     "col_copy": 16,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/AUDIT.md",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/AUDIT.md",
+   "sha256_original": "17d2182329108fb008f5e011ea305c62dc4cc2fd80dad955193bef032d14c89b",
+   "sha256_copy": "1fa15762eb4f18c29041911278dc0149c438c735616cccbd2eb1187be6eccf99",
+   "replacements": [
+    {
+     "line": 6,
+     "col_original": 17,
+     "col_copy": 17,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 6,
+     "col_original": 60,
+     "col_copy": 68,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 219,
+     "col_original": 5,
+     "col_copy": 5,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 220,
+     "col_original": 3,
+     "col_copy": 3,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 221,
+     "col_original": 4,
+     "col_copy": 4,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 265,
+     "col_original": 74,
+     "col_copy": 74,
+     "rule": "R9",
+     "original_shown": "<TMPA>",
+     "replacement": "<tmp>"
+    },
+    {
+     "line": 265,
+     "col_original": 265,
+     "col_copy": 167,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/FREEZE.json",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/FREEZE.json",
+   "sha256_original": "22709e73963fdda2971055f9cd3614b41d32bec2a922dc7593c203a71859e5f6",
+   "sha256_copy": "b585e53f799678b7d077ef5757b039d251baac39cf8364303976fae8275a3d8a",
+   "replacements": [
+    {
+     "line": 12,
+     "col_original": 21,
+     "col_copy": 21,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/PHASE_C_STOP_R5.md",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/PHASE_C_STOP_R5.md",
+   "sha256_original": "8e0514ffb94fbd2e2209b0017e08ae22e41d8d96472cc944a1d57f9b5afa6d40",
+   "sha256_copy": "8d319e61de2dd016ac1e019a1484932b79dc3af12f4af553b18496f7884949d4",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 152,
+     "col_copy": 152,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 20,
+     "col_original": 31,
+     "col_copy": 31,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 26,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/PHASE_D_STOP.md",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/PHASE_D_STOP.md",
+   "sha256_original": "17631a69159167b149ac3bea5e3968c009f5f039c160fe36fd1476dd43d22937",
+   "sha256_copy": "99397befd4d19ff2dbee3247e1372f21a7a062f36833745ac47b3995d3376e24",
+   "replacements": [
+    {
+     "line": 5,
+     "col_original": 14,
+     "col_copy": 14,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 25,
+     "col_original": 72,
+     "col_copy": 72,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 29,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 42,
+     "col_original": 49,
+     "col_copy": 49,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 42,
+     "col_original": 81,
+     "col_copy": 89,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/PREREGISTRATION.md",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/PREREGISTRATION.md",
+   "sha256_original": "e4551e35ffe8622a7450964e345c9b73afb5d97abb378ef7f6e0451b4406f135",
+   "sha256_copy": "59e1d6c9ff41d80281dee3dfc8bb05ec7bfe8e92dbdbc2fd522592677f745d77",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 42,
+     "col_copy": 42,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 5,
+     "col_original": 96,
+     "col_copy": 96,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 8,
+     "col_original": 8,
+     "col_copy": 8,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 23,
+     "col_original": 57,
+     "col_copy": 57,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 26,
+     "col_original": 5,
+     "col_copy": 5,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 32,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 74,
+     "col_original": 46,
+     "col_copy": 46,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 422,
+     "col_original": 4,
+     "col_copy": 4,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 423,
+     "col_original": 25,
+     "col_copy": 25,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 428,
+     "col_original": 88,
+     "col_copy": 88,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 443,
+     "col_original": 21,
+     "col_copy": 21,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 445,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 481,
+     "col_original": 274,
+     "col_copy": 274,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 485,
+     "col_original": 173,
+     "col_copy": 173,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 505,
+     "col_original": 3,
+     "col_copy": 3,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 557,
+     "col_original": 262,
+     "col_copy": 262,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 560,
+     "col_original": 107,
+     "col_copy": 107,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 566,
+     "col_original": 25,
+     "col_copy": 25,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 568,
+     "col_original": 30,
+     "col_copy": 30,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/PREREG_DRAFT.md",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/PREREG_DRAFT.md",
+   "sha256_original": "cb6d5cd487e421034569badc5b4ba58c053bacd27f4cb4501b8b65f6ff7c8d15",
+   "sha256_copy": "50c070c0463747e495582830d5d0b27192b06df3cdd3c27a5f0436cb136b2519",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 46,
+     "col_copy": 46,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 5,
+     "col_original": 34,
+     "col_copy": 34,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 8,
+     "col_original": 110,
+     "col_copy": 110,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 15,
+     "col_original": 24,
+     "col_copy": 24,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 16,
+     "col_original": 164,
+     "col_copy": 164,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 18,
+     "col_original": 93,
+     "col_copy": 93,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 329,
+     "col_original": 4,
+     "col_copy": 4,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 330,
+     "col_original": 25,
+     "col_copy": 25,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 335,
+     "col_original": 88,
+     "col_copy": 88,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 346,
+     "col_original": 22,
+     "col_copy": 22,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 348,
+     "col_original": 87,
+     "col_copy": 87,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 352,
+     "col_original": 391,
+     "col_copy": 391,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 353,
+     "col_original": 374,
+     "col_copy": 374,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 354,
+     "col_original": 484,
+     "col_copy": 484,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 355,
+     "col_original": 274,
+     "col_copy": 274,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 384,
+     "col_original": 274,
+     "col_copy": 274,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 388,
+     "col_original": 173,
+     "col_copy": 173,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 414,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/REPORT.md",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/REPORT.md",
+   "sha256_original": "a559df5330efd779870dcc4fdf9bccf4288383390a3566bb817ccf8626fc3678",
+   "sha256_copy": "a3beeecdaa9fbb1430849b8e78671e7e52a25c8a5f56950cba41d9f2a8e89df9",
+   "replacements": [
+    {
+     "line": 84,
+     "col_original": 132,
+     "col_copy": 132,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 87,
+     "col_original": 215,
+     "col_copy": 215,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/confirm.log",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/confirm.log",
+   "sha256_original": "851b42b905de82d8c81505e8fe45df908559762b6aee4f26e6ff9c940cb13f25",
+   "sha256_copy": "6555af42348ca32e2e3a89e735220733caa0d27defbff4d11d8aaca909d8a924",
+   "replacements": [
+    {
+     "line": 1,
+     "col_original": 60,
+     "col_copy": 60,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 19,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 21,
+     "col_original": 60,
+     "col_copy": 60,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 31,
+     "col_original": 60,
+     "col_copy": 60,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 48,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 50,
+     "col_original": 60,
+     "col_copy": 60,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 69,
+     "col_original": 68,
+     "col_copy": 68,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 92,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 94,
+     "col_original": 59,
+     "col_copy": 59,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 105,
+     "col_original": 59,
+     "col_copy": 59,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 116,
+     "col_original": 59,
+     "col_copy": 59,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 127,
+     "col_original": 62,
+     "col_copy": 62,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/confirm_wrapper.log",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/confirm_wrapper.log",
+   "sha256_original": "cb1c9d6729db463e3036f753ec1abbde089d03e7e639e2cbf22e62a800ff31b4",
+   "sha256_copy": "0d9686c79b4e8c34114b2417ff8f2ce64097f3abdbed0c364b0269c010e82e78",
+   "replacements": [
+    {
+     "line": 14,
+     "col_original": 38,
+     "col_copy": 38,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 14,
+     "col_original": 301,
+     "col_copy": 297,
+     "rule": "R10",
+     "original_shown": "<TMPB>",
+     "replacement": "<tmp>"
+    },
+    {
+     "line": 14,
+     "col_original": 405,
+     "col_copy": 356,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 27,
+     "col_original": 303,
+     "col_copy": 303,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/dev.log",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/dev.log",
+   "sha256_original": "c9735a75277957319595322707e48c03094e9bba07a2bcf888f187c91618e9dc",
+   "sha256_copy": "50698098ca53436f573e221d096983535906af19ae4204e16c7c9e6004433f72",
+   "replacements": [
+    {
+     "line": 1,
+     "col_original": 65,
+     "col_copy": 65,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 27,
+     "col_original": 64,
+     "col_copy": 64,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 59,
+     "col_original": 66,
+     "col_copy": 66,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 70,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 72,
+     "col_original": 66,
+     "col_copy": 66,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/fetch_data.py",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/fetch_data.py",
+   "sha256_original": "fede2ed9d6f625ad5271c2f9d7a7d4ed5226740e08142a0692d7f59c8f961291",
+   "sha256_copy": "fe555918d8218b2498f3571bee28efcfb1da7a321f930f83161e84e7c14d6507",
+   "replacements": [
+    {
+     "line": 2,
+     "col_original": 21,
+     "col_copy": 21,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 4,
+     "col_original": 50,
+     "col_copy": 50,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 4,
+     "col_original": 66,
+     "col_copy": 72,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 5,
+     "col_original": 50,
+     "col_copy": 50,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 5,
+     "col_original": 66,
+     "col_copy": 72,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 53,
+     "col_original": 79,
+     "col_copy": 79,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 65,
+     "col_original": 24,
+     "col_copy": 24,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 65,
+     "col_original": 61,
+     "col_copy": 67,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 70,
+     "col_original": 30,
+     "col_copy": 30,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 89,
+     "col_original": 62,
+     "col_copy": 62,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 89,
+     "col_original": 78,
+     "col_copy": 84,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/run_uconfirm.sh",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/run_uconfirm.sh",
+   "sha256_original": "fa76e46bd0098e150fb4cfdc23246fbdfbf55c5968f8dce25ff2297c840f9614",
+   "sha256_copy": "2db426bd1444ee7be2705215303959cc4f7a84c6d6a9ddc7c5253e71c9933bc2",
+   "replacements": [
+    {
+     "line": 2,
+     "col_original": 95,
+     "col_copy": 95,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 49,
+     "col_original": 66,
+     "col_copy": 66,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/smoke.log",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/smoke.log",
+   "sha256_original": "d9aa4e7cfc5645d5a313e08cb07096847f89a8e7bbf130dacaeb582aad76e0ee",
+   "sha256_copy": "f3281c66bb095756fe17744562e5861fb119e9850f9d78caf97443c97017008e",
+   "replacements": [
+    {
+     "line": 1,
+     "col_original": 144,
+     "col_copy": 144,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/test_uconfirm.py",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/test_uconfirm.py",
+   "sha256_original": "cd50a036019f336ddbf1a8d8fcc10f1ecd0567a86b980b06d33c47b6545da14f",
+   "sha256_copy": "a63f0ae1ed20a7230761d20b821d4ce405b6b0177bdeaaa4a7803cde477146cc",
+   "replacements": [
+    {
+     "line": 433,
+     "col_original": 33,
+     "col_copy": 33,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 435,
+     "col_original": 33,
+     "col_copy": 33,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/uconfirm.py",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/uconfirm.py",
+   "sha256_original": "cba5e677c6e98905632c2d5c5483b9155e84e13a3bb8282ddf11b5056d076d4c",
+   "sha256_copy": "5c95cd558ccb289da6da6d50ab276d5ba79faa62435b3737a55d68a7aacd1cb0",
+   "replacements": [
+    {
+     "line": 29,
+     "col_original": 73,
+     "col_copy": 73,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 71,
+     "col_original": 64,
+     "col_copy": 64,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 82,
+     "col_original": 64,
+     "col_copy": 64,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 83,
+     "col_original": 64,
+     "col_copy": 64,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 97,
+     "col_original": 64,
+     "col_copy": 64,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 773,
+     "col_original": 33,
+     "col_copy": 33,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 1370,
+     "col_original": 78,
+     "col_copy": 78,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 1486,
+     "col_original": 100,
+     "col_copy": 100,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 1711,
+     "col_original": 91,
+     "col_copy": 91,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 1714,
+     "col_original": 55,
+     "col_copy": 55,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/confirm/hashes.jsonl",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/confirm/hashes.jsonl",
+   "sha256_original": "5ba142069a4a47ab302bf174faa16f665ff83954988f2123f7a6b9a0a2a7f675",
+   "sha256_copy": "ea05e9086fe2933c559c7f1752a5461b217c7745a1b77604c35d2b2aa96564ac",
+   "replacements": [
+    {
+     "line": 1,
+     "col_original": 81,
+     "col_copy": 81,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 1,
+     "col_original": 296,
+     "col_copy": 292,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 1,
+     "col_original": 511,
+     "col_copy": 503,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 81,
+     "col_copy": 81,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 296,
+     "col_copy": 292,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 511,
+     "col_copy": 503,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 3,
+     "col_original": 79,
+     "col_copy": 79,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 3,
+     "col_original": 294,
+     "col_copy": 290,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 3,
+     "col_original": 509,
+     "col_copy": 501,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 4,
+     "col_original": 81,
+     "col_copy": 81,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 4,
+     "col_original": 296,
+     "col_copy": 292,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 4,
+     "col_original": 511,
+     "col_copy": 503,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 5,
+     "col_original": 81,
+     "col_copy": 81,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 5,
+     "col_original": 296,
+     "col_copy": 292,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 5,
+     "col_original": 511,
+     "col_copy": 503,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 6,
+     "col_original": 79,
+     "col_copy": 79,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 6,
+     "col_original": 294,
+     "col_copy": 290,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 6,
+     "col_original": 509,
+     "col_copy": 501,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 7,
+     "col_original": 86,
+     "col_copy": 86,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 7,
+     "col_original": 301,
+     "col_copy": 297,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 7,
+     "col_original": 516,
+     "col_copy": 508,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 8,
+     "col_original": 80,
+     "col_copy": 80,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 8,
+     "col_original": 295,
+     "col_copy": 291,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 8,
+     "col_original": 510,
+     "col_copy": 502,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 9,
+     "col_original": 78,
+     "col_copy": 78,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 9,
+     "col_original": 293,
+     "col_copy": 289,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 9,
+     "col_original": 508,
+     "col_copy": 500,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 10,
+     "col_original": 80,
+     "col_copy": 80,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 10,
+     "col_original": 295,
+     "col_copy": 291,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 10,
+     "col_original": 510,
+     "col_copy": 502,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 11,
+     "col_original": 78,
+     "col_copy": 78,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 11,
+     "col_original": 293,
+     "col_copy": 289,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 11,
+     "col_original": 508,
+     "col_copy": 500,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 12,
+     "col_original": 80,
+     "col_copy": 80,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 12,
+     "col_original": 295,
+     "col_copy": 291,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 12,
+     "col_original": 510,
+     "col_copy": 502,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 13,
+     "col_original": 78,
+     "col_copy": 78,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 13,
+     "col_original": 293,
+     "col_copy": 289,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 13,
+     "col_original": 508,
+     "col_copy": 500,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/confirm/results.json",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/confirm/results.json",
+   "sha256_original": "77c6fdac3e385c6dff0a3b8a68992c1bcbb782b6aaa31cdf590f7c6236c98ce2",
+   "sha256_copy": "a410b074e7d893df53dccecf49c4561c307a7c12714534c60951088ae17b73e8",
+   "replacements": [
+    {
+     "line": 14,
+     "col_original": 22,
+     "col_copy": 22,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/data/FETCH_LOG.json",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/data/FETCH_LOG.json",
+   "sha256_original": "b2f54d7d3f5d056d2efe2227366e8e6423f49d4446a9f676b487569e76d5048b",
+   "sha256_copy": "c6dd567b4d836ff9999e0922af6cdf85aa44164b1afa06eddeb3ae4bcb4681b3",
+   "replacements": [
+    {
+     "line": 4,
+     "col_original": 4,
+     "col_copy": 4,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/dev/hashes.jsonl",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/dev/hashes.jsonl",
+   "sha256_original": "4f3f8914d43539d27ded5d2e8a30a8b49b44df83e6d366f3c56063453f4d9268",
+   "sha256_copy": "a70cbe1d4266d90e3e96d868a9d39c84f961fca107498548de70b2b2ff88bd46",
+   "replacements": [
+    {
+     "line": 1,
+     "col_original": 87,
+     "col_copy": 87,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 1,
+     "col_original": 302,
+     "col_copy": 298,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 1,
+     "col_original": 517,
+     "col_copy": 509,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 85,
+     "col_copy": 85,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 300,
+     "col_copy": 296,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 515,
+     "col_copy": 507,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 3,
+     "col_original": 86,
+     "col_copy": 86,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 3,
+     "col_original": 301,
+     "col_copy": 297,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 3,
+     "col_original": 516,
+     "col_copy": 508,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 4,
+     "col_original": 84,
+     "col_copy": 84,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 4,
+     "col_original": 299,
+     "col_copy": 295,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 4,
+     "col_original": 514,
+     "col_copy": 506,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 5,
+     "col_original": 88,
+     "col_copy": 88,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 5,
+     "col_original": 303,
+     "col_copy": 299,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 5,
+     "col_original": 518,
+     "col_copy": 510,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 6,
+     "col_original": 88,
+     "col_copy": 88,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 6,
+     "col_original": 303,
+     "col_copy": 299,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 6,
+     "col_original": 518,
+     "col_copy": 510,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 7,
+     "col_original": 86,
+     "col_copy": 86,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 7,
+     "col_original": 301,
+     "col_copy": 297,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 7,
+     "col_original": 516,
+     "col_copy": 508,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/smoke/hashes.jsonl",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/smoke/hashes.jsonl",
+   "sha256_original": "8d0f3515245f5d0d3dd1d27dd2ff648b7067fce8985a1f5d46121e77c291f7b6",
+   "sha256_copy": "83bc3877d3c4e9a9bcc8252461829cfcadb5fe77088031edb38eb733254fa9fb",
+   "replacements": [
+    {
+     "line": 1,
+     "col_original": 77,
+     "col_copy": 77,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 1,
+     "col_original": 292,
+     "col_copy": 288,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 1,
+     "col_original": 507,
+     "col_copy": 499,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 75,
+     "col_copy": 75,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 290,
+     "col_copy": 286,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 505,
+     "col_copy": 497,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/PREREGISTRATION.md",
+   "original_path": "ember/research/format_gap_20261023/PREREGISTRATION.md",
+   "sha256_original": "e7b8f105f8e1b5fdc3ab33fa61136044d9971280a103d7a5787504eb3a5d2596",
+   "sha256_copy": "344b5a6a5800175e2dcabf0d5039433636ef61c62f9b90ef0f85194abbbd81e6",
+   "replacements": [
+    {
+     "line": 4,
+     "col_original": 57,
+     "col_copy": 57,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 23,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 32,
+     "col_original": 139,
+     "col_copy": 139,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 94,
+     "col_original": 469,
+     "col_copy": 469,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 134,
+     "col_original": 71,
+     "col_copy": 71,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 134,
+     "col_original": 87,
+     "col_copy": 93,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 232,
+     "col_original": 143,
+     "col_copy": 143,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 244,
+     "col_original": 176,
+     "col_copy": 176,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 245,
+     "col_original": 254,
+     "col_copy": 254,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 255,
+     "col_original": 101,
+     "col_copy": 101,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 255,
+     "col_original": 125,
+     "col_copy": 133,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 255,
+     "col_original": 160,
+     "col_copy": 176,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 258,
+     "col_original": 21,
+     "col_copy": 21,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 259,
+     "col_original": 365,
+     "col_copy": 365,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/REPORT.md",
+   "original_path": "ember/research/format_gap_20261023/REPORT.md",
+   "sha256_original": "733cc1e255d236297bf26646ed26ff6dd38acee02284cf4c7a94b4aa1af78fcc",
+   "sha256_copy": "53c6d649eea95055301fbafd0a87ac47e9ee6cf5d4a073236337ce656453400b",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 83,
+     "col_copy": 83,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 150,
+     "col_original": 293,
+     "col_copy": 293,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/test_ugap.py",
+   "original_path": "ember/research/format_gap_20261023/test_ugap.py",
+   "sha256_original": "81fb2db1bdff9c43d10347ee871d0061852042cfed52b4fdff68c7aa5f043b4d",
+   "sha256_copy": "50c7d3110e02d0691e9e04eb85c3e8af2af55f58d408590a013b455f4f5993e8",
+   "replacements": [
+    {
+     "line": 416,
+     "col_original": 51,
+     "col_copy": 51,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/ugap.py",
+   "original_path": "ember/research/format_gap_20261023/ugap.py",
+   "sha256_original": "57d6d6771384fd7b4e0de09f92468c0b11328a7a04c849edccb9aafcd00131d8",
+   "sha256_copy": "dd884c2046ca121732de4dacae15ef3704341f2d3db81f3450ef6a3617890aa9",
+   "replacements": [
+    {
+     "line": 15,
+     "col_original": 62,
+     "col_copy": 62,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 15,
+     "col_original": 83,
+     "col_copy": 91,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 223,
+     "col_original": 69,
+     "col_copy": 69,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 284,
+     "col_original": 93,
+     "col_copy": 93,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 529,
+     "col_original": 14,
+     "col_copy": 14,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 529,
+     "col_original": 46,
+     "col_copy": 52,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 530,
+     "col_original": 36,
+     "col_copy": 36,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 530,
+     "col_original": 60,
+     "col_copy": 66,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 543,
+     "col_original": 62,
+     "col_copy": 62,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 543,
+     "col_original": 78,
+     "col_copy": 84,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 592,
+     "col_original": 91,
+     "col_copy": 91,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 1061,
+     "col_original": 24,
+     "col_copy": 24,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 1061,
+     "col_original": 46,
+     "col_copy": 52,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 1061,
+     "col_original": 89,
+     "col_copy": 101,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/confirm/hashes.jsonl",
+   "original_path": "ember/research/format_gap_20261023/confirm/hashes.jsonl",
+   "sha256_original": "cfbebe20a903a7fd15b997f92048cd4c944828fc6d0193fb894e2709d41534f6",
+   "sha256_copy": "2fa06bd4c9e4aacb8048fb4a25f7b59cd22e149c2bd588ab9272f9f997bb324b",
+   "replacements": [
+    {
+     "line": 1,
+     "col_original": 80,
+     "col_copy": 80,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 1,
+     "col_original": 295,
+     "col_copy": 291,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 1,
+     "col_original": 510,
+     "col_copy": 502,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 78,
+     "col_copy": 78,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 293,
+     "col_copy": 289,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 508,
+     "col_copy": 500,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 3,
+     "col_original": 80,
+     "col_copy": 80,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 3,
+     "col_original": 295,
+     "col_copy": 291,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 3,
+     "col_original": 510,
+     "col_copy": 502,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 4,
+     "col_original": 78,
+     "col_copy": 78,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 4,
+     "col_original": 293,
+     "col_copy": 289,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 4,
+     "col_original": 508,
+     "col_copy": 500,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 5,
+     "col_original": 80,
+     "col_copy": 80,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 5,
+     "col_original": 295,
+     "col_copy": 291,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 5,
+     "col_original": 510,
+     "col_copy": 502,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 6,
+     "col_original": 78,
+     "col_copy": 78,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 6,
+     "col_original": 293,
+     "col_copy": 289,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 6,
+     "col_original": 508,
+     "col_copy": 500,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 7,
+     "col_original": 80,
+     "col_copy": 80,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 7,
+     "col_original": 295,
+     "col_copy": 291,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 7,
+     "col_original": 510,
+     "col_copy": 502,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 8,
+     "col_original": 78,
+     "col_copy": 78,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 8,
+     "col_original": 293,
+     "col_copy": 289,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 8,
+     "col_original": 508,
+     "col_copy": 500,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 9,
+     "col_original": 79,
+     "col_copy": 79,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 9,
+     "col_original": 294,
+     "col_copy": 290,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 9,
+     "col_original": 509,
+     "col_copy": 501,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 10,
+     "col_original": 77,
+     "col_copy": 77,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 10,
+     "col_original": 292,
+     "col_copy": 288,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 10,
+     "col_original": 507,
+     "col_copy": 499,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 11,
+     "col_original": 79,
+     "col_copy": 79,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 11,
+     "col_original": 294,
+     "col_copy": 290,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 11,
+     "col_original": 509,
+     "col_copy": 501,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 12,
+     "col_original": 77,
+     "col_copy": 77,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 12,
+     "col_original": 292,
+     "col_copy": 288,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 12,
+     "col_original": 507,
+     "col_copy": 499,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 13,
+     "col_original": 79,
+     "col_copy": 79,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 13,
+     "col_original": 294,
+     "col_copy": 290,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 13,
+     "col_original": 509,
+     "col_copy": 501,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 14,
+     "col_original": 77,
+     "col_copy": 77,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 14,
+     "col_original": 292,
+     "col_copy": 288,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 14,
+     "col_original": 507,
+     "col_copy": 499,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 15,
+     "col_original": 79,
+     "col_copy": 79,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 15,
+     "col_original": 294,
+     "col_copy": 290,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 15,
+     "col_original": 509,
+     "col_copy": 501,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 16,
+     "col_original": 77,
+     "col_copy": 77,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 16,
+     "col_original": 292,
+     "col_copy": 288,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 16,
+     "col_original": 507,
+     "col_copy": 499,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/confirm/results.json",
+   "original_path": "ember/research/format_gap_20261023/confirm/results.json",
+   "sha256_original": "a597366bc4847ba424223c6826e14a5e5b3908e4818c02b9461f333f9645db88",
+   "sha256_copy": "0aeee9c1610561660eedeb8a71184de789a1ca72a229f2ce0a451330c5c133d6",
+   "replacements": [
+    {
+     "line": 1441,
+     "col_original": 48,
+     "col_copy": 48,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/data/FETCH_LOG.json",
+   "original_path": "ember/research/format_gap_20261023/data/FETCH_LOG.json",
+   "sha256_original": "0cc5364939523cfa27df9a605183729bf9bc1451625cfa87621f2b9bb211861f",
+   "sha256_copy": "b7e2102084dab54c9e2dff19ee12f9c701adcd0954d0398d84b210534a243324",
+   "replacements": [
+    {
+     "line": 4,
+     "col_original": 4,
+     "col_copy": 4,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/dev/dev_selection.json",
+   "original_path": "ember/research/format_gap_20261023/dev/dev_selection.json",
+   "sha256_original": "ac50917964efd3a75e8e6a03c4a09f0efe40f46f01ec645e88bed6a929825e02",
+   "sha256_copy": "048d3f05d352402ed768e7de97a112fe643f94c7489a032d7513e2f237a45165",
+   "replacements": [
+    {
+     "line": 44,
+     "col_original": 47,
+     "col_copy": 47,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/dev/hashes.jsonl",
+   "original_path": "ember/research/format_gap_20261023/dev/hashes.jsonl",
+   "sha256_original": "90deb2ce338e920778ff61d71ba51662d748b4b0961878e15052986dd9579824",
+   "sha256_copy": "95d5f1acf699a0c2b98aae79e5a4726f1214b3d9d3ecc893cc08508657a02230",
+   "replacements": [
+    {
+     "line": 1,
+     "col_original": 78,
+     "col_copy": 78,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 2,
+     "col_original": 76,
+     "col_copy": 76,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/logs/Dp.log",
+   "original_path": "ember/research/format_gap_20261023/logs/Dp.log",
+   "sha256_original": "d45e22341a3c823f7083803d617d980cfad9010c517977d9f749740ce914cb6a",
+   "sha256_copy": "a7f0d949e0913552086956a8794b3dab0ad727c8d2432e0635e1f24e895900a5",
+   "replacements": [
+    {
+     "line": 27,
+     "col_original": 120,
+     "col_copy": 120,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/logs/F.log",
+   "original_path": "ember/research/format_gap_20261023/logs/F.log",
+   "sha256_original": "5d13458b3b795d5a6286bb68fc7ad5666922cd9d4265967772075c29d6ef9cfc",
+   "sha256_copy": "f54c86f2cdcc742e95c58d90b458b429917677855b8f4b54a76ab76d0c8a95e9",
+   "replacements": [
+    {
+     "line": 5,
+     "col_original": 43,
+     "col_copy": 43,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    },
+    {
+     "line": 11,
+     "col_original": 43,
+     "col_copy": 43,
+     "rule": "R15",
+     "original_shown": "<NAMELC>",
+     "replacement": "researcher"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_equal_bits_20261023/AUDIT.md",
+   "original_path": "ember/research/split_equal_bits_20261023/AUDIT.md",
+   "sha256_original": "1aa7e5fc3e7788621f25aeb8611da7a53b9495e65d3ccb46e9bb9eb8ae589d7f",
+   "sha256_copy": "62c2390cce3ab8c7068d90d16af2d44f35ea99039eaa7a26a54b1450bb9560dd",
+   "replacements": [
+    {
+     "line": 5,
+     "col_original": 59,
+     "col_copy": 59,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_equal_bits_20261023/PREREGISTRATION.md",
+   "original_path": "ember/research/split_equal_bits_20261023/PREREGISTRATION.md",
+   "sha256_original": "f8a812656f072747323f744243e6e8e3bd35ba7d396d724c592bdbad2d984ed5",
+   "sha256_copy": "dec2ced5e14499db919ad44ddcd0cf13a9290de1581b012bb5fac07b6c949e74",
+   "replacements": [
+    {
+     "line": 5,
+     "col_original": 53,
+     "col_copy": 53,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 19,
+     "col_original": 79,
+     "col_copy": 79,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 336,
+     "col_original": 118,
+     "col_copy": 118,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 336,
+     "col_original": 192,
+     "col_copy": 200,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 336,
+     "col_original": 277,
+     "col_copy": 293,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 337,
+     "col_original": 94,
+     "col_copy": 94,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 338,
+     "col_original": 152,
+     "col_copy": 152,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 339,
+     "col_original": 90,
+     "col_copy": 90,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 409,
+     "col_original": 144,
+     "col_copy": 144,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 429,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_equal_bits_20261023/REPORT.md",
+   "original_path": "ember/research/split_equal_bits_20261023/REPORT.md",
+   "sha256_original": "934abe73c01e2ce7801f67cbb2f4af35ad9e548713b122b14eb902d3bc3e6480",
+   "sha256_copy": "c29309e38baebb69de50493911f944ec1c29b2c38aaaca59a26cc8fc2e325c45",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 116,
+     "col_copy": 116,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_equal_bits_20261023/run_sebits.sh",
+   "original_path": "ember/research/split_equal_bits_20261023/run_sebits.sh",
+   "sha256_original": "e22accb6214783a2af2675bc14c1b890a83fc63248db555ac60cb738cc5ef999",
+   "sha256_copy": "d0a251dba86b72e8a63f31a16759dbf460c6234a2b5e8a6cbefdc9a63ff1a231",
+   "replacements": [
+    {
+     "line": 2,
+     "col_original": 65,
+     "col_copy": 65,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_equal_bits_20261023/sebits.py",
+   "original_path": "ember/research/split_equal_bits_20261023/sebits.py",
+   "sha256_original": "db0f25b468ee55046a4ab94b3398c875b5157409f6c2577fef0496045de08696",
+   "sha256_copy": "6ea826210a32c7762984e5c1bf638dc131618be470409120a2c394dcf2c9489a",
+   "replacements": [
+    {
+     "line": 2210,
+     "col_original": 82,
+     "col_copy": 82,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_equal_bits_20261023/audit/stats_check.json",
+   "original_path": "ember/research/split_equal_bits_20261023/audit/stats_check.json",
+   "sha256_original": "e3026ef0604ed82ffbb9cf9255df79250412326b025a7fdfa710182a0bd857bf",
+   "sha256_copy": "8bd2d9297ff292d1b34f2fcc006ed88e83327ea34ebdc30dd411132a5711ee37",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 18,
+     "col_copy": 18,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_equal_bits_20261023/audit/stats_check.py",
+   "original_path": "ember/research/split_equal_bits_20261023/audit/stats_check.py",
+   "sha256_original": "e1cdf5eeca4aba22f20c2ff7b5abd39a39367acf8678f6c65392c46b278fa2d4",
+   "sha256_copy": "127b9051f2d4e888f5bd716c8a339571260b4c97844884e8f202c3dd5d13453d",
+   "replacements": [
+    {
+     "line": 580,
+     "col_original": 64,
+     "col_copy": 64,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_equal_bits_20261023/logs/data_wrapper.log",
+   "original_path": "ember/research/split_equal_bits_20261023/logs/data_wrapper.log",
+   "sha256_original": "52b199477df329733ace955944d98738b8a0d4150f188680581a7394142376c9",
+   "sha256_copy": "f1ad001304da9c92afa6087a74e62569224788aeff0e77f8d00a12df9ad86dd0",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 38,
+     "col_copy": 38,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_leak_replication_20261024/AUDIT.md",
+   "original_path": "ember/research/split_leak_replication_20261024/AUDIT.md",
+   "sha256_original": "9e2a35b2c54f9c73d4d3404ebe0dbea0e534e55ad69da71056347c7807663063",
+   "sha256_copy": "143ff28d2b54359fed12727066f7e74e26541051c4b0a64ae8b78bea5ccac7c8",
+   "replacements": [
+    {
+     "line": 4,
+     "col_original": 39,
+     "col_copy": 39,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_leak_replication_20261024/FREEZE.json",
+   "original_path": "ember/research/split_leak_replication_20261024/FREEZE.json",
+   "sha256_original": "80094d618c4c8b5c4fa2fd1bc827d497b9bffce418af9fc052ad3effe1a94580",
+   "sha256_copy": "f731ea0a7d5d92ac4cf64eb492fe742aa2f4900128ed3984ecf7c8bffa4e8e88",
+   "replacements": [
+    {
+     "line": 58,
+     "col_original": 15,
+     "col_copy": 15,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_leak_replication_20261024/PREREGISTRATION.md",
+   "original_path": "ember/research/split_leak_replication_20261024/PREREGISTRATION.md",
+   "sha256_original": "91fdb88e2f02f6d0b46e4ad99532e185383f58dbe6f03ace8dc7bda35bae5daf",
+   "sha256_copy": "119554d884850a53397ce8bb159186630b00d84e70dfad28331241209841b02e",
+   "replacements": [
+    {
+     "line": 5,
+     "col_original": 53,
+     "col_copy": 53,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 175,
+     "col_original": 74,
+     "col_copy": 74,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 175,
+     "col_original": 137,
+     "col_copy": 145,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 176,
+     "col_original": 159,
+     "col_copy": 159,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 179,
+     "col_original": 90,
+     "col_copy": 90,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 212,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_leak_replication_20261024/REPORT.md",
+   "original_path": "ember/research/split_leak_replication_20261024/REPORT.md",
+   "sha256_original": "dde423d8d62d7ac7cf4824e866fb2644902005a9230dc1847531fb4b26099478",
+   "sha256_copy": "e9f6695c68fa5537226177a5490b66b80cd994089bdebcedf6186da02d729204",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 79,
+     "col_copy": 79,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_leak_replication_20261024/run_sleak.sh",
+   "original_path": "ember/research/split_leak_replication_20261024/run_sleak.sh",
+   "sha256_original": "0cc9e3a64a60a49e2b6a7b3c5dabeb70cd20f8ca23bf85ebcfc7022d27f92b9a",
+   "sha256_copy": "3da0d99d2adacdef639e25c0bfdc5e1e37374f447b57f5e2f4a159e4b565c5e4",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 3,
+     "col_copy": 3,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_leak_replication_20261024/sebits.py",
+   "original_path": "ember/research/split_leak_replication_20261024/sebits.py",
+   "sha256_original": "db0f25b468ee55046a4ab94b3398c875b5157409f6c2577fef0496045de08696",
+   "sha256_copy": "6ea826210a32c7762984e5c1bf638dc131618be470409120a2c394dcf2c9489a",
+   "replacements": [
+    {
+     "line": 2210,
+     "col_original": 82,
+     "col_copy": 82,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_leak_replication_20261024/logs/waiter.log",
+   "original_path": "ember/research/split_leak_replication_20261024/logs/waiter.log",
+   "sha256_original": "f64d4e07c88c14149c4354125b1279213cc5cc31a1e8ab2ea5cbfbc159eb3d41",
+   "sha256_copy": "76014559562dcc8e79503c2e7b994259bf8c3a747a8b16601f3e471aa240587a",
+   "replacements": [
+    {
+     "line": 1,
+     "col_original": 59,
+     "col_copy": 59,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/marl_replay_20261023/PREREGISTRATION.md",
+   "original_path": "ember/research/marl_replay_20261023/PREREGISTRATION.md",
+   "sha256_original": "fae973001b9b86d8f00b5db8c0d6ecf524816f851e4ded5a211bedf84a3724a6",
+   "sha256_copy": "0728cf1ab20c51591eec9655c2f753140d64a7df770076875e01828478e595c5",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 52,
+     "col_copy": 52,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 11,
+     "col_original": 3,
+     "col_copy": 3,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 160,
+     "col_original": 40,
+     "col_copy": 40,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 161,
+     "col_original": 46,
+     "col_copy": 46,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 185,
+     "col_original": 70,
+     "col_copy": 70,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 240,
+     "col_original": 86,
+     "col_copy": 86,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 258,
+     "col_original": 30,
+     "col_copy": 30,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 313,
+     "col_original": 108,
+     "col_copy": 108,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 316,
+     "col_original": 89,
+     "col_copy": 89,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/marl_replay_20261023/REPORT.md",
+   "original_path": "ember/research/marl_replay_20261023/REPORT.md",
+   "sha256_original": "51c2b50a2092110866b1c109dfb4099ec48d3372e82d35a6b83d6fd669baa9d3",
+   "sha256_copy": "2d82f85b646ca06c7f4386aa50b041e98986da892d39ac7676de19bd28741341",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 79,
+     "col_copy": 79,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/marl_replay_20261023/jobs.py",
+   "original_path": "ember/research/marl_replay_20261023/jobs.py",
+   "sha256_original": "5ae48b45a31df878b2ec5595d58d700fb3ce5f183ff443d5767131154000d0c4",
+   "sha256_copy": "1dd7acd03cb860852ef5a9f5e35b0d346c1e3ec89d2acf707285444329754d7e",
+   "replacements": [
+    {
+     "line": 106,
+     "col_original": 102,
+     "col_copy": 102,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 125,
+     "col_original": 68,
+     "col_copy": 68,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/influence_monitor_20261023/PREREGISTRATION.md",
+   "original_path": "ember/research/influence_monitor_20261023/PREREGISTRATION.md",
+   "sha256_original": "9e60d91fdecc62e420e17f616b10cbbf77d928bb2e05d854c13c1dacefd5f62b",
+   "sha256_copy": "2e776ac10a9e485f782f630a627b620a9a7c18dbb91d59043a53075f7c5e8fb1",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 52,
+     "col_copy": 52,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 10,
+     "col_original": 3,
+     "col_copy": 3,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/influence_monitor_20261023/REPORT.md",
+   "original_path": "ember/research/influence_monitor_20261023/REPORT.md",
+   "sha256_original": "dc4072626c272790c9744adfc8c346eb221d6f2cefc11cc64b4c7fc01098c949",
+   "sha256_copy": "e256784fbb597c886ce4d57b5cf395e7d4b0f5525bcbe7c31236500f8ef466e6",
+   "replacements": [
+    {
+     "line": 3,
+     "col_original": 52,
+     "col_copy": 52,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_r06_localization_cpu_20261020/PLAN.md",
+   "original_path": "ember/research/latent_r06_localization_cpu_20261020/PLAN.md",
+   "sha256_original": "564e0d316364e8cd749c28587c889527c3f0d7da0546b448101d450199af47dd",
+   "sha256_copy": "0068287acf5729e7ff960cdc6111644f5eb602a154fd4f12c2de27b6d6e98e50",
+   "replacements": [
+    {
+     "line": 9,
+     "col_original": 49,
+     "col_copy": 49,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_r06_localization_cpu_20261020/REPORT.md",
+   "original_path": "ember/research/latent_r06_localization_cpu_20261020/REPORT.md",
+   "sha256_original": "094ec3a9901dc29e2c4385e6852c025cde90dc6d50fe5926f85954ee6e90b6e1",
+   "sha256_copy": "fdfb89ad5ea3d6103627f7427aaadb6852abec9480ce8d6f414fd4f962d2d081",
+   "replacements": [
+    {
+     "line": 95,
+     "col_original": 102,
+     "col_copy": 102,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 106,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_r06_t5_factored_oracle_20261020/PLAN.md",
+   "original_path": "ember/research/latent_r06_t5_factored_oracle_20261020/PLAN.md",
+   "sha256_original": "b4b833702316e7104d6fd9737824c163650e89654776c0c603d776a6f296024f",
+   "sha256_copy": "433a357d90e0d253b435ddfb423e755903e0a2e45ca816b40785c9c868eb8eda",
+   "replacements": [
+    {
+     "line": 5,
+     "col_original": 20,
+     "col_copy": 20,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 111,
+     "col_original": 713,
+     "col_copy": 713,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 113,
+     "col_original": 61,
+     "col_copy": 61,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 113,
+     "col_original": 111,
+     "col_copy": 119,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 123,
+     "col_original": 488,
+     "col_copy": 488,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 133,
+     "col_original": 136,
+     "col_copy": 136,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 133,
+     "col_original": 603,
+     "col_copy": 550,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 135,
+     "col_original": 49,
+     "col_copy": 49,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 135,
+     "col_original": 99,
+     "col_copy": 107,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 141,
+     "col_original": 856,
+     "col_copy": 856,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 143,
+     "col_original": 49,
+     "col_copy": 49,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 143,
+     "col_original": 99,
+     "col_copy": 107,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_r06_t5_factored_oracle_20261020/REPORT.md",
+   "original_path": "ember/research/latent_r06_t5_factored_oracle_20261020/REPORT.md",
+   "sha256_original": "26ae1831141bfb62bd4d3ba591b986cd16e843739f33ebb1de9aa14b3a63ad48",
+   "sha256_copy": "ebd576ebd9ed5cb6f93f9056d06f6fa296fd4a17182c140daea87fdc1e58c5bd",
+   "replacements": [
+    {
+     "line": 50,
+     "col_original": 296,
+     "col_copy": 296,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_r06_t5_factored_oracle_20261020/launch.sh",
+   "original_path": "ember/research/latent_r06_t5_factored_oracle_20261020/launch.sh",
+   "sha256_original": "001b94f98de79f43ad6a84776f341fc2695dabc024800d68cdb7f389e7b48f36",
+   "sha256_copy": "84831fb439844d776fa20b2e58fab309c888b4edacef21604ce9884401f69469",
+   "replacements": [
+    {
+     "line": 8,
+     "col_original": 4,
+     "col_copy": 4,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_r06_t5_factored_oracle_20261020/run_smoke.log",
+   "original_path": "ember/research/latent_r06_t5_factored_oracle_20261020/run_smoke.log",
+   "sha256_original": "5e65f11bce48823ade695c37d6463decb6f2fbed778f2957137d5b49c38ac9bf",
+   "sha256_copy": "c06d415fc6ef7f88f91a302748107cab0c76ff2d016e52ed47050bda04fa203a",
+   "replacements": [
+    {
+     "line": 11,
+     "col_original": 1,
+     "col_copy": 1,
+     "rule": "R12",
+     "original_shown": "<MACHOME>/",
+     "replacement": "<local>/"
+    },
+    {
+     "line": 24,
+     "col_original": 9,
+     "col_copy": 9,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 26,
+     "col_original": 9,
+     "col_copy": 9,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 29,
+     "col_original": 9,
+     "col_copy": 9,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 45,
+     "col_original": 9,
+     "col_copy": 9,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 47,
+     "col_original": 9,
+     "col_copy": 9,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 50,
+     "col_original": 9,
+     "col_copy": 9,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 65,
+     "col_original": 9,
+     "col_copy": 9,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 67,
+     "col_original": 9,
+     "col_copy": 9,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 70,
+     "col_original": 9,
+     "col_copy": 9,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 85,
+     "col_original": 9,
+     "col_copy": 9,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 87,
+     "col_original": 9,
+     "col_copy": 9,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    },
+    {
+     "line": 90,
+     "col_original": 9,
+     "col_copy": 9,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_r06_t5b_wide_20261022/PLAN.md",
+   "original_path": "ember/research/latent_r06_t5b_wide_20261022/PLAN.md",
+   "sha256_original": "55850bb31173b2732aee2b5fdec40b93d4ff82e60b675e87eb8be827782349b5",
+   "sha256_copy": "db42434bcf1744e93564e7806d1a5c4a274322a6437304a885b6f143b65419c0",
+   "replacements": [
+    {
+     "line": 5,
+     "col_original": 20,
+     "col_copy": 20,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 36,
+     "col_original": 150,
+     "col_copy": 150,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    },
+    {
+     "line": 37,
+     "col_original": 259,
+     "col_copy": 259,
+     "rule": "R14",
+     "original_shown": "<NAME>",
+     "replacement": "[researcher]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_r06_t5b_wide_20261022/launch.sh",
+   "original_path": "ember/research/latent_r06_t5b_wide_20261022/launch.sh",
+   "sha256_original": "d53f6cc3eab6999195f57e25a383078d7f725aa275111a83936eec724bf2c496",
+   "sha256_copy": "17eef68261955fe32951a783aeda54dc5d4b103d611c79663a677ed9d4c71705",
+   "replacements": [
+    {
+     "line": 8,
+     "col_original": 4,
+     "col_copy": 4,
+     "rule": "R5",
+     "original_shown": "<SNAPSHOT>/ember/",
+     "replacement": ""
+    }
+   ]
   }
  ],
  "redaction_rule": {
@@ -6725,7 +10303,7 @@
   "reason": "quotes private chat",
   "scope": "Direct quotes of private chat messages (text in quotation marks that reproduces the words of a chat message). The quotation marks are part of the removed passage. Neutral reports of an authorization, for example 'The user authorized this fresh bridge run', are not quotes and are not redacted."
  },
- "files_redacted": 4,
+ "files_redacted": 22,
  "redactions": [
   {
    "new_path": "records/research/latent_anchor_E3_20261003/PREREGISTRATION.md",
@@ -6786,6 +10364,359 @@
      "replacement": "[redacted: private chat]"
     }
    ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_pilot_20261020/PLAN.md",
+   "original_path": "ember/research/latent_uncertainty_pilot_20261020/PLAN.md",
+   "sha256_original": "a402d08cd49554149bb91300c6e6413f24fb0751b7db9a1f6b478a85bd2a304e",
+   "sha256_copy": "0c1a19c1370a14ba1e7130e5c93e8689751a3f7094e8f095f435da6592c39bf5",
+   "redactions": [
+    {
+     "line": 5,
+     "col_original": 1,
+     "col_copy": 1,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    },
+    {
+     "line": 6,
+     "col_original": 1,
+     "col_copy": 1,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_pilot_20261020/PLAN.original_20261020.md",
+   "original_path": "ember/research/latent_uncertainty_pilot_20261020/PLAN.original_20261020.md",
+   "sha256_original": "248a4d21fd90c7ae6defbacf23926e98a65186103c4a54fe42c98ad8d383cd80",
+   "sha256_copy": "85ba8048f38d86c3cdf94c39d1761fcb064225a24f7143f967fa274852bb2463",
+   "redactions": [
+    {
+     "line": 5,
+     "col_original": 1,
+     "col_copy": 1,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    },
+    {
+     "line": 6,
+     "col_original": 1,
+     "col_copy": 1,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/AUDIT.md",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/AUDIT.md",
+   "sha256_original": "17d2182329108fb008f5e011ea305c62dc4cc2fd80dad955193bef032d14c89b",
+   "sha256_copy": "1fa15762eb4f18c29041911278dc0149c438c735616cccbd2eb1187be6eccf99",
+   "redactions": [
+    {
+     "line": 6,
+     "col_original": 103,
+     "col_copy": 119,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/PHASE_C_STOP_R5.md",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/PHASE_C_STOP_R5.md",
+   "sha256_original": "8e0514ffb94fbd2e2209b0017e08ae22e41d8d96472cc944a1d57f9b5afa6d40",
+   "sha256_copy": "8d319e61de2dd016ac1e019a1484932b79dc3af12f4af553b18496f7884949d4",
+   "redactions": [
+    {
+     "line": 26,
+     "col_original": 38,
+     "col_copy": 46,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/PHASE_D_STOP.md",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/PHASE_D_STOP.md",
+   "sha256_original": "17631a69159167b149ac3bea5e3968c009f5f039c160fe36fd1476dd43d22937",
+   "sha256_copy": "99397befd4d19ff2dbee3247e1372f21a7a062f36833745ac47b3995d3376e24",
+   "redactions": [
+    {
+     "line": 5,
+     "col_original": 55,
+     "col_copy": 63,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    },
+    {
+     "line": 29,
+     "col_original": 38,
+     "col_copy": 46,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/PREREGISTRATION.md",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/PREREGISTRATION.md",
+   "sha256_original": "e4551e35ffe8622a7450964e345c9b73afb5d97abb378ef7f6e0451b4406f135",
+   "sha256_copy": "59e1d6c9ff41d80281dee3dfc8bb05ec7bfe8e92dbdbc2fd522592677f745d77",
+   "redactions": [
+    {
+     "line": 32,
+     "col_original": 54,
+     "col_copy": 62,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    },
+    {
+     "line": 443,
+     "col_original": 60,
+     "col_copy": 68,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    },
+    {
+     "line": 505,
+     "col_original": 43,
+     "col_copy": 51,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/PREREG_DRAFT.md",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/PREREG_DRAFT.md",
+   "sha256_original": "cb6d5cd487e421034569badc5b4ba58c053bacd27f4cb4501b8b65f6ff7c8d15",
+   "sha256_copy": "50c070c0463747e495582830d5d0b27192b06df3cdd3c27a5f0436cb136b2519",
+   "redactions": [
+    {
+     "line": 414,
+     "col_original": 38,
+     "col_copy": 46,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_uncertainty_confirm_20261021/data/FETCH_LOG.json",
+   "original_path": "ember/research/latent_uncertainty_confirm_20261021/data/FETCH_LOG.json",
+   "sha256_original": "b2f54d7d3f5d056d2efe2227366e8e6423f49d4446a9f676b487569e76d5048b",
+   "sha256_copy": "c6dd567b4d836ff9999e0922af6cdf85aa44164b1afa06eddeb3ae4bcb4681b3",
+   "redactions": [
+    {
+     "line": 4,
+     "col_original": 20,
+     "col_copy": 26,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/PREREGISTRATION.md",
+   "original_path": "ember/research/format_gap_20261023/PREREGISTRATION.md",
+   "sha256_original": "e7b8f105f8e1b5fdc3ab33fa61136044d9971280a103d7a5787504eb3a5d2596",
+   "sha256_copy": "344b5a6a5800175e2dcabf0d5039433636ef61c62f9b90ef0f85194abbbd81e6",
+   "redactions": [
+    {
+     "line": 25,
+     "col_original": 3,
+     "col_copy": 3,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/format_gap_20261023/data/FETCH_LOG.json",
+   "original_path": "ember/research/format_gap_20261023/data/FETCH_LOG.json",
+   "sha256_original": "0cc5364939523cfa27df9a605183729bf9bc1451625cfa87621f2b9bb211861f",
+   "sha256_copy": "b7e2102084dab54c9e2dff19ee12f9c701adcd0954d0398d84b210534a243324",
+   "redactions": [
+    {
+     "line": 4,
+     "col_original": 20,
+     "col_copy": 26,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_equal_bits_20261023/PREREGISTRATION.md",
+   "original_path": "ember/research/split_equal_bits_20261023/PREREGISTRATION.md",
+   "sha256_original": "f8a812656f072747323f744243e6e8e3bd35ba7d396d724c592bdbad2d984ed5",
+   "sha256_copy": "dec2ced5e14499db919ad44ddcd0cf13a9290de1581b012bb5fac07b6c949e74",
+   "redactions": [
+    {
+     "line": 429,
+     "col_original": 116,
+     "col_copy": 124,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/split_leak_replication_20261024/PREREGISTRATION.md",
+   "original_path": "ember/research/split_leak_replication_20261024/PREREGISTRATION.md",
+   "sha256_original": "91fdb88e2f02f6d0b46e4ad99532e185383f58dbe6f03ace8dc7bda35bae5daf",
+   "sha256_copy": "119554d884850a53397ce8bb159186630b00d84e70dfad28331241209841b02e",
+   "redactions": [
+    {
+     "line": 214,
+     "col_original": 30,
+     "col_copy": 30,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    },
+    {
+     "line": 215,
+     "col_original": 30,
+     "col_copy": 30,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/marl_replay_20261023/PREREGISTRATION.md",
+   "original_path": "ember/research/marl_replay_20261023/PREREGISTRATION.md",
+   "sha256_original": "fae973001b9b86d8f00b5db8c0d6ecf524816f851e4ded5a211bedf84a3724a6",
+   "sha256_copy": "0728cf1ab20c51591eec9655c2f753140d64a7df770076875e01828478e595c5",
+   "redactions": [
+    {
+     "line": 11,
+     "col_original": 73,
+     "col_copy": 81,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/marl_replay_20261023/REPORT.md",
+   "original_path": "ember/research/marl_replay_20261023/REPORT.md",
+   "sha256_original": "51c2b50a2092110866b1c109dfb4099ec48d3372e82d35a6b83d6fd669baa9d3",
+   "sha256_copy": "2d82f85b646ca06c7f4386aa50b041e98986da892d39ac7676de19bd28741341",
+   "redactions": [
+    {
+     "line": 292,
+     "col_original": 32,
+     "col_copy": 32,
+     "reason": "names a model release whose results are not public yet",
+     "replacement": "[redacted: unpublished result]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/influence_monitor_20261023/PREREGISTRATION.md",
+   "original_path": "ember/research/influence_monitor_20261023/PREREGISTRATION.md",
+   "sha256_original": "9e60d91fdecc62e420e17f616b10cbbf77d928bb2e05d854c13c1dacefd5f62b",
+   "sha256_copy": "2e776ac10a9e485f782f630a627b620a9a7c18dbb91d59043a53075f7c5e8fb1",
+   "redactions": [
+    {
+     "line": 10,
+     "col_original": 55,
+     "col_copy": 63,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    },
+    {
+     "line": 152,
+     "col_original": 241,
+     "col_copy": 241,
+     "reason": "names a model release whose results are not public yet",
+     "replacement": "[redacted: unpublished result]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_r06_localization_cpu_20261020/REPORT.md",
+   "original_path": "ember/research/latent_r06_localization_cpu_20261020/REPORT.md",
+   "sha256_original": "094ec3a9901dc29e2c4385e6852c025cde90dc6d50fe5926f85954ee6e90b6e1",
+   "sha256_copy": "fdfb89ad5ea3d6103627f7427aaadb6852abec9480ce8d6f414fd4f962d2d081",
+   "redactions": [
+    {
+     "line": 106,
+     "col_original": 52,
+     "col_copy": 60,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_r06_t5_factored_oracle_20261020/PLAN.md",
+   "original_path": "ember/research/latent_r06_t5_factored_oracle_20261020/PLAN.md",
+   "sha256_original": "b4b833702316e7104d6fd9737824c163650e89654776c0c603d776a6f296024f",
+   "sha256_copy": "433a357d90e0d253b435ddfb423e755903e0a2e45ca816b40785c9c868eb8eda",
+   "redactions": [
+    {
+     "line": 5,
+     "col_original": 55,
+     "col_copy": 63,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    },
+    {
+     "line": 113,
+     "col_original": 125,
+     "col_copy": 141,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    },
+    {
+     "line": 133,
+     "col_original": 142,
+     "col_copy": 150,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    },
+    {
+     "line": 135,
+     "col_original": 113,
+     "col_copy": 129,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    },
+    {
+     "line": 143,
+     "col_original": 113,
+     "col_copy": 129,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
+  },
+  {
+   "new_path": "records/research/latent_r06_t5b_wide_20261022/PLAN.md",
+   "original_path": "ember/research/latent_r06_t5b_wide_20261022/PLAN.md",
+   "sha256_original": "55850bb31173b2732aee2b5fdec40b93d4ff82e60b675e87eb8be827782349b5",
+   "sha256_copy": "db42434bcf1744e93564e7806d1a5c4a274322a6437304a885b6f143b65419c0",
+   "redactions": [
+    {
+     "line": 5,
+     "col_original": 55,
+     "col_copy": 63,
+     "reason": "quotes private chat",
+     "replacement": "[redacted: private chat]"
+    }
+   ]
   }
- ]
+ ],
+ "private_prefix_v1_1": "<SNAPSHOT> stands for the 2026-10 snapshot folder, <MACHOME> for the home folder of the 2026-10 account, <TMPA>, <TMPB> and <TMPROOT> for temporary folders of agent sessions, and <NAME> for the researcher's name. Their values are withheld. With the values, the log rebuilds each original file that is not redacted (integrity/verify.py --prefix NAME=VALUE).",
+ "redaction_rule_v1_1": {
+  "replacement": "[redacted: unpublished result]",
+  "reason": "names a model release whose results are not public yet (two reason texts in SCRUB_LOG.json: a model release, or a study)",
+  "scope": "Passages that name a model release or a study whose results are not public yet: one sentence of marl_replay_20261023/REPORT.md and one phrase of influence_monitor_20261023/PREREGISTRATION.md."
+ }
 }

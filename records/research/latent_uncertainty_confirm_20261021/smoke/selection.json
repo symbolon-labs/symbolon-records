@@ -1,0 +1,167 @@
+{
+ "status": "SMOKE (code check only)",
+ "time": "2026-10-21 13:49:43",
+ "mode": "smoke",
+ "sender": "main",
+ "sender_repo": "Qwen/Qwen3-1.7B",
+ "blocks": [
+  21,
+  28
+ ],
+ "probe_family": "mlp",
+ "probe_info": {
+  "family": "mlp",
+  "wd": 0.01,
+  "cv_nll": 0.795006491411108,
+  "cv_grid": {
+   "0.0001": 0.7950130634387972,
+   "0.001": 0.7950124842413155,
+   "0.01": 0.795006491411108
+  },
+  "final": {
+   "best_epoch": 2,
+   "inner_val_nll": 0.6064968705177307
+  },
+  "at_grid_end": true
+ },
+ "formats": {
+  "T2": "F1",
+  "T3": "F1",
+  "T4": "F3",
+  "T5": "F3",
+  "T6": "list"
+ },
+ "L": {
+  "rank": 16,
+  "lr": 0.01,
+  "epochs": 2,
+  "name": "L_r16_lr0.01_ep3",
+  "inner_val_nll": 0.47440085804003324
+ },
+ "L_probe": {
+  "lr": 0.01,
+  "epochs": 3,
+  "name": "Lprobe_lr0.01_ep3",
+  "inner_val_nll": 0.6869968300068118
+ },
+ "n_test": 6000,
+ "sd_binary_T4_minus_L": 0.47995176390491345,
+ "gates": {
+  "G-D1": {
+   "value": 0.234375,
+   "rule": "0.20 <= dev accuracy <= 0.80",
+   "pass": true
+  },
+  "G-D4": {
+   "value": 0.96875,
+   "rule": "alias and token-F1 rules agree on >= 90% of dev items",
+   "pass": true,
+   "disagreements_file": "gd4_disagreements.jsonl"
+  },
+  "parser": {
+   "failure_rate": 0.046875,
+   "change_needed": false,
+   "view_file": "parser_view.json",
+   "rule": "design 6.1: more than 5% failures -> a dated parser change in the preregistration"
+  },
+  "G-D2": {
+   "value": 0.5208333333333334,
+   "rule": "probe direct on c1: dev-test AUROC >= 0.65",
+   "family": "mlp",
+   "pass": false
+  },
+  "G-D3": {
+   "value": [
+    0.6927061815079468,
+    0.5741954585461042
+   ],
+   "rule": "dev-test NLL(Source) < NLL(T0)",
+   "pass": false
+  }
+ },
+ "times": {
+  "items_seconds": 58.267430782318115,
+  "sender_dev_train_s_per_item": 1.92592453956604,
+  "sender_dev_test_s_per_item": 2.1546740531921387,
+  "probes_seconds": 0.998974084854126,
+  "recv_T0_dev_train_s_per_pass": 0.01644064486026764,
+  "recv_T0c_dev_train_s_per_pass": 0.02200426657994588,
+  "recv_T1_dev_train_s_per_pass": 0.016702085733413696,
+  "recv_Source_dev_train_s_per_pass": 0.07308012247085571,
+  "recv_Q-only_dev_train_s_per_pass": 0.011584142843882242,
+  "recv_T2_F1_dev_train_s_per_pass": 0.016399602095286053,
+  "recv_T2_F2_dev_train_s_per_pass": 0.015632102886835735,
+  "recv_T2_F3_dev_train_s_per_pass": 0.01583133637905121,
+  "recv_T3_F1_dev_train_s_per_pass": 0.016388391455014546,
+  "recv_T3_F2_dev_train_s_per_pass": 0.015605936447779337,
+  "recv_T3_F3_dev_train_s_per_pass": 0.01563120385011037,
+  "recv_T4_F1_dev_train_s_per_pass": 0.02717655897140503,
+  "recv_T4_F2_dev_train_s_per_pass": 0.024782622853914898,
+  "recv_T4_F3_dev_train_s_per_pass": 0.025096500913302105,
+  "recv_T5_F1_dev_train_s_per_pass": 0.026942819356918335,
+  "recv_T5_F2_dev_train_s_per_pass": 0.024647265672683716,
+  "recv_T5_F3_dev_train_s_per_pass": 0.02484773099422455,
+  "recv_T6_list_dev_train_s_per_pass": 0.048821792006492615,
+  "recv_T6_counts_dev_train_s_per_pass": 0.02817608416080475,
+  "recv_T0_dev_test_s_per_pass": 0.01987794041633606,
+  "recv_T0c_dev_test_s_per_pass": 0.023305997252464294,
+  "recv_T1_dev_test_s_per_pass": 0.020396947860717773,
+  "recv_Source_dev_test_s_per_pass": 0.0692816823720932,
+  "recv_Q-only_dev_test_s_per_pass": 0.016854390501976013,
+  "recv_T2_F1_dev_test_s_per_pass": 0.019759684801101685,
+  "recv_T2_F2_dev_test_s_per_pass": 0.019521862268447876,
+  "recv_T2_F3_dev_test_s_per_pass": 0.02032269537448883,
+  "recv_T3_F1_dev_test_s_per_pass": 0.01989443600177765,
+  "recv_T3_F2_dev_test_s_per_pass": 0.019645243883132935,
+  "recv_T3_F3_dev_test_s_per_pass": 0.0196617990732193,
+  "recv_T4_F1_dev_test_s_per_pass": 0.0282718688249588,
+  "recv_T4_F2_dev_test_s_per_pass": 0.02600187063217163,
+  "recv_T4_F3_dev_test_s_per_pass": 0.025645196437835693,
+  "recv_T5_F1_dev_test_s_per_pass": 0.027474001049995422,
+  "recv_T5_F2_dev_test_s_per_pass": 0.025324001908302307,
+  "recv_T5_F3_dev_test_s_per_pass": 0.02505895495414734,
+  "recv_T6_list_dev_test_s_per_pass": 0.049099624156951904,
+  "recv_T6_counts_dev_test_s_per_pass": 0.028732553124427795,
+  "text_seconds": 40.435518980026245,
+  "text_passes": 1216,
+  "latent_seconds": 88.73706579208374
+ },
+ "code_sha256": "690305212c48de3fa9aed58a41c7a89b16ab156f2c57f06a37b01eb19df74566",
+ "latent_readout_input": "raw",
+ "dedupe_questions": true,
+ "t5_raw": true,
+ "t6_count_top": "samples",
+ "dev_test_nll": {
+  "T0": 0.5741954585461042,
+  "T0c": 0.575329903951354,
+  "T1": 0.5898603510019376,
+  "Source": 0.6927061815079468,
+  "Q-only": 0.7458771512270687,
+  "T2_F1": 0.5913228052233253,
+  "T2_F2": 0.6772380594156935,
+  "T2_F3": 0.7128756968778563,
+  "T3_F1": 0.5874603786198042,
+  "T3_F2": 0.7000686291228515,
+  "T3_F3": 0.664924437418969,
+  "T4_F1": 0.7539106996393065,
+  "T4_F2": 0.5861278316466257,
+  "T4_F3": 0.5760699568131501,
+  "T5_F1": 0.7799486190624965,
+  "T5_F2": 0.5801177883128856,
+  "T5_F3": 0.5726039200241679,
+  "T6_list": 0.5859774504611425,
+  "T6_counts": 0.6061318705104746,
+  "L": 0.6392165883147293
+ },
+ "projection_hours": {
+  "s_per_item": 2.0402992963790894,
+  "s_per_pass": 0.025524262142808812,
+  "s_per_step": 1.6785746812820435,
+  "D1_3000_items": 1.7002494136492412,
+  "D2a_57000_passes": 0.4041341505944729,
+  "C1_4000_items": 2.266999218198988,
+  "C2_6000_items": 3.4004988272984824,
+  "C3_80000_passes": 0.5672058253957514,
+  "per_seed_20000_passes_plus_3_fits_of_6_epochs": 1.190910632150215
+ }
+}

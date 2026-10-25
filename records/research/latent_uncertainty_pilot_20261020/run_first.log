@@ -1,0 +1,128 @@
+[22:05:03] data: train=2000 test=1000
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 24784.89it/s]
+[22:15:37] sender train: n=2000 acc=0.732 633s
+[22:20:51] sender test: n=1000 acc=0.736 315s
+[22:24:43] probes: T3 lam=0.1 cv_nll=0.3620; T4 lam=0.1 cv_nll=0.4665; T4@28 cv_nll=0.4649
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<01:10,  4.08it/s]Loading weights:  48%|████▊     | 138/290 [00:00<00:00, 487.19it/s]Loading weights:  73%|███████▎  | 211/290 [00:00<00:00, 524.31it/s]Loading weights:  96%|█████████▌| 278/290 [00:00<00:00, 492.68it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 449.44it/s]
+[22:24:57] text arm T0 done
+[22:25:16] text arm T1 done
+[22:25:35] text arm T2 done
+[22:25:54] text arm T3 done
+[22:26:30] text arm T4 done
+[22:27:28] text arm Card done
+[22:27:28] embedding route identity max abs diff: 0.00e+00
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 3743.24it/s]
+[22:32:01] latent lr=3e-05: best val NLL 0.5180 at epoch 5 (272s)
+[22:36:32] latent lr=0.0001: best val NLL 0.5617 at epoch 5 (543s)
+[22:39:48] latent lr=0.0003: best val NLL 0.5485 at epoch 2 (739s)
+[22:43:05] latent lr=0.001: best val NLL 0.5803 at epoch 2 (936s)
+[22:48:05] latent: lr=3e-05 epochs=5 test NLL L=0.5223 L-shuf=1.4701 L-testshuf=2.7689 (1237s)
+| arm | NLL | gap to Bayes | Brier | acc | ECE | zero-shot NLL | zero-shot acc |
+|---|---|---|---|---|---|---|---|
+| T0 | 0.8634 | 0.5286 | 0.4338 | 0.736 | 0.0142 | 2.3280 | 0.268 |
+| T1 | 0.8335 | 0.4987 | 0.4240 | 0.736 | 0.0099 | 1.9326 | 0.366 |
+| T2 | 0.7995 | 0.4647 | 0.3982 | 0.736 | 0.0385 | 1.7771 | 0.575 |
+| T3 | 0.6463 | 0.3116 | 0.3279 | 0.739 | 0.0449 | 1.7728 | 0.540 |
+| T4 | 0.4832 | 0.1484 | 0.2406 | 0.837 | 0.0234 | 2.4876 | 0.268 |
+| Card | 0.5703 | 0.2356 | 0.3059 | 0.786 | 0.0375 | 2.7460 | 0.268 |
+| L | 0.5223 | 0.1876 | 0.2645 | 0.812 | 0.0549 | 2.3181 | 0.288 |
+| L-shuf | 1.4701 | 1.1354 | 0.7885 | 0.236 | 0.1243 | 2.3286 | 0.267 |
+| L-testshuf | 2.7689 | 2.4341 | 1.2090 | 0.275 | 0.5567 | 2.1424 | 0.268 |
+| ref: Bayes | 0.3348 | 0.0000 | 0.1779 | 0.864 | 0.0075 | | |
+| ref: Prior | 1.3863 | 1.0515 | 0.7500 | 0.217 | 0.0330 | | |
+| ref: sender_softmax_direct | 0.9117 | 0.5769 | 0.4350 | 0.736 | 0.1733 | | |
+| ref: probe4_block21_direct | 0.4359 | 0.1011 | 0.2224 | 0.851 | 0.0310 | | |
+| ref: probe4_block28_direct | 0.4266 | 0.0918 | 0.2184 | 0.853 | 0.0211 | | |
+
+| difference (NLL) | mean | 95% CI |
+|---|---|---|
+| T0 minus L | +0.3411 | [+0.2846, +0.3971] |
+| T1 minus L | +0.3111 | [+0.2544, +0.3659] |
+| T2 minus L | +0.2772 | [+0.2229, +0.3312] |
+| T3 minus L | +0.1240 | [+0.0758, +0.1709] |
+| T4 minus L | -0.0391 | [-0.0747, -0.0046] |
+| Card minus L | +0.0480 | [-0.0054, +0.1012] |
+| L-shuf minus L | +0.9478 | [+0.8865, +1.0077] |
+| L-testshuf minus L | +2.2466 | [+2.1132, +2.3812] |
+| T0 minus T2 | +0.0639 | [+0.0422, +0.0857] |
+| T2 minus T4 | +0.3163 | [+0.2681, +0.3645] |
+| T3 minus T4 | +0.1631 | [+0.1197, +0.2061] |
+| T0 minus Card | +0.2931 | [+0.2355, +0.3504] |
+{
+ "best_of_T0_T2": "T2",
+ "L_beats_best_text": true,
+ "L_beats_T3": true,
+ "L_beats_T4": false,
+ "case": 2,
+ "sanity_Lshuf_ok": true,
+ "sanity_Card_ok": true,
+ "valid": true,
+ "margin_nats": 0.02,
+ "ln4": 1.3862943611198906
+}
+{
+ "sender_acc": {
+  "train": 0.7315,
+  "test": 0.736
+ },
+ "bayes_argmax_acc_test": 0.864,
+ "sender_agrees_with_bayes_argmax_test": 0.795,
+ "digit_histograms_test": {
+  "T1": {
+   "7": 899,
+   "9": 101
+  },
+  "T2": {
+   "4": 18,
+   "5": 53,
+   "6": 55,
+   "7": 73,
+   "8": 161,
+   "9": 640
+  },
+  "T3": {
+   "0": 9,
+   "1": 33,
+   "2": 65,
+   "3": 73,
+   "4": 68,
+   "5": 69,
+   "6": 62,
+   "7": 76,
+   "8": 122,
+   "9": 423
+  }
+ },
+ "digit_auc_for_sender_correct_test": {
+  "T1": 0.5660408432147563,
+  "T2": 0.7039355854743083,
+  "T3": 0.9038285367259552
+ },
+ "probe3_auc_test": 0.9104856307641633,
+ "latent_info": {
+  "lr": 3e-05,
+  "epochs": 5,
+  "n_inner_train": 1600,
+  "n_inner_val": 400,
+  "seconds": 1236.532024860382
+ },
+ "latent_grid": {
+  "3e-05": {
+   "best_val_nll": 0.5180464299029927,
+   "best_epoch": 5
+  },
+  "0.0001": {
+   "best_val_nll": 0.5616620081692615,
+   "best_epoch": 5
+  },
+  "0.0003": {
+   "best_val_nll": 0.5484869293495923,
+   "best_epoch": 2
+  },
+  "0.001": {
+   "best_val_nll": 0.5802653607580168,
+   "best_epoch": 2
+  }
+ }
+}
+[22:50:20] done

@@ -1,0 +1,33 @@
+{
+ "G-D1": {
+  "value": 0.23466666666666666,
+  "rule": "0.20 <= dev accuracy <= 0.80",
+  "pass": true
+ },
+ "G-D4": {
+  "value": 0.9936666666666667,
+  "rule": "alias and token-F1 rules agree on >= 90% of dev items",
+  "pass": true,
+  "disagreements_file": "gd4_disagreements.jsonl"
+ },
+ "parser": {
+  "failure_rate": 0.028333333333333332,
+  "change_needed": false,
+  "view_file": "parser_view.json",
+  "rule": "design 6.1: more than 5% failures -> a dated parser change in the preregistration"
+ },
+ "G-D2": {
+  "value": 0.8893878136200717,
+  "rule": "probe direct on c1: dev-test AUROC >= 0.65",
+  "family": "logistic",
+  "pass": true
+ },
+ "G-D3": {
+  "value": [
+   0.46316534837963047,
+   0.44293914834631887
+  ],
+  "rule": "dev-test NLL(Source) < NLL(T0)",
+  "pass": false
+ }
+}

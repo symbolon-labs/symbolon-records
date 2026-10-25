@@ -1,0 +1,47 @@
+{"check": "V6", "dev_acc": 0.889, "ok": true, "time": "2026-10-24 13:09:10"}
+{"check": "V3", "where": "prep start", "ok": true, "time": "2026-10-24 13:09:10"}
+{"check": "V3", "where": "prep end", "ok": true, "time": "2026-10-24 13:09:21"}
+{"check": "V3", "where": "head start", "ok": true, "time": "2026-10-24 13:09:21"}
+{"check": "V3", "where": "head end", "ok": true, "time": "2026-10-24 13:09:24"}
+{"check": "V3", "where": "topk start", "ok": true, "time": "2026-10-24 13:09:24"}
+{"check": "V3", "where": "topk end", "ok": true, "time": "2026-10-24 13:09:33"}
+{"check": "V3", "where": "full start", "ok": true, "time": "2026-10-24 13:09:33"}
+{"check": "V3", "where": "full end", "ok": true, "time": "2026-10-24 13:09:39"}
+{"check": "V3", "where": "RAW_c16_s1_q4 start", "ok": true, "time": "2026-10-24 13:09:39"}
+{"check": "V3", "where": "RAW_c16_s1_q4 end", "ok": true, "time": "2026-10-24 13:09:44"}
+{"check": "V3", "where": "RAW_c64_s2_q1 start", "ok": true, "time": "2026-10-24 13:09:44"}
+{"check": "V3", "where": "RAW_c64_s2_q1 end", "ok": true, "time": "2026-10-24 13:09:48"}
+{"check": "V3", "where": "RAW_c16_s4_q4 start", "ok": true, "time": "2026-10-24 13:09:48"}
+{"check": "V3", "where": "RAW_c16_s4_q4 end", "ok": true, "time": "2026-10-24 13:09:52"}
+{"check": "V3", "where": "BOT_c16_s1_q4 start", "ok": true, "time": "2026-10-24 13:09:52"}
+{"check": "V3", "where": "BOT_c16_s1_q4 end", "ok": true, "time": "2026-10-24 13:09:58"}
+{"check": "V3", "where": "BOT_c16_s8_q1 start", "ok": true, "time": "2026-10-24 13:09:58"}
+{"check": "V3", "where": "BOT_c16_s8_q1 end", "ok": true, "time": "2026-10-24 13:10:02"}
+{"check": "V3", "where": "BOT_float start", "ok": true, "time": "2026-10-24 13:10:02"}
+{"check": "V3", "where": "BOT_float end", "ok": true, "time": "2026-10-24 13:10:06"}
+{"check": "V3", "where": "msgs start", "ok": true, "time": "2026-10-24 13:10:06"}
+{"check": "V4", "where": "msgs TOPK@64", "ok": true, "bits": 58, "time": "2026-10-24 13:10:08"}
+{"check": "V4", "where": "msgs LAB", "ok": true, "bits": 4, "time": "2026-10-24 13:10:09"}
+{"check": "V4", "where": "msgs RAW@64", "ok": true, "bits": 64, "time": "2026-10-24 13:10:12"}
+{"check": "V4", "where": "msgs BOT@64", "ok": true, "bits": 64, "time": "2026-10-24 13:10:14"}
+{"check": "V4", "where": "msgs RAW_c64_s2_q1", "ok": true, "bits": 256, "time": "2026-10-24 13:10:17"}
+{"check": "V4", "where": "msgs RAW_c16_s4_q4", "ok": true, "bits": 1024, "time": "2026-10-24 13:10:20"}
+{"check": "V4", "where": "msgs BOT_c16_s8_q1", "ok": true, "bits": 1024, "time": "2026-10-24 13:10:22"}
+{"check": "V4", "where": "msgs RAW_native", "ok": true, "bits": 32768, "time": "2026-10-24 13:10:25"}
+{"check": "V4", "where": "msgs BOT_float", "ok": true, "bits": 512, "time": "2026-10-24 13:10:25"}
+{"check": "V3", "where": "msgs end", "ok": true, "time": "2026-10-24 13:10:25"}
+{"check": "V3", "where": "S1_TOPK@64 start", "ok": true, "time": "2026-10-24 13:10:25"}
+{"check": "V3", "where": "S1_TOPK@64 end", "ok": true, "time": "2026-10-24 13:10:34"}
+{"check": "V3", "where": "S1_RAW_c64_s2_q1 start", "ok": true, "time": "2026-10-24 13:10:34"}
+{"check": "V3", "where": "S1_RAW_c64_s2_q1 end", "ok": true, "time": "2026-10-24 13:10:42"}
+{"check": "V3", "where": "S1_RAW_c16_s4_q4 start", "ok": true, "time": "2026-10-24 13:10:42"}
+{"check": "V3", "where": "S1_RAW_c16_s4_q4 end", "ok": true, "time": "2026-10-24 13:10:49"}
+{"check": "V3", "where": "S1_RAW_native start", "ok": true, "time": "2026-10-24 13:10:49"}
+{"check": "V3", "where": "S1_RAW_native end", "ok": true, "time": "2026-10-24 13:10:57"}
+{"check": "V3", "where": "S1_BOT_c16_s8_q1 start", "ok": true, "time": "2026-10-24 13:10:57"}
+{"check": "V3", "where": "S1_BOT_c16_s8_q1 end", "ok": true, "time": "2026-10-24 13:11:03"}
+{"check": "V3", "where": "S1_TOPK@64_ctrl start", "ok": true, "time": "2026-10-24 13:11:03"}
+{"check": "V2", "where": "S1_TOPK@64_ctrl", "ok": true, "dev_psnr": 12.669707552956996, "F0": 12.68055937201839, "time": "2026-10-24 13:11:10"}
+{"check": "V3", "where": "S1_TOPK@64_ctrl end", "ok": true, "time": "2026-10-24 13:11:10"}
+{"check": "V3", "where": "L1_BOT@64 start", "ok": true, "time": "2026-10-24 13:11:10"}
+{"check": "V3", "where": "L1_BOT@64 end", "ok": true, "time": "2026-10-24 13:11:30"}

@@ -1,0 +1,150 @@
+[13:44:15] DRAFT uconfirm.py smoke stages ['items', 'sender', 'gates', 'probes', 'text', 'latent', 'select', 'ctext', 'seeds', 'analysis'] out research/latent_uncertainty_confirm_20261021/smoke sender main code 690305212c48
+[13:44:18] weight hashes (start): 3 files
+[13:44:18] == stage items
+[13:45:16] items: {'dev_train': 2000, 'dev_test': 1000, 'train': 4000, 'test_pool': 7991}; alias normalization agreement 0.9999; window match {'dev_train': 0.9935, 'dev_test': 0.993, 'train': 0.992, 'test_pool': 0.9914904267300714}
+[13:45:16] == stage items done (58 s)
+[13:45:16] == stage sender
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 17782.65it/s]
+[13:46:52] sender dev_train chunk 1/1: 48 items, 92 s (1.93 s/item), parser failures 2
+[13:46:52] sender dev_train: merged 48 items (1.93 s/item)
+[13:47:32] sender dev_test chunk 1/1: 16 items, 34 s (2.15 s/item), parser failures 1
+[13:47:32] sender dev_test: merged 16 items (2.15 s/item)
+[13:47:33] == stage sender done (136 s)
+[13:47:33] == stage gates
+[13:47:33] gate G-D1: pass {'value': 0.234375, 'rule': '0.20 <= dev accuracy <= 0.80', 'pass': True}
+[13:47:33] gate G-D4: pass {'value': 0.96875, 'rule': 'alias and token-F1 rules agree on >= 90% of dev items', 'pass': True, 'disagreements_file': 'gd4_disagreements.jsonl'}
+[13:47:33] gate parser: (record) {'failure_rate': 0.046875, 'change_needed': False, 'view_file': 'parser_view.json', 'rule': 'design 6.1: more than 5% failures -> a dated parser change in the preregistration'}
+[13:47:33] == stage gates done (0 s)
+[13:47:33] == stage probes
+[13:47:34] probe logistic: dev-test NLL 0.7081 AUROC 0.438
+[13:47:34] probe mlp: dev-test NLL 0.6738 AUROC 0.521
+[13:47:34] gate G-D2: FAIL {'value': 0.5208333333333334, 'rule': 'probe direct on c1: dev-test AUROC >= 0.65', 'family': 'mlp', 'pass': False}
+[13:47:34] == stage probes done (1 s)
+[13:47:34] == stage text
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<00:59,  4.85it/s]Loading weights:  48%|████▊     | 138/290 [00:00<00:00, 559.38it/s]Loading weights:  75%|███████▌  | 218/290 [00:00<00:00, 538.85it/s]Loading weights:  98%|█████████▊| 285/290 [00:00<00:00, 514.76it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 479.88it/s]
+[13:48:06] text T0: dev-test NLL 0.5742
+[13:48:06] text T0c: dev-test NLL 0.5753
+[13:48:07] text T1: dev-test NLL 0.5899
+[13:48:07] text Source: dev-test NLL 0.6927
+[13:48:08] text Q-only: dev-test NLL 0.7459
+[13:48:08] text T2_F1: dev-test NLL 0.5913
+[13:48:09] text T2_F2: dev-test NLL 0.6772
+[13:48:09] text T2_F3: dev-test NLL 0.7129
+[13:48:10] text T3_F1: dev-test NLL 0.5875
+[13:48:10] text T3_F2: dev-test NLL 0.7001
+[13:48:11] text T3_F3: dev-test NLL 0.6649
+[13:48:11] text T4_F1: dev-test NLL 0.7539
+[13:48:11] text T4_F2: dev-test NLL 0.5861
+[13:48:12] text T4_F3: dev-test NLL 0.5761
+[13:48:12] text T5_F1: dev-test NLL 0.7799
+[13:48:13] text T5_F2: dev-test NLL 0.5801
+[13:48:13] text T5_F3: dev-test NLL 0.5726
+[13:48:14] text T6_list: dev-test NLL 0.5860
+[13:48:14] text T6_counts: dev-test NLL 0.6061
+[13:48:14] gate G-D3: FAIL {'value': [0.6927061815079468, 0.5741954585461042], 'rule': 'dev-test NLL(Source) < NLL(T0)', 'pass': False}
+[13:48:14] == stage text done (40 s)
+[13:48:14] == stage latent
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 4145.57it/s]
+[13:48:25] latent L_full_lr3e-05_ep2: best inner-val NLL 0.7076 at epoch 2 of 2 (9 s)
+[13:48:32] latent L_full_lr0.0001_ep2: best inner-val NLL 0.6810 at epoch 2 of 2 (7 s)
+[13:48:39] latent L_r16_lr0.001_ep2: best inner-val NLL 0.6830 at epoch 1 of 2 (7 s)
+[13:48:46] latent L_r16_lr0.003_ep2: best inner-val NLL 0.5730 at epoch 2 of 2 (7 s)
+[13:48:53] latent L_r16_lr0.01_ep2: best inner-val NLL 0.4744 at epoch 2 of 2 (7 s)
+[13:49:00] latent L_r16_lr0.03_ep2: best inner-val NLL 1.8826 at epoch 2 of 2 (7 s)
+[13:49:10] latent L_r16_lr0.01_ep3: best inner-val NLL 0.4744 at epoch 2 of 3 (10 s)
+[13:49:17] latent Lprobe_lr0.001_ep2: best inner-val NLL 0.7400 at epoch 1 of 2 (7 s)
+[13:49:24] latent Lprobe_lr0.01_ep2: best inner-val NLL 0.7013 at epoch 2 of 2 (7 s)
+[13:49:31] latent Lprobe_lr0.03_ep2: best inner-val NLL 0.9189 at epoch 2 of 2 (7 s)
+[13:49:41] latent Lprobe_lr0.01_ep3: best inner-val NLL 0.6870 at epoch 3 of 3 (10 s)
+[13:49:43] latent: L* L_r16_lr0.01_ep3 (0.4744); L-probe* Lprobe_lr0.01_ep3 (0.6870); SD 0.480 -> n_test 6000
+[13:49:43] == stage latent done (89 s)
+[13:49:43] == stage select
+[13:49:43] select: {"probe_family": "mlp", "formats": {"T2": "F1", "T3": "F1", "T4": "F3", "T5": "F3", "T6": "list"}, "L": {"rank": 16, "lr": 0.01, "epochs": 2, "name": "L_r16_lr0.01_ep3", "inner_val_nll": 0.47440085804003324}, "L_probe": {"lr": 0.01, "epochs": 3, "name": "Lprobe_lr0.01_ep3", "inner_val_nll": 0.6869968300068118}, "n_test": 6000}
+[13:49:43] == stage select done (0 s)
+[13:49:43] == stage ctext
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  94%|█████████▍| 273/290 [00:00<00:00, 2723.70it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2680.67it/s]
+[13:49:44] ctext T2 dev_train: 48 passes
+[13:49:45] ctext T5 dev_train: 48 passes
+[13:49:48] ctext T6 dev_train: 48 passes
+[13:49:48] ctext T2 dev_test: 16 passes
+[13:49:48] ctext T5 dev_test: 16 passes
+[13:49:49] ctext T6 dev_test: 16 passes
+[13:49:49] == stage ctext done (6 s)
+[13:49:49] == stage seeds
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  79%|███████▊  | 228/290 [00:00<00:00, 2240.22it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2212.90it/s]
+[13:50:02] seed 20261101 L: 2 epochs, last train loss 0.6038 (8 s)
+[13:50:13] seed 20261101 L-shuf: 2 epochs, last train loss 0.6327 (7 s)
+[13:50:28] seed 20261101 L-probe: 3 epochs, last train loss 0.3788 (11 s)
+[13:50:30] seed 20261101: done (41 s)
+[13:50:42] seed 20261102 L: 2 epochs, last train loss 0.8399 (8 s)
+[13:50:54] seed 20261102 L-shuf: 2 epochs, last train loss 0.7999 (8 s)
+[13:51:09] seed 20261102 L-probe: 3 epochs, last train loss 0.3469 (11 s)
+[13:51:11] seed 20261102: done (41 s)
+[13:51:23] seed 20261103 L: 2 epochs, last train loss 0.8504 (8 s)
+[13:51:34] seed 20261103 L-shuf: 2 epochs, last train loss 0.7653 (8 s)
+[13:51:49] seed 20261103 L-probe: 3 epochs, last train loss 0.2805 (12 s)
+[13:51:52] seed 20261103: done (41 s)
+[13:51:52] == stage seeds done (123 s)
+[13:51:52] == stage analysis
+[13:52:03] analysis seed 20261101: readouts done
+[13:52:14] analysis seed 20261102: readouts done
+[13:52:25] analysis seed 20261103: readouts done
+Status: SMOKE (code check only; not evidence)
+
+| arm | NLL | AUROC | Brier | ECE | acc | AUROC y_SE | zero-shot NLL |
+|---|---|---|---|---|---|---|---|
+| T0 | 0.7088 | 0.458 | 0.2619 | 0.3438 | 0.500 | 0.550 | 0.7302 |
+| T0c | 0.6971 | 0.438 | 0.2449 | 0.2180 | 0.625 | 0.750 | 0.6777 |
+| T1 | 0.7822 | 0.500 | 0.2984 | 0.4551 | 0.500 | 0.617 | 0.8579 |
+| T2 | 0.7732 | 0.500 | 0.2946 | 0.4283 | 0.500 | 0.550 | 0.8514 |
+| T5 | 0.7332 | 0.479 | 0.2622 | 0.3070 | 0.562 | 0.661 | 0.7818 |
+| T6 | 0.6987 | 0.479 | 0.2412 | 0.2282 | 0.625 | 0.728 | 0.6580 |
+| Source | 0.6573 | 0.451 | 0.2205 | 0.2701 | 0.708 | 0.800 | 0.7335 |
+| Q-only | 0.7459 | 0.438 | 0.2698 | 0.3707 | 0.625 | 0.689 | 0.8917 |
+| T3 | 0.7795 | 0.500 | 0.2981 | 0.4542 | 0.500 | 0.633 | 0.8522 |
+| T4 | 0.7160 | 0.528 | 0.2535 | 0.3323 | 0.604 | 0.794 | 0.7454 |
+| L | 0.7240 | 0.521 | 0.2605 | 0.3117 | 0.562 | 0.656 | 0.7972 |
+| L-shuf | 0.7148 | 0.521 | 0.2585 | 0.3499 | 0.542 | 0.628 | 0.7379 |
+| L-testshuf | 0.6883 | 0.562 | 0.2490 | 0.2537 | 0.583 | 0.644 | 0.6901 |
+| L-probe | 0.8752 | 0.424 | 0.3108 | 0.3839 | 0.479 | 0.750 | 0.8002 |
+| probe-direct | 0.7571 | 0.340 | 0.2826 | 0.3814 | 0.375 | nan |  |
+| sender-direct | 0.4974 | 0.833 | 0.1670 | 0.2052 | 0.708 | nan |  |
+| base-rate | 0.5635 | 0.500 | 0.1879 | 0.0208 | 0.750 | nan |  |
+
+Case 0: invalid. S* = T0c. Validity: {'V1': True, 'V2': True, 'V3': False, 'V4': True}. c_round = 0.0657.
+
+| A beats B? | mean NLL(B) - NLL(A) | 95% CI | per seed | beats |
+|---|---|---|---|---|
+| L vs T0c | -0.0270 | [-0.2015, +0.1810] | -0.085, -0.068, +0.073 | False |
+| L vs T4 | -0.0080 | [-0.1730, +0.2007] | -0.100, -0.054, +0.131 | False |
+| T4 vs L | +0.0080 | [-0.2007, +0.1730] | +0.100, +0.054, -0.131 | False |
+| L vs L-probe | +0.1511 | [-0.0064, +0.3326] | +0.134, +0.016, +0.303 | False |
+| T4 vs T0c | -0.0189 | [-0.1157, +0.0708] | +0.015, -0.014, -0.058 | False |
+| T4 vs T3 | +0.0635 | [-0.1568, +0.2530] | +0.081, +0.074, +0.036 | False |
+| T4 vs T0c | -0.0189 | [-0.1157, +0.0708] | +0.015, -0.014, -0.058 | False |
+| T5 vs T2 | +0.0400 | [-0.1640, +0.2315] | +0.040, +0.040, +0.040 | False |
+| T6 vs T5 | +0.0345 | [-0.1183, +0.2039] | +0.035, +0.035, +0.035 | False |
+| L vs T6 | -0.0254 | [-0.2531, +0.2320] | -0.084, -0.067, +0.074 | False |
+| L vs T3 | +0.0555 | [-0.0754, +0.1921] | -0.020, +0.019, +0.167 | False |
+| L vs L-testshuf | -0.0357 | [-0.0789, +0.0096] | +0.002, -0.078, -0.032 | False |
+| L-probe vs T4 | -0.1592 | [-0.3452, +0.0066] | -0.234, -0.070, -0.173 | False |
+| T0c vs T4 | +0.0189 | [-0.0708, +0.1157] | -0.015, +0.014, +0.058 | False |
+| T3 vs T4 | -0.0635 | [-0.2530, +0.1568] | -0.081, -0.074, -0.036 | False |
+| T0c vs T4 | +0.0189 | [-0.0708, +0.1157] | -0.015, +0.014, +0.058 | False |
+| T2 vs T5 | -0.0400 | [-0.2315, +0.1640] | -0.040, -0.040, -0.040 | False |
+| T5 vs T6 | -0.0345 | [-0.2039, +0.1183] | -0.035, -0.035, -0.035 | False |
+| T6 vs L | +0.0254 | [-0.2320, +0.2531] | +0.084, +0.067, -0.074 | False |
+| T3 vs L | -0.0555 | [-0.1921, +0.0754] | +0.020, -0.019, -0.167 | False |
+| L-testshuf vs L | +0.0357 | [-0.0096, +0.0789] | -0.002, +0.078, +0.032 | False |
+| T4 vs L-probe | +0.1592 | [-0.0066, +0.3452] | +0.234, +0.070, +0.173 | False |
+
+| route loss: NLL(arm) - NLL(probe direct) | mean | 95% CI |
+|---|---|---|
+| T3 | +0.0224 | [-0.2286, +0.2799] |
+| T4 | -0.0411 | [-0.3480, +0.3237] |
+| L | -0.0331 | [-0.2108, +0.1546] |
+| L-probe | +0.1181 | [-0.1606, +0.4411] |
+[13:52:25] analysis: case 0 (invalid); status SMOKE (code check only; not evidence)
+[13:52:25] == stage analysis done (33 s)
+[13:52:28] weight hashes (end): 3 files
+[13:52:28] done

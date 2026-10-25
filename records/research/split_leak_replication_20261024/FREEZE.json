@@ -1,0 +1,67 @@
+{
+ "time": "2026-10-24 18:39:26",
+ "sha256": {
+  "PREREGISTRATION.md": "91fdb88e2f02f6d0b46e4ad99532e185383f58dbe6f03ace8dc7bda35bae5daf",
+  "sebits.py": "db0f25b468ee55046a4ab94b3398c875b5157409f6c2577fef0496045de08696",
+  "selection.json": "b5a24e75a717249de91e0b5f82d1ef9f453e76070d151db8c524b789cd0ac907",
+  "sleak.py": "0be7e1e27e036f0f4e719d8aade04f9b7a56b60be819643524b1562822c9b0db",
+  "test_sleak.py": "553d7214094c1b9ab4c9b0b4b68554a0061b6e743dcf59919ba5d516b1e9cb6b",
+  "run_sleak.sh": "0cc9e3a64a60a49e2b6a7b3c5dabeb70cd20f8ca23bf85ebcfc7022d27f92b9a",
+  "wait_and_run.sh": "b0807b5e6330cf3007e6355f1c7573104fd4ccc67641ddc60e6ab74da02bae69",
+  "test_run_sleak.zsh": "4a636ebfcaa9fb18f1c5eb7d510f669333c379ba4d9ae2c1f0be01b5091157dd"
+ },
+ "tests": {
+  "run": 12,
+  "failures": 0,
+  "errors": 0
+ },
+ "data": {
+  "url": "https://cave.cs.toronto.edu/kriz/cifar-10-binary.tar.gz",
+  "archive": "cifar-10-binary.tar.gz",
+  "bytes": 170052171,
+  "sha256": "c4a38c50a1bc5f3a1c5537f2155ab9d68f9f25eb1ed8d9ddda3db29a59bca1dd",
+  "md5": "c32a1d4ab5d03f1284b67883e8d87530",
+  "md5_page": "c32a1d4ab5d03f1284b67883e8d87530",
+  "time": "2026-10-24 13:04:10",
+  "npz_sha256": {
+   "cifar10_train.npz": "3718a9a09265eb5e1b478fc87f49ff46f36397e04fd03f151173b44ee928f95c",
+   "cifar10_test_images.npz": "4b19da3a0393bc5bc233d475551b7b4cd6fc3bd725bb6c897b4468ddef00cf4e",
+   "cifar10_test_labels.npz": "fec3b140ee9cc86565710c177dc1ff8abc36d8f06e158568576a36648d6b63c1"
+  },
+  "class_counts": {
+   "train": [
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000,
+    5000
+   ],
+   "test": [
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000,
+    1000
+   ]
+  }
+ },
+ "data_dir": "research/split_equal_bits_20261023/data",
+ "sealed_freeze_sha256": "12248fb35fdbb4fe39d6250c3b34386debd2fbf40e270f2e0a6557ad174e93a0",
+ "versions": {
+  "python": "3.12.14",
+  "torch": "2.13.0",
+  "numpy": "2.4.6"
+ },
+ "amends": null,
+ "rule": "Every job checks these hashes and the npz hashes and stops on a difference."
+}

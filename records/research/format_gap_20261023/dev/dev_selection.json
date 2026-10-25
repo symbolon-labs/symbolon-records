@@ -1,0 +1,57 @@
+{
+ "status": "DEVELOPMENT (Phase D' selection). Not evidence.",
+ "time": "2026-10-23 23:52:47",
+ "F_star": "WD2",
+ "F_other": "LOs",
+ "family_star": "words",
+ "tied": [
+  "WD2"
+ ],
+ "eligible": [
+  "D2",
+  "D3",
+  "LOs",
+  "ICD7",
+  "WD2",
+  "ICD7D2"
+ ],
+ "pooled_nll": {
+  "F3": 0.41824630133568674,
+  "D2": 0.44233112229845134,
+  "D3": 0.44551083682769216,
+  "LOs": 0.4273040660863403,
+  "ICD7": 0.4178476008722185,
+  "WD2": 0.41054537671165425,
+  "ICD7D2": 0.4129226283861682
+ },
+ "gain_star": 0.00770092462403249,
+ "gates": {
+  "G-F2": {
+   "value": 0.40903614283793316,
+   "reference": 0.40904,
+   "tolerance": 0.001,
+   "pass": true,
+   "rule": "dev-test NLL of F3 = 0.40904 +- 0.001 (Phase D value)"
+  },
+  "G-F1": {
+   "value": 0.00770092462403249,
+   "threshold": 0.005,
+   "pass": true,
+   "rule": "pooled dev NLL(F3) - pooled dev NLL(F*) >= 0.005"
+  }
+ },
+ "decision": "go",
+ "outcome": "G-F2 and G-F1 pass: Plan M runs ([researcher], 2026-10-23, about 20:30)",
+ "tag_tokens": {
+  "F3": 3.9691709844559586,
+  "D2": 6.0,
+  "D3": 7.0,
+  "LOs": 8.0,
+  "ICD7": 4.472279792746114,
+  "WD2": 9.96917098445596,
+  "ICD7D2": 10.472279792746114
+ },
+ "code_sha256": "57d6d6771384fd7b4e0de09f92468c0b11328a7a04c849edccb9aafcd00131d8",
+ "prereg_sha256": "e7b8f105f8e1b5fdc3ab33fa61136044d9971280a103d7a5787504eb3a5d2596",
+ "dev_result_sha256": "d95d42c2b8a5af43b4b2c78f56d92ef3ced49e8bee1cccbb4ddc9913c46eb00c"
+}

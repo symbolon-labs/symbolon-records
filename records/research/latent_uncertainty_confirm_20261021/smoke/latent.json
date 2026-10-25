@@ -1,0 +1,235 @@
+{
+ "selected_L": {
+  "name": "L_r16_lr0.01_ep3",
+  "spec": {
+   "kind": "L",
+   "rank": 16,
+   "lr": 0.01,
+   "max_epochs": 3
+  },
+  "best_val_nll": 0.47440085804003324,
+  "best_epoch": 2,
+  "epochs_run": 3,
+  "history": [
+   {
+    "epoch": 1,
+    "train_loss": 0.7323644035740903,
+    "seconds": 3.1810052394866943,
+    "val_nll": 1.4592580249539318
+   },
+   {
+    "epoch": 2,
+    "train_loss": 0.669445298219982,
+    "seconds": 6.721697092056274,
+    "val_nll": 0.47440085804003324
+   },
+   {
+    "epoch": 3,
+    "train_loss": 0.20758001427901418,
+    "seconds": 10.07144808769226,
+    "val_nll": 0.6227744725223864
+   }
+  ],
+  "finite": true
+ },
+ "selected_L_probe": {
+  "name": "Lprobe_lr0.01_ep3",
+  "spec": {
+   "kind": "L-probe",
+   "rank": null,
+   "lr": 0.01,
+   "max_epochs": 3
+  },
+  "best_val_nll": 0.6869968300068118,
+  "best_epoch": 3,
+  "epochs_run": 3,
+  "history": [
+   {
+    "epoch": 1,
+    "train_loss": 0.8261967646448236,
+    "seconds": 3.178609848022461,
+    "val_nll": 1.8125415033845376
+   },
+   {
+    "epoch": 2,
+    "train_loss": 0.7950796359463742,
+    "seconds": 6.698477745056152,
+    "val_nll": 0.7012788993193901
+   },
+   {
+    "epoch": 3,
+    "train_loss": 0.2583547571772023,
+    "seconds": 9.977706909179688,
+    "val_nll": 0.6869968300068118
+   }
+  ],
+  "finite": true
+ },
+ "rounds_L": [
+  {
+   "rule": "lr at grid end",
+   "from_lr": 0.003,
+   "added": 0.01,
+   "group": [
+    "L",
+    16
+   ]
+  },
+  {
+   "rule": "lr at grid end",
+   "from_lr": 0.01,
+   "added": 0.03,
+   "group": [
+    "L",
+    16
+   ]
+  },
+  {
+   "rule": "epoch limit raised",
+   "config": "L_r16_lr0.01_ep2",
+   "to": 3
+  }
+ ],
+ "rounds_L_probe": [
+  {
+   "rule": "lr at grid end",
+   "from_lr": 0.01,
+   "added": 0.03,
+   "group": [
+    "L-probe",
+    null
+   ]
+  },
+  {
+   "rule": "epoch limit raised",
+   "config": "Lprobe_lr0.01_ep2",
+   "to": 3
+  }
+ ],
+ "grid_L": {
+  "L_full_lr3e-05_ep2": {
+   "spec": {
+    "kind": "L",
+    "rank": null,
+    "lr": 3e-05,
+    "max_epochs": 2
+   },
+   "best_val_nll": 0.7075800271876326,
+   "best_epoch": 2,
+   "epochs_run": 2,
+   "finite": true
+  },
+  "L_full_lr0.0001_ep2": {
+   "spec": {
+    "kind": "L",
+    "rank": null,
+    "lr": 0.0001,
+    "max_epochs": 2
+   },
+   "best_val_nll": 0.6810119350826322,
+   "best_epoch": 2,
+   "epochs_run": 2,
+   "finite": true
+  },
+  "L_r16_lr0.001_ep2": {
+   "spec": {
+    "kind": "L",
+    "rank": 16,
+    "lr": 0.001,
+    "max_epochs": 2
+   },
+   "best_val_nll": 0.6830383999530525,
+   "best_epoch": 1,
+   "epochs_run": 2,
+   "finite": true
+  },
+  "L_r16_lr0.003_ep2": {
+   "spec": {
+    "kind": "L",
+    "rank": 16,
+    "lr": 0.003,
+    "max_epochs": 2
+   },
+   "best_val_nll": 0.5730012127886202,
+   "best_epoch": 2,
+   "epochs_run": 2,
+   "finite": true
+  },
+  "L_r16_lr0.03_ep2": {
+   "spec": {
+    "kind": "L",
+    "rank": 16,
+    "lr": 0.03,
+    "max_epochs": 2
+   },
+   "best_val_nll": 1.8825625321108663,
+   "best_epoch": 2,
+   "epochs_run": 2,
+   "finite": true
+  },
+  "L_r16_lr0.01_ep3": {
+   "spec": {
+    "kind": "L",
+    "rank": 16,
+    "lr": 0.01,
+    "max_epochs": 3
+   },
+   "best_val_nll": 0.47440085804003324,
+   "best_epoch": 2,
+   "epochs_run": 3,
+   "finite": true
+  }
+ },
+ "grid_L_probe": {
+  "Lprobe_lr0.001_ep2": {
+   "spec": {
+    "kind": "L-probe",
+    "rank": null,
+    "lr": 0.001,
+    "max_epochs": 2
+   },
+   "best_val_nll": 0.7400137835506745,
+   "best_epoch": 1,
+   "epochs_run": 2,
+   "finite": true
+  },
+  "Lprobe_lr0.03_ep2": {
+   "spec": {
+    "kind": "L-probe",
+    "rank": null,
+    "lr": 0.03,
+    "max_epochs": 2
+   },
+   "best_val_nll": 0.9188648520274235,
+   "best_epoch": 2,
+   "epochs_run": 2,
+   "finite": true
+  },
+  "Lprobe_lr0.01_ep3": {
+   "spec": {
+    "kind": "L-probe",
+    "rank": null,
+    "lr": 0.01,
+    "max_epochs": 3
+   },
+   "best_val_nll": 0.6869968300068118,
+   "best_epoch": 3,
+   "epochs_run": 3,
+   "finite": true
+  }
+ },
+ "sd_binary_T4_minus_L": 0.47995176390491345,
+ "mean_binary_T4_minus_L": -0.06314663150157922,
+ "n_test": 6000,
+ "n_test_pool": 7991,
+ "n_rule": "SD above 0.6 -> all 7991 pool items; else 6000",
+ "inner_train": 38,
+ "inner_val": 10,
+ "receiver_param_sha256_before": "fe5f214635a19e4d8052924e712fb52e517279e8161d212e8d1e60d0ee9628f4",
+ "receiver_param_sha256_after": "fe5f214635a19e4d8052924e712fb52e517279e8161d212e8d1e60d0ee9628f4",
+ "dev_test_nll": {
+  "L": 0.6392165883147293,
+  "T4": 0.5760699568131501
+ },
+ "s_per_step": 1.6785746812820435
+}

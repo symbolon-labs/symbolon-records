@@ -10,14 +10,25 @@ This repository does not contain model weights. The records name each model and 
 
 | Model | Pinned revision | License | Use in these records |
 |---|---|---|---|
-| [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B/tree/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e) | `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e` | Apache-2.0 | Sender in all R.01 and R.06 runs |
+| [Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B/tree/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e) | `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e` | Apache-2.0 | Sender in all R.01 and R.06 runs and in R.08 |
 | [Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B/tree/c1899de289a04d12100db370d81485cdf75e47ca) | `c1899de289a04d12100db370d81485cdf75e47ca` | Apache-2.0 | Receiver in channel v1 and Gate 3 (v2); control in the receiver qualification |
-| [HuggingFaceTB/SmolLM2-360M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/tree/a10cc1512eabd3dde888204e902eca88bddb4951) | `a10cc1512eabd3dde888204e902eca88bddb4951` | Apache-2.0 | Receiver in Gate 4, binding gate V1, E3 and all R.06 tests |
+| [HuggingFaceTB/SmolLM2-360M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/tree/a10cc1512eabd3dde888204e902eca88bddb4951) | `a10cc1512eabd3dde888204e902eca88bddb4951` | Apache-2.0 | Receiver in Gate 4, binding gate V1, E3 and all R.06 tests, and in R.08 |
 | [meta-llama/Llama-3.2-1B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct/tree/9213176726f574b556790deb65791e0c5aa438b6) | `9213176726f574b556790deb65791e0c5aa438b6` | Llama 3.2 Community License (gated access) | Receiver in the failed Llama attempt and in the receiver qualification |
 
 The revisions come from the model cache paths in the records (for example `data/tiny/manifest.json` in each channel folder). E3 loads the same Qwen3-1.7B and SmolLM2-360M-Instruct revisions, and `records/research/latent_anchor_program_20260930/lab.py` checks the parameter hashes of both models.
 
 The licenses and revisions were checked on the Hugging Face hub on 2026-10-19.
+
+## Data sets (version 1.1)
+
+This repository does not contain the data sets. The records name each one.
+
+| Data set | Pinned revision | Use in these records |
+|---|---|---|
+| [mandarjoshi/trivia_qa](https://huggingface.co/datasets/mandarjoshi/trivia_qa), subset rc.wikipedia | `0f7faf33a3908546c6fd5b73a660e0f8ff173c2f` | R.08 confirmatory and format-gap studies. The dataset card gives the license as unknown and says that the University of Washington does not own the copyright of the questions and documents. Thus the files with question and passage text are not included. |
+| CIFAR-10 | the copy in the R.09 folders (hashes in their `FREEZE.json`) | R.09. The images are not included. |
+
+R.10 uses generated data only (a small two-dimensional catch task for two agents, and a toy channel).
 
 ## Python packages
 

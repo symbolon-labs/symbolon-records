@@ -1,0 +1,1404 @@
+{
+ "status": "EXPLORATORY",
+ "plan": "PLAN.md",
+ "notes": "IMPLEMENTATION_NOTES.md",
+ "sizes": {
+  "train": 64,
+  "test": 32
+ },
+ "seeds": {
+  "data": [
+   2026102091,
+   2026102092
+  ],
+  "other": 20261020
+ },
+ "args": {
+  "out": "smoke",
+  "n_train": 64,
+  "n_test": 32,
+  "seeds": "smoke",
+  "max_epochs": 8,
+  "patience": 3,
+  "sender_bs": 16
+ },
+ "stage_seconds": {
+  "data": 0.00041294097900390625,
+  "sender": 1.1920928955078125e-05,
+  "probes": 0.003538846969604492,
+  "text": 0.00020003318786621094,
+  "latent": 1.0013580322265625e-05
+ },
+ "env": {
+  "torch": "2.13.0",
+  "transformers": "5.10.2",
+  "python": "3.12.14",
+  "sender": "<local>/.cache/huggingface/hub/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "receiver": "<local>/.cache/huggingface/hub/models--HuggingFaceTB--SmolLM2-360M-Instruct/snapshots/a10cc1512eabd3dde888204e902eca88bddb4951"
+ },
+ "arms": {
+  "T0": {
+   "readout": {
+    "nll": 0.8389891148180474,
+    "brier": 0.41752711673073495,
+    "acc": 0.78125,
+    "ece": 0.19936030228656665,
+    "gap_to_bayes_nll": 0.4451912426028306
+   },
+   "zero_shot": {
+    "nll": 1.913778660705803,
+    "brier": 0.858221159037273,
+    "acc": 0.25,
+    "ece": 0.48203968572564837,
+    "gap_to_bayes_nll": 1.519980788490586
+   }
+  },
+  "T1": {
+   "readout": {
+    "nll": 0.8411403153149517,
+    "brier": 0.41877767946033073,
+    "acc": 0.78125,
+    "ece": 0.20043390560905738,
+    "gap_to_bayes_nll": 0.4473424430997349
+   },
+   "zero_shot": {
+    "nll": 1.603113886593535,
+    "brier": 0.7414241309626451,
+    "acc": 0.3125,
+    "ece": 0.3782628605281604,
+    "gap_to_bayes_nll": 1.2093160143783184
+   }
+  },
+  "T2": {
+   "readout": {
+    "nll": 0.828760621443178,
+    "brier": 0.40803367659379275,
+    "acc": 0.78125,
+    "ece": 0.28252569508063186,
+    "gap_to_bayes_nll": 0.4349627492279612
+   },
+   "zero_shot": {
+    "nll": 1.4429562836223648,
+    "brier": 0.6355361483862956,
+    "acc": 0.65625,
+    "ece": 0.30739626108002843,
+    "gap_to_bayes_nll": 1.0491584114071482
+   }
+  },
+  "T3": {
+   "readout": {
+    "nll": 0.8317015762385346,
+    "brier": 0.4112894757162975,
+    "acc": 0.78125,
+    "ece": 0.20458382727207536,
+    "gap_to_bayes_nll": 0.4379037040233178
+   },
+   "zero_shot": {
+    "nll": 1.4480134056794285,
+    "brier": 0.6503168744201075,
+    "acc": 0.625,
+    "ece": 0.2759421578356313,
+    "gap_to_bayes_nll": 1.0542155334642116
+   }
+  },
+  "T4": {
+   "readout": {
+    "nll": 0.842553051905551,
+    "brier": 0.41704218450037894,
+    "acc": 0.78125,
+    "ece": 0.18643816718957576,
+    "gap_to_bayes_nll": 0.4487551796903342
+   },
+   "zero_shot": {
+    "nll": 2.1197312626446347,
+    "brier": 0.9048117970285673,
+    "acc": 0.25,
+    "ece": 0.3827587220532187,
+    "gap_to_bayes_nll": 1.725933390429418
+   }
+  },
+  "Card": {
+   "readout": {
+    "nll": 0.8320492005100539,
+    "brier": 0.4703840054109032,
+    "acc": 0.65625,
+    "ece": 0.21066494387475138,
+    "gap_to_bayes_nll": 0.43825132829483715
+   },
+   "zero_shot": {
+    "nll": 2.1661349800903387,
+    "brier": 1.0089969731810111,
+    "acc": 0.25,
+    "ece": 0.5431642560878212,
+    "gap_to_bayes_nll": 1.772337107875122
+   }
+  },
+  "L": {
+   "readout": {
+    "nll": 1.0519976519652223,
+    "brier": 0.5567812584197678,
+    "acc": 0.53125,
+    "ece": 0.19097887920300985,
+    "gap_to_bayes_nll": 0.6581997797500055
+   },
+   "zero_shot": {
+    "nll": 2.203585476737721,
+    "brier": 0.9969956381221367,
+    "acc": 0.28125,
+    "ece": 0.3935383902942731,
+    "gap_to_bayes_nll": 1.8097876045225045
+   }
+  },
+  "L-shuf": {
+   "readout": {
+    "nll": 1.4357953625953819,
+    "brier": 0.7868837377188633,
+    "acc": 0.25,
+    "ece": 0.17638486431401204,
+    "gap_to_bayes_nll": 1.0419974903801652
+   },
+   "zero_shot": {
+    "nll": 2.194931405600131,
+    "brier": 1.0761271358086102,
+    "acc": 0.25,
+    "ece": 0.5104457738277655,
+    "gap_to_bayes_nll": 1.801133533384914
+   }
+  },
+  "L-testshuf": {
+   "readout": {
+    "nll": 1.8922103786677211,
+    "brier": 0.9458978575537791,
+    "acc": 0.28125,
+    "ece": 0.36346135920750433,
+    "gap_to_bayes_nll": 1.4984125064525045
+   },
+   "zero_shot": {
+    "nll": 1.9485229711348844,
+    "brier": 0.9899270913041611,
+    "acc": 0.28125,
+    "ece": 0.4550971399128564,
+    "gap_to_bayes_nll": 1.5547250989196675
+   }
+  }
+ },
+ "references": {
+  "Bayes": {
+   "nll": 0.3937978722152168,
+   "brier": 0.2440588647168595,
+   "acc": 0.8125,
+   "ece": 0.07417983949885448,
+   "gap_to_bayes_nll": 0.0
+  },
+  "Bayes-9": {
+   "nll": 1.1565260813636358,
+   "brier": 0.2592592592588611,
+   "acc": 0.8125,
+   "ece": 0.0937499999977606,
+   "gap_to_bayes_nll": 0.762728209148419
+  },
+  "Bayes-9-cal": {
+   "nll": 0.4038142800133033,
+   "brier": 0.24449652782624595,
+   "acc": 0.8125,
+   "ece": 0.07414573074501976,
+   "gap_to_bayes_nll": 0.01001640779808649
+  },
+  "Prior": {
+   "nll": 1.3862943611198906,
+   "brier": 0.75,
+   "acc": 0.34375,
+   "ece": 0.09375,
+   "gap_to_bayes_nll": 0.9924964889046738
+  },
+  "sender_softmax_direct": {
+   "nll": 0.8121903080136024,
+   "brier": 0.40926523729840864,
+   "acc": 0.78125,
+   "ece": 0.22582553482601622,
+   "gap_to_bayes_nll": 0.4183924357983856
+  },
+  "probe4_block21_direct": {
+   "nll": 0.901792756569182,
+   "brier": 0.4648372956874424,
+   "acc": 0.75,
+   "ece": 0.3307748562019744,
+   "gap_to_bayes_nll": 0.5079948843539652
+  },
+  "probe4_block28_direct": {
+   "nll": 0.8396525975177658,
+   "brier": 0.4483021920804329,
+   "acc": 0.75,
+   "ece": 0.21288087372814712,
+   "gap_to_bayes_nll": 0.445854725302549
+  }
+ },
+ "differences": {
+  "T0_minus_L": {
+   "mean": -0.21300853714717508,
+   "ci95": [
+    -0.5520508931750854,
+    0.11177027710818542
+   ]
+  },
+  "T1_minus_L": {
+   "mean": -0.21085733665027073,
+   "ci95": [
+    -0.5505531249163836,
+    0.10943214491742903
+   ]
+  },
+  "T2_minus_L": {
+   "mean": -0.22323703052204455,
+   "ci95": [
+    -0.5579196399800113,
+    0.09939285241486694
+   ]
+  },
+  "T3_minus_L": {
+   "mean": -0.22029607572668794,
+   "ci95": [
+    -0.5595701448641757,
+    0.0990016410944228
+   ]
+  },
+  "T4_minus_L": {
+   "mean": -0.20944460005967155,
+   "ci95": [
+    -0.5413265534757437,
+    0.10461749652970796
+   ]
+  },
+  "Card_minus_L": {
+   "mean": -0.21994845145516848,
+   "ci95": [
+    -0.5603723598622021,
+    0.10497848243103446
+   ]
+  },
+  "L-shuf_minus_L": {
+   "mean": 0.3837977106301593,
+   "ci95": [
+    0.01980274272281992,
+    0.7507792599229304
+   ]
+  },
+  "L-testshuf_minus_L": {
+   "mean": 0.8402127267024986,
+   "ci95": [
+    0.3340603722348902,
+    1.3384504997488442
+   ]
+  },
+  "T0_minus_T2": {
+   "mean": 0.010228493374869519,
+   "ci95": [
+    -0.013485069758900035,
+    0.0322570131051072
+   ]
+  },
+  "T2_minus_T4": {
+   "mean": -0.013792430462373039,
+   "ci95": [
+    -0.10512819283313532,
+    0.07985471635792238
+   ]
+  },
+  "T3_minus_T4": {
+   "mean": -0.010851475667016415,
+   "ci95": [
+    -0.07836962200747835,
+    0.063857047586602
+   ]
+  },
+  "T0_minus_Card": {
+   "mean": 0.006939914307993442,
+   "ci95": [
+    -0.2704102062822092,
+    0.26049584482196686
+   ]
+  }
+ },
+ "reading_rule": {
+  "best_of_T0_T2": "T2",
+  "L_beats_best_text": false,
+  "L_beats_T3": false,
+  "L_beats_T4": false,
+  "case": 3,
+  "sanity_Lshuf_ok": true,
+  "sanity_Card_ok": true,
+  "valid": true,
+  "margin_nats": 0.02,
+  "ln4": 1.3862943611198906
+ },
+ "diagnostics": {
+  "sender_acc": {
+   "train": 0.765625,
+   "test": 0.78125
+  },
+  "bayes_argmax_acc_test": 0.8125,
+  "bayes9_cost_nll": 0.01001640779808649,
+  "bayes9_true_color_zero_fraction_test": 0.03125,
+  "sender_agrees_with_bayes_argmax_test": 0.84375,
+  "digit_histograms_test": {
+   "T1": {
+    "7": 30,
+    "9": 2
+   },
+   "T2": {
+    "4": 1,
+    "6": 2,
+    "8": 9,
+    "9": 20
+   },
+   "T3": {
+    "1": 3,
+    "2": 1,
+    "4": 1,
+    "5": 1,
+    "6": 3,
+    "7": 3,
+    "8": 5,
+    "9": 15
+   }
+  },
+  "digit_auc_for_sender_correct_test": {
+   "T1": 0.54,
+   "T2": 0.7571428571428572,
+   "T3": 0.7542857142857143
+  },
+  "probe3_auc_test": 0.7714285714285715,
+  "readout_info": {
+   "T0": {
+    "lam": 10.0,
+    "cv_nll": 0.8620561643949773,
+    "cv_grid": {
+     "1e-05": 3.064854353347045,
+     "0.0001": 2.6337305686779433,
+     "0.001": 1.6998365134734001,
+     "0.01": 1.4468416835275724,
+     "0.1": 1.2023659949456968,
+     "1.0": 0.9836162391869103,
+     "10.0": 0.8620561643949773
+    }
+   },
+   "T1": {
+    "lam": 10.0,
+    "cv_nll": 0.8510301806829177,
+    "cv_grid": {
+     "1e-05": 2.960318987085017,
+     "0.0001": 2.082017545774391,
+     "0.001": 1.664156137935075,
+     "0.01": 1.4062060089667705,
+     "0.1": 1.1652953634301668,
+     "1.0": 0.9564452127171554,
+     "10.0": 0.8510301806829177
+    }
+   },
+   "T2": {
+    "lam": 10.0,
+    "cv_nll": 0.8601389795042753,
+    "cv_grid": {
+     "1e-05": 2.9824930314092004,
+     "0.0001": 2.6465101525392645,
+     "0.001": 1.995755172783716,
+     "0.01": 1.5822496674917397,
+     "0.1": 1.2262190916817803,
+     "1.0": 0.9703759558675145,
+     "10.0": 0.8601389795042753
+    }
+   },
+   "T3": {
+    "lam": 10.0,
+    "cv_nll": 0.8434653313424195,
+    "cv_grid": {
+     "1e-05": 4.828197123542038,
+     "0.0001": 4.279324713060066,
+     "0.001": 3.221647873662131,
+     "0.01": 2.2608562885336028,
+     "0.1": 1.484166148972185,
+     "1.0": 0.9971234318715136,
+     "10.0": 0.8434653313424195
+    }
+   },
+   "T4": {
+    "lam": 10.0,
+    "cv_nll": 0.8963847891121994,
+    "cv_grid": {
+     "1e-05": 5.803505426115377,
+     "0.0001": 4.795333519315176,
+     "0.001": 3.5612786514773447,
+     "0.01": 2.402919521071372,
+     "0.1": 1.4978721169192295,
+     "1.0": 0.9872084474692443,
+     "10.0": 0.8963847891121994
+    }
+   },
+   "Card": {
+    "lam": 1.0,
+    "cv_nll": 0.9494034805948913,
+    "cv_grid": {
+     "1e-05": 2.9903026119179534,
+     "0.0001": 2.478923112598779,
+     "0.001": 1.996174212556658,
+     "0.01": 1.5557433846212483,
+     "0.1": 1.1839702998734227,
+     "1.0": 0.9494034805948913,
+     "10.0": 1.0318750486201267
+    }
+   }
+  },
+  "probe_info": {
+   "T3": {
+    "lam": 1.0,
+    "cv_nll": 0.49909672814934003,
+    "cv_grid": {
+     "1e-05": 1.7547467148078892,
+     "0.0001": 1.4565238609600388,
+     "0.001": 1.168501847896485,
+     "0.01": 0.8993248781447785,
+     "0.1": 0.6645926843781254,
+     "1.0": 0.49909672814934003
+    }
+   },
+   "T4": {
+    "lam": 1.0,
+    "cv_nll": 1.0044062798907631,
+    "cv_grid": {
+     "1e-05": 2.452330195540897,
+     "0.0001": 2.0904642458316864,
+     "0.001": 1.7441528247976172,
+     "0.01": 1.4288001867613316,
+     "0.1": 1.1676238650381912,
+     "1.0": 1.0044062798907631
+    }
+   },
+   "T4_block28": {
+    "lam": 1.0,
+    "cv_nll": 0.7734750424953332,
+    "cv_grid": {
+     "1e-05": 2.038355409275696,
+     "0.0001": 1.729446038444331,
+     "0.001": 1.4300108454148037,
+     "0.01": 1.155090880542368,
+     "0.1": 0.9234800094201887,
+     "1.0": 0.7734750424953332
+    }
+   }
+  },
+  "latent_info": {
+   "lr": 0.001,
+   "epochs": 6,
+   "n_inner_train": 52,
+   "n_inner_val": 12,
+   "seconds": 41.097055196762085
+  },
+  "latent_grid": {
+   "3e-05": {
+    "best_val_nll": 1.3776559679340288,
+    "best_epoch": 8
+   },
+   "0.0001": {
+    "best_val_nll": 1.3396678079351012,
+    "best_epoch": 6
+   },
+   "0.0003": {
+    "best_val_nll": 1.2171815692319907,
+    "best_epoch": 5
+   },
+   "0.001": {
+    "best_val_nll": 1.0137472935630802,
+    "best_epoch": 6
+   }
+  },
+  "embedding_route_identity_max_abs_diff": 0.0,
+  "example_messages_test": {
+   "T0": [
+    "The box is yellow.",
+    "The box is red.",
+    "The box is yellow."
+   ],
+   "T1": [
+    "The box is yellow. Confidence: 7 out of 9.",
+    "The box is red. Confidence: 7 out of 9.",
+    "The box is yellow. Confidence: 9 out of 9."
+   ],
+   "T2": [
+    "The box is yellow. Confidence: 9 out of 9.",
+    "The box is red. Confidence: 6 out of 9.",
+    "The box is yellow. Confidence: 9 out of 9."
+   ],
+   "T3": [
+    "The box is yellow. Confidence: 8 out of 9.",
+    "The box is red. Confidence: 6 out of 9.",
+    "The box is yellow. Confidence: 9 out of 9."
+   ],
+   "T4": [
+    "The box is yellow. Confidence: red 0 out of 9, blue 0 out of 9, green 1 out of 9, yellow 7 out of 9.",
+    "The box is red. Confidence: red 5 out of 9, blue 1 out of 9, green 3 out of 9, yellow 0 out of 9.",
+    "The box is yellow. Confidence: red 0 out of 9, blue 1 out of 9, green 0 out of 9, yellow 8 out of 9."
+   ],
+   "Card": [
+    "Box ADP. Five witnesses saw this box. Each witness is right 65% of the time.\nWitness 1 says yellow.\nWitness 2 says yellow.\nWitness 3 says green.\nWitness 4 says red.\nWitness 5 says yellow.",
+    "Box SR7. Five witnesses saw this box. Each witness is right 65% of the time.\nWitness 1 says green.\nWitness 2 says red.\nWitness 3 says red.\nWitness 4 says yellow.\nWitness 5 says red.",
+    "Box 3I2. Five witnesses saw this box. Each witness is right 65% of the time.\nWitness 1 says yellow.\nWitness 2 says yellow.\nWitness 3 says yellow.\nWitness 4 says yellow.\nWitness 5 says yellow."
+   ]
+  },
+  "example_cards_test": [
+   {
+    "card": "Box ADP. Five witnesses saw this box. Each witness is right 65% of the time.\nWitness 1 says yellow.\nWitness 2 says yellow.\nWitness 3 says green.\nWitness 4 says red.\nWitness 5 says yellow.",
+    "color": "yellow",
+    "bayes": [
+     0.03010207296326632,
+     0.005402936172893952,
+     0.03010207296326632,
+     0.9343929179005733
+    ]
+   },
+   {
+    "card": "Box SR7. Five witnesses saw this box. Each witness is right 65% of the time.\nWitness 1 says green.\nWitness 2 says red.\nWitness 3 says red.\nWitness 4 says yellow.\nWitness 5 says red.",
+    "color": "red",
+    "bayes": [
+     0.9343929179005732,
+     0.0054029361728939514,
+     0.030102072963266314,
+     0.030102072963266314
+    ]
+   },
+   {
+    "card": "Box 3I2. Five witnesses saw this box. Each witness is right 65% of the time.\nWitness 1 says yellow.\nWitness 2 says yellow.\nWitness 3 says yellow.\nWitness 4 says yellow.\nWitness 5 says yellow.",
+    "color": "yellow",
+    "bayes": [
+     0.00018617635831643466,
+     0.00018617635831643466,
+     0.00018617635831643466,
+     0.9994414709250506
+    ]
+   }
+  ]
+ },
+ "records": [
+  {
+   "arm": "T0",
+   "view": "readout",
+   "metric": "nll",
+   "value": 0.8389891148180474
+  },
+  {
+   "arm": "T0",
+   "view": "readout",
+   "metric": "brier",
+   "value": 0.41752711673073495
+  },
+  {
+   "arm": "T0",
+   "view": "readout",
+   "metric": "acc",
+   "value": 0.78125
+  },
+  {
+   "arm": "T0",
+   "view": "readout",
+   "metric": "ece",
+   "value": 0.19936030228656665
+  },
+  {
+   "arm": "T0",
+   "view": "readout",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.4451912426028306
+  },
+  {
+   "arm": "T0",
+   "view": "zero_shot",
+   "metric": "nll",
+   "value": 1.913778660705803
+  },
+  {
+   "arm": "T0",
+   "view": "zero_shot",
+   "metric": "brier",
+   "value": 0.858221159037273
+  },
+  {
+   "arm": "T0",
+   "view": "zero_shot",
+   "metric": "acc",
+   "value": 0.25
+  },
+  {
+   "arm": "T0",
+   "view": "zero_shot",
+   "metric": "ece",
+   "value": 0.48203968572564837
+  },
+  {
+   "arm": "T0",
+   "view": "zero_shot",
+   "metric": "gap_to_bayes_nll",
+   "value": 1.519980788490586
+  },
+  {
+   "arm": "T1",
+   "view": "readout",
+   "metric": "nll",
+   "value": 0.8411403153149517
+  },
+  {
+   "arm": "T1",
+   "view": "readout",
+   "metric": "brier",
+   "value": 0.41877767946033073
+  },
+  {
+   "arm": "T1",
+   "view": "readout",
+   "metric": "acc",
+   "value": 0.78125
+  },
+  {
+   "arm": "T1",
+   "view": "readout",
+   "metric": "ece",
+   "value": 0.20043390560905738
+  },
+  {
+   "arm": "T1",
+   "view": "readout",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.4473424430997349
+  },
+  {
+   "arm": "T1",
+   "view": "zero_shot",
+   "metric": "nll",
+   "value": 1.603113886593535
+  },
+  {
+   "arm": "T1",
+   "view": "zero_shot",
+   "metric": "brier",
+   "value": 0.7414241309626451
+  },
+  {
+   "arm": "T1",
+   "view": "zero_shot",
+   "metric": "acc",
+   "value": 0.3125
+  },
+  {
+   "arm": "T1",
+   "view": "zero_shot",
+   "metric": "ece",
+   "value": 0.3782628605281604
+  },
+  {
+   "arm": "T1",
+   "view": "zero_shot",
+   "metric": "gap_to_bayes_nll",
+   "value": 1.2093160143783184
+  },
+  {
+   "arm": "T2",
+   "view": "readout",
+   "metric": "nll",
+   "value": 0.828760621443178
+  },
+  {
+   "arm": "T2",
+   "view": "readout",
+   "metric": "brier",
+   "value": 0.40803367659379275
+  },
+  {
+   "arm": "T2",
+   "view": "readout",
+   "metric": "acc",
+   "value": 0.78125
+  },
+  {
+   "arm": "T2",
+   "view": "readout",
+   "metric": "ece",
+   "value": 0.28252569508063186
+  },
+  {
+   "arm": "T2",
+   "view": "readout",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.4349627492279612
+  },
+  {
+   "arm": "T2",
+   "view": "zero_shot",
+   "metric": "nll",
+   "value": 1.4429562836223648
+  },
+  {
+   "arm": "T2",
+   "view": "zero_shot",
+   "metric": "brier",
+   "value": 0.6355361483862956
+  },
+  {
+   "arm": "T2",
+   "view": "zero_shot",
+   "metric": "acc",
+   "value": 0.65625
+  },
+  {
+   "arm": "T2",
+   "view": "zero_shot",
+   "metric": "ece",
+   "value": 0.30739626108002843
+  },
+  {
+   "arm": "T2",
+   "view": "zero_shot",
+   "metric": "gap_to_bayes_nll",
+   "value": 1.0491584114071482
+  },
+  {
+   "arm": "T3",
+   "view": "readout",
+   "metric": "nll",
+   "value": 0.8317015762385346
+  },
+  {
+   "arm": "T3",
+   "view": "readout",
+   "metric": "brier",
+   "value": 0.4112894757162975
+  },
+  {
+   "arm": "T3",
+   "view": "readout",
+   "metric": "acc",
+   "value": 0.78125
+  },
+  {
+   "arm": "T3",
+   "view": "readout",
+   "metric": "ece",
+   "value": 0.20458382727207536
+  },
+  {
+   "arm": "T3",
+   "view": "readout",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.4379037040233178
+  },
+  {
+   "arm": "T3",
+   "view": "zero_shot",
+   "metric": "nll",
+   "value": 1.4480134056794285
+  },
+  {
+   "arm": "T3",
+   "view": "zero_shot",
+   "metric": "brier",
+   "value": 0.6503168744201075
+  },
+  {
+   "arm": "T3",
+   "view": "zero_shot",
+   "metric": "acc",
+   "value": 0.625
+  },
+  {
+   "arm": "T3",
+   "view": "zero_shot",
+   "metric": "ece",
+   "value": 0.2759421578356313
+  },
+  {
+   "arm": "T3",
+   "view": "zero_shot",
+   "metric": "gap_to_bayes_nll",
+   "value": 1.0542155334642116
+  },
+  {
+   "arm": "T4",
+   "view": "readout",
+   "metric": "nll",
+   "value": 0.842553051905551
+  },
+  {
+   "arm": "T4",
+   "view": "readout",
+   "metric": "brier",
+   "value": 0.41704218450037894
+  },
+  {
+   "arm": "T4",
+   "view": "readout",
+   "metric": "acc",
+   "value": 0.78125
+  },
+  {
+   "arm": "T4",
+   "view": "readout",
+   "metric": "ece",
+   "value": 0.18643816718957576
+  },
+  {
+   "arm": "T4",
+   "view": "readout",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.4487551796903342
+  },
+  {
+   "arm": "T4",
+   "view": "zero_shot",
+   "metric": "nll",
+   "value": 2.1197312626446347
+  },
+  {
+   "arm": "T4",
+   "view": "zero_shot",
+   "metric": "brier",
+   "value": 0.9048117970285673
+  },
+  {
+   "arm": "T4",
+   "view": "zero_shot",
+   "metric": "acc",
+   "value": 0.25
+  },
+  {
+   "arm": "T4",
+   "view": "zero_shot",
+   "metric": "ece",
+   "value": 0.3827587220532187
+  },
+  {
+   "arm": "T4",
+   "view": "zero_shot",
+   "metric": "gap_to_bayes_nll",
+   "value": 1.725933390429418
+  },
+  {
+   "arm": "Card",
+   "view": "readout",
+   "metric": "nll",
+   "value": 0.8320492005100539
+  },
+  {
+   "arm": "Card",
+   "view": "readout",
+   "metric": "brier",
+   "value": 0.4703840054109032
+  },
+  {
+   "arm": "Card",
+   "view": "readout",
+   "metric": "acc",
+   "value": 0.65625
+  },
+  {
+   "arm": "Card",
+   "view": "readout",
+   "metric": "ece",
+   "value": 0.21066494387475138
+  },
+  {
+   "arm": "Card",
+   "view": "readout",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.43825132829483715
+  },
+  {
+   "arm": "Card",
+   "view": "zero_shot",
+   "metric": "nll",
+   "value": 2.1661349800903387
+  },
+  {
+   "arm": "Card",
+   "view": "zero_shot",
+   "metric": "brier",
+   "value": 1.0089969731810111
+  },
+  {
+   "arm": "Card",
+   "view": "zero_shot",
+   "metric": "acc",
+   "value": 0.25
+  },
+  {
+   "arm": "Card",
+   "view": "zero_shot",
+   "metric": "ece",
+   "value": 0.5431642560878212
+  },
+  {
+   "arm": "Card",
+   "view": "zero_shot",
+   "metric": "gap_to_bayes_nll",
+   "value": 1.772337107875122
+  },
+  {
+   "arm": "L",
+   "view": "readout",
+   "metric": "nll",
+   "value": 1.0519976519652223
+  },
+  {
+   "arm": "L",
+   "view": "readout",
+   "metric": "brier",
+   "value": 0.5567812584197678
+  },
+  {
+   "arm": "L",
+   "view": "readout",
+   "metric": "acc",
+   "value": 0.53125
+  },
+  {
+   "arm": "L",
+   "view": "readout",
+   "metric": "ece",
+   "value": 0.19097887920300985
+  },
+  {
+   "arm": "L",
+   "view": "readout",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.6581997797500055
+  },
+  {
+   "arm": "L",
+   "view": "zero_shot",
+   "metric": "nll",
+   "value": 2.203585476737721
+  },
+  {
+   "arm": "L",
+   "view": "zero_shot",
+   "metric": "brier",
+   "value": 0.9969956381221367
+  },
+  {
+   "arm": "L",
+   "view": "zero_shot",
+   "metric": "acc",
+   "value": 0.28125
+  },
+  {
+   "arm": "L",
+   "view": "zero_shot",
+   "metric": "ece",
+   "value": 0.3935383902942731
+  },
+  {
+   "arm": "L",
+   "view": "zero_shot",
+   "metric": "gap_to_bayes_nll",
+   "value": 1.8097876045225045
+  },
+  {
+   "arm": "L-shuf",
+   "view": "readout",
+   "metric": "nll",
+   "value": 1.4357953625953819
+  },
+  {
+   "arm": "L-shuf",
+   "view": "readout",
+   "metric": "brier",
+   "value": 0.7868837377188633
+  },
+  {
+   "arm": "L-shuf",
+   "view": "readout",
+   "metric": "acc",
+   "value": 0.25
+  },
+  {
+   "arm": "L-shuf",
+   "view": "readout",
+   "metric": "ece",
+   "value": 0.17638486431401204
+  },
+  {
+   "arm": "L-shuf",
+   "view": "readout",
+   "metric": "gap_to_bayes_nll",
+   "value": 1.0419974903801652
+  },
+  {
+   "arm": "L-shuf",
+   "view": "zero_shot",
+   "metric": "nll",
+   "value": 2.194931405600131
+  },
+  {
+   "arm": "L-shuf",
+   "view": "zero_shot",
+   "metric": "brier",
+   "value": 1.0761271358086102
+  },
+  {
+   "arm": "L-shuf",
+   "view": "zero_shot",
+   "metric": "acc",
+   "value": 0.25
+  },
+  {
+   "arm": "L-shuf",
+   "view": "zero_shot",
+   "metric": "ece",
+   "value": 0.5104457738277655
+  },
+  {
+   "arm": "L-shuf",
+   "view": "zero_shot",
+   "metric": "gap_to_bayes_nll",
+   "value": 1.801133533384914
+  },
+  {
+   "arm": "L-testshuf",
+   "view": "readout",
+   "metric": "nll",
+   "value": 1.8922103786677211
+  },
+  {
+   "arm": "L-testshuf",
+   "view": "readout",
+   "metric": "brier",
+   "value": 0.9458978575537791
+  },
+  {
+   "arm": "L-testshuf",
+   "view": "readout",
+   "metric": "acc",
+   "value": 0.28125
+  },
+  {
+   "arm": "L-testshuf",
+   "view": "readout",
+   "metric": "ece",
+   "value": 0.36346135920750433
+  },
+  {
+   "arm": "L-testshuf",
+   "view": "readout",
+   "metric": "gap_to_bayes_nll",
+   "value": 1.4984125064525045
+  },
+  {
+   "arm": "L-testshuf",
+   "view": "zero_shot",
+   "metric": "nll",
+   "value": 1.9485229711348844
+  },
+  {
+   "arm": "L-testshuf",
+   "view": "zero_shot",
+   "metric": "brier",
+   "value": 0.9899270913041611
+  },
+  {
+   "arm": "L-testshuf",
+   "view": "zero_shot",
+   "metric": "acc",
+   "value": 0.28125
+  },
+  {
+   "arm": "L-testshuf",
+   "view": "zero_shot",
+   "metric": "ece",
+   "value": 0.4550971399128564
+  },
+  {
+   "arm": "L-testshuf",
+   "view": "zero_shot",
+   "metric": "gap_to_bayes_nll",
+   "value": 1.5547250989196675
+  },
+  {
+   "arm": "Bayes",
+   "view": "reference",
+   "metric": "nll",
+   "value": 0.3937978722152168
+  },
+  {
+   "arm": "Bayes",
+   "view": "reference",
+   "metric": "brier",
+   "value": 0.2440588647168595
+  },
+  {
+   "arm": "Bayes",
+   "view": "reference",
+   "metric": "acc",
+   "value": 0.8125
+  },
+  {
+   "arm": "Bayes",
+   "view": "reference",
+   "metric": "ece",
+   "value": 0.07417983949885448
+  },
+  {
+   "arm": "Bayes",
+   "view": "reference",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.0
+  },
+  {
+   "arm": "Bayes-9",
+   "view": "reference",
+   "metric": "nll",
+   "value": 1.1565260813636358
+  },
+  {
+   "arm": "Bayes-9",
+   "view": "reference",
+   "metric": "brier",
+   "value": 0.2592592592588611
+  },
+  {
+   "arm": "Bayes-9",
+   "view": "reference",
+   "metric": "acc",
+   "value": 0.8125
+  },
+  {
+   "arm": "Bayes-9",
+   "view": "reference",
+   "metric": "ece",
+   "value": 0.0937499999977606
+  },
+  {
+   "arm": "Bayes-9",
+   "view": "reference",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.762728209148419
+  },
+  {
+   "arm": "Bayes-9-cal",
+   "view": "reference",
+   "metric": "nll",
+   "value": 0.4038142800133033
+  },
+  {
+   "arm": "Bayes-9-cal",
+   "view": "reference",
+   "metric": "brier",
+   "value": 0.24449652782624595
+  },
+  {
+   "arm": "Bayes-9-cal",
+   "view": "reference",
+   "metric": "acc",
+   "value": 0.8125
+  },
+  {
+   "arm": "Bayes-9-cal",
+   "view": "reference",
+   "metric": "ece",
+   "value": 0.07414573074501976
+  },
+  {
+   "arm": "Bayes-9-cal",
+   "view": "reference",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.01001640779808649
+  },
+  {
+   "arm": "Prior",
+   "view": "reference",
+   "metric": "nll",
+   "value": 1.3862943611198906
+  },
+  {
+   "arm": "Prior",
+   "view": "reference",
+   "metric": "brier",
+   "value": 0.75
+  },
+  {
+   "arm": "Prior",
+   "view": "reference",
+   "metric": "acc",
+   "value": 0.34375
+  },
+  {
+   "arm": "Prior",
+   "view": "reference",
+   "metric": "ece",
+   "value": 0.09375
+  },
+  {
+   "arm": "Prior",
+   "view": "reference",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.9924964889046738
+  },
+  {
+   "arm": "sender_softmax_direct",
+   "view": "reference",
+   "metric": "nll",
+   "value": 0.8121903080136024
+  },
+  {
+   "arm": "sender_softmax_direct",
+   "view": "reference",
+   "metric": "brier",
+   "value": 0.40926523729840864
+  },
+  {
+   "arm": "sender_softmax_direct",
+   "view": "reference",
+   "metric": "acc",
+   "value": 0.78125
+  },
+  {
+   "arm": "sender_softmax_direct",
+   "view": "reference",
+   "metric": "ece",
+   "value": 0.22582553482601622
+  },
+  {
+   "arm": "sender_softmax_direct",
+   "view": "reference",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.4183924357983856
+  },
+  {
+   "arm": "probe4_block21_direct",
+   "view": "reference",
+   "metric": "nll",
+   "value": 0.901792756569182
+  },
+  {
+   "arm": "probe4_block21_direct",
+   "view": "reference",
+   "metric": "brier",
+   "value": 0.4648372956874424
+  },
+  {
+   "arm": "probe4_block21_direct",
+   "view": "reference",
+   "metric": "acc",
+   "value": 0.75
+  },
+  {
+   "arm": "probe4_block21_direct",
+   "view": "reference",
+   "metric": "ece",
+   "value": 0.3307748562019744
+  },
+  {
+   "arm": "probe4_block21_direct",
+   "view": "reference",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.5079948843539652
+  },
+  {
+   "arm": "probe4_block28_direct",
+   "view": "reference",
+   "metric": "nll",
+   "value": 0.8396525975177658
+  },
+  {
+   "arm": "probe4_block28_direct",
+   "view": "reference",
+   "metric": "brier",
+   "value": 0.4483021920804329
+  },
+  {
+   "arm": "probe4_block28_direct",
+   "view": "reference",
+   "metric": "acc",
+   "value": 0.75
+  },
+  {
+   "arm": "probe4_block28_direct",
+   "view": "reference",
+   "metric": "ece",
+   "value": 0.21288087372814712
+  },
+  {
+   "arm": "probe4_block28_direct",
+   "view": "reference",
+   "metric": "gap_to_bayes_nll",
+   "value": 0.445854725302549
+  },
+  {
+   "arm": "T0 minus L",
+   "view": "readout",
+   "metric": "nll_difference_mean",
+   "value": -0.21300853714717508
+  },
+  {
+   "arm": "T1 minus L",
+   "view": "readout",
+   "metric": "nll_difference_mean",
+   "value": -0.21085733665027073
+  },
+  {
+   "arm": "T2 minus L",
+   "view": "readout",
+   "metric": "nll_difference_mean",
+   "value": -0.22323703052204455
+  },
+  {
+   "arm": "T3 minus L",
+   "view": "readout",
+   "metric": "nll_difference_mean",
+   "value": -0.22029607572668794
+  },
+  {
+   "arm": "T4 minus L",
+   "view": "readout",
+   "metric": "nll_difference_mean",
+   "value": -0.20944460005967155
+  },
+  {
+   "arm": "Card minus L",
+   "view": "readout",
+   "metric": "nll_difference_mean",
+   "value": -0.21994845145516848
+  },
+  {
+   "arm": "L-shuf minus L",
+   "view": "readout",
+   "metric": "nll_difference_mean",
+   "value": 0.3837977106301593
+  },
+  {
+   "arm": "L-testshuf minus L",
+   "view": "readout",
+   "metric": "nll_difference_mean",
+   "value": 0.8402127267024986
+  },
+  {
+   "arm": "T0 minus T2",
+   "view": "readout",
+   "metric": "nll_difference_mean",
+   "value": 0.010228493374869519
+  },
+  {
+   "arm": "T2 minus T4",
+   "view": "readout",
+   "metric": "nll_difference_mean",
+   "value": -0.013792430462373039
+  },
+  {
+   "arm": "T3 minus T4",
+   "view": "readout",
+   "metric": "nll_difference_mean",
+   "value": -0.010851475667016415
+  },
+  {
+   "arm": "T0 minus Card",
+   "view": "readout",
+   "metric": "nll_difference_mean",
+   "value": 0.006939914307993442
+  }
+ ]
+}

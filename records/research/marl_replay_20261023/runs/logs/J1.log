@@ -1,0 +1,34 @@
+[gate 2026-10-23 23:06:40]
+  lab jobs: none
+  hot python: none
+  power: ac=1 battery=100% charger=140W
+  swap: total = 2048.00M  used = 404.31M  free = 1643.69M  (encrypted)
+  free disk: 119 GB
+  freeze: OK: 16 files and 2 inputs equal FREEZE.json (2026-10-23T18:11:30+00:00)
+  unit tests: Ran 39 tests in 6.046s OK 
+  gate result: PASS
+[launch 2026-10-23 23:06:48] job=J1 pid=37844 script=jobs.py args=teams --cond W1 --seeds 1-20 --job J1
+[23:06:48] start mode=teams cond=W1 seeds=1-20 job=J1 torch=2.13.0
+[23:07:10] J1 W1 s1: train 17.1s gate C 0.9775 Z 0.2950 pass True eval 3.8s V2 True V3 True team 21.8s
+[23:07:30] J1 W1 s2: train 16.9s gate C 0.9975 Z 0.2995 pass True eval 3.1s V2 True V3 True team 20.3s
+[23:07:50] J1 W1 s3: train 16.5s gate C 0.9895 Z 0.2985 pass True eval 3.2s V2 True V3 True team 19.9s
+[23:07:50] J1 S2 check: projected 6.9 min for 20 teams
+[23:08:10] J1 W1 s4: train 16.5s gate C 0.9815 Z 0.2800 pass True eval 3.1s V2 True V3 True team 19.8s
+[23:08:30] J1 W1 s5: train 16.8s gate C 0.9890 Z 0.3250 pass True eval 3.1s V2 True V3 True team 20.2s
+[23:08:50] J1 W1 s6: train 16.5s gate C 0.9945 Z 0.3075 pass True eval 3.1s V2 True V3 True team 19.8s
+[23:09:10] J1 W1 s7: train 16.7s gate C 0.9580 Z 0.2840 pass True eval 3.1s V2 True V3 True team 20.1s
+[23:09:30] J1 W1 s8: train 16.5s gate C 0.9780 Z 0.2970 pass True eval 3.2s V2 True V3 True team 19.9s
+[23:09:50] J1 W1 s9: train 16.5s gate C 0.9880 Z 0.2945 pass True eval 3.1s V2 True V3 True team 19.9s
+[23:10:10] J1 W1 s10: train 16.5s gate C 0.9950 Z 0.3150 pass True eval 3.1s V2 True V3 True team 19.9s
+[23:10:30] J1 W1 s11: train 16.5s gate C 0.9890 Z 0.2890 pass True eval 3.1s V2 True V3 True team 19.9s
+[23:10:49] J1 W1 s12: train 16.5s gate C 0.9910 Z 0.2820 pass True eval 3.1s V2 True V3 True team 19.9s
+[23:11:09] J1 W1 s13: train 16.5s gate C 0.9940 Z 0.2860 pass True eval 3.1s V2 True V3 True team 19.9s
+[23:11:29] J1 W1 s14: train 16.5s gate C 0.9960 Z 0.3050 pass True eval 3.1s V2 True V3 True team 19.9s
+[23:11:49] J1 W1 s15: train 16.5s gate C 0.9850 Z 0.3070 pass True eval 3.2s V2 True V3 True team 19.9s
+[23:12:09] J1 W1 s16: train 16.5s gate C 0.9875 Z 0.3110 pass True eval 3.1s V2 True V3 True team 19.9s
+[23:12:29] J1 W1 s17: train 16.5s gate C 0.9975 Z 0.3130 pass True eval 3.1s V2 True V3 True team 19.8s
+[23:12:49] J1 W1 s18: train 16.5s gate C 0.9985 Z 0.3095 pass True eval 3.1s V2 True V3 True team 19.8s
+[23:13:09] J1 W1 s19: train 16.5s gate C 0.9800 Z 0.3130 pass True eval 3.1s V2 True V3 True team 19.8s
+[23:13:28] J1 W1 s20: train 16.5s gate C 0.9900 Z 0.3000 pass True eval 3.1s V2 True V3 True team 19.9s
+END {"status": "complete", "job": "J1", "wall_seconds": 400.2122088749893}
+[launch 2026-10-23 23:13:30] job=J1 exit=0

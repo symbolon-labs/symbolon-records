@@ -1,0 +1,33 @@
+[gate 2026-10-23 23:20:06]
+  lab jobs: none
+  hot python: none
+  power: ac=1 battery=100% charger=140W
+  swap: total = 2048.00M  used = 404.31M  free = 1643.69M  (encrypted)
+  free disk: 115 GB
+  freeze: OK: 16 files and 2 inputs equal FREEZE.json (2026-10-23T18:11:30+00:00)
+  unit tests: Ran 39 tests in 5.942s OK 
+  gate result: PASS
+[launch 2026-10-23 23:20:13] job=J3 pid=38698 script=jobs.py args=score --seeds 1-20 --job J3
+[23:20:13] start mode=score cond=None seeds=1-20 job=J3 torch=2.13.0
+[23:21:17] J3 s1: {"team": "W1_s01", "seconds_test": 21.806390209007077, "seconds_silent": 41.7636315409909, "participation_ratio": 2.2404082989319454}
+[23:22:21] J3 s2: {"team": "W1_s02", "seconds_test": 22.901553750009043, "seconds_silent": 40.89187145800679, "participation_ratio": 2.190356358771392}
+[23:23:18] J3 s3: {"team": "W1_s03", "seconds_test": 20.596613000001526, "seconds_silent": 36.794002166978316, "participation_ratio": 2.2608891837827683}
+[23:24:16] J3 s4: {"team": "W1_s04", "seconds_test": 20.734643917006906, "seconds_silent": 37.17840929099475, "participation_ratio": 2.3763290657045424}
+[23:25:14] J3 s5: {"team": "W1_s05", "seconds_test": 20.537844583013793, "seconds_silent": 37.60420770797646, "participation_ratio": 2.332764432321785}
+[23:26:18] J3 s6: {"team": "W1_s06", "seconds_test": 22.677564040990546, "seconds_silent": 41.06994383400888, "participation_ratio": 2.230283684666274}
+[23:27:19] J3 s7: {"team": "W1_s07", "seconds_test": 21.13633249999839, "seconds_silent": 39.78605124997557, "participation_ratio": 2.3154930207691384}
+[23:28:19] J3 s8: {"team": "W1_s08", "seconds_test": 20.924611875001574, "seconds_silent": 39.19027812499553, "participation_ratio": 2.3211248488344793}
+[23:29:18] J3 s9: {"team": "W1_s09", "seconds_test": 21.264624124974944, "seconds_silent": 38.23081779200584, "participation_ratio": 2.313162583307721}
+[23:30:27] J3 s10: {"team": "W1_s10", "seconds_test": 23.6747771249793, "seconds_silent": 44.55886079202173, "participation_ratio": 2.235674268850806}
+[23:31:31] J3 s11: {"team": "W1_s11", "seconds_test": 22.28274654201232, "seconds_silent": 42.12582841698895, "participation_ratio": 2.303762811028935}
+[23:32:31] J3 s12: {"team": "W1_s12", "seconds_test": 20.945475125015946, "seconds_silent": 38.57193858298706, "participation_ratio": 2.3578346122464553}
+[23:33:32] J3 s13: {"team": "W1_s13", "seconds_test": 21.10111895899172, "seconds_silent": 40.51015612500487, "participation_ratio": 2.2564127450278626}
+[23:34:32] J3 s14: {"team": "W1_s14", "seconds_test": 21.69528404198354, "seconds_silent": 38.19233104100567, "participation_ratio": 2.306340184982006}
+[23:35:35] J3 s15: {"team": "W1_s15", "seconds_test": 21.729814124992117, "seconds_silent": 41.505253084003925, "participation_ratio": 2.486068082301428}
+[23:36:39] J3 s16: {"team": "W1_s16", "seconds_test": 21.682495084009133, "seconds_silent": 42.029667665978195, "participation_ratio": 2.260204276715942}
+[23:37:38] J3 s17: {"team": "W1_s17", "seconds_test": 21.082734208001057, "seconds_silent": 38.03910475000157, "participation_ratio": 2.2860809443130976}
+[23:38:40] J3 s18: {"team": "W1_s18", "seconds_test": 22.44044995799777, "seconds_silent": 39.768460499995854, "participation_ratio": 2.202251659916748}
+[23:39:45] J3 s19: {"team": "W1_s19", "seconds_test": 22.033588416001294, "seconds_silent": 42.938380374980625, "participation_ratio": 2.3300925416176352}
+[23:40:49] J3 s20: {"team": "W1_s20", "seconds_test": 21.795050958986394, "seconds_silent": 41.91584691600292, "participation_ratio": 2.3210372489493785}
+END {"status": "complete", "job": "J3", "wall_seconds": 1235.8175577090005}
+[launch 2026-10-23 23:40:50] job=J3 exit=0
